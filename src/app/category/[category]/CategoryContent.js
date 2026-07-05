@@ -102,31 +102,36 @@ const filteredData = useMemo(() => {
     }
   };
 
-  // canonical 및 prev/next 동적 헤드 태그 주입
+ // canonical 및 prev/next 동적 헤드 태그 주입
   useEffect(() => {
     if (typeof window === "undefined") return;
 
-    document.title = `CS 고객센터 도우미 - ${rawCategory} 카테고리 정보 (${currentPage}페이지)`;
+    // rawCategory가 이미 인코딩된 상태라면 한 번 디코딩해서 사용합니다.
+    const cleanCategory = decodeURIComponent(rawCategory);
+    document.title = `CS 고객센터 도우미 - ${cleanCategory} 카테고리 정보 (${currentPage}페이지)`;
 
     const oldTags = document.head.querySelectorAll('link[rel="canonical"], link[rel="prev"], link[rel="next"]');
     oldTags.forEach(el => el.remove());
 
+    // URL을 만들 때 encodeURIComponent를 빼고, 원본 한글값(cleanCategory)을 활용합니다.
+    const baseUrl = `https://cshelper.kr/category/${cleanCategory}`;
+
     const canonical = document.createElement("link");
     canonical.rel = "canonical";
-    canonical.href = `https://cshelper.kr/category/${encodeURIComponent(rawCategory)}?page=${currentPage}`;
+    canonical.href = `${baseUrl}?page=${currentPage}`;
     document.head.appendChild(canonical);
 
     if (currentPage > 1) {
       const prev = document.createElement("link");
       prev.rel = "prev";
-      prev.href = `https://cshelper.kr/category/${encodeURIComponent(rawCategory)}?page=${currentPage - 1}`;
+      prev.href = `${baseUrl}?page=${currentPage - 1}`;
       document.head.appendChild(prev);
     }
 
     if (currentPage < totalPages) {
       const next = document.createElement("link");
       next.rel = "next";
-      next.href = `https://cshelper.kr/category/${encodeURIComponent(rawCategory)}?page=${currentPage + 1}`;
+      next.href = `${baseUrl}?page=${currentPage + 1}`;
       document.head.appendChild(next);
     }
   }, [currentPage, totalPages, rawCategory]);
@@ -209,7 +214,8 @@ const filteredData = useMemo(() => {
             <div className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 {paginatedData.map(({ item, index }) => {
-                  const is24h = item.hours.includes("24시간") || item.name.includes("분실") || item.name.includes("사고");
+                  // item.hours가 없으면 빈 문자열("")로 처리하여 에러를 방지합니다.
+                  const is24h = (item.hours || "").includes("24시간") || item.name.includes("분실");
                   const slug = getSlug(item.name);
                   return (
                     <Fragment key={item.id || index}>
