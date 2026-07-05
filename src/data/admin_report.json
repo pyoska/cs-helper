@@ -1,0 +1,93 @@
+{
+  "scanDate": "2026-07-05",
+  "totalScanned": 1012,
+  "summary": {
+    "invalidPhoneCount": 81,
+    "missingWebUrlCount": 0,
+    "invalidWebUrlCount": 0,
+    "missingTipCount": 0,
+    "duplicateCount": 0
+  },
+  "flaggedItems": {
+    "invalidPhones": [
+      {
+        "index": 16,
+        "name": "한국통신선불카드 고객센터 고객센터",
+        "phone": "080-2580-721"
+      },
+      {
+        "index": 62,
+        "name": "KB국민은행 고객센터",
+        "phone": "1588-9999 (단축키 *)"
+      },
+      {
+        "index": 63,
+        "name": "신한은행 고객센터",
+        "phone": "1599-8000 (단축키 *)"
+      },
+      {
+        "index": 64,
+        "name": "우리은행 고객센터",
+        "phone": "1588-5000 (단축키 #-1)"
+      },
+      {
+        "index": 65,
+        "name": "NH농협은행 고객센터",
+        "phone": "1661-3000 (단축키 8)"
+      },
+      {
+        "index": 66,
+        "name": "하나은행 고객센터",
+        "phone": "1599-1111 (단축키 #)"
+      },
+      {
+        "index": 69,
+        "name": "IBK기업은행 고객센터",
+        "phone": "1588-2588 (단축키 #)"
+      },
+      {
+        "index": 70,
+        "name": "케이뱅크 고객센터",
+        "phone": "1522-1000 (단축키 8)"
+      },
+      {
+        "index": 82,
+        "name": "제주은행 대표고객센터 고객센터",
+        "phone": "1588-0079 (단축키 1)"
+      },
+      {
+        "index": 84,
+        "name": "한국투자공사 대표전화 고객센터",
+        "phone": "02-2179-1000 (본사 대표)"
+      },
+      {
+        "index": 85,
+        "name": "한국증권금융 고객센터 고객센터",
+        "phone": "1544-8333 (본사 대표)"
+      },
+      {
+        "index": 86,
+        "name": "상호저축은행 디지털지원센터 고객센터",
+        "phone": "1544-3637 (단축키 1)"
+      },
+      {
+        "index": 87,
+        "name": "상호저축은행 야간사기신고 고객센터",
+        "phone": "02-3978-800"
+      },
+      {
+        "index": 91,
+        "name": "하나은행 기업뱅킹지원단 고객센터",
+        "phone": "1599-1111 (단축키 3)"
+      },
+      {
+        "index": 95,
+        "name": "우리카드 상생금융지원 데스크 고객센터",
+        "phone": "1588-9955 (내선 8)"
+      }
+    ],
+    "invalidUrls": [],
+    "duplicates": [],
+    "missingUrlsSample": []
+  }
+}
