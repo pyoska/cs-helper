@@ -219,7 +219,7 @@ const catDetail = CATEGORY_MAP[decodedCategory] || { name: decodedCategory, icon
   const name = item?.name || "";
   
   // 에러 방지: hours가 undefined여도 안전하게 체크
-  const is24h = hours.includes("24시간") || name.includes("분실");
+ const is24h = item?.hours?.includes("24시간") || item?.name?.includes("분실");
   
   const slug = getSlug(name);
   
