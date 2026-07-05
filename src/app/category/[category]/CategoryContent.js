@@ -70,12 +70,19 @@ export default function CategoryContent({ rawCategory }) {
     }
   }, []);
 
-  // 실시간 필터링
-  const filteredData = useMemo(() => {
-    return customerData.map((item, index) => ({ item, index })).filter(({ item }) => {
-      return item.category === rawCategory;
-    });
-  }, [rawCategory]);
+// CategoryContent.js 내부
+const filteredData = useMemo(() => {
+  // 1. URL에서 넘어온 파라미터를 한글로 디코딩합니다.
+  const decodedCategory = decodeURIComponent(rawCategory).trim();
+  
+  return customerData.map((item, index) => ({ item, index })).filter(({ item }) => {
+    // 2. 데이터의 카테고리 값도 공백을 제거합니다.
+    const itemCategory = (item.category || "").trim();
+    
+    // 3. 디코딩된 값과 데이터 값을 비교합니다.
+    return itemCategory === decodedCategory;
+  });
+}, [rawCategory]);
 
   // 총 페이지 수
   const totalPages = useMemo(() => {
