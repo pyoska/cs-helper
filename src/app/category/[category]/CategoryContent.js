@@ -1,17 +1,10 @@
-'use client';
+"use client";
 
-/**
- * [파일명: CategoryContent.js]
- * 
- * @description 
- * 특정 카테고리의 고객센터 데이터를 필터링하여 리스트로 출력하는 Next.js 클라이언트 컴포넌트입니다.
- * Senior Full-Stack Engineer 관점에서 SEO 최적화(Canonical, Prev/Next), Hydration Mismatch 방지,
- * 그리고 모바일 친화적인 Sliding Window 페이지네이션을 구현했습니다.
- */
+import { useState, useEffect, useMemo, Suspense, Fragment } from "react";
+import Link from "next/link";
+import { useSearchParams, useRouter } from "next/navigation";
 
-import { useState, useEffect, useMemo } from 'react';
-import Link from 'next/link';
-import { useRouter, useSearchParams } from 'next/navigation';
+// Lucide-React 아이콘 임포트: 성능 및 가독성을 고려한 선별적 사용
 import {
   Phone,
   Clock,
@@ -26,26 +19,26 @@ import {
   Car,
   BarChart2,
   Tv,
-  ArrowRight,
-  AlertCircle,
-  ChevronLeft,
-  ChevronRight,
-  MoreHorizontal
-} from 'lucide-react';
+  Wrench,
+  Sparkles,
+  ArrowRight
+} from "lucide-react";
 
-import { customerData } from '@/data/customerData';
-import Footer from '@/components/Footer';
+// 데이터 및 컴포넌트 임포트
+import { customerData } from "@/data/customerData";
+import Footer from "@/components/Footer";
 
-// --- 상수 정의 ---
-
+/**
+ * 1. 전역 상수 정의
+ */
 const ITEMS_PER_PAGE = 12;
 
-// 카테고리 매핑 데이터 (Source Context 기반)
+// 카테고리별 아이콘 및 표시 이름 매핑 (가전 카테고리는 AS 전문성을 위해 Wrench 아이콘 적용)
 const CATEGORY_MAP = {
   "카드": { name: "카드/금융", icon: CreditCard },
   "은행": { name: "은행/저축", icon: Building2 },
   "통신": { name: "통신/인터넷", icon: Smartphone },
-  "가전": { name: "가전/AS", icon: Tv },
+  "가전": { name: "가전/AS", icon: Wrench },
   "보험": { name: "보험/상조", icon: ShieldCheck },
   "배달·쇼핑": { name: "배달/쇼핑", icon: ShoppingBag },
   "항공·여행": { name: "항공/여행", icon: Plane },
@@ -55,24 +48,18 @@ const CATEGORY_MAP = {
   "기타": { name: "기타", icon: HelpCircle }
 };
 
-// --- 유틸리티 함수 ---
-
 /**
- * 전화번호 문자열에서 숫자와 +, - 기호만 추출합니다. (Source Context 반영)
- * @param {string} phone 
- * @returns {string}
+ * 2. 유틸리티 함수 (Source Context 기반 데이터 가공)
  */
+
+// 전화번호 정제: 괄호 내용 제거 후 숫자와 +, - 기호만 남김
 const getDialablePhone = (phone) => {
   if (!phone) return "";
-  // 괄호 및 괄호 안의 내용을 제거하고 숫자/기호만 남김
+  // Source Context 지시사항: 괄호 및 포함된 문자열 우선 제거 후 숫자 관련 기호 추출
   return phone.replace(/\([^)]*\)/g, "").replace(/[^0-9+-]/g, "").trim();
 };
 
-/**
- * SEO에 적합한 URL 슬러그를 생성합니다. (Source Context 반영)
- * @param {string} name 
- * @returns {string}
- */
+// URL 친화적 슬러그 생성: 중복 문구 제거 및 특수문자 처리
 const getSlug = (name) => {
   if (!name) return "";
   let cleanName = name.trim()
@@ -81,275 +68,196 @@ const getSlug = (name) => {
     .replace(/고객센터$/, "")
     .trim();
 
-  // 소스 컨텍스트의 정규식 [/\: *?"<>|%,.* ] 을 적용하여 특수문자 및 공백 제거
-  cleanName = cleanName.replace(/[/\: *?"<>|%,.* ]/g, "");
-  return cleanName.replace(/\s+/g, "-") + "-고객센터";
+  // 특수문자 제거 및 공백을 하이픈으로 변환
+  cleanName = cleanName.replace(/[/\: *?"<>|%,.*]/g, "");
+  // 연속된 하이픈 방지 및 최종 슬러그 생성
+  return cleanName.replace(/\s+/g, "-").replace(/-+/g, "-") + "-고객센터";
 };
 
-// --- 메인 컴포넌트 ---
-
-export default function CategoryContent({ rawCategory }) {
+/**
+ * 3. CategoryInner 컴포넌트 (핵심 로직부)
+ * useSearchParams 사용으로 인한 Build Error 방지를 위해 Suspense 내부에서 실행됩니다.
+ */
+function CategoryInner({ rawCategory }) {
   const router = useRouter();
   const searchParams = useSearchParams();
   
-  // URL 쿼리 파라미터에서 현재 페이지를 읽어와 초기 상태값 설정
-  const pageParam = searchParams.get('page');
-  const [currentPage, setCurrentPage] = useState(pageParam ? parseInt(pageParam) : 1);
-  const [isMounted, setIsMounted] = useState(false);
+  // URL 쿼리 파라미터에서 현재 페이지 추출 (기본값 1)
+  const currentPage = parseInt(searchParams.get("page") || "1", 10);
 
-  // Hydration Mismatch 방지: 클라이언트 마운트 여부 확인
-  useEffect(() => {
-    setIsMounted(true);
-  }, []);
-
-  // 1. 카테고리명 디코딩 (Safe Decoding)
+  // 카테고리 디코딩 및 데이터 안전 처리
   const decodedCategory = useMemo(() => {
     try {
       return decodeURIComponent(rawCategory).trim();
     } catch (e) {
-      console.error("Decoding error:", e);
       return rawCategory;
     }
   }, [rawCategory]);
 
-  // 2. 데이터 필터링
-  const filteredData = useMemo(() => {
-    return customerData.filter((item) => 
-      item.category && item.category.trim() === decodedCategory
-    );
-  }, [decodedCategory]);
-
-  // 3. 페이지네이션 계산
-  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
-  
-  const paginatedData = useMemo(() => {
-    const start = (currentPage - 1) * ITEMS_PER_PAGE;
-    return filteredData.slice(start, start + ITEMS_PER_PAGE);
-  }, [filteredData, currentPage]);
-
-  // 4. 동적 SEO 헤드 주입 (Canonical, Prev, Next)
-  useEffect(() => {
-    if (!isMounted) return;
-
-    const head = document.head;
-    const protocol = window.location.protocol;
-    const host = window.location.host;
-    const pathname = window.location.pathname;
-    const baseUrl = `${protocol}//${host}${pathname}`;
-    
-    const cleanupTags = () => {
-      const selectors = ['link[rel="canonical"]', 'link[rel="prev"]', 'link[rel="next"]'];
-      selectors.forEach(sel => {
-        const tags = head.querySelectorAll(sel);
-        tags.forEach(t => t.remove());
-      });
-    };
-
-    cleanupTags();
-
-    // Canonical Tag
-    const canonical = document.createElement('link');
-    canonical.rel = 'canonical';
-    canonical.href = currentPage === 1 ? baseUrl : `${baseUrl}?page=${currentPage}`;
-    head.appendChild(canonical);
-
-    // Prev Tag
-    if (currentPage > 1) {
-      const prev = document.createElement('link');
-      prev.rel = 'prev';
-      prev.href = currentPage === 2 ? baseUrl : `${baseUrl}?page=${currentPage - 1}`;
-      head.appendChild(prev);
-    }
-
-    // Next Tag
-    if (currentPage < totalPages) {
-      const next = document.createElement('link');
-      next.rel = 'next';
-      next.href = `${baseUrl}?page=${currentPage + 1}`;
-      head.appendChild(next);
-    }
-
-    return () => cleanupTags();
-  }, [currentPage, totalPages, isMounted]);
-
-  // 5. 이벤트 핸들러
-  const handlePageChange = (pageNum) => {
-    setCurrentPage(pageNum);
-    // URL 쿼리 파라미터 업데이트 (SEO 및 뒤로가기 대응)
-    router.push(`?page=${pageNum}`, { scroll: false });
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
-  // UI 데이터 매핑
   const catDetail = CATEGORY_MAP[decodedCategory] || { name: decodedCategory, icon: HelpCircle };
   const CategoryIcon = catDetail.icon;
 
-  // Sliding Window 페이지네이션 로직 (UI 파괴 방지)
-  const renderPaginationButtons = () => {
-    const pages = [];
-    const windowSize = 2; // 현재 페이지 앞뒤로 보여줄 개수
+  // 필터링: 공백 및 대소문자 오차 방지를 위한 정규화 필터링
+  const filteredData = useMemo(() => {
+    return customerData.filter((item) => 
+      item.category?.trim() === decodedCategory
+    );
+  }, [decodedCategory]);
 
-    for (let i = 1; i <= totalPages; i++) {
-      if (
-        i === 1 || 
-        i === totalPages || 
-        (i >= currentPage - windowSize && i <= currentPage + windowSize)
-      ) {
-        pages.push(i);
-      } else if (
-        i === currentPage - windowSize - 1 || 
-        i === currentPage + windowSize + 1
-      ) {
-        pages.push('ellipsis');
+  // 페이지네이션 관련 계산
+  const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
+  const paginatedData = useMemo(() => {
+    const startIndex = (currentPage - 1) * ITEMS_PER_PAGE;
+    return filteredData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
+  }, [filteredData, currentPage]);
+
+  /**
+   * 4. SEO 및 동적 메타 데이터 최적화
+   * useEffect를 통한 클라이언트 사이드 Head 주입 (Canonical, Prev, Next)
+   */
+  useEffect(() => {
+    const head = document.head;
+    const baseUrl = window.location.origin + window.location.pathname;
+
+    const updateLinkTag = (rel, href) => {
+      let tag = document.querySelector(`link[rel="${rel}"]`);
+      if (tag) {
+        if (href) {
+          tag.setAttribute("href", href);
+        } else {
+          tag.remove();
+        }
+      } else if (href) {
+        const newTag = document.createElement("link");
+        newTag.rel = rel;
+        newTag.href = href;
+        head.appendChild(newTag);
       }
-    }
+    };
 
-    // 중복 ellipsis 제거
-    const uniquePages = pages.filter((v, i, a) => a.indexOf(v) === i);
+    // Canonical 설정
+    updateLinkTag("canonical", `${baseUrl}?page=${currentPage}`);
 
-    return uniquePages.map((p, idx) => {
-      if (p === 'ellipsis') {
-        return <MoreHorizontal key={`ellipsis-${idx}`} className="text-gray-400" />;
-      }
-      return (
-        <button
-          key={p}
-          onClick={() => handlePageChange(p)}
-          className={`w-10 h-10 rounded-xl font-bold transition-all duration-200 ${
-            currentPage === p
-              ? 'bg-blue-600 text-white shadow-md'
-              : 'bg-white border border-gray-200 text-gray-600 hover:border-blue-400 hover:text-blue-600'
-          }`}
-        >
-          {p}
-        </button>
-      );
-    });
+    // Prev/Next 관계 링크 설정
+    updateLinkTag("prev", currentPage > 1 ? `${baseUrl}?page=${currentPage - 1}` : null);
+    updateLinkTag("next", currentPage < totalPages ? `${baseUrl}?page=${currentPage + 1}` : null);
+
+    // Cleanup: 컴포넌트 언마운트 시 추가된 태그 관리 (선택 사항이나 아키텍처상 유지)
+  }, [currentPage, totalPages, decodedCategory]);
+
+  // 페이지 변경 시 스크롤 상단 이동 및 라우팅
+  const handlePageChange = (pageNum) => {
+    router.push(`?page=${pageNum}`, { scroll: true });
   };
 
-  if (!isMounted) return null; // 서버 사이드 렌더링 시 빈 화면 방지
-
   return (
-    <div className="min-h-screen bg-[#f8f9fa] flex flex-col font-sans text-slate-900">
-      {/* 상단 히어로 섹션 */}
-      <header className="bg-white border-b border-gray-200">
-        <div className="max-w-7xl mx-auto px-5 py-10 md:py-14">
-          <div className="flex flex-col md:flex-row md:items-center gap-6">
-            <div className="inline-flex p-4 bg-blue-50 rounded-3xl text-blue-600 shadow-sm w-fit">
-              <CategoryIcon size={36} strokeWidth={2.5} />
-            </div>
-            <div>
-              <h1 className="text-3xl md:text-4xl font-extrabold tracking-tight text-gray-900 mb-2">
-                {catDetail.name} <span className="text-blue-600">고객센터</span>
-              </h1>
-              <p className="text-gray-500 text-lg font-medium">
-                총 {filteredData.length}개의 검증된 고객센터 정보를 제공합니다.
-              </p>
-            </div>
+    <div className="max-w-7xl mx-auto px-4 py-8 min-h-screen flex flex-col">
+      <main className="flex-grow">
+        {/* 헤더 섹션: 카테고리 정보 표시 */}
+        <div className="flex items-center gap-4 mb-8">
+          <div className="p-3 bg-blue-50 rounded-2xl shadow-sm">
+            <CategoryIcon className="w-8 h-8 text-blue-600" />
+          </div>
+          <div>
+            <h1 className="text-2xl font-bold text-gray-900 tracking-tight">
+              {catDetail.name} 고객센터 안내
+            </h1>
+            <p className="text-gray-500 text-sm mt-1">
+              총 <span className="font-semibold text-blue-600">{filteredData.length}개</span>의 관련 채널이 검색되었습니다.
+            </p>
           </div>
         </div>
-      </header>
 
-      {/* 메인 콘텐츠 리스트 */}
-      <main className="flex-grow max-w-7xl mx-auto px-5 py-12 w-full">
-        {filteredData.length > 0 ? (
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {paginatedData.map((item, index) => {
-              const name = item?.name || "명칭 미상";
-              const hours = item?.hours || "운영 시간 정보 없음";
-              const is24h = item?.hours?.includes("24시간") || item?.name?.includes("분실");
-              const dialablePhone = getDialablePhone(item?.phone);
-              const slug = getSlug(name);
+        {/* 리스트 그리드: 모바일 1열 / 태블릿 2열 / 데스크탑 3열 반응형 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+          {paginatedData.map((item, index) => {
+            const name = item?.name || "정보 없음";
+            const hours = item?.hours || "";
+            const is24h = hours.includes("24시간") || name.includes("분실") || name.includes("사고");
+            const slug = getSlug(name);
+            const dialablePhone = getDialablePhone(item?.phone);
 
-              return (
-                <article 
-                  key={`${item.id || index}`}
-                  className="group bg-white rounded-2xl border border-gray-200 p-7 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col"
-                >
-                  <div className="flex-grow">
-                    <div className="flex justify-between items-start mb-5">
-                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors leading-snug">
-                        {name}
-                      </h3>
-                      {is24h && (
-                        <span className="shrink-0 bg-red-50 text-red-600 text-[11px] font-black px-2.5 py-1 rounded-full flex items-center gap-1 uppercase tracking-wider">
-                          <AlertCircle size={12} /> 24H
-                        </span>
-                      )}
+            return (
+              <div key={`${name}-${index}`} className="group bg-white rounded-2xl border border-gray-100 p-6 hover:shadow-xl hover:border-blue-100 transition-all duration-300">
+                <div className="flex justify-between items-start mb-5">
+                  <h2 className="text-lg font-bold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors">
+                    {name}
+                  </h2>
+                  {is24h && (
+                    <span className="bg-red-50 text-red-500 text-[10px] font-black px-2 py-1 rounded-md flex items-center gap-1 shrink-0">
+                      <Sparkles className="w-3 h-3" /> 24H
+                    </span>
+                  )}
+                </div>
+
+                <div className="space-y-3 mb-6">
+                  <div className="flex items-center text-gray-600 gap-3">
+                    <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center">
+                      <Phone className="w-4 h-4 text-gray-400" />
                     </div>
-
-                    <div className="space-y-4 mb-8">
-                      <div className="flex items-center text-gray-700 bg-gray-50 p-3 rounded-lg border border-gray-100">
-                        <Phone size={18} className="mr-3 text-blue-500 shrink-0" />
-                        <span className="font-bold text-lg">{item?.phone || "번호 정보 없음"}</span>
-                      </div>
-                      <div className="flex items-start text-gray-500 px-1">
-                        <Clock size={16} className="mr-3 mt-1 text-gray-400 shrink-0" />
-                        <p className="text-sm leading-relaxed">{hours}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex flex-col gap-3 mt-auto">
-                    <a
-                      href={`tel:${dialablePhone}`}
-                      className="w-full bg-blue-600 text-white py-4 rounded-xl font-black text-lg hover:bg-blue-700 active:scale-[0.98] transition-all flex items-center justify-center gap-2 shadow-lg shadow-blue-100"
-                    >
-                      <Phone size={20} fill="currentColor" /> 전화하기
+                    <a href={`tel:${dialablePhone}`} className="text-sm font-bold tracking-wider hover:text-blue-600">
+                      {item?.phone || "번호 정보 없음"}
                     </a>
-                    <Link
-                      href={`/center/${slug}`}
-                      className="w-full bg-white text-gray-600 border border-gray-200 py-3 rounded-xl font-bold hover:bg-gray-50 active:scale-[0.98] transition-all flex items-center justify-center gap-2"
-                    >
-                      상세정보 <ArrowRight size={18} />
-                    </Link>
                   </div>
-                </article>
-              );
-            })}
-          </div>
-        ) : (
-          <div className="text-center py-32 bg-white rounded-3xl border border-dashed border-gray-300">
-            <HelpCircle size={64} className="mx-auto text-gray-200 mb-6" />
-            <h2 className="text-2xl font-bold text-gray-400">등록된 데이터가 없습니다</h2>
-            <p className="text-gray-400 mt-2">다른 카테고리를 선택해 주세요.</p>
-          </div>
-        )}
+                  <div className="flex items-center text-gray-600 gap-3">
+                    <div className="w-8 h-8 rounded-full bg-gray-50 flex items-center justify-center">
+                      <Clock className="w-4 h-4 text-gray-400" />
+                    </div>
+                    <span className="text-sm font-medium">{hours || "운영시간 미정"}</span>
+                  </div>
+                </div>
 
-        {/* 페이지네이션 (Sliding Window 구현) */}
+                <Link 
+                  href={`/customer-service/${slug}`}
+                  className="w-full py-3.5 bg-gray-50 group-hover:bg-blue-600 group-hover:text-white text-gray-700 rounded-xl font-bold flex items-center justify-center gap-2 transition-all"
+                >
+                  상세 정보 확인 <ArrowRight className="w-4 h-4" />
+                </Link>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* 페이지네이션: 접근성 및 클릭 편의성 고려 */}
         {totalPages > 1 && (
-          <nav className="mt-16 flex justify-center items-center gap-3">
-            <button
-              onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
-              disabled={currentPage === 1}
-              className="p-2 border rounded-xl hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-              aria-label="Previous Page"
-            >
-              <ChevronLeft size={24} />
-            </button>
-            
-            <div className="hidden sm:flex items-center gap-2">
-              {renderPaginationButtons()}
-            </div>
-
-            {/* 모바일용 심플 페이지 표시 */}
-            <div className="sm:hidden font-bold text-gray-500">
-              {currentPage} / {totalPages}
-            </div>
-
-            <button
-              onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
-              disabled={currentPage === totalPages}
-              className="p-2 border rounded-xl hover:bg-gray-100 disabled:opacity-30 disabled:cursor-not-allowed transition-colors"
-              aria-label="Next Page"
-            >
-              <ChevronRight size={24} />
-            </button>
-          </nav>
+          <div className="flex justify-center items-center gap-2 py-10">
+            {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
+              <button
+                key={num}
+                onClick={() => handlePageChange(num)}
+                className={`w-11 h-11 rounded-xl font-bold transition-all duration-200 ${
+                  currentPage === num
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-100 scale-110"
+                    : "bg-white text-gray-400 hover:bg-gray-100 border border-gray-100"
+                }`}
+              >
+                {num}
+              </button>
+            ))}
+          </div>
         )}
       </main>
 
       <Footer />
     </div>
+  );
+}
+
+/**
+ * 5. 메인 엔트리 포인트 (Suspense Boundary)
+ * Next.js SSR 환경에서 클라이언트 훅의 안전한 실행을 보장합니다.
+ */
+export default function CategoryContent({ rawCategory }) {
+  return (
+    <Suspense fallback={
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="flex flex-col items-center gap-5">
+          <div className="w-14 h-14 border-4 border-blue-600 border-t-transparent rounded-full animate-spin"></div>
+          <p className="text-gray-500 font-bold animate-pulse">고객센터 정보를 불러오고 있습니다...</p>
+        </div>
+      </div>
+    }>
+      <CategoryInner rawCategory={rawCategory} />
+    </Suspense>
   );
 }
