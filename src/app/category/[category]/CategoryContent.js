@@ -70,6 +70,11 @@ export default function CategoryContent({ rawCategory }) {
     }
   }, []);
 
+  // CategoryContent.js의 filteredData 선언 부분 바로 위에 추가
+console.log("Raw Category received:", rawCategory);
+const decoded = decodeURIComponent(rawCategory);
+console.log("Decoded Category:", decoded);
+
 // CategoryContent.js 내부
 const filteredData = useMemo(() => {
   // 1. URL에서 넘어온 파라미터를 한글로 디코딩합니다.
