@@ -55,8 +55,8 @@ const getSlug = (name) => {
 };
 
 export default function CategoryContent({ rawCategory }) {
-  const router = useRouter();
-  const [currentPage, setCurrentPage] = useState(1);
+  // URL에서 넘어온 값을 한글로 확실히 변환
+  const categoryName = decodeURIComponent(rawCategory);
 
   // URL에서 page 파라미터 읽어오기
   useEffect(() => {
