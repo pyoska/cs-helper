@@ -141,8 +141,8 @@ const filteredData = useMemo(() => {
     return filteredData.slice(startIndex, startIndex + ITEMS_PER_PAGE);
   }, [filteredData, currentPage]);
 
-  const catDetail = CATEGORY_MAP[rawCategory] || { name: rawCategory, icon: HelpCircle };
-  const IconComp = catDetail.icon;
+const decodedCategory = decodeURIComponent(rawCategory);
+const catDetail = CATEGORY_MAP[decodedCategory] || { name: decodedCategory, icon: HelpCircle };
 
   return (
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">
