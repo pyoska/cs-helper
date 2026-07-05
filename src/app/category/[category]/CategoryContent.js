@@ -1,11 +1,12 @@
 "use client";
 
-import React, { useState, useEffect, useMemo, useDeferredValue, Suspense, Fragment } from "react";
+import { useState, useEffect, useMemo, Suspense, Fragment } from "react";
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, useRouter } from "next/navigation";
 import {
   Phone,
   Clock,
+  Search,
   CreditCard,
   Building2,
   Smartphone,
@@ -17,34 +18,29 @@ import {
   Car,
   BarChart2,
   Tv,
+  ArrowRight,
+  ChevronLeft,
+  ChevronRight,
   BadgeCheck,
   Wrench,
-  Sparkles,
-  ArrowRight,
-  AlertCircle,
-  Search,
-  Landmark,
-  ShieldAlert
+  Sparkles
 } from "lucide-react";
 
-// 외부 데이터 및 레이아웃 컴포넌트 임포트
 import { customerData } from "@/data/customerData";
 import Footer from "@/components/Footer";
 
 /**
- * [상수 설정]
+ * 유틸리티 함수 및 상수 정의
  */
 const ITEMS_PER_PAGE = 12;
 
-// [SOURCE_IMAGE_1]의 시각적 위계에 맞춘 카테고리 맵 구성
 const CATEGORY_MAP = {
-  "은행": { name: "은행/금융", icon: CreditCard, subText: "은행 및 카드사 상담 연결" },
-  "배달·쇼핑": { name: "쇼핑몰", icon: ShoppingBag, subText: "주요 이커머스 고객센터" },
-  "통신": { name: "통신사", icon: Smartphone, subText: "SKT, KT, LG 통신 장애 및 변경" },
-  "공공": { name: "공공기관", icon: Landmark, subText: "민원 상담 및 정부 서비스" },
-  "보험": { name: "보험/증권", icon: ShieldCheck, subText: "가입 및 보장 내역 확인" },
-  "긴급분실": { name: "긴급분실", icon: ShieldAlert, subText: "카드/통장 분실 즉시 신고" },
+  "카드": { name: "카드/금융", icon: CreditCard },
+  "은행": { name: "은행/금융", icon: Building2 }, // 이미지 기준 "금융"으로 통일
+  "통신": { name: "통신/인터넷", icon: Smartphone },
   "가전": { name: "가전/AS", icon: Tv },
+  "보험": { name: "보험/증권", icon: ShieldCheck }, // 이미지 기준 "증권"으로 통일
+  "배달·쇼핑": { name: "배달/쇼핑", icon: ShoppingBag },
   "항공·여행": { name: "항공/여행", icon: Plane },
   "IT·플랫폼": { name: "IT/플랫폼", icon: Laptop },
   "자동차": { name: "자동차", icon: Car },
@@ -52,17 +48,14 @@ const CATEGORY_MAP = {
   "기타": { name: "기타", icon: HelpCircle }
 };
 
-/**
- * [유틸리티 함수]
- */
-
-// 전화번호에서 숫자만 추출 (tel: 프로토콜용)
+// 전화번호에서 다이얼 가능한 숫자만 추출 (+ 포함)
 const getDialablePhone = (phone) => {
   if (!phone) return "";
-  return phone.replace(/[^0-9]/g, "");
+  // 소스 텍스트 정규식 반영: 괄호 내용 제거 후 숫자 및 + 기호 유지
+  return phone.replace(/\([^)]*\)/g, "").replace(/[^0-9+-]/g, "").trim();
 };
 
-// SEO 친화적 슬러그 생성 (소문자 변환 및 중복 제거)
+// 한글 이름을 URL 안전한 슬러그로 변환 (404 오류 방지 핵심 로직)
 const getSlug = (name) => {
   if (!name) return "";
   let cleanName = name.trim()
@@ -71,232 +64,209 @@ const getSlug = (name) => {
     .replace(/고객센터$/, "")
     .trim();
 
-  // 특수문자 제거, 공백 하이픈 변환, 소문화
-  cleanName = cleanName.replace(/[/\:\\*?"<>|%,.*]/g, "");
-  const slug = cleanName.replace(/\s+/g, "-").toLowerCase();
-  return `${slug}-고객센터`;
+  // 특수문자 제거 및 공백을 대시로 변환
+  cleanName = cleanName.replace(/[/\: *?"<>|%,.*]/g, "");
+  return cleanName.replace(/\s+/g, "-") + "-고객센터";
+};
+
+// 안전한 URI 디코딩 함수 (한글 깨짐 방지)
+const safeDecodeURIComponent = (str) => {
+  try {
+    return decodeURIComponent(str);
+  } catch (e) {
+    console.error("Decoding error:", e);
+    return str;
+  }
 };
 
 /**
- * CategoryContentInner: 비즈니스 로직 및 UI 구현
+ * 검색 및 페이징 로직을 담은 내부 컴포넌트
  */
-function CategoryContentInner({ rawCategory }) {
+function CategoryInner({ rawCategory }) {
+  const router = useRouter();
   const searchParams = useSearchParams();
-  const [searchTerm, setSearchTerm] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
+  const currentPage = parseInt(searchParams.get("page") || "1", 10);
   
-  // 성능 최적화를 위한 검색어 디퍼드 벨류 적용
-  const deferredSearchTerm = useDeferredValue(searchTerm);
+  const [searchQuery, setSearchQuery] = useState("");
+  const decodedCategory = useMemo(() => safeDecodeURIComponent(rawCategory), [rawCategory]);
+  const catDetail = CATEGORY_MAP[decodedCategory] || { name: decodedCategory, icon: HelpCircle };
+  const CategoryIcon = catDetail.icon;
 
-  // 1. Safe Decoding: 인코딩 오류 방지 처리
-  const decodedCategory = useMemo(() => {
-    try {
-      return rawCategory ? decodeURIComponent(rawCategory).trim() : "";
-    } catch (e) {
-      console.error("Decoding error:", e);
-      return rawCategory || "";
-    }
-  }, [rawCategory]);
-
-  // 2. Search & Filter Logic: 카테고리 매칭 및 검색 필터링
+  // 카테고리 필터링 및 검색어 필터링 통합 로직
   const filteredData = useMemo(() => {
     return customerData.filter((item) => {
-      const isCategoryMatch = item.category === decodedCategory;
-      const isSearchMatch = (item.name || "").toLowerCase().includes(deferredSearchTerm.toLowerCase());
-      return isCategoryMatch && isSearchMatch;
+      const isMatchCategory = item.category === decodedCategory;
+      const isMatchSearch = item.name.toLowerCase().includes(searchQuery.toLowerCase());
+      return isMatchCategory && isMatchSearch;
     });
-  }, [decodedCategory, deferredSearchTerm]);
+  }, [decodedCategory, searchQuery]);
 
-  // 3. Pagination Logic
+  // 페이징 계산
   const totalPages = Math.ceil(filteredData.length / ITEMS_PER_PAGE);
   const paginatedData = useMemo(() => {
     const start = (currentPage - 1) * ITEMS_PER_PAGE;
     return filteredData.slice(start, start + ITEMS_PER_PAGE);
   }, [filteredData, currentPage]);
 
-  // 4. SEO Dynamic Injection: Canonical 및 Pagination Tag 관리
+  // 동적 SEO 헤드 태그 주입 (Client Component 방식)
   useEffect(() => {
-    const head = document.head;
-    const baseUrl = `https://cs-helper.kr/category/${rawCategory}`;
-    const canonicalUrl = `${baseUrl}${currentPage > 1 ? `?page=${currentPage}` : ""}`;
-
-    // 태그 생성/업데이트 함수
-    const setTag = (rel, href) => {
-      let tag = document.querySelector(`link[rel="${rel}"]`);
-      if (tag) {
-        tag.setAttribute("href", href);
-      } else {
-        tag = document.createElement("link");
-        tag.setAttribute("rel", rel);
-        tag.setAttribute("href", href);
-        head.appendChild(tag);
-      }
-      return tag;
-    };
-
-    const canonicalTag = setTag("canonical", canonicalUrl);
+    const baseUrl = window.location.origin + window.location.pathname;
     
-    let prevTag = null;
-    if (currentPage > 1) {
-      prevTag = setTag("prev", `${baseUrl}?page=${currentPage - 1}`);
+    // Canonical Link 설정
+    let canonical = document.querySelector('link[rel="canonical"]');
+    if (!canonical) {
+      canonical = document.createElement('link');
+      canonical.setAttribute('rel', 'canonical');
+      document.head.appendChild(canonical);
     }
+    canonical.setAttribute('href', `${baseUrl}${currentPage > 1 ? `?page=${currentPage}` : ''}`);
 
-    let nextTag = null;
-    if (currentPage < totalPages) {
-      nextTag = setTag("next", `${baseUrl}?page=${currentPage + 1}`);
-    }
-
-    // Cleanup: 언마운트 시 동적 태그 제거 (태그 중복 방지)
-    return () => {
-      if (canonicalTag) canonicalTag.remove();
-      const p = document.querySelector('link[rel="prev"]');
-      const n = document.querySelector('link[rel="next"]');
-      if (p) p.remove();
-      if (n) n.remove();
+    // Pagination Links (Prev/Next) 설정
+    const updateLink = (rel, page) => {
+      let link = document.querySelector(`link[rel="${rel}"]`);
+      if (page >= 1 && page <= totalPages) {
+        if (!link) {
+          link = document.createElement('link');
+          link.setAttribute('rel', rel);
+          document.head.appendChild(link);
+        }
+        link.setAttribute('href', `${baseUrl}?page=${page}`);
+      } else if (link) {
+        link.remove();
+      }
     };
+
+    updateLink('prev', currentPage - 1);
+    updateLink('next', currentPage + 1);
   }, [currentPage, totalPages, rawCategory]);
 
-  const handlePageChange = (pageNum) => {
-    setCurrentPage(pageNum);
-    window.scrollTo({ top: 0, behavior: "smooth" });
+  const handlePageChange = (page) => {
+    router.push(`/category/${rawCategory}?page=${page}`, { scroll: true });
   };
 
-  const catDetail = CATEGORY_MAP[decodedCategory] || { name: decodedCategory, icon: HelpCircle };
-  const CategoryIcon = catDetail.icon;
-
   return (
-    <div className="min-h-screen bg-gray-50 flex flex-col font-sans">
-      {/* Search Section: [SOURCE_IMAGE_1] 테마 적용 */}
-      <section className="bg-[#0f172a] pt-16 pb-24 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-2xl md:text-4xl font-bold text-white mb-8 flex items-center justify-center gap-3">
-            <CategoryIcon className="w-10 h-10 text-blue-400" />
+    <div className="min-h-screen bg-gray-50 flex flex-col">
+      {/* Header Section */}
+      <section className="bg-[#0f172a] pt-16 pb-24 px-4 text-center">
+        <div className="max-w-4xl mx-auto">
+          <div className="flex justify-center mb-6">
+            <div className="p-4 bg-white/10 rounded-2xl backdrop-blur-sm">
+              <CategoryIcon className="w-12 h-12 text-blue-400" />
+            </div>
+          </div>
+          <h1 className="text-3xl md:text-4xl font-bold text-white mb-8">
             {catDetail.name} 고객센터
           </h1>
           
-          <div className="relative max-w-2xl mx-auto mb-6">
-            <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
+          {/* Search Input */}
+          <div className="relative max-w-2xl mx-auto">
+            <div className="absolute inset-y-0 left-5 flex items-center pointer-events-none">
               <Search className="h-6 w-6 text-gray-400" />
             </div>
             <input
               type="text"
-              placeholder="삼성카드 고객센터 또는 #분실신고를 검색해보세요"
-              className="w-full pl-14 pr-24 py-5 rounded-full shadow-lg focus:ring-4 focus:ring-blue-500/30 outline-none text-gray-900 text-lg transition-all"
-              value={searchTerm}
-              onChange={(e) => {
-                setSearchTerm(e.target.value);
-                setCurrentPage(1);
-              }}
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              placeholder={`${catDetail.name} 관련 서비스나 키워드를 입력하세요`}
+              className="w-full pl-14 pr-32 py-5 bg-white rounded-full shadow-2xl focus:outline-none focus:ring-4 focus:ring-blue-500/20 text-lg"
             />
-            <button className="absolute right-3 top-2.5 bottom-2.5 px-6 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-colors">
+            <button className="absolute right-2 top-2 bottom-2 px-8 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-full transition-all text-lg">
               검색
             </button>
-          </div>
-
-          {/* 인기 검색어 row [SOURCE_IMAGE_1] 기반 */}
-          <div className="flex flex-wrap justify-center items-center gap-3 text-sm text-gray-300">
-            <span className="opacity-70">인기 검색어:</span>
-            {["신한카드", "삼성카드", "현대카드", "국민카드", "롯데카드"].map((tag) => (
-              <button
-                key={tag}
-                onClick={() => setSearchTerm(tag)}
-                className="px-4 py-1.5 rounded-md border border-gray-700 hover:bg-gray-800 transition-colors"
-              >
-                {tag}
-              </button>
-            ))}
           </div>
         </div>
       </section>
 
-      {/* Result Info & Grid Layout */}
-      <main className="flex-grow max-w-7xl mx-auto w-full px-4 -mt-12 mb-24">
-        <div className="bg-white rounded-2xl shadow-sm border border-gray-100 p-6 mb-8 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <p className="text-gray-700 text-lg">
-            <span className="font-bold text-blue-600">'{catDetail.name}'</span> 분야 검색결과 
-            <span className="font-bold ml-1">{filteredData.length}곳</span>
+      {/* Info Bar */}
+      <div className="max-w-7xl mx-auto w-full px-4 -mt-8 mb-8">
+        <div className="bg-white rounded-xl shadow-sm border border-gray-100 p-5 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-600">
+            <span className="text-blue-600 font-bold">'{catDetail.name}'</span> 분야 검색결과 <span className="font-bold text-gray-900">{filteredData.length}</span>곳
           </p>
-          <p className="text-gray-400 text-sm italic">이름을 입력하거나 전화번호를 누르면 바로 전화가 걸립니다.</p>
+          <p className="text-sm text-gray-400 italic">이름을 입력하거나 전화번호를 누르면 바로 전화가 걸립니다.</p>
         </div>
+      </div>
 
-        {/* 서비스 카드 그리드: [SOURCE_IMAGE_2] 디자인 반영 */}
+      {/* Result Grid */}
+      <main className="max-w-7xl mx-auto w-full px-4 flex-grow mb-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {paginatedData.map((item, index) => {
-            const name = item?.name || "정보 없음";
-            const hours = item?.hours || "";
-            // 분실 관련 키워드가 있거나 24시간 표기가 있으면 강조
-            const is24h = hours.includes("24시간") || name.includes("분실");
-            const slug = getSlug(name);
-            const dialPhone = getDialablePhone(item?.phone);
-
+            const is24h = item.hours?.includes("24시간") || item.name?.includes("분실");
+            const slug = getSlug(item.name);
+            
             return (
-              <div key={index} className="bg-white rounded-2xl border border-gray-100 p-7 hover:shadow-xl transition-all duration-300 flex flex-col justify-between group">
-                <div>
-                  <div className="flex justify-between items-start mb-5">
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">
-                      {name}
-                    </h3>
-                    <Link href={`/details/${slug}`} className="p-2 bg-gray-50 rounded-full text-gray-400 group-hover:bg-blue-50 group-hover:text-blue-500 transition-colors">
-                      <ArrowRight className="w-5 h-5" />
+              <div key={index} className="bg-white rounded-2xl border border-gray-200 shadow-sm hover:shadow-md transition-shadow flex flex-col overflow-hidden">
+                <div className="p-6 flex-grow">
+                  <div className="flex justify-between items-start mb-4">
+                    <Link href={`/center/${slug}`} className="group">
+                      <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors">
+                        {item.name}
+                      </h3>
                     </Link>
+                    <div className="p-2 bg-gray-50 rounded-lg">
+                      <ArrowRight className="w-5 h-5 text-gray-300" />
+                    </div>
                   </div>
 
-                  <div className="space-y-4 mb-8">
-                    <div className="flex items-center text-[15px] text-gray-500">
-                      <Clock className="w-5 h-5 mr-3 text-gray-300" />
-                      <span className={is24h ? "text-blue-600 font-semibold" : ""}>
-                        {hours || "운영시간 정보 없음"}
+                  <div className="space-y-3">
+                    <div className="flex items-center text-gray-600">
+                      <Clock className="w-4 h-4 mr-2 text-gray-400" />
+                      <span className={`text-sm ${is24h ? 'text-red-500 font-medium' : ''}`}>
+                        {item.hours || "평일 09:00 ~ 18:00"}
                       </span>
                     </div>
-                    <div className="flex items-center text-[15px]">
-                      <Phone className="w-5 h-5 mr-3 text-gray-300" />
-                      <a 
-                        href={`tel:${dialPhone}`} 
-                        className="text-blue-600 font-bold hover:underline"
-                      >
-                        {item?.phone || "번호 정보 없음"}
+                    <div className="flex items-center">
+                      <Phone className="w-4 h-4 mr-2 text-blue-500" />
+                      <a href={`tel:${getDialablePhone(item.phone)}`} className="text-lg font-bold text-blue-600 hover:underline">
+                        {item.phone}
                       </a>
                     </div>
                   </div>
                 </div>
 
                 <Link 
-                  href={`/details/${slug}`}
-                  className="flex items-center text-blue-600 font-semibold text-sm group-hover:translate-x-1 transition-transform"
+                  href={`/center/${slug}`}
+                  className="w-full py-4 bg-gray-50 border-t border-gray-100 text-center text-sm font-semibold text-gray-600 hover:bg-blue-50 hover:text-blue-700 transition-colors flex items-center justify-center gap-2"
                 >
-                  <Phone className="w-4 h-4 mr-1.5" />
-                  전화번호 · 상담원 연결 팁 보기 →
+                  전화번호·상담원 연결 팁 보기 <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             );
           })}
         </div>
 
-        {/* 결과 없음 UI */}
-        {filteredData.length === 0 && (
-          <div className="text-center py-32 bg-white rounded-3xl border border-dashed border-gray-200">
-            <AlertCircle className="w-16 h-16 text-gray-200 mx-auto mb-6" />
-            <p className="text-gray-500 text-xl font-medium">검색 결과가 없습니다.</p>
-            <p className="text-gray-400 mt-2">다른 검색어를 입력하거나 카테고리를 확인해주세요.</p>
-          </div>
-        )}
-
         {/* Pagination UI */}
         {totalPages > 1 && (
-          <div className="mt-16 flex justify-center items-center gap-3">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((pageNum) => (
+          <div className="mt-12 flex justify-center items-center gap-2">
+            <button 
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="p-2 rounded-lg border border-gray-300 disabled:opacity-30 transition-opacity"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            
+            {[...Array(totalPages)].map((_, i) => (
               <button
-                key={pageNum}
-                onClick={() => handlePageChange(pageNum)}
-                className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all ${
-                  currentPage === pageNum
-                    ? "bg-blue-600 text-white font-bold shadow-lg shadow-blue-200"
-                    : "bg-white text-gray-500 hover:bg-gray-50 border border-gray-100"
+                key={i + 1}
+                onClick={() => handlePageChange(i + 1)}
+                className={`w-10 h-10 rounded-lg font-bold transition-all ${
+                  currentPage === i + 1 
+                    ? "bg-blue-600 text-white shadow-lg shadow-blue-200" 
+                    : "bg-white border border-gray-300 text-gray-600 hover:border-blue-500 hover:text-blue-500"
                 }`}
               >
-                {pageNum}
+                {i + 1}
               </button>
             ))}
+
+            <button 
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="p-2 rounded-lg border border-gray-300 disabled:opacity-30 transition-opacity"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
           </div>
         )}
       </main>
@@ -307,17 +277,20 @@ function CategoryContentInner({ rawCategory }) {
 }
 
 /**
- * CategoryContent (Main Export): Vercel 빌드 및 클라이언트 사이드 Hook 안정성 확보를 위한 Suspense 적용
+ * 메인 컴포넌트 (Suspense 래퍼)
+ * useSearchParams 사용 시의 Vercel 빌드 및 런타임 하이드레이션 오류를 방지하기 위해 필수적으로 적용함.
  */
 export default function CategoryContent({ rawCategory }) {
   return (
     <Suspense fallback={
-      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50">
-        <div className="w-12 h-12 border-4 border-blue-600 border-t-transparent rounded-full animate-spin mb-4"></div>
-        <p className="text-gray-500 font-bold animate-pulse">고객센터 정보를 불러오는 중입니다...</p>
+      <div className="min-h-screen flex items-center justify-center bg-gray-50">
+        <div className="flex flex-col items-center gap-4">
+          <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-600"></div>
+          <p className="text-gray-500 font-medium">데이터를 불러오는 중입니다...</p>
+        </div>
       </div>
     }>
-      <CategoryContentInner rawCategory={rawCategory} />
+      <CategoryInner rawCategory={rawCategory} />
     </Suspense>
   );
 }
