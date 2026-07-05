@@ -213,12 +213,19 @@ const catDetail = CATEGORY_MAP[decodedCategory] || { name: decodedCategory, icon
           {paginatedData.length > 0 ? (
             <div className="space-y-8">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                {paginatedData.map(({ item, index }) => {
-                  // item.hours가 없으면 빈 문자열("")로 처리하여 에러를 방지합니다.
-                  const is24h = (item.hours || "").includes("24시간") || item.name.includes("분실");
-                  const slug = getSlug(item.name);
-                  return (
-                    <Fragment key={item.id || index}>
+               {paginatedData.map(({ item, index }) => {
+  // 안전하게 데이터 접근 (hours가 없으면 빈 문자열로 처리)
+  const hours = item?.hours || "";
+  const name = item?.name || "";
+  
+  // 에러 방지: hours가 undefined여도 안전하게 체크
+  const is24h = hours.includes("24시간") || name.includes("분실");
+  
+  const slug = getSlug(name);
+  
+  return (
+    <Fragment key={item.id || index}>
+      
                       <div
                         className="bg-white border border-slate-150 rounded-3xl p-6 shadow-xs hover:shadow-xl hover:-translate-y-1 hover:border-[#0055FF]/40 transition-all flex flex-col justify-between group"
                       >
