@@ -1,28 +1,19 @@
 "use client";
 
-import { useState, useEffect, useMemo, Suspense } from "react";
+import React, { useState, useEffect, useMemo, Suspense } from "react";
 import Link from "next/link";
 import { useSearchParams, useRouter } from "next/navigation";
-import {
-  Phone,
-  Clock,
-  CreditCard,
-  Building2,
-  Smartphone,
-  ShieldCheck,
-  ShoppingBag,
-  Wrench,
-  BarChart2,
-  Tv,
-  Search,
-  ChevronRight
+import { 
+  Search, Phone, Clock, ArrowRight, ChevronLeft, ChevronRight,
+  CreditCard, Building2, Smartphone, Tv, ShieldCheck, 
+  ShoppingBag, Wrench, BarChart2
 } from "lucide-react";
 import { customerData } from "@/data/customerData";
 import Footer from "@/components/Footer";
 
 /**
  * CATEGORY_MAP: page.js.txt 소스 컨텍스트의 아이콘 정의를 엄격히 준수
- * 시스템 전반의 일관성을 유지하기 위해 아키텍처 가이드에 맞춘 매핑
+ * IT·플랫폼=Smartphone, 자동차=Wrench, 항공·여행=Wrench, 기타=ShieldCheck 매핑 확인
  */
 const CATEGORY_MAP = {
   "카드": { name: "카드/금융", icon: CreditCard },
@@ -41,8 +32,8 @@ const CATEGORY_MAP = {
 const ITEMS_PER_PAGE = 12;
 
 /**
- * getSlug: 상세 페이지(app/[slug]/page.js)와의 연동을 위해
- * 원천 소스(page.js.txt)의 정규식을 완벽하게 복제하여 404 에러 방지
+ * getSlug: 상세 페이지(app/[slug]/page.js)와의 정합성을 위해 
+ * page.js.txt의 정규식 및 공백 처리를 캐릭터 단위로 완벽 복제
  */
 const getSlug = (name) => {
   if (!name) return "";
@@ -56,7 +47,7 @@ const getSlug = (name) => {
 };
 
 /**
- * getDialablePhone: 하이픈 및 숫자 추출 로직
+ * getDialablePhone: tel: 링크용 숫자 및 하이픈 추출 (page.js.txt 로직 준수)
  */
 const getDialablePhone = (phone) => {
   if (!phone) return "";
@@ -64,7 +55,7 @@ const getDialablePhone = (phone) => {
 };
 
 /**
- * CategoryList: 핵심 비즈니스 로직 및 UI 렌더링 컴포넌트
+ * CategoryList: 핵심 비즈니스 로직 및 UI 렌더링
  */
 function CategoryList({ rawCategory }) {
   const searchParams = useSearchParams();
@@ -72,17 +63,16 @@ function CategoryList({ rawCategory }) {
   const currentPage = parseInt(searchParams.get("page") || "1", 10);
   const [searchTerm, setSearchTerm] = useState("");
 
-  // URL 파라미터 한글 디코딩 및 안전한 처리
+  // URL 파라미터 한글 깨짐 방지를 위한 디코딩
   const decodedCategory = useMemo(() => {
     try {
-      return decodeURIComponent(rawCategory);
+      return decodeURIComponent(rawCategory).trim();
     } catch (e) {
-      console.error("Decoding error:", e);
       return rawCategory;
     }
   }, [rawCategory]);
 
-  // 카테고리 필터링 및 검색어 필터링 통합 로직
+  // 카테고리 필터링 및 검색어 매칭 로직
   const filteredData = useMemo(() => {
     return customerData.filter((item) => {
       const matchesCategory = item.category === decodedCategory;
@@ -98,51 +88,46 @@ function CategoryList({ rawCategory }) {
   }, [filteredData, currentPage]);
 
   /**
-   * SEO 최적화: Canonical 및 Pagination 링크 태그 동적 주입 및 정리
+   * SEO 최적화: Canonical, Prev, Next 태그 동적 주입 및 중복 방지 Cleanup
    */
   useEffect(() => {
-    const head = document.head;
     const baseUrl = "https://cshelper.kr";
     const currentPath = `/category/${rawCategory}`;
-    const canonicalUrl = `${baseUrl}${currentPath}?page=${currentPage}`;
+    const head = document.head;
 
-    // Canonical Tag
-    let canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (!canonicalLink) {
-      canonicalLink = document.createElement("link");
-      canonicalLink.setAttribute("rel", "canonical");
-      head.appendChild(canonicalLink);
-    }
-    canonicalLink.setAttribute("href", canonicalUrl);
-
-    // Pagination Tags Cleanup & Injection
-    const cleanupPagination = () => {
-      document.querySelectorAll('link[rel="prev"], link[rel="next"]').forEach(el => el.remove());
+    // 기존 태그 삭제 (Cleanup)
+    const removeExistingTags = () => {
+      const selectors = ['link[rel="canonical"]', 'link[rel="prev"]', 'link[rel="next"]'];
+      selectors.forEach(selector => {
+        head.querySelectorAll(selector).forEach(el => el.remove());
+      });
     };
-    cleanupPagination();
 
-    if (currentPage > 1) {
-      const prevLink = document.createElement("link");
-      prevLink.setAttribute("rel", "prev");
-      prevLink.setAttribute("href", `${baseUrl}${currentPath}?page=${currentPage - 1}`);
-      head.appendChild(prevLink);
-    }
-    if (currentPage < totalPages) {
-      const nextLink = document.createElement("link");
-      nextLink.setAttribute("rel", "next");
-      nextLink.setAttribute("href", `${baseUrl}${currentPath}?page=${currentPage + 1}`);
-      head.appendChild(nextLink);
-    }
+    const createTag = (rel, href) => {
+      const tag = document.createElement("link");
+      tag.rel = rel;
+      tag.href = href;
+      head.appendChild(tag);
+    };
 
-    return () => cleanupPagination();
+    removeExistingTags();
+    createTag("canonical", `${baseUrl}${currentPath}?page=${currentPage}`);
+    if (currentPage > 1) createTag("prev", `${baseUrl}${currentPath}?page=${currentPage - 1}`);
+    if (currentPage < totalPages) createTag("next", `${baseUrl}${currentPath}?page=${currentPage + 1}`);
+
+    return () => removeExistingTags();
   }, [currentPage, totalPages, rawCategory]);
 
   const catInfo = CATEGORY_MAP[decodedCategory] || { name: decodedCategory, icon: ShieldCheck };
-  const IconComponent = catInfo.icon;
+  const CategoryIcon = catInfo.icon;
+
+  const handlePageChange = (page) => {
+    router.push(`/category/${rawCategory}?page=${page}`, { scroll: true });
+  };
 
   return (
     <div className="min-h-screen bg-[#F4F7FB] flex flex-col font-sans">
-      {/* 상단 네비게이션: 1페이지.png 가이드 준수 */}
+      {/* 상단 네비게이션 (SOURCE_IMAGE_3 준수) */}
       <header className="bg-[#0F172A] text-white py-4 px-6 flex justify-between items-center shadow-md">
         <Link href="/" className="text-xl font-bold tracking-tight flex items-center">
           CS 고객센터 도우미<span className="text-blue-400 text-sm ml-1">.kr</span>
@@ -153,113 +138,115 @@ function CategoryList({ rawCategory }) {
         </div>
       </header>
 
-      {/* 검색 섹션: 디자인 가이드에 따라 화이트 배경 및 확장형 UI 적용 */}
-      <section className="bg-white border-b border-gray-100 pt-16 pb-20 px-4 text-center">
-        <div className="max-w-4xl mx-auto">
-          <div className="mb-8 flex justify-center">
-            <div className="p-4 bg-blue-50 rounded-3xl border border-blue-100 shadow-sm">
-              <IconComponent className="w-14 h-14 text-blue-600" />
-            </div>
-          </div>
-          <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-10 tracking-tight">
-            {catInfo.name} 고객센터
-          </h1>
-          
-          <div className="relative max-w-2xl mx-auto group">
-            <div className="absolute inset-y-0 left-6 flex items-center pointer-events-none">
-              <Search className="h-6 w-6 text-gray-400 group-focus-within:text-blue-500 transition-colors" />
-            </div>
+      {/* 히어로 및 검색 영역 (SOURCE_IMAGE_2 디자인 반영) */}
+      <section className="bg-[#0F172A] pt-12 pb-20 px-4 text-center">
+        <div className="inline-flex p-3 bg-white/10 rounded-2xl mb-4">
+          <CategoryIcon className="w-10 h-10 text-blue-400" />
+        </div>
+        <h1 className="text-3xl font-bold text-white mb-8">{catInfo.name} 고객센터</h1>
+        
+        <div className="max-w-2xl mx-auto">
+          <form onSubmit={(e) => e.preventDefault()} className="relative flex items-center">
+            <Search className="absolute left-5 w-5 h-5 text-slate-400" />
             <input
               type="text"
+              placeholder={`${catInfo.name} 관련 서비스나 키워드를 입력하세요`}
+              className="w-full pl-14 pr-32 py-4 rounded-full bg-white text-slate-900 focus:outline-none shadow-xl text-lg"
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
-              placeholder={`${catInfo.name} 관련 서비스나 키워드를 입력하세요`}
-              className="w-full pl-14 pr-36 py-5 bg-gray-50 border border-gray-200 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-blue-100 focus:bg-white focus:border-blue-500 shadow-sm transition-all text-lg"
             />
-            <button className="absolute right-3 top-2.5 bottom-2.5 px-8 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 active:scale-95 transition-all shadow-md">
+            <button 
+              type="submit"
+              className="absolute right-2 px-8 py-2.5 bg-blue-600 text-white rounded-full font-bold hover:bg-blue-700 transition-colors"
+            >
               검색
             </button>
-          </div>
+          </form>
         </div>
       </section>
 
-      {/* 결과 그리드 및 결과 요약 영역 */}
-      <main className="flex-grow max-w-7xl mx-auto w-full px-4 -mt-8 mb-24">
-        <div className="bg-white/80 backdrop-blur-md rounded-2xl shadow-sm border border-gray-100 p-5 mb-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-gray-700 font-medium text-lg">
-            <span className="text-blue-600 font-bold">&apos;{catInfo.name}&apos;</span> 분야 검색결과 <span className="font-extrabold text-slate-900">{filteredData.length}</span>곳
+      {/* 결과 요약 및 리스트 (SOURCE_IMAGE_2 기준) */}
+      <main className="max-w-6xl mx-auto w-full px-4 -mt-10 mb-20 flex-grow">
+        <div className="bg-white rounded-xl shadow-sm border border-slate-100 p-4 mb-6 flex justify-between items-center">
+          <p className="text-slate-600 text-sm">
+            <span className="text-blue-600 font-bold">'{catInfo.name}'</span> 분야 검색결과 <span className="font-bold">{filteredData.length}</span>곳
           </p>
-          <p className="text-sm text-gray-500 bg-gray-100 px-4 py-2 rounded-full">
-            이름을 입력하거나 전화번호를 누르면 바로 전화가 걸립니다.
-          </p>
+          <span className="text-xs text-slate-400 hidden sm:block">이름을 입력하거나 전화번호를 누르면 바로 전화가 걸립니다.</span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        {/* 카드 그리드 */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {paginatedData.map((item, idx) => {
             const slug = getSlug(item.name);
-            const is24h = item.hours?.includes("24시간") || item.name.includes("분실") || item.name.includes("사고");
-            
             return (
-              <Link 
-                key={idx} 
-                href={`/${slug}`} 
-                className="group bg-white rounded-3xl border border-gray-200 hover:border-blue-500 hover:shadow-2xl transition-all duration-300 overflow-hidden flex flex-col transform hover:-translate-y-1"
-              >
-                <div className="p-8">
-                  <div className="flex justify-between items-start mb-6">
-                    <h3 className="text-xl font-bold text-gray-900 group-hover:text-blue-600 transition-colors leading-tight">
-                      {item.name}
-                    </h3>
-                    <div className="p-2 bg-gray-50 rounded-full group-hover:bg-blue-50 transition-colors">
-                      <Phone className="w-5 h-5 text-gray-400 group-hover:text-blue-500" />
-                    </div>
+              <div key={idx} className="bg-white rounded-2xl border border-slate-100 p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
+                <div>
+                  <div className="flex justify-between items-start mb-4">
+                    <h3 className="font-bold text-lg text-slate-800 group-hover:text-blue-600 transition-colors">{item.name}</h3>
+                    <Link href={`/${slug}`}>
+                      <ChevronRight className="w-5 h-5 text-slate-300 group-hover:text-blue-500 transition-colors" />
+                    </Link>
                   </div>
                   
-                  <div className="space-y-4">
-                    <div className="flex items-center text-gray-500 font-medium">
-                      <Clock className="w-5 h-5 mr-3 text-gray-400" />
-                      <span className="text-sm">{item.hours || "정보 확인 필요"}</span>
-                      {is24h && (
-                        <span className="ml-3 px-2.5 py-1 bg-red-100 text-red-600 text-[10px] font-black rounded-md tracking-tighter">24H</span>
-                      )}
+                  <div className="space-y-3 mb-6">
+                    <div className="flex items-center text-sm text-slate-500">
+                      <Clock className="w-4 h-4 mr-2 text-slate-400" />
+                      <span>{item.hours || "정보 없음"}</span>
                     </div>
-                    <div className="flex items-center text-blue-600 font-black text-2xl tracking-tighter">
-                      <Phone className="w-5 h-5 mr-3" />
+                    <a 
+                      href={`tel:${getDialablePhone(item.phone)}`}
+                      className="flex items-center text-xl font-extrabold text-blue-600 hover:underline"
+                    >
+                      <Phone className="w-5 h-5 mr-2" />
                       {item.phone}
-                    </div>
+                    </a>
                   </div>
                 </div>
 
-                <div className="mt-auto border-t border-gray-100 bg-gray-50/50 p-5 group-hover:bg-blue-600 transition-all duration-300">
-                  <div className="flex items-center justify-center text-sm font-bold text-gray-600 group-hover:text-white transition-colors">
-                    전화번호 상담원 연결 바로가기
-                    <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </div>
-              </Link>
+                <Link 
+                  href={`/${slug}`}
+                  className="w-full flex justify-center items-center py-3 bg-slate-50 rounded-xl text-slate-600 text-sm font-medium hover:bg-blue-50 hover:text-blue-600 transition-colors border border-transparent hover:border-blue-100"
+                >
+                  전화번호·상담원 연결 팁 보기
+                  <ArrowRight className="w-4 h-4 ml-1" />
+                </Link>
+              </div>
             );
           })}
         </div>
 
-        {/* 페이지네이션 UI: 접근성 및 가독성 최적화 */}
+        {/* 페이지네이션 */}
         {totalPages > 1 && (
-          <div className="mt-20 flex justify-center items-center gap-3">
-            {Array.from({ length: totalPages }, (_, i) => i + 1).map((num) => (
+          <div className="mt-12 flex justify-center items-center gap-2">
+            <button
+              onClick={() => handlePageChange(Math.max(1, currentPage - 1))}
+              disabled={currentPage === 1}
+              className="p-2 rounded-lg border border-slate-200 disabled:opacity-30 hover:bg-slate-50 transition-colors"
+            >
+              <ChevronLeft className="w-5 h-5" />
+            </button>
+            
+            {[...Array(totalPages)].map((_, i) => (
               <button
-                key={num}
-                onClick={() => {
-                  router.push(`/category/${rawCategory}?page=${num}`);
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }}
-                className={`w-12 h-12 rounded-xl font-bold transition-all duration-200 ${
-                  currentPage === num
-                    ? "bg-blue-600 text-white shadow-lg scale-110"
-                    : "bg-white text-gray-500 border border-gray-200 hover:border-blue-400 hover:text-blue-600"
+                key={i}
+                onClick={() => handlePageChange(i + 1)}
+                className={`w-10 h-10 rounded-lg font-bold transition-all ${
+                  currentPage === i + 1 
+                  ? "bg-blue-600 text-white shadow-lg shadow-blue-100" 
+                  : "bg-white border border-slate-200 text-slate-600 hover:bg-slate-50"
                 }`}
               >
-                {num}
+                {i + 1}
               </button>
             ))}
+
+            <button
+              onClick={() => handlePageChange(Math.min(totalPages, currentPage + 1))}
+              disabled={currentPage === totalPages}
+              className="p-2 rounded-lg border border-slate-200 disabled:opacity-30 hover:bg-slate-50 transition-colors"
+            >
+              <ChevronRight className="w-5 h-5" />
+            </button>
           </div>
         )}
       </main>
@@ -270,17 +257,15 @@ function CategoryList({ rawCategory }) {
 }
 
 /**
- * CategoryContent Export: Vercel 빌드 안정성을 위해 Suspense Boundary 적용
- * 테마에 맞춘 로딩 스켈레톤 디자인 포함
+ * CategoryContent Main: Vercel 배포 시 useSearchParams 오류 방지를 위해 Suspense 적용
  */
 export default function CategoryContent({ rawCategory }) {
   return (
     <Suspense fallback={
-      <div className="min-h-screen bg-[#F4F7FB] flex flex-col">
-        <div className="h-16 bg-[#0F172A] w-full" />
-        <div className="flex-grow flex flex-col items-center justify-center">
-          <div className="w-16 h-16 border-4 border-blue-100 border-t-blue-600 rounded-full animate-spin mb-4" />
-          <p className="text-gray-500 font-bold animate-pulse">고객센터 데이터를 안전하게 불러오고 있습니다...</p>
+      <div className="min-h-screen flex items-center justify-center bg-[#F4F7FB]">
+        <div className="flex flex-col items-center">
+          <div className="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mb-4"></div>
+          <p className="text-slate-500 font-medium">데이터를 구성하고 있습니다...</p>
         </div>
       </div>
     }>

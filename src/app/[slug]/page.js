@@ -4,26 +4,28 @@ import {
   Clock, 
   ExternalLink, 
   ArrowLeft, 
-  BadgeCheck, 
   ShieldCheck, 
-  CreditCard,
-  Building2,
-  Smartphone,
-  Tv,
-  ShoppingBag,
-  Wrench,
-  Link2,
-  Lock,
-  Calendar,
-  BarChart2,
-  AlertTriangle,
-  Sparkles,
-  UserCheck
+  CreditCard, 
+  Building2, 
+  Smartphone, 
+  Tv, 
+  ShoppingBag, 
+  Wrench, 
+  Laptop, 
+  Car, 
+  BarChart2, 
+  Lock, 
+  Calendar, 
+  AlertTriangle, 
+  Sparkles 
 } from "lucide-react";
 import { customerData } from "@/data/customerData";
 import Footer from "@/components/Footer";
 
-// 카테고리 정의 및 아이콘 매핑
+/**
+ * 1. 카테고리 정의 및 아이콘 매핑
+ * Source Context: CategoryContent.js.txt 및 page.js.txt 기준 엄격 준수
+ */
 const CATEGORY_MAP = {
   "카드": { name: "카드/금융", icon: CreditCard },
   "은행": { name: "은행/저축", icon: Building2 },
@@ -38,21 +40,25 @@ const CATEGORY_MAP = {
   "기타": { name: "기타", icon: ShieldCheck }
 };
 
+/**
+ * 2. 표준화된 유틸리티 함수
+ */
 const getSlug = (name) => {
-  let cleanName = name.trim().replace(/\s+고객센터$/, "").replace(/\s+고객센터\s+고객센터$/, "").replace(/고객센터$/, "").trim();
-  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
+  if (!name) return "";
+  let cleanName = name.trim()
+    .replace(/\s+고객센터$/, "")
+    .replace(/\s+고객센터\s+고객센터$/, "")
+    .replace(/고객센터$/, "")
+    .trim();
+  // 특수문자 제거 정규식 및 공백 하이픈 변경
+  cleanName = cleanName.replace(/[/: *?"<>|%,.* ]/g, "");
   return cleanName.replace(/\s+/g, "-") + "-고객센터";
 };
 
-export async function generateStaticParams() {
-  return customerData.map((item) => ({
-    slug: getSlug(item.name),
-  }));
-}
-
 const getDialablePhone = (phone) => {
   if (!phone) return "";
-  return phone.replace(/\([^)]*\)/g, "").replace(/[^0-9+-]/g, "").trim();
+  // Source Context (page.js.txt) 기준 정규식 적용
+  return phone.replace(/([^)]*)/g, "").replace(/[^0-9+-]/g, "").trim();
 };
 
 const getBadgeIcon = (kIdx) => {
@@ -61,117 +67,88 @@ const getBadgeIcon = (kIdx) => {
   return <BarChart2 className="w-3.5 h-3.5 text-blue-600" />;
 };
 
+/**
+ * 3. 정적 파라미터 및 메타데이터 생성 (SSG & SEO)
+ */
+export async function generateStaticParams() {
+  return customerData.map((item) => ({
+    slug: getSlug(item.name),
+  }));
+}
+
+export async function generateMetadata({ params }) {
+  const { slug } = await params;
+  const decodedSlug = decodeURIComponent(slug);
+  const company = customerData.find(x => getSlug(x.name) === decodedSlug);
+
+  if (!company) {
+    return {
+      title: "고객센터 정보 찾기 | CS 고객센터 도우미",
+      description: "찾으시는 고객센터의 정확한 전화번호와 상담 시간을 확인하세요.",
+    };
+  }
+
+  return {
+    title: `${company.name} 고객센터 전화번호 및 연결 팁 - CS 고객센터 도우미`,
+    description: `${company.name}의 공식 대표번호 ${company.phone}, 운영 시간(${company.hours}), 그리고 상담원에게 가장 빠르게 연결되는 팁을 확인하세요.`,
+    alternates: {
+      canonical: `https://cshelper.kr/${slug}`,
+    },
+  };
+}
+
+/**
+ * 4. 메인 컴포넌트 (CompanySlugPage)
+ */
 export default async function CompanySlugPage({ params }) {
   const { slug } = await params;
   
-  // 요구사항: URL 인코딩된 한글 슬러그 디코딩 처리 (404 예방)
+  // 한글 슬러그 디코딩 처리 (Next.js 15 대응)
   const decodedSlug = decodeURIComponent(slug);
-  
   const matchingIndex = customerData.findIndex(x => getSlug(x.name) === decodedSlug);
   const company = customerData[matchingIndex];
 
-  // 요구사항: 데이터를 찾지 못할 경우 '비슷한 고객센터 찾기' 추천 링크 제공
+  // 404 예외 처리 및 비슷한 항목 추천 UI
   if (!company) {
-    // 슬러그에서 키워드를 파싱하여 매칭 항목 추천
     const keyword = decodedSlug.split("-")[0] || "";
     const similarItems = customerData
-      .map((item, idx) => ({ item, idx }))
-      .filter(({ item }) => {
-        return (
-          item.name.includes(keyword) || 
-          (item.category && decodedSlug.includes(item.category))
-        );
-      })
+      .filter((item) => item.name.includes(keyword) || (item.category && decodedSlug.includes(item.category)))
       .slice(0, 4);
 
-    // 추천 항목이 부족할 경우 기본 인기 카드사 추천
-    const fallbackItems = similarItems.length > 0 ? similarItems : [
-      { item: customerData[0], idx: 0 },
-      { item: customerData[3], idx: 3 },
-      { item: customerData[62], idx: 62 }
-    ].filter(x => x.item);
-
     return (
-      <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">
-        <nav className="bg-slate-900 border-b border-slate-800 shadow-md">
-          <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-xl font-black tracking-tight text-white">
-                CS 고객센터 도우미<span className="text-blue-400 font-semibold text-sm">.kr</span>
-              </span>
-            </Link>
-          </div>
-        </nav>
-
-        <main className="flex-grow max-w-xl mx-auto w-full px-4 py-16 flex flex-col justify-center">
-          <div className="bg-white border border-slate-200 rounded-3xl p-8 md:p-10 text-center shadow-sm space-y-6">
-            <AlertTriangle className="w-16 h-16 text-orange-500 mx-auto" />
-            <div>
-              <h2 className="text-lg font-black text-slate-900">요청하신 고객센터 정보를 찾을 수 없습니다</h2>
-              <p className="text-xs text-slate-500 mt-2">
-                경로가 변경되었거나 일시적으로 조회가 불가한 브랜드 정보입니다.
-              </p>
-            </div>
-
-            {/* 비슷한 고객센터 추천 리스트 */}
-            <div className="space-y-3 pt-4 border-t border-slate-100 text-left">
-              <h3 className="text-xs font-extrabold text-slate-500 flex items-center gap-1">
-                <Link2 className="w-4 h-4 text-blue-650" />
-                혹시 아래 고객센터를 찾으시나요?
-              </h3>
-              <div className="flex flex-col gap-2">
-                {fallbackItems.map(({ item, idx }) => (
-                  <Link
-                    key={idx}
-                    href={`/${getSlug(item.name)}`}
-                    className="p-3 bg-slate-50 hover:bg-blue-50 border border-slate-200 rounded-xl flex items-center justify-between text-xs font-bold transition-all group"
-                  >
-                    <span className="text-slate-850 group-hover:text-blue-600 truncate">{item.name}</span>
-                    <span className="text-3xs text-blue-600 font-extrabold shrink-0">이동 →</span>
-                  </Link>
-                ))}
-              </div>
-            </div>
-
-            <div className="pt-2">
-              <Link 
-                href="/" 
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-extrabold px-6 py-3.5 rounded-xl text-xs transition-colors shadow-md shadow-blue-500/10"
-              >
-                메인 대시보드로 가기
-              </Link>
+      <div className="min-h-screen bg-[#F4F7FB] flex flex-col items-center justify-center p-6 text-center">
+        <AlertTriangle className="w-16 h-16 text-amber-500 mb-4" />
+        <h1 className="text-2xl font-bold mb-2">고객센터 정보를 찾을 수 없습니다.</h1>
+        <p className="text-slate-600 mb-8">요청하신 페이지가 이동되었거나 삭제되었을 수 있습니다.</p>
+        
+        {similarItems.length > 0 && (
+          <div className="w-full max-w-md">
+            <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">비슷한 고객센터 추천</h2>
+            <div className="grid gap-3">
+              {similarItems.map((item) => (
+                <Link key={item.name} href={`/${getSlug(item.name)}`} className="bg-white p-4 rounded-xl shadow-sm hover:border-blue-400 border border-transparent transition-all flex justify-between items-center group">
+                  <span className="font-medium group-hover:text-blue-600 transition-colors">{item.name}</span>
+                  <ArrowLeft className="w-4 h-4 rotate-180 text-blue-500" />
+                </Link>
+              ))}
             </div>
           </div>
-        </main>
+        )}
+        <Link href="/" className="mt-8 text-blue-600 font-medium flex items-center gap-2 hover:underline">
+          <ArrowLeft className="w-4 h-4" /> 홈으로 돌아가기
+        </Link>
       </div>
     );
   }
 
-  // 함께 많이 찾는 추천 정보 추출 (동일 카테고리)
-  const relatedItems = customerData
-    .map((item, idx) => ({ item, idx }))
-    .filter(x => x.item.category === company.category && x.item.name !== company.name)
-    .slice(0, 3);
-
-  // 체류시간 극대화 요소를 위해 카테고리가 다른 인기 해결 팁 자동 추천 추출
-  const recommendedTips = customerData
-    .map((item, idx) => ({ item, slug: getSlug(item.name) }))
-    .filter(x => x.item.name !== company.name)
-    .slice(matchingIndex + 5, matchingIndex + 7)
-    .map((x, i) => {
-      // 만약 범위를 넘어가면 기본 데이터 매핑
-      if (!x.item) {
-        return { item: customerData[(matchingIndex + i) % customerData.length], slug: getSlug(customerData[(matchingIndex + i) % customerData.length].name) };
-      }
-      return x;
-    });
-
-  // SEO 스키마 정의
+  // 5. SEO 구조화 데이터 (JSON-LD) 생성
+  const dialablePhone = getDialablePhone(company.phone);
+  
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": company.name,
-    "telephone": getDialablePhone(company.phone),
+    "telephone": dialablePhone,
     "url": company.web_url || `https://cshelper.kr/${getSlug(company.name)}`,
     "description": company.description,
     "identifier": {
@@ -181,7 +158,7 @@ export default async function CompanySlugPage({ params }) {
     },
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": getDialablePhone(company.phone),
+      "telephone": dialablePhone,
       "contactType": "customer service",
       "hoursAvailable": company.hours,
       "description": "공식 채널 대조 및 실시간 통화 확인 완료 정보"
@@ -190,325 +167,180 @@ export default async function CompanySlugPage({ params }) {
 
   const subTopicFaqs = company.keywords ? company.keywords.map((keyword, kIdx) => {
     const cleanKeyword = keyword.split(" ").pop();
-    let q = "";
-    let a = "";
+    let q = "", a = "";
     if (kIdx === 0) {
       q = `${company.name}의 ${cleanKeyword} 접수 및 공식 확인 방법은 무엇인가요?`;
-      a = `${company.name}의 ${cleanKeyword}를 접수할 수 있는 공식 인증 다이렉트 번호는 ${company.phone}입니다. 긴급/사고 접수의 경우 연중무휴 24시간 가동되므로 지체 없이 전화를 걸어 조치를 취하시길 권장하며, 통화 연결 후 0번(상담원 즉시 연결)을 누르는 것이 가장 빠릅니다.`;
+      a = `${company.name}의 ${cleanKeyword}를 접수할 수 있는 공식 인증 번호는 ${company.phone}입니다. 통화 연결 후 0번(상담원 즉시 연결)을 누르면 가장 빠르게 처리가 가능합니다.`;
     } else if (kIdx === 1) {
       q = `${company.name} ${cleanKeyword} 신청 시 통화 대기를 줄이는 해결책이 있나요?`;
-      a = `${company.name}의 공식 ${cleanKeyword} 업무는 대표센터 ${company.phone}로 유선 연결하여 전문 상담사와 직접 대화하는 편이 확실합니다. 유선 통화량이 몰려 연결이 지연된다면, 공식 웹페이지에 로그인하여 간편 메뉴로 직접 처리할 수도 있습니다.`;
+      a = `대표번호 ${company.phone}로 유선 연결하여 전문 상담사와 직접 대화하는 것이 가장 정확합니다. 연결이 지연될 경우 공식 웹사이트의 실시간 채팅 상담을 활용해 보세요.`;
     } else {
-      q = `${company.name} ${cleanKeyword} 조회 업무를 실시간으로 빠르게 하는 팁은 무엇인가요?`;
-      a = `${company.name}의 공식 ${cleanKeyword} 조회를 원하신다면 대표번호 ${company.phone}에 전화를 건 후 음성 ARS 시스템을 거쳐 조회 완료하시거나, 공식 모바일 앱 내 마이페이지 대시보드를 활용해 로그인 1초 만에 최신 결과를 확인하실 수 있습니다.`;
+      q = `${company.name} ${cleanKeyword} 조회 업무를 실시간으로 빠르게 하는 팁은?`;
+      a = `${company.name} 공식 대표번호에 전화를 걸어 ARS를 통하거나, 공식 모바일 앱 내 마이페이지를 통해 1초 만에 최신 결과를 확인할 수 있습니다.`;
     }
     return { q, a };
   }) : [];
 
-  const mainFaqs = [
-    {
-      q: `${company.name}의 공식 인증 대표 전화번호는 몇 번인가요?`,
-      a: `${company.name}의 공식 검증된 전화번호는 ${company.phone}이며, 고객센터 운영 시간은 ${company.hours}입니다.`
-    },
-    ...subTopicFaqs.map(f => ({ q: f.q, a: f.a }))
-  ];
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": mainFaqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.q,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.a
-      }
-    }))
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `${company.name}의 공식 인증 대표 전화번호는 몇 번인가요?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `${company.name}의 공식 전화번호는 ${company.phone}이며, 운영 시간은 ${company.hours}입니다.`
+        }
+      },
+      ...subTopicFaqs.map(faq => ({
+        "@type": "Question",
+        "name": faq.q,
+        "acceptedAnswer": { "@type": "Answer", "text": faq.a }
+      }))
+    ]
   };
 
+  // 6. 추천 로직 (동일 카테고리 & 체류시간 증대용 cross-category)
+  const relatedItems = customerData
+    .filter(x => x.category === company.category && x.name !== company.name)
+    .slice(0, 3);
+
+  const recommendedTips = customerData
+    .map((item) => ({ item, slug: getSlug(item.name) }))
+    .filter(x => x.item.name !== company.name)
+    .slice(matchingIndex + 5, matchingIndex + 7)
+    .map((x, i) => {
+      if (!x.item) {
+        const fallback = customerData[(matchingIndex + i) % customerData.length];
+        return { item: fallback, slug: getSlug(fallback.name) };
+      }
+      return x;
+    });
+
   const is24h = company.hours.includes("24시간") || company.name.includes("분실") || company.name.includes("사고");
-  const categoryName = CATEGORY_MAP[company.category]?.name || company.category;
+  const CategoryIcon = CATEGORY_MAP[company.category]?.icon || ShieldCheck;
 
   return (
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">
-      
-      {/* 구글 검색 엔진이 선호하는 신뢰성 인증 메타태그 삽입 */}
-      <meta name="trust-verification" content="verified-official-20260705" />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
-      {/* 검색 로봇 수집용 JSON-LD 스키마 삽입 */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
-      />
-
-      {/* 브랜드 네비게이션 */}
-      <nav className="bg-slate-900 border-b border-slate-800 shadow-md">
-        <div className="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2">
-            <span className="text-xl font-black tracking-tight text-white">
-              CS 고객센터 도우미<span className="text-blue-400 font-semibold text-sm">.kr</span>
-            </span>
-          </Link>
-          <div className="flex gap-4 text-xs font-bold text-slate-300">
-            <Link href="/" className="hover:text-blue-400">고객센터 검색</Link>
-            <Link href="/about" className="hover:text-blue-400">About Us</Link>
-          </div>
+      {/* 헤더 */}
+      <header className="bg-[#0F172A] text-white py-4 px-6 flex justify-between items-center shadow-md">
+        <Link href="/" className="text-xl font-bold tracking-tight flex items-center">
+          CS 고객센터 도우미<span className="text-blue-400 text-sm ml-1">.kr</span>
+        </Link>
+        <div className="hidden sm:flex gap-6 text-sm font-medium opacity-90">
+          <span className="hover:text-blue-400 cursor-pointer transition-colors">About Us</span>
+          <span className="hover:text-blue-400 cursor-pointer transition-colors">관리자 모드</span>
         </div>
-      </nav>
+      </header>
 
-      {/* 상세 콘텐츠 영역 */}
-      <main className="flex-grow max-w-2xl mx-auto w-full px-4 py-8">
-        
-        {/* 뒤로가기 버튼 */}
-        <Link 
-          href="/" 
-          className="inline-flex items-center gap-1 text-xs font-black text-blue-655 hover:text-blue-700 hover:underline mb-6 cursor-pointer"
-        >
-          <ArrowLeft className="w-4 h-4" /> 목록 대시보드로 돌아가기
+      <main className="flex-grow container mx-auto px-4 py-8 max-w-4xl">
+        <Link href="/" className="inline-flex items-center text-sm text-slate-500 hover:text-blue-600 mb-6 transition-colors">
+          <ArrowLeft className="w-4 h-4 mr-1" /> 목록으로 돌아가기
         </Link>
 
-        {/* 요구사항: 전문성(E-E-A-T) 강화를 위한 1인칭 전문가 칼럼 상단 컨테이너 영역 */}
-        <section className="bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100 rounded-3xl p-5 md:p-6 mb-6 shadow-3xs">
-          <div className="flex items-center gap-2 mb-2">
-            <UserCheck className="w-5 h-5 text-blue-600" />
-            <h2 className="text-sm md:text-base font-extrabold text-slate-900">
-              [전문가 팁] {company.name} 상담 대기 최소화 분석 요약
-            </h2>
+        {/* 상세 정보 카드 */}
+        <section className="bg-white rounded-3xl shadow-xl overflow-hidden border border-white">
+          <div className="p-8 sm:p-12">
+            <div className="flex flex-col sm:flex-row sm:items-center gap-6 mb-8">
+              <div className="w-16 h-16 bg-blue-50 rounded-2xl flex items-center justify-center text-blue-600 shadow-inner">
+                <CategoryIcon className="w-8 h-8" />
+              </div>
+              <div>
+                <div className="flex items-center gap-3 mb-1">
+                  <span className="text-xs font-bold text-blue-600 bg-blue-50 px-2.5 py-1 rounded-full uppercase tracking-wider">
+                    {CATEGORY_MAP[company.category]?.name || company.category}
+                  </span>
+                  {is24h && (
+                    <span className="text-xs font-bold text-emerald-600 bg-emerald-50 px-2.5 py-1 rounded-full uppercase tracking-wider flex items-center gap-1">
+                      <span className="w-1.5 h-1.5 bg-emerald-500 rounded-full animate-pulse" /> 24시간 운영
+                    </span>
+                  )}
+                </div>
+                <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">{company.name} 고객센터</h1>
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <a href={`tel:${dialablePhone}`} className="group flex items-center p-6 bg-blue-600 rounded-2xl text-white transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95 shadow-lg shadow-blue-200">
+                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4 group-hover:rotate-12 transition-transform">
+                  <Phone className="w-6 h-6 text-white" />
+                </div>
+                <div>
+                  <p className="text-blue-100 text-xs font-semibold uppercase tracking-widest mb-1">전화번호 바로 연결</p>
+                  <p className="text-2xl font-bold tracking-tighter">{company.phone}</p>
+                </div>
+              </a>
+
+              <div className="flex items-center p-6 bg-slate-50 rounded-2xl border border-slate-100">
+                <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-4 shadow-sm">
+                  <Clock className="w-6 h-6 text-slate-400" />
+                </div>
+                <div>
+                  <p className="text-slate-400 text-xs font-semibold uppercase tracking-widest mb-1">상담 운영 시간</p>
+                  <p className="text-lg font-bold text-slate-700">{company.hours}</p>
+                </div>
+              </div>
+            </div>
           </div>
-          <p className="text-xs text-slate-650 leading-relaxed">
-            제가 직접 유선 통화 테스트를 완료해 본 결과, {company.name} 고객센터는 주로 매일 오전 9시부터 11시 사이가 가장 긴 연결 대기시간을 기록합니다. 급하지 않은 결제 업무나 단순 정보성 변경 업무는 온라인 웹페이지나 오전 11시 이후의 한가한 시간대를 타겟으로 진행하시길 권장해 드립니다.
-          </p>
+
+          {/* 핵심 팁 & FAQ 섹션 */}
+          <div className="bg-slate-50 p-8 border-t border-slate-100">
+            <h2 className="text-lg font-bold mb-4 flex items-center gap-2 text-slate-800">
+              <Sparkles className="w-5 h-5 text-amber-500" /> 연결 팁 & 핵심 가이드
+            </h2>
+            <div className="space-y-4">
+              {subTopicFaqs.map((faq, idx) => (
+                <div key={idx} className="bg-white p-5 rounded-xl border border-slate-200 shadow-sm">
+                  <div className="flex gap-3">
+                    <div className="mt-1 flex-shrink-0">{getBadgeIcon(idx)}</div>
+                    <div>
+                      <p className="font-bold text-slate-900 mb-2 leading-snug">{faq.q}</p>
+                      <p className="text-slate-600 text-sm leading-relaxed">{faq.a}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
         </section>
 
-        {/* 메인 상세 카드 */}
-        <article className="bg-white border border-slate-200/80 rounded-3xl overflow-hidden shadow-sm w-full">
-          
-          {/* 카드 상단 헤더 */}
-          <div className="bg-slate-900 p-6 md:p-8 text-white relative">
-            <div className="flex items-center justify-between mb-3">
-              <span className="text-2xs font-bold bg-blue-500/20 text-blue-400 px-3 py-1 rounded-full border border-blue-500/30">
-                {categoryName}
-              </span>
-              <span className={`text-2xs font-bold px-2.5 py-0.5 rounded-full flex items-center gap-1 ${
-                is24h ? "bg-red-500/20 text-red-400 border border-red-500/30" : "bg-emerald-500/20 text-emerald-450 border border-emerald-500/30"
-              }`}>
-                <span className={`w-1.5 h-1.5 rounded-full ${is24h ? "bg-red-400 animate-pulse" : "bg-emerald-400"}`} />
-                {is24h ? "24시간 운영" : "연결 원활"}
-              </span>
-            </div>
-
-            <h1 className="text-xl md:text-2xl font-black tracking-tight leading-tight">
-              {company.name} 고객센터 전화번호 및 연결 안내
-            </h1>
-            <p className="text-xs text-slate-400 mt-2">{company.description}</p>
-
-            {/* 실시간 검증 뱃지 */}
-            <div className="flex items-center gap-1.5 px-4 py-2.5 bg-emerald-500/10 border border-emerald-500/25 text-emerald-400 rounded-xl text-xs font-bold w-full justify-center mt-6">
-              <BadgeCheck className="w-4.5 h-4.5 text-emerald-400 fill-emerald-950" />
-              <span>2026.07.05 실시간 검증 완료: 공식 정보 일치</span>
-            </div>
-          </div>
-
-          {/* 카드 바디 */}
-          <div className="p-6 md:p-8 space-y-8">
-            
-            {/* 대표 전화번호 구역 */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase">검증 직통 전화번호</h3>
-              <div className="flex items-center justify-between p-5 bg-blue-50/50 rounded-2xl border border-blue-100/50">
-                <div className="flex flex-col">
-                  <span className="text-2xl font-black text-slate-900 tracking-tight">{company.phone}</span>
-                  <span className="text-3xs text-blue-650 font-bold flex items-center gap-0.5 mt-1">
-                    <BadgeCheck className="w-3.5 h-3.5 text-blue-500 fill-blue-100" />
-                    공식 소스 확인
-                  </span>
-                </div>
-                <a
-                  href={`tel:${getDialablePhone(company.phone)}`}
-                  className="flex items-center gap-2 px-5 py-3.5 bg-blue-600 hover:bg-blue-700 text-white text-xs font-black rounded-xl transition-colors shadow-sm shadow-blue-500/10 cursor-pointer"
-                >
-                  <Phone className="w-4 h-4 fill-white" />
-                  전화 걸기
-                </a>
-              </div>
-            </div>
-
-            {/* ARS 입력 경로 & 가이드 */}
-            <div className="space-y-3">
-              <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase">ARS 단축 입력 가이드</h3>
-              <div className="space-y-3">
-                {company.ars_path && (
-                  <div className="p-4 bg-slate-50 rounded-2xl text-sm border border-slate-100 flex justify-between items-center">
-                    <span className="font-semibold text-slate-500">ARS 단축 치트키 경로</span>
-                    <strong className="text-blue-600 font-black text-lg">{company.ars_path}</strong>
+        {/* 추천 섹션: 동일 카테고리 */}
+        {relatedItems.length > 0 && (
+          <section className="mt-12">
+            <h3 className="text-xl font-bold mb-6 px-1 text-slate-800">함께 많이 찾는 {CATEGORY_MAP[company.category]?.name} 고객센터</h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {relatedItems.map((item) => (
+                <Link key={item.name} href={`/${getSlug(item.name)}`} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col justify-between group">
+                  <span className="font-bold text-slate-800 group-hover:text-blue-600 transition-colors mb-2">{item.name}</span>
+                  <div className="flex items-center text-xs text-slate-400 font-medium">
+                    <Phone className="w-3 h-3 mr-1" /> {item.phone}
                   </div>
-                )}
-                <div className="p-4 bg-slate-50 rounded-2xl text-xs leading-relaxed text-slate-700 border border-slate-105">
-                  <h4 className="font-extrabold text-slate-800 mb-1.5">ARS 안내 및 단축 입력 요령</h4>
-                  <p>
-                    {company.name} 상담사 연결을 신속하게 완료하려면 통화 후 ARS 단축경로 {company.ars_path ? `[${company.ars_path}]` : "안내"}를 활용해 보시기 바랍니다.
-                    기계식 안내 멘트를 처음부터 끝까지 들을 필요 없이, 연결 즉시 단축 번호를 누르면 불필요한 대기 시간을 평균 30초 이상 절감할 수 있으며, 특히 이용량이 몰리는 출퇴근 시간대에 매우 유용합니다.
-                  </p>
-                </div>
-              </div>
+                </Link>
+              ))}
             </div>
+          </section>
+        )}
 
-            {/* 업무별 Q&A 상세 정보 */}
-            {company.keywords && (
-              <div className="space-y-4">
-                <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase">업무별 상세 해결 가이드 및 Q&amp;A</h3>
-                <div className="flex flex-col gap-4">
-                  {subTopicFaqs.map((faq, kIdx) => (
-                    <div 
-                      key={kIdx}
-                      className="p-5 bg-slate-50 rounded-2xl border border-slate-150 space-y-2.5"
-                    >
-                      <div className="flex items-center gap-1.5 text-xs font-extrabold text-blue-700">
-                        {getBadgeIcon(kIdx)}
-                        <span>Q. {faq.q}</span>
-                      </div>
-                      <p className="text-xs text-slate-650 leading-relaxed pl-5">
-                        {faq.a}
-                      </p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* 요구사항: 상세 페이지 내 해시태그 클릭 시 홈 화면으로 이동하여 검색 필터링하도록 로직 구현 */}
-            {company.keywords && (
+        {/* 추천 섹션: 인기 해결 팁 (Cross-Category) */}
+        {recommendedTips.length > 0 && (
+          <section className="mt-10 mb-8">
+            <div className="bg-white rounded-2xl p-6 border border-blue-50 shadow-sm">
+              <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">화제의 고객센터 연결 가이드</h3>
               <div className="space-y-3">
-                <h3 className="text-xs font-bold text-slate-400 tracking-wider uppercase">검색 필터 키워드</h3>
-                <div className="flex flex-wrap gap-2">
-                  {company.keywords.map((kw, kIdx) => {
-                    const label = kw.split(" ").pop();
-                    return (
-                      <Link 
-                        key={kIdx}
-                        href={`/tag/${encodeURIComponent(label)}`}
-                        className="inline-flex items-center gap-1 text-3xs bg-blue-50 text-blue-700 hover:bg-[#0055FF] hover:text-white border border-blue-150 hover:border-[#0055FF] px-3 py-1.5 rounded-full font-extrabold transition-all cursor-pointer select-none shadow-3xs"
-                      >
-                        {getBadgeIcon(kIdx)}
-                        <span>#{label}</span>
-                      </Link>
-                    );
-                  })}
-                </div>
-              </div>
-            )}
-
-            {/* 작성자 경험 팁 */}
-            <div className="bg-blue-50/40 p-5 rounded-2xl border border-blue-500/10 space-y-2">
-              <h3 className="text-xs font-extrabold text-blue-700 tracking-wider flex items-center gap-1 uppercase">
-                <ShieldCheck className="w-4 h-4 text-blue-500" />
-                작성자 경험 팁 (내가 직접 전화해 보니)
-              </h3>
-              <p className="text-xs md:text-sm text-slate-700 font-bold leading-relaxed">
-                {company.experienceTip}
-              </p>
-              <p className="text-xs text-slate-500 leading-relaxed mt-1">
-                실제로 통화해 본 결과, {company.name} 고객센터는 주로 매주 월요일과 매월 결제일 근처(20일~25일)에 상담 문의가 집중적으로 집중됩니다. 
-                해당 혼잡 시간대를 피하여 화요일이나 목요일 오전 11시 전후로 문의 전화를 시도하시면 상담사 다이렉트 상담 연결 성공 확률이 크게 향상되며, 
-                ARS 연결 시 상담원 안내 멘트 스킵 단축키를 적극 활용하는 편이 시간 소모를 최대로 예방할 수 있는 가장 확실한 방법입니다.
-              </p>
-            </div>
-
-            {/* 운영시간 및 링크 */}
-            <div className="grid grid-cols-2 gap-4 text-xs">
-              <div className="p-4 bg-slate-50 rounded-xl space-y-1 border border-slate-100">
-                <span className="text-slate-400 font-semibold block">⏱️ 운영시간</span>
-                <strong className="text-slate-700">{company.hours}</strong>
-              </div>
-              <div className="p-4 bg-slate-50 rounded-xl space-y-1 border border-slate-100">
-                <span className="text-slate-400 font-semibold block">🌐 웹페이지 바로가기</span>
-                {company.web_url ? (
-                  <a
-                    href={company.web_url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-650 hover:underline flex items-center gap-0.5 font-bold"
-                  >
-                    공식 홈페이지 이동 <ExternalLink className="w-3.5 h-3.5 inline" />
-                  </a>
-                ) : (
-                  <span className="text-slate-500 font-medium">정보 없음</span>
-                )}
-              </div>
-            </div>
-
-            {/* 스마트 내부 링크 시스템 */}
-            {relatedItems.length > 0 && (
-              <div className="space-y-3 pt-6 border-t border-slate-100">
-                <h3 className="text-xs font-bold text-slate-400 tracking-wider flex items-center gap-1 uppercase">
-                  <Link2 className="w-4 h-4 text-blue-500" />
-                  함께 많이 찾는 정보
-                </h3>
-                <div className="flex flex-col gap-2">
-                  {relatedItems.map(({ item, idx }) => (
-                    <Link
-                      key={idx}
-                      href={`/${getSlug(item.name)}`}
-                      className="w-full p-4 bg-slate-50 hover:bg-blue-50 border border-slate-200/60 hover:border-blue-300 rounded-2xl flex items-center justify-between text-left transition-all cursor-pointer group"
-                    >
-                      <div className="flex items-center gap-2.5">
-                        <span className="text-3xs bg-slate-200 text-slate-650 px-2 py-0.5 rounded font-extrabold group-hover:bg-blue-100 group-hover:text-blue-600">
-                          {item.category}
-                        </span>
-                        <span className="text-xs font-bold text-slate-800 group-hover:text-blue-600">
-                          {item.name}
-                        </span>
-                      </div>
-                      <span className="text-3xs font-extrabold text-blue-600 group-hover:underline">
-                        상세 치트키 보기 →
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              </div>
-            )}
-
-            {/* 요구사항: 체류시간 극대화를 위한 '사용자가 함께 보면 좋은 팁' 자동 추천 위젯 */}
-            <div className="space-y-4 pt-8 border-t border-slate-150">
-              <h3 className="text-sm font-extrabold text-slate-900 flex items-center gap-1.5">
-                <Sparkles className="w-5 h-5 text-amber-500 fill-amber-100" />
-                사용자가 함께 보면 좋은 꿀팁
-              </h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {recommendedTips.map(({ item, slug }) => (
-                  <Link
-                    key={slug}
-                    href={`/${slug}`}
-                    className="p-5 bg-amber-50/20 hover:bg-amber-50 border border-amber-250/25 hover:border-amber-500/40 rounded-2xl flex flex-col justify-between transition-all cursor-pointer group"
-                  >
-                    <span className="text-xs font-extrabold text-slate-850 group-hover:text-amber-700">
-                      {item.name}의 통화 지연 대처법 및 ARS 단축 팁
-                    </span>
-                    <span className="text-3xs text-amber-600 font-extrabold mt-3 flex items-center gap-0.5">
-                      1인칭 즉시 연결 팁 보기 →
-                    </span>
+                {recommendedTips.map((tip, idx) => (
+                  <Link key={idx} href={`/${tip.slug}`} className="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition-colors group">
+                    <span className="text-slate-700 font-medium">{tip.item.name} 빠르게 연결하는 법</span>
+                    <ExternalLink className="w-4 h-4 text-slate-300 group-hover:text-blue-400" />
                   </Link>
                 ))}
               </div>
             </div>
-
-          </div>
-        </article>
-
-        {/* 요구사항: 전문성(E-E-A-T) 강화를 위한 1인칭 전문가 칼럼 하단 컨테이너 영역 */}
-        <section className="bg-slate-50 border border-slate-200 border-dashed rounded-3xl p-6 md:p-8 mt-8">
-          <h4 className="text-sm md:text-base font-semibold text-slate-900 mb-2 flex items-center gap-1">
-            ✍️ CS고객센터 도우미의 1인칭 분석 종합 꿀팁
-          </h4>
-          <p className="text-base leading-relaxed" style={{ color: 'rgba(0, 0, 0, 0.85)' }}>
-            제가 현업에서 다년간 여러 금융사들의 대표 고객센터 응대 패턴을 분석하고 상담원 실무 인터뷰를 진행해 본 결과, 대기시간 단축의 핵심은 자동 ARS 음성 안내가 나올 때 바로 스킵 번호(보통 0번이나 *번)를 눌러서 상담사 대기 열에 먼저 들어가는 것입니다. 본 가이드를 즐겨찾기해 두시고 통화료 낭비와 대기 시간을 획기적으로 줄여보시기 바랍니다.
-          </p>
-        </section>
-
+          </section>
+        )}
       </main>
 
       <Footer />
