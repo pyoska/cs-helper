@@ -75,19 +75,17 @@ console.log("Raw Category received:", rawCategory);
 const decoded = decodeURIComponent(rawCategory);
 console.log("Decoded Category:", decoded);
 
-// CategoryContent.js 내부
+// CategoryContent.js
 const filteredData = useMemo(() => {
-  // 1. URL에서 넘어온 파라미터를 한글로 디코딩합니다.
+  // URL 인코딩된 문자열을 한글로 복원합니다.
   const decodedCategory = decodeURIComponent(rawCategory).trim();
   
-  return customerData.map((item, index) => ({ item, index })).filter(({ item }) => {
-    // 2. 데이터의 카테고리 값도 공백을 제거합니다.
-    const itemCategory = (item.category || "").trim();
-    
-    // 3. 디코딩된 값과 데이터 값을 비교합니다.
-    return itemCategory === decodedCategory;
+  // 전체 데이터 중 category 속성을 확인하여 필터링합니다.
+  return customerData.filter((item) => {
+    // 데이터의 카테고리 값도 공백을 제거하여 비교합니다.
+    return (item.category || "").trim() === decodedCategory;
   });
-}, [rawCategory]);
+}, [rawCategory, customerData]); // customerData를 의존성 배열에 추가
 
   // 총 페이지 수
   const totalPages = useMemo(() => {
