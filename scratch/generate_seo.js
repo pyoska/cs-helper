@@ -93,12 +93,14 @@ let rssXml = `<?xml version="1.0" encoding="UTF-8" ?>
   <atom:link href="https://cshelper.kr/rss.xml" rel="self" type="application/rss+xml" />
 `;
 
-// Add first 50 latest items to feed
 customerData.slice(0, 50).forEach((item) => {
   const slug = getSlug(item.name);
   const encodedSlug = encodeURIComponent(slug);
+  const companyName = item.name || "";
+  const cleanName = companyName.endsWith("고객센터") ? companyName : `${companyName} 고객센터`;
+
   rssXml += `  <item>
-    <title>${item.name} 고객센터 전화번호 및 연결 안내</title>
+    <title>${cleanName} 전화번호 및 연결 안내</title>
     <link>https://cshelper.kr/${encodedSlug}</link>
     <guid>https://cshelper.kr/${encodedSlug}</guid>
     <description>${item.description}. 대표전화: ${item.phone}. 운영시간: ${item.hours}. 1인칭 실전 꿀팁: ${item.experienceTip}</description>
