@@ -10,7 +10,9 @@ if (!fs.existsSync(publicDir)) {
 // Slug helper function matching the detail route logic
 const getSlug = (name) => {
   if (!name) return "";
-  return name.trim().replace(/고객센터/g, "").replace(/[/\: *?"<>|%,.*]/g, "").replace(/\s+/g, "-") + "-고객센터";
+  let cleanName = name.trim().replace(/고객센터/g, "").trim();
+  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
+  return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
 // 1. Generate sitemap.xml

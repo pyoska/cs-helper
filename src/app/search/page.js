@@ -40,9 +40,10 @@ const getDialablePhone = (phone) => {
 };
 
 const getSlug = (name) => {
-  let cleanName = name.trim().replace(/\s+고객센터$/, "").replace(/\s+고객센터\s+고객센터$/, "").replace(/고객센터$/, "").trim();
+  if (!name) return "";
+  let cleanName = name.trim().replace(/고객센터/g, "").trim();
   cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
-  return cleanName.replace(/\s+/g, "-") + "-고객센터";
+  return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
 function SearchContent() {
