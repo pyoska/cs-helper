@@ -76,9 +76,12 @@ export async function generateMetadata({ params }) {
     };
   }
 
+  const companyName = company?.name || "";
+  const cleanName = companyName.endsWith("고객센터") ? companyName : `${companyName} 고객센터`;
+
   return {
-    title: `${company?.name || ""} 고객센터 전화번호 및 연결 팁 - CS 고객센터 도우미`,
-    description: `${company?.name || ""}의 공식 대표번호 ${company?.phone || ""}, 운영 시간(${company?.hours || ""}), 그리고 상담원에게 가장 빠르게 연결되는 팁을 확인하세요.`,
+    title: `${cleanName} 전화번호 및 연결 팁 - CS 고객센터 도우미`,
+    description: `${cleanName}의 공식 대표번호 ${company?.phone || ""}, 운영 시간(${company?.hours || ""}), 그리고 상담원에게 가장 빠르게 연결되는 팁을 확인하세요.`,
     alternates: {
       canonical: `https://cshelper.kr/${slug}`,
     },
@@ -131,6 +134,8 @@ export default async function CompanySlugPage({ params }) {
   }
 
   const dialablePhone = getDialablePhone(company?.phone || "");
+  const companyName = company?.name || "";
+  const cleanName = companyName.endsWith("고객센터") ? companyName : `${companyName} 고객센터`;
   
   const localBusinessSchema = {
     "@context": "https://schema.org",
@@ -245,7 +250,7 @@ export default async function CompanySlugPage({ params }) {
                     </span>
                   )}
                 </div>
-                <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">{company?.name || ""} 고객센터</h1>
+                <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">{cleanName}</h1>
               </div>
             </div>
 
