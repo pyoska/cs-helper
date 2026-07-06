@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://cshelper.kr/sitemap.xml

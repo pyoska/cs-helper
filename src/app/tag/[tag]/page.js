@@ -97,6 +97,18 @@ const GUIDE_ARTICLES = {
   }
 };
 
+export async function generateMetadata({ params }) {
+  const { tag } = await params;
+  const decodedTag = decodeURIComponent(tag);
+  return {
+    title: `${decodedTag} 고객센터 대표전화 및 빠른 상담 연결 팁 | CS 고객센터 도우미`,
+    description: `대한민국 대표 기업들의 ${decodedTag} 관련 고객센터 전화번호 및 빠른 연결 단축키 정보를 확인하세요.`,
+    alternates: {
+      canonical: `https://cshelper.kr/tag/${tag}`,
+    }
+  };
+}
+
 export default async function TagPage({ params }) {
   const { tag } = await params;
   const decodedTag = decodeURIComponent(tag);

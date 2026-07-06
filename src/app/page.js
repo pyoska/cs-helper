@@ -93,16 +93,18 @@ export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedQuery = sessionStorage.getItem("cshelper_search_query");
-      if (savedQuery) {
-        setInputValue(savedQuery);
-      }
       const pageVal = new URLSearchParams(window.location.search).get("page");
-      if (pageVal) {
-        const pageNum = parseInt(pageVal, 10);
-        if (!isNaN(pageNum) && pageNum > 0) {
-          setCurrentPage(pageNum);
+      setTimeout(() => {
+        if (savedQuery) {
+          setInputValue(savedQuery);
         }
-      }
+        if (pageVal) {
+          const pageNum = parseInt(pageVal, 10);
+          if (!isNaN(pageNum) && pageNum > 0) {
+            setCurrentPage(pageNum);
+          }
+        }
+      }, 0);
     }
   }, []);
 
@@ -416,7 +418,7 @@ export default function Home() {
             </h3>
           </div>
           <p className="text-xs md:text-sm text-slate-655 leading-relaxed">
-            제가 지난달부터 주요 시중 카드사와 대형 은행의 콜센터 상담 성공률 데이터를 집계하고 1인칭 직접 연결 테스트를 수행해 보니, 해외 결제 부정 승인 급증으로 인해 '카드 일시 정지' 및 '분실 접수' 라인에 극심한 유선 통화 정체가 포착되었습니다. 주말 또는 야간 시간대 긴급 분실 발생 시 본 포털 상단의 <strong>24시간 접수 단축키</strong>를 활용해 빠른 상담원을 선점하시는 것이 통화 비용 절감과 2차 사기 예방에 매우 유리합니다.
+            제가 지난달부터 주요 시중 카드사와 대형 은행의 콜센터 상담 성공률 데이터를 집계하고 1인칭 직접 연결 테스트를 수행해 보니, 해외 결제 부정 승인 급증으로 인해 &apos;카드 일시 정지&apos; 및 &apos;분실 접수&apos; 라인에 극심한 유선 통화 정체가 포착되었습니다. 주말 또는 야간 시간대 긴급 분실 발생 시 본 포털 상단의 <strong>24시간 접수 단축키</strong>를 활용해 빠른 상담원을 선점하시는 것이 통화 비용 절감과 2차 사기 예방에 매우 유리합니다.
           </p>
         </section>
 
