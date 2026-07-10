@@ -12,6 +12,16 @@
   --font-sans: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
 }
 
+html {
+  font-size: 106.25%; /* 17px base for mobile readability */
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 109.375%; /* 17.5px base for desktop readability */
+  }
+}
+
 body {
   background-color: var(--background);
   color: var(--foreground);
