@@ -22,6 +22,7 @@ import {
 } from "lucide-react";
 import { customerData } from "@/data/customerData";
 import Footer from "@/components/Footer";
+import DwellTimeEnhancer from "@/components/DwellTimeEnhancer";
 
 const CATEGORY_MAP = {
   "카드": { name: "카드/금융", icon: CreditCard },
@@ -83,7 +84,7 @@ export async function generateMetadata({ params }) {
 
   return {
     title: `${cleanName} 전화번호 및 연결 팁 - CS 고객센터 도우미`,
-    description: `${cleanName}의 공식 대표번호 ${company?.phone || ""}, 운영 시간(${company?.hours || ""}), 그리고 상담원에게 가장 빠르게 연결되는 팁을 확인하세요.`,
+    description: `${cleanName} 고객센터 대표번호(${company?.phone || ""}) 연결 후, ARS 안내 멘트를 끝까지 들을 필요 없이 즉시 상담원과 통화할 수 있는 단축번호 치트키를 지금 확인해 보세요.`,
     alternates: {
       canonical: `https://cshelper.kr/${slug}`,
     },
@@ -277,6 +278,13 @@ export default async function CompanySlugPage({ params }) {
                 </div>
               </div>
             </div>
+            <DwellTimeEnhancer 
+              companyName={cleanName}
+              phone={company?.phone || ""}
+              arsPath={company?.ars_path || ""}
+              hours={company?.hours || ""}
+              webUrl={company?.web_url || ""}
+            />
           </div>
 
           <div className="bg-slate-50 p-8 border-t border-slate-100">
