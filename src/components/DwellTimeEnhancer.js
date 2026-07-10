@@ -19,6 +19,11 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
   const [successRate, setSuccessRate] = useState(87);
   const [showSchedule, setShowSchedule] = useState(false);
 
+  const hasShortcut = phone?.includes("단축키") || arsPath?.includes("단축키");
+  const shortcutNum = phone?.includes("단축키") 
+    ? phone.split("단축키").pop().replace(/[^0-9*#]/g, "") 
+    : (arsPath?.includes("단축키") ? arsPath.split("단축키").pop().replace(/[^0-9*#]/g, "") : null);
+
   useEffect(() => {
     // Get client current hour safely
     setCurrentHour(new Date().getHours());
@@ -114,14 +119,24 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
 
           <div className="relative">
             <div className="absolute -left-[30px] top-0.5 w-5 h-5 rounded-full bg-blue-500 text-white text-[10px] font-bold flex items-center justify-center">3</div>
-            <p className="text-xs font-bold text-slate-800">지정된 단축키 입력</p>
+            <p className="text-xs font-bold text-slate-800">
+              {hasShortcut ? "지정된 단축키 입력" : "상담원 직통 연결 대기"}
+            </p>
             <p className="text-[11px] text-slate-400 mt-0.5">
-              원하시는 상담 부서에 맞게 곧바로 아래 번호를 연속하여 누르시면 불필요한 대기 없이 스킵됩니다:
+              {hasShortcut 
+                ? "원하시는 상담 부서에 맞게 곧바로 아래 단축번호를 누르시면 불필요한 대기 단계가 즉시 스킵됩니다:" 
+                : "단축 입력 단계가 없는 직통 전화선입니다. 신호음이 끝날 때까지 대기하시면 상담원에게 연결됩니다:"}
             </p>
             <div className="mt-2 bg-slate-50 p-3 rounded-xl border border-slate-100 flex items-center justify-between">
-              <span className="text-xs font-extrabold text-slate-700">{arsPath || "상담원 바로연결"}</span>
-              <span className="text-xs font-extrabold text-white bg-[#0055FF] px-2.5 py-1 rounded-md shadow-xs">
-                {arsPath?.includes("단축키") ? arsPath.split("단축키").pop().replace(/[^0-9*#]/g, "") + "번 입력" : "상담원연결 스킵 지원"}
+              <span className="text-xs font-extrabold text-slate-700">
+                {hasShortcut ? (arsPath?.includes("단축키") ? arsPath.split("(")[0].trim() : arsPath) : (arsPath || "상담원 바로연결")}
+              </span>
+              <span className={`text-[11px] font-extrabold px-2.5 py-1 rounded-md border ${
+                hasShortcut 
+                  ? "text-blue-600 bg-blue-50 border-blue-100" 
+                  : "text-slate-500 bg-slate-100 border-slate-200"
+              }`}>
+                {hasShortcut ? `${shortcutNum}번 입력` : "직통 연결 지원"}
               </span>
             </div>
           </div>
