@@ -288,7 +288,7 @@ export const customerData = [
     "web_url": "https://www.nonghyup.com"
   },
   {
-    "name": "한국통신선불카드 고객센터 고객센터",
+    "name": "한국통신선불카드 고객센터",
     "category": "카드",
     "phone": "080-2580-721",
     "main_phone": "080-2580-721",
@@ -301,7 +301,7 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "한국통신선불카드 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "한국통신선불카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kt.com"
   },
@@ -378,7 +378,7 @@ export const customerData = [
     "web_url": "https://www.shinhancard.com"
   },
   {
-    "name": "우리카드 종합고객센터 고객센터",
+    "name": "우리카드 종합고객센터",
     "category": "카드",
     "phone": "1588-9955",
     "main_phone": "1588-9955",
@@ -391,7 +391,7 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "우리카드 종합고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "우리카드 종합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.wooricard.com"
   },
@@ -738,7 +738,7 @@ export const customerData = [
     "web_url": "https://www.bccard.com"
   },
   {
-    "name": "하나카드 대표고객센터 고객센터",
+    "name": "하나카드 대표고객센터",
     "category": "카드",
     "phone": "1800-1111",
     "main_phone": "1800-1111",
@@ -751,7 +751,7 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "하나카드 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "하나카드 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.hanacard.co.kr"
   },
@@ -810,7 +810,7 @@ export const customerData = [
     "web_url": "https://card.nonghyup.com"
   },
   {
-    "name": "S-OIL 보너스카드 고객센터 고객센터",
+    "name": "S-OIL 보너스카드 고객센터",
     "category": "카드",
     "phone": "1588-5151",
     "main_phone": "1588-5151",
@@ -823,12 +823,12 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "S-OIL 보너스카드 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "S-OIL 보너스카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.s-oilbonus.com"
   },
   {
-    "name": "SK 보너스카드 고객센터 고객센터",
+    "name": "SK 보너스카드 고객센터",
     "category": "카드",
     "phone": "1599-5120",
     "main_phone": "1599-5120",
@@ -841,7 +841,7 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "SK 보너스카드 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "SK 보너스카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.enclean.com"
   },
@@ -864,7 +864,7 @@ export const customerData = [
     "web_url": "https://www.gscaltex.com"
   },
   {
-    "name": "캐시비 통합고객센터 고객센터",
+    "name": "캐시비 통합고객센터",
     "category": "카드",
     "phone": "1644-0006",
     "main_phone": "1644-0006",
@@ -877,12 +877,12 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "캐시비 통합고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "캐시비 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.cashbee.co.kr"
   },
   {
-    "name": "카카오페이 대표고객센터 고객센터",
+    "name": "카카오페이 대표고객센터",
     "category": "카드",
     "phone": "1644-7405",
     "main_phone": "1644-7405",
@@ -895,12 +895,12 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "카카오페이 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "카카오페이 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kakaopay.com"
   },
   {
-    "name": "토스 지원고객센터 고객센터",
+    "name": "토스 지원고객센터",
     "category": "카드",
     "phone": "1599-4905",
     "main_phone": "1599-4905",
@@ -913,12 +913,12 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "토스 지원고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "토스 지원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://toss.im"
   },
   {
-    "name": "페이코 지원고객센터 고객센터",
+    "name": "페이코 지원고객센터",
     "category": "카드",
     "phone": "1544-6891",
     "main_phone": "1544-6891",
@@ -931,7 +931,7 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "페이코 지원고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "페이코 지원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.payco.com"
   },
@@ -954,7 +954,7 @@ export const customerData = [
     "web_url": "https://www.kbinsure.co.kr"
   },
   {
-    "name": "카카오페이손해보험 고객센터 고객센터",
+    "name": "카카오페이손해보험 고객센터",
     "category": "카드",
     "phone": "1544-0022",
     "main_phone": "1544-0022",
@@ -967,7 +967,7 @@ export const customerData = [
       "한도조회"
     ],
     "isVerified": true,
-    "description": "카카오페이손해보험 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "카카오페이손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kakaopayinsure.com"
   },
@@ -1368,7 +1368,7 @@ export const customerData = [
     "web_url": "https://www.cu.co.kr"
   },
   {
-    "name": "KDB산업은행 대표고객센터 고객센터",
+    "name": "KDB산업은행 대표고객센터",
     "category": "은행",
     "phone": "1588-1500",
     "main_phone": "1588-1500",
@@ -1381,12 +1381,12 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "KDB산업은행 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "KDB산업은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kdb.co.kr"
   },
   {
-    "name": "Sh수협은행 대표고객센터 고객센터",
+    "name": "Sh수협은행 대표고객센터",
     "category": "은행",
     "phone": "1588-1515",
     "main_phone": "1588-1515",
@@ -1399,12 +1399,12 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "Sh수협은행 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "Sh수협은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.suhyup-bank.com"
   },
   {
-    "name": "한국씨티은행 대표고객센터 고객센터",
+    "name": "한국씨티은행 대표고객센터",
     "category": "은행",
     "phone": "1588-7000",
     "main_phone": "1588-7000",
@@ -1417,12 +1417,12 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "한국씨티은행 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "한국씨티은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.citibank.co.kr"
   },
   {
-    "name": "부산은행 대표고객센터 고객센터",
+    "name": "부산은행 대표고객센터",
     "category": "은행",
     "phone": "1588-6200",
     "main_phone": "1588-6200",
@@ -1435,12 +1435,12 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "부산은행 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "부산은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.busanbank.co.kr"
   },
   {
-    "name": "경남은행 대표고객센터 고객센터",
+    "name": "경남은행 대표고객센터",
     "category": "은행",
     "phone": "1670-5989",
     "main_phone": "1588-8585",
@@ -1453,12 +1453,12 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "경남은행 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "경남은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.knbank.co.kr"
   },
   {
-    "name": "전북은행 대표고객센터 고객센터",
+    "name": "전북은행 대표고객센터",
     "category": "은행",
     "phone": "1522-1704",
     "main_phone": "1588-4477",
@@ -1471,12 +1471,12 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "전북은행 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "전북은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.jbbank.co.kr"
   },
   {
-    "name": "제주은행 대표고객센터 고객센터",
+    "name": "제주은행 대표고객센터",
     "category": "은행",
     "phone": "1588-0079 (단축키 1)",
     "main_phone": "1588-0079",
@@ -1489,12 +1489,12 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "제주은행 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "제주은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.e-jejubank.com"
   },
   {
-    "name": "우체국 예금보험 고객센터 고객센터",
+    "name": "우체국 예금보험 고객센터",
     "category": "은행",
     "phone": "1588-1600",
     "main_phone": "1588-1900",
@@ -1507,7 +1507,7 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "우체국 예금보험 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "우체국 예금보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.epostbank.go.kr"
   },
@@ -1530,7 +1530,7 @@ export const customerData = [
     "web_url": "https://www.kic.go.kr"
   },
   {
-    "name": "한국증권금융 고객센터 고객센터",
+    "name": "한국증권금융 고객센터",
     "category": "은행",
     "phone": "1544-8333 (본사 대표)",
     "main_phone": "1544-8333",
@@ -1543,7 +1543,7 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "한국증권금융 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "한국증권금융 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.ksfc.co.kr"
   },
@@ -1944,7 +1944,7 @@ export const customerData = [
     "web_url": "https://www.daehanbank.co.kr"
   },
   {
-    "name": "HB저축 대표고객센터 고객센터",
+    "name": "HB저축 대표고객센터",
     "category": "은행",
     "phone": "1833-8889",
     "main_phone": "1833-8889",
@@ -1957,7 +1957,7 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "HB저축 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "HB저축 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.hbsb.co.kr"
   },
@@ -3186,7 +3186,7 @@ export const customerData = [
     "web_url": "https://www.shinhansb.co.kr"
   },
   {
-    "name": "대한저축 디지털고객센터 고객센터",
+    "name": "대한저축 디지털고객센터",
     "category": "은행",
     "phone": "1544-3637",
     "main_phone": "1544-3637",
@@ -3199,7 +3199,7 @@ export const customerData = [
       "공인인증서"
     ],
     "isVerified": true,
-    "description": "대한저축 디지털고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "대한저축 디지털고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.daehanbank.co.kr"
   },
@@ -4518,7 +4518,7 @@ export const customerData = [
     "web_url": "https://www.skbroadband.com"
   },
   {
-    "name": "KT텔레캅 보안고객센터 고객센터",
+    "name": "KT텔레캅 보안고객센터",
     "category": "통신",
     "phone": "1588-0112",
     "main_phone": "1588-0112",
@@ -4531,7 +4531,7 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "KT텔레캅 보안고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "KT텔레캅 보안고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kttelecop.co.kr"
   },
@@ -4644,7 +4644,7 @@ export const customerData = [
     "web_url": "https://www.sejongtelecom.net"
   },
   {
-    "name": "SK7모바일 종합지원고객센터 고객센터",
+    "name": "SK7모바일 종합지원고객센터",
     "category": "통신",
     "phone": "1599-3508",
     "main_phone": "1599-3508",
@@ -4657,7 +4657,7 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "SK7모바일 종합지원고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "SK7모바일 종합지원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.sk7mobile.com"
   },
@@ -4680,7 +4680,7 @@ export const customerData = [
     "web_url": "https://www.sk7mobile.com"
   },
   {
-    "name": "kt M모바일 통합고객센터 고객센터",
+    "name": "kt M모바일 통합고객센터",
     "category": "통신",
     "phone": "080-850-1114",
     "main_phone": "1899-5000",
@@ -4693,12 +4693,12 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "kt M모바일 통합고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "kt M모바일 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.ktmmobile.com"
   },
   {
-    "name": "U+ 유모바일 대표고객센터 고객센터",
+    "name": "U+ 유모바일 대표고객센터",
     "category": "통신",
     "phone": "1644-5353",
     "main_phone": "1644-5353",
@@ -4711,12 +4711,12 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "U+ 유모바일 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "U+ 유모바일 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.uplusumobile.com"
   },
   {
-    "name": "헬로모바일 대표고객센터 고객센터",
+    "name": "헬로모바일 대표고객센터",
     "category": "통신",
     "phone": "1855-1144",
     "main_phone": "1855-1144",
@@ -4729,7 +4729,7 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "헬로모바일 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "헬로모바일 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.lghellovision.net"
   },
@@ -4788,7 +4788,7 @@ export const customerData = [
     "web_url": "https://www.freet.co.kr"
   },
   {
-    "name": "LG헬로비전 SKT망 고객센터 고객센터",
+    "name": "LG헬로비전 SKT망 고객센터",
     "category": "통신",
     "phone": "1855-2114",
     "main_phone": "1855-2114",
@@ -4801,12 +4801,12 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "LG헬로비전 SKT망 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "LG헬로비전 SKT망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.lghellovision.net"
   },
   {
-    "name": "LG헬로비전 KT망 고객센터 고객센터",
+    "name": "LG헬로비전 KT망 고객센터",
     "category": "통신",
     "phone": "1855-1000",
     "main_phone": "1855-1000",
@@ -4819,12 +4819,12 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "LG헬로비전 KT망 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "LG헬로비전 KT망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.lghellovision.net"
   },
   {
-    "name": "LG헬로비전 LGU+망 고객센터 고객센터",
+    "name": "LG헬로비전 LGU+망 고객센터",
     "category": "통신",
     "phone": "1855-1144",
     "main_phone": "1855-1144",
@@ -4837,7 +4837,7 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "LG헬로비전 LGU+망 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "LG헬로비전 LGU+망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.lghellovision.net"
   },
@@ -5274,7 +5274,7 @@ export const customerData = [
     "web_url": "https://www.snowman.co.kr"
   },
   {
-    "name": "여유텔레콤 LGU+망 고객센터 고객센터",
+    "name": "여유텔레콤 LGU+망 고객센터",
     "category": "통신",
     "phone": "1661-5511",
     "main_phone": "1661-5511",
@@ -5287,7 +5287,7 @@ export const customerData = [
       "인터넷장애"
     ],
     "isVerified": true,
-    "description": "여유텔레콤 LGU+망 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "여유텔레콤 LGU+망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.yeoyoutelecom.com"
   },
@@ -5994,7 +5994,7 @@ export const customerData = [
     "web_url": "https://www.tefal.co.kr"
   },
   {
-    "name": "롯데정보통신 기술고객센터 고객센터",
+    "name": "롯데정보통신 기술고객센터",
     "category": "가전",
     "phone": "02-2626-6114",
     "main_phone": "02-2626-6114",
@@ -6007,7 +6007,7 @@ export const customerData = [
       "부품구매"
     ],
     "isVerified": true,
-    "description": "롯데정보통신 기술고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "롯데정보통신 기술고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.ldcc.co.kr"
   },
@@ -6066,7 +6066,7 @@ export const customerData = [
     "web_url": "https://www.apple.com/ko"
   },
   {
-    "name": "HP코리아 기술고객센터 고객센터",
+    "name": "HP코리아 기술고객센터",
     "category": "가전",
     "phone": "1588-3003",
     "main_phone": "1588-3003",
@@ -6079,7 +6079,7 @@ export const customerData = [
       "부품구매"
     ],
     "isVerified": true,
-    "description": "HP코리아 기술고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "HP코리아 기술고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.hp.com/kr-ko"
   },
@@ -6264,7 +6264,7 @@ export const customerData = [
     "web_url": "https://www.oralb.co.kr"
   },
   {
-    "name": "네스프레소 클럽 고객센터 고객센터",
+    "name": "네스프레소 클럽 고객센터",
     "category": "가전",
     "phone": "080-734-3111",
     "main_phone": "080-734-3111",
@@ -6277,7 +6277,7 @@ export const customerData = [
       "부품구매"
     ],
     "isVerified": true,
-    "description": "네스프레소 클럽 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "네스프레소 클럽 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.nespresso.com/kr"
   },
@@ -6948,7 +6948,7 @@ export const customerData = [
     "web_url": "https://www.aimsak.co.kr"
   },
   {
-    "name": "에스오일 윤활유 고객센터 고객센터",
+    "name": "에스오일 윤활유 고객센터",
     "category": "가전",
     "phone": "1644-5151",
     "main_phone": "1644-5151",
@@ -6961,7 +6961,7 @@ export const customerData = [
       "부품구매"
     ],
     "isVerified": true,
-    "description": "에스오일 윤활유 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "에스오일 윤활유 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.s-oil7.com"
   },
@@ -7002,7 +7002,7 @@ export const customerData = [
     "web_url": "https://www.skzic.com"
   },
   {
-    "name": "만도 부품종합고객센터 고객센터",
+    "name": "만도 부품종합고객센터",
     "category": "가전",
     "phone": "1544-3040",
     "main_phone": "1544-3040",
@@ -7015,7 +7015,7 @@ export const customerData = [
       "부품구매"
     ],
     "isVerified": true,
-    "description": "만도 부품종합고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "만도 부품종합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.hlmando.com"
   },
@@ -8424,7 +8424,7 @@ export const customerData = [
     "web_url": "https://www.wemakeprice.com"
   },
   {
-    "name": "컬리 마켓컬리 고객센터 고객센터",
+    "name": "컬리 마켓컬리 고객센터",
     "category": "배달·쇼핑",
     "phone": "1644-1107",
     "main_phone": "1644-1107",
@@ -8437,7 +8437,7 @@ export const customerData = [
       "환불문의"
     ],
     "isVerified": true,
-    "description": "컬리 마켓컬리 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "컬리 마켓컬리 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kurly.com"
   },
@@ -9036,7 +9036,7 @@ export const customerData = [
     "web_url": "https://www.hanainsure.co.kr"
   },
   {
-    "name": "한국무역보험공사 고객센터 고객센터",
+    "name": "한국무역보험공사 고객센터",
     "category": "보험",
     "phone": "1588-3884",
     "main_phone": "1588-3884",
@@ -9049,7 +9049,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "한국무역보험공사 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "한국무역보험공사 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.ksure.or.kr"
   },
@@ -9072,7 +9072,7 @@ export const customerData = [
     "web_url": "https://www.hanwhalife.com"
   },
   {
-    "name": "한화생명보험 민원고객센터 고객센터",
+    "name": "한화생명보험 민원고객센터",
     "category": "보험",
     "phone": "1588-6363 (내선 9)",
     "main_phone": "1588-6363",
@@ -9085,7 +9085,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "한화생명보험 민원고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "한화생명보험 민원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.hanwhalife.com"
   },
@@ -9234,7 +9234,7 @@ export const customerData = [
     "web_url": "https://www.kdblife.co.kr"
   },
   {
-    "name": "DB생명보험 대표고객센터 고객센터",
+    "name": "DB생명보험 대표고객센터",
     "category": "보험",
     "phone": "1588-3131",
     "main_phone": "1588-3131",
@@ -9247,7 +9247,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "DB생명보험 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "DB생명보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.idblife.com"
   },
@@ -9270,7 +9270,7 @@ export const customerData = [
     "web_url": "https://www.metlife.co.kr"
   },
   {
-    "name": "KB라이프생명 대표고객센터 고객센터",
+    "name": "KB라이프생명 대표고객센터",
     "category": "보험",
     "phone": "1588-3374",
     "main_phone": "1588-3374",
@@ -9283,12 +9283,12 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "KB라이프생명 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "KB라이프생명 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kblife.co.kr"
   },
   {
-    "name": "처브라이프생명 대표고객센터 고객센터",
+    "name": "처브라이프생명 대표고객센터",
     "category": "보험",
     "phone": "1599-4600",
     "main_phone": "1599-4600",
@@ -9301,12 +9301,12 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "처브라이프생명 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "처브라이프생명 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.chubblife.co.kr"
   },
   {
-    "name": "하나생명보험 대표고객센터 고객센터",
+    "name": "하나생명보험 대표고객센터",
     "category": "보험",
     "phone": "1577-1112",
     "main_phone": "1577-1112",
@@ -9319,7 +9319,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "하나생명보험 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "하나생명보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.hanalife.co.kr"
   },
@@ -9378,7 +9378,7 @@ export const customerData = [
     "web_url": "https://www.cardif.co.kr"
   },
   {
-    "name": "푸본현대생명 대표고객센터 고객센터",
+    "name": "푸본현대생명 대표고객센터",
     "category": "보험",
     "phone": "1577-4624",
     "main_phone": "1577-4624",
@@ -9391,7 +9391,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "푸본현대생명 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "푸본현대생명 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.fubonhyundai.com"
   },
@@ -9432,7 +9432,7 @@ export const customerData = [
     "web_url": "https://www.lina.co.kr"
   },
   {
-    "name": "AIA생명보험 대표고객센터 고객센터",
+    "name": "AIA생명보험 대표고객센터",
     "category": "보험",
     "phone": "1588-9898",
     "main_phone": "1588-9898",
@@ -9445,7 +9445,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "AIA생명보험 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "AIA생명보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.aia.co.kr"
   },
@@ -9684,7 +9684,7 @@ export const customerData = [
     "web_url": "https://www.hi.co.kr"
   },
   {
-    "name": "라이나손해보험 대표고객센터 고객센터",
+    "name": "라이나손해보험 대표고객센터",
     "category": "보험",
     "phone": "1588-0058",
     "main_phone": "1588-0058",
@@ -9697,12 +9697,12 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "라이나손해보험 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "라이나손해보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.lina.co.kr"
   },
   {
-    "name": "에이스손해보험 대표고객센터 고객센터",
+    "name": "에이스손해보험 대표고객센터",
     "category": "보험",
     "phone": "1566-5800",
     "main_phone": "1566-5800",
@@ -9715,7 +9715,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "에이스손해보험 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "에이스손해보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.chubb.com/kr-ko"
   },
@@ -9756,7 +9756,7 @@ export const customerData = [
     "web_url": "https://www.kscfc.co.kr"
   },
   {
-    "name": "한국해운조합 대표고객센터 고객센터",
+    "name": "한국해운조합 대표고객센터",
     "category": "보험",
     "phone": "02-6096-2000",
     "main_phone": "02-6096-2000",
@@ -9769,12 +9769,12 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "한국해운조합 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "한국해운조합 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.theksa.or.kr"
   },
   {
-    "name": "화물자동차공제조합 고객센터 고객센터",
+    "name": "화물자동차공제조합 고객센터",
     "category": "보험",
     "phone": "1577-0990 (내선 1)",
     "main_phone": "1577-0990",
@@ -9787,7 +9787,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "화물자동차공제조합 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "화물자동차공제조합 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.kfda.or.kr"
   },
@@ -9828,7 +9828,7 @@ export const customerData = [
     "web_url": "https://www.taxi.or.kr"
   },
   {
-    "name": "교직원공제회 대표고객센터 고객센터",
+    "name": "교직원공제회 대표고객센터",
     "category": "보험",
     "phone": "1577-3400",
     "main_phone": "1577-3400",
@@ -9841,12 +9841,12 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "교직원공제회 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "교직원공제회 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.ktcu.or.kr"
   },
   {
-    "name": "군인공제회 대표고객센터 고객센터",
+    "name": "군인공제회 대표고객센터",
     "category": "보험",
     "phone": "1599-9090",
     "main_phone": "1599-9090",
@@ -9859,12 +9859,12 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "군인공제회 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "군인공제회 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.mscaa.or.kr"
   },
   {
-    "name": "경찰공제회 대표고객센터 고객센터",
+    "name": "경찰공제회 대표고객센터",
     "category": "보험",
     "phone": "1577-0112",
     "main_phone": "1577-0112",
@@ -9877,7 +9877,7 @@ export const customerData = [
       "계약해지"
     ],
     "isVerified": true,
-    "description": "경찰공제회 대표고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "경찰공제회 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "http://www.poma.or.kr"
   },
@@ -11772,7 +11772,7 @@ export const customerData = [
     "web_url": "https://www.cjolivenetworks.co.kr"
   },
   {
-    "name": "한화시스템 ICT고객센터 고객센터",
+    "name": "한화시스템 ICT고객센터",
     "category": "IT·플랫폼",
     "phone": "1544-1114",
     "main_phone": "1544-1114",
@@ -11785,7 +11785,7 @@ export const customerData = [
       "회원탈퇴"
     ],
     "isVerified": true,
-    "description": "한화시스템 ICT고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "한화시스템 ICT고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.hanwhasystems.com"
   },
@@ -13176,7 +13176,7 @@ export const customerData = [
     "web_url": "https://www.modernhouse.co.kr"
   },
   {
-    "name": "이마트 통합고객센터 고객센터",
+    "name": "이마트 통합고객센터",
     "category": "백화점·마트",
     "phone": "1577-1234",
     "main_phone": "1577-1234",
@@ -13189,7 +13189,7 @@ export const customerData = [
       "포인트적립"
     ],
     "isVerified": true,
-    "description": "이마트 통합고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "이마트 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.emart.com"
   },
@@ -13212,7 +13212,7 @@ export const customerData = [
     "web_url": "https://www.traders.co.kr"
   },
   {
-    "name": "현대백화점 통합고객센터 고객센터",
+    "name": "현대백화점 통합고객센터",
     "category": "백화점·마트",
     "phone": "1588-2233",
     "main_phone": "1588-2233",
@@ -13225,7 +13225,7 @@ export const customerData = [
       "포인트적립"
     ],
     "isVerified": true,
-    "description": "현대백화점 통합고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "description": "현대백화점 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
     "web_url": "https://www.ehyundai.com"
   },
