@@ -213,9 +213,20 @@ export default async function CompanySlugPage({ params }) {
   };
 
   const brandPrefix = getBrandPrefix(company?.name || "");
+  const mainBrand = company?.name ? company.name.split(" ")[0].trim() : "";
   
+  const siloItems = mainBrand && mainBrand.length >= 2
+    ? customerData
+        .filter(x => x?.name !== company?.name && x?.name.startsWith(mainBrand))
+        .slice(0, 3)
+    : [];
+
   const brandMatches = brandPrefix && brandPrefix.length >= 2
-    ? customerData.filter(x => x?.name !== company?.name && x?.name.startsWith(brandPrefix))
+    ? customerData.filter(x => 
+        x?.name !== company?.name && 
+        x?.name.startsWith(brandPrefix) && 
+        !x?.name.startsWith(mainBrand)
+      )
     : [];
 
   const diffCategoryMatches = brandMatches.filter(x => x.category !== company.category);
@@ -395,6 +406,24 @@ export default async function CompanySlugPage({ params }) {
             </div>
           </div>
         </section>
+
+        {siloItems.length > 0 && (
+          <section className="mt-12">
+            <h3 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
+              🔍 {mainBrand} 세부 고객센터 바로가기
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {siloItems.map((item) => (
+                <Link key={item?.name || ""} href={`/${getSlug(item?.name || "")}`} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col justify-between group">
+                  <span className="font-bold text-slate-800 group-hover:text-blue-600 transition-colors mb-2">{item?.name || ""}</span>
+                  <div className="flex items-center text-xs text-slate-400 font-medium">
+                    <Phone className="w-3 h-3 mr-1" /> {item?.phone || ""}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {familyItems.length > 0 && (
           <section className="mt-12">
