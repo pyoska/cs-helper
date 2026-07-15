@@ -15,7 +15,8 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungcard.com"
+    "web_url": "https://www.samsungcard.com",
+    "subtasks": []
   },
   {
     "name": "신한카드 고객센터",
@@ -33,7 +34,8 @@ export const customerData = [
     "isVerified": true,
     "description": "신한카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhancard.com"
+    "web_url": "https://www.shinhancard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 고객센터",
@@ -51,7 +53,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "현대카드 고객센터",
@@ -69,7 +72,8 @@ export const customerData = [
     "isVerified": true,
     "description": "현대카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyundaicard.com"
+    "web_url": "https://www.hyundaicard.com",
+    "subtasks": []
   },
   {
     "name": "롯데카드 고객센터",
@@ -87,7 +91,8 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lottecard.co.kr"
+    "web_url": "https://www.lottecard.co.kr",
+    "subtasks": []
   },
   {
     "name": "우리카드 고객센터",
@@ -105,7 +110,8 @@ export const customerData = [
     "isVerified": true,
     "description": "우리카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooricard.com"
+    "web_url": "https://www.wooricard.com",
+    "subtasks": []
   },
   {
     "name": "하나카드 고객센터",
@@ -123,7 +129,8 @@ export const customerData = [
     "isVerified": true,
     "description": "하나카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanacard.co.kr"
+    "web_url": "https://www.hanacard.co.kr",
+    "subtasks": []
   },
   {
     "name": "NH농협카드 고객센터",
@@ -141,7 +148,8 @@ export const customerData = [
     "isVerified": true,
     "description": "NH농협카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.nonghyup.com"
+    "web_url": "https://card.nonghyup.com",
+    "subtasks": []
   },
   {
     "name": "BC카드 고객센터",
@@ -159,7 +167,8 @@ export const customerData = [
     "isVerified": true,
     "description": "BC카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bccard.com"
+    "web_url": "https://www.bccard.com",
+    "subtasks": []
   },
   {
     "name": "현대캐피탈 고객센터",
@@ -177,7 +186,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대캐피탈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyundaicapital.com"
+    "web_url": "https://www.hyundaicapital.com",
+    "subtasks": [
+      {
+        "name": "오토 금융 상담",
+        "phone": "1588-2114"
+      },
+      {
+        "name": "신용 대출 상담",
+        "phone": "1588-2114"
+      },
+      {
+        "name": "중도상환 문의",
+        "phone": "1588-2114"
+      }
+    ]
   },
   {
     "name": "엘포인트 (롯데멤버스) 고객센터",
@@ -195,7 +218,8 @@ export const customerData = [
     "isVerified": true,
     "description": "엘포인트 (롯데멤버스) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lpoint.com"
+    "web_url": "https://www.lpoint.com",
+    "subtasks": []
   },
   {
     "name": "아메리칸 익스프레스 고객센터",
@@ -213,7 +237,8 @@ export const customerData = [
     "isVerified": true,
     "description": "아메리칸 익스프레스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.americanexpress.com/ko-kr"
+    "web_url": "https://www.americanexpress.com/ko-kr",
+    "subtasks": []
   },
   {
     "name": "온누리상품권 고객센터",
@@ -231,7 +256,8 @@ export const customerData = [
     "isVerified": true,
     "description": "온누리상품권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sbiz.or.kr"
+    "web_url": "https://www.sbiz.or.kr",
+    "subtasks": []
   },
   {
     "name": "페이북 (BC카드) 고객센터",
@@ -249,7 +275,8 @@ export const customerData = [
     "isVerified": true,
     "description": "페이북 (BC카드) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://paybooc.co.kr"
+    "web_url": "https://paybooc.co.kr",
+    "subtasks": []
   },
   {
     "name": "문화누리카드 고객센터",
@@ -267,7 +294,8 @@ export const customerData = [
     "isVerified": true,
     "description": "문화누리카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mnuri.kr"
+    "web_url": "https://www.mnuri.kr",
+    "subtasks": []
   },
   {
     "name": "농협상품권 통합관리센터 고객센터",
@@ -285,7 +313,8 @@ export const customerData = [
     "isVerified": true,
     "description": "농협상품권 통합관리센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nonghyup.com"
+    "web_url": "https://www.nonghyup.com",
+    "subtasks": []
   },
   {
     "name": "한국통신선불카드 고객센터",
@@ -303,7 +332,8 @@ export const customerData = [
     "isVerified": true,
     "description": "한국통신선불카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kt.com"
+    "web_url": "https://www.kt.com",
+    "subtasks": []
   },
   {
     "name": "신한카드 분실 및 승인센터 고객센터",
@@ -321,7 +351,8 @@ export const customerData = [
     "isVerified": true,
     "description": "신한카드 분실 및 승인센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhancard.com"
+    "web_url": "https://www.shinhancard.com",
+    "subtasks": []
   },
   {
     "name": "신한카드 단기·장기 카드대출 고객센터",
@@ -357,7 +388,8 @@ export const customerData = [
     "isVerified": true,
     "description": "신한카드 할부금융센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhancard.com"
+    "web_url": "https://www.shinhancard.com",
+    "subtasks": []
   },
   {
     "name": "신한카드 외국인전용 데스크 고객센터",
@@ -375,7 +407,8 @@ export const customerData = [
     "isVerified": true,
     "description": "신한카드 외국인전용 데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhancard.com"
+    "web_url": "https://www.shinhancard.com",
+    "subtasks": []
   },
   {
     "name": "우리카드 종합고객센터",
@@ -393,7 +426,8 @@ export const customerData = [
     "isVerified": true,
     "description": "우리카드 종합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooricard.com"
+    "web_url": "https://www.wooricard.com",
+    "subtasks": []
   },
   {
     "name": "우리카드 분실신고 ARS 고객센터",
@@ -411,7 +445,8 @@ export const customerData = [
     "isVerified": true,
     "description": "우리카드 분실신고 ARS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooricard.com"
+    "web_url": "https://www.wooricard.com",
+    "subtasks": []
   },
   {
     "name": "우리카드 카드전화신청 센터 고객센터",
@@ -429,7 +464,8 @@ export const customerData = [
     "isVerified": true,
     "description": "우리카드 카드전화신청 센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooricard.com"
+    "web_url": "https://www.wooricard.com",
+    "subtasks": []
   },
   {
     "name": "우리카드 금융서비스 ARS 고객센터",
@@ -447,7 +483,8 @@ export const customerData = [
     "isVerified": true,
     "description": "우리카드 금융서비스 ARS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooricard.com"
+    "web_url": "https://www.wooricard.com",
+    "subtasks": []
   },
   {
     "name": "우리카드 자동차할부금융 고객센터",
@@ -465,7 +502,8 @@ export const customerData = [
     "isVerified": true,
     "description": "우리카드 자동차할부금융 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooricard.com"
+    "web_url": "https://www.wooricard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 단기·장기 카드대출 고객센터",
@@ -501,7 +539,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 분실 및 승인센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 간편전화신청 고객센터",
@@ -519,7 +558,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 간편전화신청 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 결제 및 제신고 고객센터",
@@ -537,7 +577,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 결제 및 제신고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 자동납부제휴카드 고객센터",
@@ -555,7 +596,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 자동납부제휴카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 KB Pay 전용라인 고객센터",
@@ -573,7 +615,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 KB Pay 전용라인 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 자동차구매 특별한도 고객센터",
@@ -591,7 +634,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 자동차구매 특별한도 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 외국인 전용데스크 고객센터",
@@ -609,7 +653,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 외국인 전용데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 점자카드 신청데스크 고객센터",
@@ -627,7 +672,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 점자카드 신청데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "KB국민카드 디지털ARS 서비스 고객센터",
@@ -645,7 +691,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민카드 디지털ARS 서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.kbcard.com"
+    "web_url": "https://card.kbcard.com",
+    "subtasks": []
   },
   {
     "name": "비씨카드 VIP서비스 전용데스크 고객센터",
@@ -663,7 +710,8 @@ export const customerData = [
     "isVerified": true,
     "description": "비씨카드 VIP서비스 전용데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bccard.com"
+    "web_url": "https://www.bccard.com",
+    "subtasks": []
   },
   {
     "name": "비씨카드 가맹점거래승인 ARS 고객센터",
@@ -681,7 +729,8 @@ export const customerData = [
     "isVerified": true,
     "description": "비씨카드 가맹점거래승인 ARS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bccard.com"
+    "web_url": "https://www.bccard.com",
+    "subtasks": []
   },
   {
     "name": "비씨카드 단기카드대출 ARS 고객센터",
@@ -699,7 +748,8 @@ export const customerData = [
     "isVerified": true,
     "description": "비씨카드 단기카드대출 ARS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bccard.com"
+    "web_url": "https://www.bccard.com",
+    "subtasks": []
   },
   {
     "name": "비씨카드 분실신고 ARS 고객센터",
@@ -717,7 +767,8 @@ export const customerData = [
     "isVerified": true,
     "description": "비씨카드 분실신고 ARS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bccard.com"
+    "web_url": "https://www.bccard.com",
+    "subtasks": []
   },
   {
     "name": "비씨카드 부가서비스 SMS센터 고객센터",
@@ -735,7 +786,8 @@ export const customerData = [
     "isVerified": true,
     "description": "비씨카드 부가서비스 SMS센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bccard.com"
+    "web_url": "https://www.bccard.com",
+    "subtasks": []
   },
   {
     "name": "하나카드 대표고객센터",
@@ -753,7 +805,8 @@ export const customerData = [
     "isVerified": true,
     "description": "하나카드 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanacard.co.kr"
+    "web_url": "https://www.hanacard.co.kr",
+    "subtasks": []
   },
   {
     "name": "현대카드 가맹점승인 ARS 고객센터",
@@ -771,7 +824,8 @@ export const customerData = [
     "isVerified": true,
     "description": "현대카드 가맹점승인 ARS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyundaicard.com"
+    "web_url": "https://www.hyundaicard.com",
+    "subtasks": []
   },
   {
     "name": "하나카드 가맹점케어센터 고객센터",
@@ -789,7 +843,8 @@ export const customerData = [
     "isVerified": true,
     "description": "하나카드 가맹점케어센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanacard.co.kr"
+    "web_url": "https://www.hanacard.co.kr",
+    "subtasks": []
   },
   {
     "name": "NH농협카드 가맹점지원콜 고객센터",
@@ -807,7 +862,8 @@ export const customerData = [
     "isVerified": true,
     "description": "NH농협카드 가맹점지원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.nonghyup.com"
+    "web_url": "https://card.nonghyup.com",
+    "subtasks": []
   },
   {
     "name": "S-OIL 보너스카드 고객센터",
@@ -825,7 +881,8 @@ export const customerData = [
     "isVerified": true,
     "description": "S-OIL 보너스카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s-oilbonus.com"
+    "web_url": "https://www.s-oilbonus.com",
+    "subtasks": []
   },
   {
     "name": "SK 보너스카드 고객센터",
@@ -843,7 +900,8 @@ export const customerData = [
     "isVerified": true,
     "description": "SK 보너스카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.enclean.com"
+    "web_url": "https://www.enclean.com",
+    "subtasks": []
   },
   {
     "name": "GS칼텍스 보너스카드 센터 고객센터",
@@ -861,7 +919,8 @@ export const customerData = [
     "isVerified": true,
     "description": "GS칼텍스 보너스카드 센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gscaltex.com"
+    "web_url": "https://www.gscaltex.com",
+    "subtasks": []
   },
   {
     "name": "캐시비 통합고객센터",
@@ -879,7 +938,8 @@ export const customerData = [
     "isVerified": true,
     "description": "캐시비 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cashbee.co.kr"
+    "web_url": "https://www.cashbee.co.kr",
+    "subtasks": []
   },
   {
     "name": "카카오페이 대표고객센터",
@@ -897,7 +957,8 @@ export const customerData = [
     "isVerified": true,
     "description": "카카오페이 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kakaopay.com"
+    "web_url": "https://www.kakaopay.com",
+    "subtasks": []
   },
   {
     "name": "토스 지원고객센터",
@@ -915,7 +976,8 @@ export const customerData = [
     "isVerified": true,
     "description": "토스 지원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://toss.im"
+    "web_url": "https://toss.im",
+    "subtasks": []
   },
   {
     "name": "페이코 지원고객센터",
@@ -933,7 +995,8 @@ export const customerData = [
     "isVerified": true,
     "description": "페이코 지원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.payco.com"
+    "web_url": "https://www.payco.com",
+    "subtasks": []
   },
   {
     "name": "KB손해보험 청각장애인 문자접수 고객센터",
@@ -951,7 +1014,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KB손해보험 청각장애인 문자접수 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": []
   },
   {
     "name": "카카오페이손해보험 고객센터",
@@ -969,7 +1033,8 @@ export const customerData = [
     "isVerified": true,
     "description": "카카오페이손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kakaopayinsure.com"
+    "web_url": "https://www.kakaopayinsure.com",
+    "subtasks": []
   },
   {
     "name": "한국스마트카드 고객케어콜 고객센터",
@@ -987,7 +1052,8 @@ export const customerData = [
     "isVerified": true,
     "description": "한국스마트카드 고객케어콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tmoney.co.kr"
+    "web_url": "https://www.tmoney.co.kr",
+    "subtasks": []
   },
   {
     "name": "롯데캐피탈 고객센터",
@@ -1005,7 +1071,8 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데캐피탈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lottecap.com"
+    "web_url": "https://www.lottecap.com",
+    "subtasks": []
   },
   {
     "name": "우리금융캐피탈 고객센터",
@@ -1023,7 +1090,8 @@ export const customerData = [
     "isVerified": true,
     "description": "우리금융캐피탈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.woorifcapital.com"
+    "web_url": "https://www.woorifcapital.com",
+    "subtasks": []
   },
   {
     "name": "IBK기업은행 카드 고객센터",
@@ -1041,7 +1109,8 @@ export const customerData = [
     "isVerified": true,
     "description": "IBK기업은행 카드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ibk.co.kr"
+    "web_url": "https://www.ibk.co.kr",
+    "subtasks": []
   },
   {
     "name": "다이너스클럽 고객센터",
@@ -1059,7 +1128,8 @@ export const customerData = [
     "isVerified": true,
     "description": "다이너스클럽 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyundaicard.com"
+    "web_url": "https://www.hyundaicard.com",
+    "subtasks": []
   },
   {
     "name": "삼성카드 분실신고 고객센터",
@@ -1077,7 +1147,8 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성카드 분실신고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungcard.com"
+    "web_url": "https://www.samsungcard.com",
+    "subtasks": []
   },
   {
     "name": "농협카드 분실신고 고객센터",
@@ -1095,7 +1166,8 @@ export const customerData = [
     "isVerified": true,
     "description": "농협카드 분실신고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://card.nonghyup.com"
+    "web_url": "https://card.nonghyup.com",
+    "subtasks": []
   },
   {
     "name": "롯데카드 분실신고 고객센터",
@@ -1113,7 +1185,8 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데카드 분실신고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lottecard.co.kr"
+    "web_url": "https://www.lottecard.co.kr",
+    "subtasks": []
   },
   {
     "name": "KB국민은행 고객센터",
@@ -1131,7 +1204,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbstar.com"
+    "web_url": "https://www.kbstar.com",
+    "subtasks": [
+      {
+        "name": "보이스피싱 피해신고",
+        "phone": "1588-9999 (단축키 *)"
+      },
+      {
+        "name": "기업전용 상담",
+        "phone": "1599-9499"
+      },
+      {
+        "name": "외국인전용 상담",
+        "phone": "1599-4477"
+      }
+    ]
   },
   {
     "name": "신한은행 고객센터",
@@ -1149,7 +1236,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhan.com"
+    "web_url": "https://www.shinhan.com",
+    "subtasks": [
+      {
+        "name": "보이스피싱 및 사고신고",
+        "phone": "1599-8000 (단축키 *)"
+      },
+      {
+        "name": "외국인 전용 상담",
+        "phone": "1577-8000 (단축키 7)"
+      },
+      {
+        "name": "어르신 전용 상담",
+        "phone": "1599-8000 (단축키 #07)"
+      }
+    ]
   },
   {
     "name": "우리은행 고객센터",
@@ -1167,7 +1268,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우리은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooribank.com"
+    "web_url": "https://www.wooribank.com",
+    "subtasks": [
+      {
+        "name": "보이스피싱 피해신고",
+        "phone": "1588-5000 (단축키 #-1)"
+      },
+      {
+        "name": "예·적금 신규 문의",
+        "phone": "1599-8100"
+      },
+      {
+        "name": "대출 신규 문의",
+        "phone": "1599-8300"
+      }
+    ]
   },
   {
     "name": "NH농협은행 고객센터",
@@ -1185,7 +1300,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NH농협은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nonghyup.com"
+    "web_url": "https://www.nonghyup.com",
+    "subtasks": [
+      {
+        "name": "사고신고 및 보이스피싱",
+        "phone": "1661-3000 (단축키 8)"
+      },
+      {
+        "name": "카드 전용 상담",
+        "phone": "1644-4000"
+      },
+      {
+        "name": "어르신전용 상담",
+        "phone": "1433-17"
+      }
+    ]
   },
   {
     "name": "하나은행 고객센터",
@@ -1203,7 +1332,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kebhana.com"
+    "web_url": "https://www.kebhana.com",
+    "subtasks": [
+      {
+        "name": "금융사기 및 분실신고",
+        "phone": "1599-1111 (단축키 #)"
+      },
+      {
+        "name": "대출 전문 상담",
+        "phone": "1599-2222"
+      },
+      {
+        "name": "맞춤 상품 상담",
+        "phone": "1599-4567"
+      }
+    ]
   },
   {
     "name": "토스뱅크 고객센터",
@@ -1221,7 +1364,21 @@ export const customerData = [
     "isVerified": true,
     "description": "토스뱅크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tossbank.com"
+    "web_url": "https://www.tossbank.com",
+    "subtasks": [
+      {
+        "name": "토스뱅크 전용 상담",
+        "phone": "1661-7654"
+      },
+      {
+        "name": "피해 및 사기 특별상담",
+        "phone": "1661-4905"
+      },
+      {
+        "name": "토스증권 및 주식문의",
+        "phone": "1599-7987"
+      }
+    ]
   },
   {
     "name": "카카오뱅크 고객센터",
@@ -1239,7 +1396,33 @@ export const customerData = [
     "isVerified": true,
     "description": "카카오뱅크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kakaobank.com"
+    "web_url": "https://www.kakaobank.com",
+    "subtasks": [
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1599-8883"
+      },
+      {
+        "name": "전화/문자 진위확인",
+        "phone": "1599-6774"
+      },
+      {
+        "name": "고령자 전용 상담",
+        "phone": "1599-8500"
+      },
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1599-8883"
+      },
+      {
+        "name": "전화/문자 진위확인",
+        "phone": "1599-6774"
+      },
+      {
+        "name": "고령자 전용 상담",
+        "phone": "1599-8500"
+      }
+    ]
   },
   {
     "name": "IBK기업은행 고객센터",
@@ -1257,7 +1440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "IBK기업은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ibk.co.kr"
+    "web_url": "https://www.ibk.co.kr",
+    "subtasks": [
+      {
+        "name": "보이스피싱 및 사고신고",
+        "phone": "1588-2588 (단축키 #)"
+      },
+      {
+        "name": "해외 이용 고객 지원",
+        "phone": "+82-31-888-8000"
+      },
+      {
+        "name": "인터넷뱅킹 전용 지원",
+        "phone": "1566-2566"
+      }
+    ]
   },
   {
     "name": "케이뱅크 고객센터",
@@ -1275,7 +1472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "케이뱅크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbanknow.com"
+    "web_url": "https://www.kbanknow.com",
+    "subtasks": [
+      {
+        "name": "보이스피싱 피해 및 분실신고",
+        "phone": "1522-1000 (단축키 8)"
+      },
+      {
+        "name": "업비트 제휴 한도 관련",
+        "phone": "1522-1000 (단축키 1)"
+      },
+      {
+        "name": "고령자 전용 상담",
+        "phone": "1522-1000 (단축키 0-1-5)"
+      }
+    ]
   },
   {
     "name": "SC제일은행 고객센터",
@@ -1293,7 +1504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SC제일은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.standardchartered.co.kr"
+    "web_url": "https://www.standardchartered.co.kr",
+    "subtasks": [
+      {
+        "name": "프리미엄 고객 상담",
+        "phone": "1577-1599"
+      },
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1588-1599 (단축키 0-1)"
+      },
+      {
+        "name": "해외 이용 고객 지원",
+        "phone": "+82-2-730-5442"
+      }
+    ]
   },
   {
     "name": "iM뱅크(대구은행) 고객센터",
@@ -1311,7 +1536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "iM뱅크(대구은행) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.imbank.co.kr"
+    "web_url": "https://www.imbank.co.kr",
+    "subtasks": [
+      {
+        "name": "인터넷/스마트뱅킹 지원",
+        "phone": "1661-5100"
+      },
+      {
+        "name": "어르신 전용 상담",
+        "phone": "1670-9550"
+      },
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1566-5050 (단축키 #)"
+      }
+    ]
   },
   {
     "name": "BNK경남은행 고객센터",
@@ -1329,7 +1568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BNK경남은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.knbank.co.kr"
+    "web_url": "https://www.knbank.co.kr",
+    "subtasks": [
+      {
+        "name": "금융상품 가입 전용",
+        "phone": "1670-5989"
+      },
+      {
+        "name": "퇴직연금 전담 부서",
+        "phone": "055-290-8200"
+      },
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1600-8585 (단축키 8)"
+      }
+    ]
   },
   {
     "name": "광주은행 고객센터",
@@ -1347,7 +1600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "광주은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kjbank.com"
+    "web_url": "https://www.kjbank.com",
+    "subtasks": [
+      {
+        "name": "KJ카드 헬프 센터",
+        "phone": "1577-3650"
+      },
+      {
+        "name": "어르신 전용 쉬운말",
+        "phone": "1661-3633"
+      },
+      {
+        "name": "시각장애인 전용 채널",
+        "phone": "1644-7766"
+      }
+    ]
   },
   {
     "name": "신협 (신협중앙회) 고객센터",
@@ -1365,7 +1632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신협 (신협중앙회) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cu.co.kr"
+    "web_url": "https://www.cu.co.kr",
+    "subtasks": [
+      {
+        "name": "공제(보험) 전용 콜센터",
+        "phone": "1544-3030"
+      },
+      {
+        "name": "분실 및 도난사고 신고",
+        "phone": "1566-6000 (단축키 5)"
+      },
+      {
+        "name": "신협중앙회 대표 민원",
+        "phone": "02-3705-5000"
+      }
+    ]
   },
   {
     "name": "KDB산업은행 대표고객센터",
@@ -1383,7 +1664,8 @@ export const customerData = [
     "isVerified": true,
     "description": "KDB산업은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kdb.co.kr"
+    "web_url": "https://www.kdb.co.kr",
+    "subtasks": []
   },
   {
     "name": "Sh수협은행 대표고객센터",
@@ -1401,7 +1683,8 @@ export const customerData = [
     "isVerified": true,
     "description": "Sh수협은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.suhyup-bank.com"
+    "web_url": "https://www.suhyup-bank.com",
+    "subtasks": []
   },
   {
     "name": "한국씨티은행 대표고객센터",
@@ -1419,7 +1702,8 @@ export const customerData = [
     "isVerified": true,
     "description": "한국씨티은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.citibank.co.kr"
+    "web_url": "https://www.citibank.co.kr",
+    "subtasks": []
   },
   {
     "name": "부산은행 대표고객센터",
@@ -1437,7 +1721,8 @@ export const customerData = [
     "isVerified": true,
     "description": "부산은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.busanbank.co.kr"
+    "web_url": "https://www.busanbank.co.kr",
+    "subtasks": []
   },
   {
     "name": "경남은행 대표고객센터",
@@ -1455,7 +1740,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경남은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.knbank.co.kr"
+    "web_url": "https://www.knbank.co.kr",
+    "subtasks": [
+      {
+        "name": "금융상품 가입전용 상담",
+        "phone": "1670-5989"
+      },
+      {
+        "name": "퇴직연금 전용 센터",
+        "phone": "055-290-8200"
+      },
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1588-8585 (단축키 8)"
+      }
+    ]
   },
   {
     "name": "전북은행 대표고객센터",
@@ -1473,7 +1772,21 @@ export const customerData = [
     "isVerified": true,
     "description": "전북은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jbbank.co.kr"
+    "web_url": "https://www.jbbank.co.kr",
+    "subtasks": [
+      {
+        "name": "비대면 신용대출 전용",
+        "phone": "1522-1704"
+      },
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1588-4477 (단축키 63)"
+      },
+      {
+        "name": "해외 이용 고객 상담",
+        "phone": "+82-2-2195-1533"
+      }
+    ]
   },
   {
     "name": "제주은행 대표고객센터",
@@ -1491,7 +1804,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제주은행 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.e-jejubank.com"
+    "web_url": "https://www.e-jejubank.com",
+    "subtasks": [
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1588-0079 (단축키 1)"
+      },
+      {
+        "name": "탐나는전 통합 고객센터",
+        "phone": "1600-3971"
+      },
+      {
+        "name": "해외 이용 고객 상담",
+        "phone": "+82-64-759-2002"
+      }
+    ]
   },
   {
     "name": "우체국 예금보험 고객센터",
@@ -1509,7 +1836,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우체국 예금보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.epostbank.go.kr"
+    "web_url": "https://www.epostbank.go.kr",
+    "subtasks": [
+      {
+        "name": "우체국 보험 전담 콜센터",
+        "phone": "1588-1600"
+      },
+      {
+        "name": "보증서 및 인증서 전용(한국정보인증)",
+        "phone": "1577-8787"
+      },
+      {
+        "name": "보이스피싱 피해 및 사고신고",
+        "phone": "1588-1900 (단축키 1)"
+      }
+    ]
   },
   {
     "name": "한국투자공사 대표전화 고객센터",
@@ -1527,7 +1868,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국투자공사 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kic.go.kr"
+    "web_url": "https://www.kic.go.kr",
+    "subtasks": [
+      {
+        "name": "KIC 본사 기획 부서",
+        "phone": "02-2179-1000 (본사 대표)"
+      },
+      {
+        "name": "기재부 소관 협조 연락망",
+        "phone": "044-215-2114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2179-1065"
+      }
+    ]
   },
   {
     "name": "한국증권금융 고객센터",
@@ -1545,7 +1900,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국증권금융 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ksfc.co.kr"
+    "web_url": "https://www.ksfc.co.kr",
+    "subtasks": [
+      {
+        "name": "우리사주 수탁 관리 문의",
+        "phone": "1544-8333 (본사 대표)"
+      },
+      {
+        "name": "본사 야간/휴일 비상 연락선",
+        "phone": "02-6908-8403"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3770-8874"
+      }
+    ]
   },
   {
     "name": "상호저축은행 디지털지원센터 고객센터",
@@ -1563,7 +1932,21 @@ export const customerData = [
     "isVerified": true,
     "description": "상호저축은행 디지털지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.fsb.or.kr"
+    "web_url": "https://www.fsb.or.kr",
+    "subtasks": [
+      {
+        "name": "스마트폰 뱅킹 장애",
+        "phone": "1544-3637 (단축키 1)"
+      },
+      {
+        "name": "공동인증서 발급 문의",
+        "phone": "1544-3637 (단축키 2)"
+      },
+      {
+        "name": "FDS 거래차단 문의",
+        "phone": "1544-3061"
+      }
+    ]
   },
   {
     "name": "상호저축은행 야간사기신고 고객센터",
@@ -1581,7 +1964,21 @@ export const customerData = [
     "isVerified": true,
     "description": "상호저축은행 야간사기신고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.fsb.or.kr"
+    "web_url": "https://www.fsb.or.kr",
+    "subtasks": [
+      {
+        "name": "보이스피싱 야간접수",
+        "phone": "02-3978-800"
+      },
+      {
+        "name": "금융사기 피해예방 센터",
+        "phone": "1544-3061"
+      },
+      {
+        "name": "저축은행 비리신고",
+        "phone": "02-397-8636"
+      }
+    ]
   },
   {
     "name": "아시아개발은행 한국지부 고객센터",
@@ -1599,7 +1996,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아시아개발은행 한국지부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.adb.org"
+    "web_url": "https://www.adb.org",
+    "subtasks": [
+      {
+        "name": "기획재정부 개발금융과",
+        "phone": "044-215-4811"
+      },
+      {
+        "name": "해외건설 수주지원단",
+        "phone": "02-3460-7489"
+      },
+      {
+        "name": "ADB 본부 국제전화",
+        "phone": "+63-2-8632-4444"
+      }
+    ]
   },
   {
     "name": "KB국민은행 기업전용데스크 고객센터",
@@ -1617,7 +2028,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민은행 기업전용데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbstar.com"
+    "web_url": "https://www.kbstar.com",
+    "subtasks": [
+      {
+        "name": "기업 인터넷뱅킹 지원",
+        "phone": "1599-9499"
+      },
+      {
+        "name": "수출입 기업 전용 상담",
+        "phone": "1599-9999"
+      },
+      {
+        "name": "SOHO 자영업 우대대출",
+        "phone": "1588-9999"
+      }
+    ]
   },
   {
     "name": "신한은행 기업온라인지원 고객센터",
@@ -1635,7 +2060,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한은행 기업온라인지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhan.com"
+    "web_url": "https://www.shinhan.com",
+    "subtasks": [
+      {
+        "name": "기업뱅킹 장애 처리",
+        "phone": "1599-8010"
+      },
+      {
+        "name": "법인 전용 여신 지원",
+        "phone": "1599-8000"
+      },
+      {
+        "name": "해외 수출입 외환 데스크",
+        "phone": "1577-8000"
+      }
+    ]
   },
   {
     "name": "하나은행 기업뱅킹지원단 고객센터",
@@ -1653,7 +2092,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나은행 기업뱅킹지원단 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kebhana.com"
+    "web_url": "https://www.kebhana.com",
+    "subtasks": [
+      {
+        "name": "기업인터넷뱅킹 전용",
+        "phone": "1599-1111 (단축키 3)"
+      },
+      {
+        "name": "법인 우대 대출 전용",
+        "phone": "1599-2222"
+      },
+      {
+        "name": "수출입 금융 외환팀",
+        "phone": "1599-4567"
+      }
+    ]
   },
   {
     "name": "NH농협은행 기업금융센터 고객센터",
@@ -1671,7 +2124,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NH농협은행 기업금융센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nonghyup.com"
+    "web_url": "https://www.nonghyup.com",
+    "subtasks": [
+      {
+        "name": "기업 전자금융 지원",
+        "phone": "1566-2114"
+      },
+      {
+        "name": "농업법인 우대 지원",
+        "phone": "1661-3000"
+      },
+      {
+        "name": "퇴직연금 법인 컨설팅",
+        "phone": "1522-3000"
+      }
+    ]
   },
   {
     "name": "KDB산업은행 기업지킴이 고객센터",
@@ -1689,7 +2156,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KDB산업은행 기업지킴이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kdb.co.kr"
+    "web_url": "https://www.kdb.co.kr",
+    "subtasks": [
+      {
+        "name": "기업 금융 대표 상담",
+        "phone": "1588-1500"
+      },
+      {
+        "name": "퇴직연금 기업 센터",
+        "phone": "1588-2117"
+      },
+      {
+        "name": "해외 지점 자금 협력",
+        "phone": "+82-2-787-4000"
+      }
+    ]
   },
   {
     "name": "수출입은행 고객상담데스크 고객센터",
@@ -1707,7 +2188,21 @@ export const customerData = [
     "isVerified": true,
     "description": "수출입은행 고객상담데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.koreaexim.go.kr"
+    "web_url": "https://www.koreaexim.go.kr",
+    "subtasks": [
+      {
+        "name": "중소중견기업 상담실",
+        "phone": "02-6252-3454"
+      },
+      {
+        "name": "해양금융단 부산지부",
+        "phone": "051-922-8835"
+      },
+      {
+        "name": "EDCF 유상원조 전용",
+        "phone": "02-3779-6114"
+      }
+    ]
   },
   {
     "name": "우리카드 상생금융지원 데스크 고객센터",
@@ -1725,7 +2220,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우리카드 상생금융지원 데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wooricard.com"
+    "web_url": "https://www.wooricard.com",
+    "subtasks": [
+      {
+        "name": "상생금융 특별 신청",
+        "phone": "1588-9955 (내선 8)"
+      },
+      {
+        "name": "금융서비스 ARS 대출",
+        "phone": "1577-9000"
+      },
+      {
+        "name": "채무조정 안심 센터",
+        "phone": "1588-5300"
+      }
+    ]
   },
   {
     "name": "현대오일뱅크 보너스센터 고객센터",
@@ -1743,7 +2252,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대오일뱅크 보너스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.oilbank.co.kr"
+    "web_url": "https://www.oilbank.co.kr",
+    "subtasks": [
+      {
+        "name": "보너스카드 등록 ARS",
+        "phone": "1588-5189"
+      },
+      {
+        "name": "누락 포인트 사후 적립",
+        "phone": "02-2004-3000"
+      },
+      {
+        "name": "카젠 프리미엄 혜택팀",
+        "phone": "1588-5189"
+      }
+    ]
   },
   {
     "name": "한국스마트카드 티머니콜 고객센터",
@@ -1761,7 +2284,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국스마트카드 티머니콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tmoney.co.kr"
+    "web_url": "https://www.tmoney.co.kr",
+    "subtasks": [
+      {
+        "name": "티머니 카드 일반 상담",
+        "phone": "1644-0088"
+      },
+      {
+        "name": "모바일 티머니 기술 지원",
+        "phone": "1644-0088 (내선 2)"
+      },
+      {
+        "name": "고장카드 환불 심사",
+        "phone": "1644-0088 (내선 3)"
+      }
+    ]
   },
   {
     "name": "머스트삼일저축은행 대표콜 고객센터",
@@ -1779,7 +2316,21 @@ export const customerData = [
     "isVerified": true,
     "description": "머스트삼일저축은행 대표콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mustsamil.co.kr"
+    "web_url": "https://www.mustsamil.co.kr",
+    "subtasks": [
+      {
+        "name": "신용 대출 및 햇살론",
+        "phone": "054-700-0321"
+      },
+      {
+        "name": "포항본점 영업 상담",
+        "phone": "1544-5544"
+      },
+      {
+        "name": "야간 금융사기 피해신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "상상인플러스저축은행 대표콜 고객센터",
@@ -1797,7 +2348,21 @@ export const customerData = [
     "isVerified": true,
     "description": "상상인플러스저축은행 대표콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sangsanginplus.co.kr"
+    "web_url": "https://www.sangsanginplus.co.kr",
+    "subtasks": [
+      {
+        "name": "금융상품 가입/상담",
+        "phone": "1600-2100"
+      },
+      {
+        "name": "리테일 금융 전문 상담",
+        "phone": "1600-2100 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동양종합금융저축 지킴이콜 고객센터",
@@ -1815,7 +2380,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동양종합금융저축 지킴이콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tyfsb.co.kr"
+    "web_url": "https://www.tyfsb.co.kr",
+    "subtasks": [
+      {
+        "name": "소비자금융 전용 상담",
+        "phone": "062-720-0813"
+      },
+      {
+        "name": "지점 예적금 종합 상담",
+        "phone": "062-224-1111"
+      },
+      {
+        "name": "야간 금융사기 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "솔브레인저축 상호금융본부 고객센터",
@@ -1833,7 +2412,21 @@ export const customerData = [
     "isVerified": true,
     "description": "솔브레인저축 상호금융본부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sb-bank.co.kr"
+    "web_url": "https://www.sb-bank.co.kr",
+    "subtasks": [
+      {
+        "name": "상호금융본부 대표 상담",
+        "phone": "051-861-8600"
+      },
+      {
+        "name": "여신 및 심사 지원",
+        "phone": "051-861-8600 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "고려저축 상호대출콜 고객센터",
@@ -1851,7 +2444,21 @@ export const customerData = [
     "isVerified": true,
     "description": "고려저축 상호대출콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.goryeobank.co.kr"
+    "web_url": "https://www.goryeobank.co.kr",
+    "subtasks": [
+      {
+        "name": "대출 상품 대표 신청",
+        "phone": "1877-9000"
+      },
+      {
+        "name": "부산 본점 예적금 종합",
+        "phone": "051-640-9086"
+      },
+      {
+        "name": "금융사기 야간사고 신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "금화저축 대출심사원콜 고객센터",
@@ -1869,7 +2476,21 @@ export const customerData = [
     "isVerified": true,
     "description": "금화저축 대출심사원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kumhwabank.co.kr"
+    "web_url": "https://www.kumhwabank.co.kr",
+    "subtasks": [
+      {
+        "name": "대출 심사 직통 센터",
+        "phone": "1899-7033"
+      },
+      {
+        "name": "본점 여신 관리 종합",
+        "phone": "032-452-6051"
+      },
+      {
+        "name": "야간 금융사기 안심신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "삼정저축 본점신용대출 고객센터",
@@ -1887,7 +2508,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼정저축 본점신용대출 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samjungbank.co.kr"
+    "web_url": "https://www.samjungbank.co.kr",
+    "subtasks": [
+      {
+        "name": "본점 여신/신용 직통",
+        "phone": "031-791-6411 (내선 1)"
+      },
+      {
+        "name": "예금 및 수신 종합",
+        "phone": "031-791-6411 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "상상인저축 안심금융상담 고객센터",
@@ -1905,7 +2540,21 @@ export const customerData = [
     "isVerified": true,
     "description": "상상인저축 안심금융상담 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sangsanginbank.co.kr"
+    "web_url": "https://www.sangsanginbank.co.kr",
+    "subtasks": [
+      {
+        "name": "안심금융 종합 상담",
+        "phone": "1577-1771"
+      },
+      {
+        "name": "디지털 뱅킹 고객 센터",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 금융사기 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대한저축 대표콜상담 고객센터",
@@ -1923,7 +2572,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대한저축 대표콜상담 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daehanbank.co.kr"
+    "web_url": "https://www.daehanbank.co.kr",
+    "subtasks": [
+      {
+        "name": "모바일 신용대출 상담",
+        "phone": "1800-4000"
+      },
+      {
+        "name": "본점 수신 영업부",
+        "phone": "062-520-5905"
+      },
+      {
+        "name": "야간 금융사기 안심콜",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대한저축 본점안내데스크 고객센터",
@@ -1941,7 +2604,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대한저축 본점안내데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daehanbank.co.kr"
+    "web_url": "https://www.daehanbank.co.kr",
+    "subtasks": [
+      {
+        "name": "본점 안내 종합",
+        "phone": "062-520-5905"
+      },
+      {
+        "name": "디지털 뱅킹 전용",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "금융사기 야간사고 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "HB저축 대표고객센터",
@@ -1959,7 +2636,21 @@ export const customerData = [
     "isVerified": true,
     "description": "HB저축 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hbsb.co.kr"
+    "web_url": "https://www.hbsb.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 고객 종합 상담",
+        "phone": "1833-8889"
+      },
+      {
+        "name": "금융재기 지원 상담",
+        "phone": "1670-5252"
+      },
+      {
+        "name": "자체 채무조정 지원",
+        "phone": "1670-6789"
+      }
+    ]
   },
   {
     "name": "HB저축 디지털뱅킹무중지 고객센터",
@@ -1977,7 +2668,21 @@ export const customerData = [
     "isVerified": true,
     "description": "HB저축 디지털뱅킹무중지 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hbsb.co.kr"
+    "web_url": "https://www.hbsb.co.kr",
+    "subtasks": [
+      {
+        "name": "디지털뱅킹 24시 장애",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "HB 대표 고객센터",
+        "phone": "1833-8889"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "HB저축 야간금융사기콜 고객센터",
@@ -1995,7 +2700,21 @@ export const customerData = [
     "isVerified": true,
     "description": "HB저축 야간금융사기콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hbsb.co.kr"
+    "web_url": "https://www.hbsb.co.kr",
+    "subtasks": [
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      },
+      {
+        "name": "FDS 거래차단 안심센터",
+        "phone": "1544-3061"
+      },
+      {
+        "name": "HB 고객상담 센터",
+        "phone": "1833-8889"
+      }
+    ]
   },
   {
     "name": "조은저축 골든브릿지대행 고객센터",
@@ -2013,7 +2732,21 @@ export const customerData = [
     "isVerified": true,
     "description": "조은저축 골든브릿지대행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.choeunbank.com"
+    "web_url": "https://www.choeunbank.com",
+    "subtasks": [
+      {
+        "name": "예수금 및 인수대행 상담",
+        "phone": "1644-7200"
+      },
+      {
+        "name": "디지털뱅킹 전용 케어",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 보이스피싱 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "웰컴저축 해솔대행콜 고객센터",
@@ -2031,7 +2764,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웰컴저축 해솔대행콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.welcomebank.co.kr"
+    "web_url": "https://www.welcomebank.co.kr",
+    "subtasks": [
+      {
+        "name": "웰컴 대행 대표 상담",
+        "phone": "1661-0001"
+      },
+      {
+        "name": "디지털 웰컴 뱅킹 센터",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 금융사기 신고접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "페퍼저축 한울대행콜 고객센터",
@@ -2049,7 +2796,21 @@ export const customerData = [
     "isVerified": true,
     "description": "페퍼저축 한울대행콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.pepperbank.kr"
+    "web_url": "https://www.pepperbank.kr",
+    "subtasks": [
+      {
+        "name": "페퍼 대행 종합 상담",
+        "phone": "1599-0722"
+      },
+      {
+        "name": "디지털뱅킹 공동 장애",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 사기피해 안심콜",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "OSB저축 스마일대행콜 고객센터",
@@ -2067,7 +2828,21 @@ export const customerData = [
     "isVerified": true,
     "description": "OSB저축 스마일대행콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.osb.co.kr"
+    "web_url": "https://www.osb.co.kr",
+    "subtasks": [
+      {
+        "name": "OSB 스마일 대행 콜",
+        "phone": "1644-0052"
+      },
+      {
+        "name": "소비자금융 전용 지원",
+        "phone": "1644-8096"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "OK저축 서울지점대행콜 고객센터",
@@ -2085,7 +2860,21 @@ export const customerData = [
     "isVerified": true,
     "description": "OK저축 서울지점대행콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.oksavingsbank.com"
+    "web_url": "https://www.oksavingsbank.com",
+    "subtasks": [
+      {
+        "name": "OK 서울지점 대행 상담",
+        "phone": "1899-7979"
+      },
+      {
+        "name": "디지털뱅킹 공동 지원",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "JT친애저축 서울채권관리센터 고객센터",
@@ -2103,7 +2892,21 @@ export const customerData = [
     "isVerified": true,
     "description": "JT친애저축 서울채권관리센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jtchinaesb.co.kr"
+    "web_url": "https://www.jtchinaesb.co.kr",
+    "subtasks": [
+      {
+        "name": "서울 채권관리 종합",
+        "phone": "1599-0060"
+      },
+      {
+        "name": "채무조정 직통 상담",
+        "phone": "02-2173-9361"
+      },
+      {
+        "name": "금융사기 야간사고 신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB저축은행 금융재기상담반 고객센터",
@@ -2121,7 +2924,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB저축은행 금융재기상담반 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbsavings.com"
+    "web_url": "https://www.kbsavings.com",
+    "subtasks": [
+      {
+        "name": "대표 고객 종합센터",
+        "phone": "1899-0900"
+      },
+      {
+        "name": "자체 채무조정 지원",
+        "phone": "02-2146-8200"
+      },
+      {
+        "name": "야간 금융사기 특별신고",
+        "phone": "02-3978-600"
+      }
+    ]
   },
   {
     "name": "SBI저축은행 담보리테일지원 고객센터",
@@ -2139,7 +2956,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SBI저축은행 담보리테일지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sbisb.co.kr"
+    "web_url": "https://www.sbisb.co.kr",
+    "subtasks": [
+      {
+        "name": "담보 리테일 전용",
+        "phone": "1600-8888"
+      },
+      {
+        "name": "금융사기 피해 지원",
+        "phone": "1544-3061"
+      },
+      {
+        "name": "어르신 전용 쉬운말",
+        "phone": "1600-8888"
+      }
+    ]
   },
   {
     "name": "SBI저축은행 신용콜렉션운영 고객센터",
@@ -2157,7 +2988,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SBI저축은행 신용콜렉션운영 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sbisb.co.kr"
+    "web_url": "https://www.sbisb.co.kr",
+    "subtasks": [
+      {
+        "name": "신용 콜렉션 종합",
+        "phone": "1566-2210"
+      },
+      {
+        "name": "개별저축은행 상담반",
+        "phone": "02-6920-6120"
+      },
+      {
+        "name": "야간 금융사기 긴급신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대명저축은행 충주지점영업과 고객센터",
@@ -2175,7 +3020,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대명저축은행 충주지점영업과 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dmsb.co.kr"
+    "web_url": "https://www.dmsb.co.kr",
+    "subtasks": [
+      {
+        "name": "충주지점 영업과",
+        "phone": "043-840-5117"
+      },
+      {
+        "name": "제천 본점 관리부",
+        "phone": "043-640-5117"
+      },
+      {
+        "name": "야간 보이스피싱 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "더케이저축 서민금융팀 고객센터",
@@ -2193,7 +3052,21 @@ export const customerData = [
     "isVerified": true,
     "description": "더케이저축 서민금융팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.theksb.co.kr"
+    "web_url": "https://www.theksb.co.kr",
+    "subtasks": [
+      {
+        "name": "서민금융 전용 상담",
+        "phone": "1899-1900"
+      },
+      {
+        "name": "더케이 본점 수신부",
+        "phone": "02-560-5087"
+      },
+      {
+        "name": "금융사기 야간접수 야간콜",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "민국저축은행 여신2팀 고객센터",
@@ -2211,7 +3084,21 @@ export const customerData = [
     "isVerified": true,
     "description": "민국저축은행 여신2팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.minkuk.co.kr"
+    "web_url": "https://www.minkuk.co.kr",
+    "subtasks": [
+      {
+        "name": "여신2팀 직통 상담",
+        "phone": "02-6711-6762"
+      },
+      {
+        "name": "본사 수신 종합 지원",
+        "phone": "02-6711-6700"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "상상인플러스 리테일금융2팀 고객센터",
@@ -2229,7 +3116,21 @@ export const customerData = [
     "isVerified": true,
     "description": "상상인플러스 리테일금융2팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sangsanginplus.co.kr"
+    "web_url": "https://www.sangsanginplus.co.kr",
+    "subtasks": [
+      {
+        "name": "리테일금융2팀 전용",
+        "phone": "1600-2100"
+      },
+      {
+        "name": "본사 천안지부 행정",
+        "phone": "041-901-2711"
+      },
+      {
+        "name": "야간 금융사기 즉시신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "스카이저축 영업지원팀 고객센터",
@@ -2247,7 +3148,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스카이저축 영업지원팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skysb.co.kr"
+    "web_url": "https://www.skysb.co.kr",
+    "subtasks": [
+      {
+        "name": "영업지원팀 직통선",
+        "phone": "02-3485-4108"
+      },
+      {
+        "name": "본사 대표수신 센터",
+        "phone": "02-3485-4102"
+      },
+      {
+        "name": "야간 금융사기 일시정지",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "애큐온저축 CustomerCare팀 고객센터",
@@ -2265,7 +3180,21 @@ export const customerData = [
     "isVerified": true,
     "description": "애큐온저축 CustomerCare팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.acuonsb.co.kr"
+    "web_url": "https://www.acuonsb.co.kr",
+    "subtasks": [
+      {
+        "name": "CustomerCare 1팀",
+        "phone": "02-3485-2303"
+      },
+      {
+        "name": "CustomerCare 2팀",
+        "phone": "02-3485-2377"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "애큐온저축 통합지원센터 고객센터",
@@ -2283,7 +3212,21 @@ export const customerData = [
     "isVerified": true,
     "description": "애큐온저축 통합지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.acuonsb.co.kr"
+    "web_url": "https://www.acuonsb.co.kr",
+    "subtasks": [
+      {
+        "name": "통합 지원 대표선",
+        "phone": "1588-5191"
+      },
+      {
+        "name": "여신 및 승인 관리",
+        "phone": "02-3485-2523"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "예가람저축 여신관리전담팀 고객센터",
@@ -2301,7 +3244,21 @@ export const customerData = [
     "isVerified": true,
     "description": "예가람저축 여신관리전담팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yegaramsb.co.kr"
+    "web_url": "https://www.yegaramsb.co.kr",
+    "subtasks": [
+      {
+        "name": "여신관리 전용 상담",
+        "phone": "070-4570-5325"
+      },
+      {
+        "name": "본사 수신 대표 상담",
+        "phone": "02-6906-7065"
+      },
+      {
+        "name": "야간 보이스피싱 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "웰컴저축 자체채무조정팀 고객센터",
@@ -2319,7 +3276,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웰컴저축 자체채무조정팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.welcomebank.co.kr"
+    "web_url": "https://www.welcomebank.co.kr",
+    "subtasks": [
+      {
+        "name": "자체 채무조정팀",
+        "phone": "02-6211-9681"
+      },
+      {
+        "name": "웰컴 대표 고객상담",
+        "phone": "1661-0001"
+      },
+      {
+        "name": "야간 보이스피싱 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "유안타저축 리테일금융지원 고객센터",
@@ -2337,7 +3308,21 @@ export const customerData = [
     "isVerified": true,
     "description": "유안타저축 리테일금융지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yuantasb.co.kr"
+    "web_url": "https://www.yuantasb.co.kr",
+    "subtasks": [
+      {
+        "name": "리테일 금융 지원",
+        "phone": "02-6022-3756"
+      },
+      {
+        "name": "본사 수신 상담 종합",
+        "phone": "02-6022-3784"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "새마을 가계안심지원콜 고객센터",
@@ -2355,7 +3340,21 @@ export const customerData = [
     "isVerified": true,
     "description": "새마을 가계안심지원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kfcc.co.kr"
+    "web_url": "https://www.kfcc.co.kr",
+    "subtasks": [
+      {
+        "name": "가계안심 대출 지원",
+        "phone": "1588-8801"
+      },
+      {
+        "name": "새마을공제 보험 전용",
+        "phone": "1599-9000"
+      },
+      {
+        "name": "야간 사고/도난 신고",
+        "phone": "1588-8801 (내선 9)"
+      }
+    ]
   },
   {
     "name": "산림조합 서민안심대출콜 고객센터",
@@ -2373,7 +3372,21 @@ export const customerData = [
     "isVerified": true,
     "description": "산림조합 서민안심대출콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nfcf.or.kr"
+    "web_url": "https://www.nfcf.or.kr",
+    "subtasks": [
+      {
+        "name": "서민안심 대출 상담",
+        "phone": "1566-1244"
+      },
+      {
+        "name": "산림공제 상호 보증",
+        "phone": "02-3434-7114"
+      },
+      {
+        "name": "신용카드 긴급 정지",
+        "phone": "1566-1244 (내선 9)"
+      }
+    ]
   },
   {
     "name": "수협 상호금융안심대출콜 고객센터",
@@ -2391,7 +3404,21 @@ export const customerData = [
     "isVerified": true,
     "description": "수협 상호금융안심대출콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.suhyup-bank.com"
+    "web_url": "https://www.suhyup-bank.com",
+    "subtasks": [
+      {
+        "name": "상호금융안심 대출",
+        "phone": "1588-1515 (내선 3)"
+      },
+      {
+        "name": "수협카드 분실 신고",
+        "phone": "1644-7500"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "+82-2-2090-1515"
+      }
+    ]
   },
   {
     "name": "농협 상호금융안심대출콜 고객센터",
@@ -2409,7 +3436,21 @@ export const customerData = [
     "isVerified": true,
     "description": "농협 상호금융안심대출콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nonghyup.com"
+    "web_url": "https://www.nonghyup.com",
+    "subtasks": [
+      {
+        "name": "상호금융안심 대출",
+        "phone": "1588-2100 (내선 2)"
+      },
+      {
+        "name": "지역농축협 신용상담",
+        "phone": "1661-3000"
+      },
+      {
+        "name": "금융사기 야간사고 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "리드코프 가계신용지원센터 고객센터",
@@ -2427,7 +3468,21 @@ export const customerData = [
     "isVerified": true,
     "description": "리드코프 가계신용지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.leadcorp.co.kr"
+    "web_url": "https://www.leadcorp.co.kr",
+    "subtasks": [
+      {
+        "name": "가계신용 지원",
+        "phone": "1544-2525"
+      },
+      {
+        "name": "대출 신규 신청센터",
+        "phone": "1544-2525 (내선 1)"
+      },
+      {
+        "name": "채권 및 법무 관리부",
+        "phone": "02-6908-8403"
+      }
+    ]
   },
   {
     "name": "러시앤캐시 가계신용지원 고객센터",
@@ -2445,7 +3500,21 @@ export const customerData = [
     "isVerified": true,
     "description": "러시앤캐시 가계신용지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.rushncash.com"
+    "web_url": "https://www.rushncash.com",
+    "subtasks": [
+      {
+        "name": "가계신용 종합 지원",
+        "phone": "1566-7979"
+      },
+      {
+        "name": "원리금 상환 정산 센터",
+        "phone": "1566-7979 (내선 2)"
+      },
+      {
+        "name": "완납 증빙 서류 교부",
+        "phone": "1566-7979 (내선 3)"
+      }
+    ]
   },
   {
     "name": "산와머니 자산안심지원 고객센터",
@@ -2463,7 +3532,21 @@ export const customerData = [
     "isVerified": true,
     "description": "산와머니 자산안심지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sanwamoney.co.kr"
+    "web_url": "https://www.sanwamoney.co.kr",
+    "subtasks": [
+      {
+        "name": "자산안심 지원 종합",
+        "phone": "1644-3300"
+      },
+      {
+        "name": "원장 증명서 교부",
+        "phone": "1644-3300 (내선 2)"
+      },
+      {
+        "name": "야간 비상 행정 지원",
+        "phone": "1644-3300 (내선 3)"
+      }
+    ]
   },
   {
     "name": "미즈사랑 자산케어지원 고객센터",
@@ -2481,7 +3564,21 @@ export const customerData = [
     "isVerified": true,
     "description": "미즈사랑 자산케어지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mizsarang.com"
+    "web_url": "https://www.mizsarang.com",
+    "subtasks": [
+      {
+        "name": "자산케어 안심 지원",
+        "phone": "1566-0008"
+      },
+      {
+        "name": "채무조정 전용 상담",
+        "phone": "1566-0008 (내선 2)"
+      },
+      {
+        "name": "제증명 팩스 신청",
+        "phone": "1566-0008 (내선 3)"
+      }
+    ]
   },
   {
     "name": "웰컴크레디라인 상생금융콜 고객센터",
@@ -2499,7 +3596,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웰컴크레디라인 상생금융콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.welcomecredit.co.kr"
+    "web_url": "https://www.welcomecredit.co.kr",
+    "subtasks": [
+      {
+        "name": "상생금융 특별 신청",
+        "phone": "1566-0008"
+      },
+      {
+        "name": "채권 사후 관리",
+        "phone": "1566-0008 (내선 2)"
+      },
+      {
+        "name": "해지 증명 서류부",
+        "phone": "1566-0008 (내선 3)"
+      }
+    ]
   },
   {
     "name": "예가람크레디트 상생금융콜 고객센터",
@@ -2517,7 +3628,21 @@ export const customerData = [
     "isVerified": true,
     "description": "예가람크레디트 상생금융콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yegaramsb.co.kr"
+    "web_url": "https://www.yegaramsb.co.kr",
+    "subtasks": [
+      {
+        "name": "상생금융 안심 콜",
+        "phone": "1566-2210"
+      },
+      {
+        "name": "예가람 대표 지원",
+        "phone": "1877-1000"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "바로크레디트 상생금융콜 고객센터",
@@ -2535,7 +3660,21 @@ export const customerData = [
     "isVerified": true,
     "description": "바로크레디트 상생금융콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.barocredit.com"
+    "web_url": "https://www.barocredit.com",
+    "subtasks": [
+      {
+        "name": "상생금융 안심 센터",
+        "phone": "1588-6161"
+      },
+      {
+        "name": "신규 심사 접수선",
+        "phone": "1588-6161 (내선 1)"
+      },
+      {
+        "name": "자산 추심 고충 처리",
+        "phone": "1588-6161 (내선 3)"
+      }
+    ]
   },
   {
     "name": "태강대부 청년희망지원콜 고객센터",
@@ -2553,7 +3692,21 @@ export const customerData = [
     "isVerified": true,
     "description": "태강대부 청년희망지원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.taegang.com"
+    "web_url": "https://www.taegang.com",
+    "subtasks": [
+      {
+        "name": "청년희망 지원 직통",
+        "phone": "1588-0050"
+      },
+      {
+        "name": "가계 신용 종합",
+        "phone": "1588-0050 (내선 2)"
+      },
+      {
+        "name": "원리금 정산 팩스부",
+        "phone": "1588-0050 (내선 3)"
+      }
+    ]
   },
   {
     "name": "골든캐피탈 상생금융지원 고객센터",
@@ -2571,7 +3724,21 @@ export const customerData = [
     "isVerified": true,
     "description": "골든캐피탈 상생금융지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.goldencapital.co.kr"
+    "web_url": "https://www.goldencapital.co.kr",
+    "subtasks": [
+      {
+        "name": "상생금융 팀",
+        "phone": "1566-0500"
+      },
+      {
+        "name": "신용 한도 심사",
+        "phone": "1566-0500 (내선 1)"
+      },
+      {
+        "name": "완납 증명 팩스선",
+        "phone": "1566-0500 (내선 3)"
+      }
+    ]
   },
   {
     "name": "스타크레디 상생대출콜 고객센터",
@@ -2589,7 +3756,33 @@ export const customerData = [
     "isVerified": true,
     "description": "스타크레디 상생대출콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.starcredit.co.kr"
+    "web_url": "https://www.starcredit.co.kr",
+    "subtasks": [
+      {
+        "name": "상생대출 안심 지원",
+        "phone": "1544-0800"
+      },
+      {
+        "name": "변제금 입금 전용",
+        "phone": "1544-0800 (내선 2)"
+      },
+      {
+        "name": "서류 발급 관리",
+        "phone": "1544-0800 (내선 3)"
+      },
+      {
+        "name": "상생대출 안심 지원",
+        "phone": "1544-0800"
+      },
+      {
+        "name": "변제금 입금 전용",
+        "phone": "1544-0800 (내선 2)"
+      },
+      {
+        "name": "서류 발급 관리",
+        "phone": "1544-0800 (내선 3)"
+      }
+    ]
   },
   {
     "name": "애니원캐피탈 대환안심콜 고객센터",
@@ -2607,7 +3800,21 @@ export const customerData = [
     "isVerified": true,
     "description": "애니원캐피탈 대환안심콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.anyonecapital.co.kr"
+    "web_url": "https://www.anyonecapital.co.kr",
+    "subtasks": [
+      {
+        "name": "대환안심론 상담",
+        "phone": "1566-0100"
+      },
+      {
+        "name": "채권 변제 전용",
+        "phone": "1566-0100 (내선 2)"
+      },
+      {
+        "name": "부당추심 보호 민원",
+        "phone": "1566-0100 (내선 3)"
+      }
+    ]
   },
   {
     "name": "유미캐피탈 가계상생콜 고객센터",
@@ -2625,7 +3832,21 @@ export const customerData = [
     "isVerified": true,
     "description": "유미캐피탈 가계상생콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yumicapital.co.kr"
+    "web_url": "https://www.yumicapital.co.kr",
+    "subtasks": [
+      {
+        "name": "가계상생 지원",
+        "phone": "1544-1500"
+      },
+      {
+        "name": "수동 가상계좌 발송",
+        "phone": "1544-1500 (내선 2)"
+      },
+      {
+        "name": "채무완납 증빙원 팩스",
+        "phone": "1544-1500 (내선 3)"
+      }
+    ]
   },
   {
     "name": "유아이크레디트 대환안심콜 고객센터",
@@ -2643,7 +3864,21 @@ export const customerData = [
     "isVerified": true,
     "description": "유아이크레디트 대환안심콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.uicredit.co.kr"
+    "web_url": "https://www.uicredit.co.kr",
+    "subtasks": [
+      {
+        "name": "대환안심론 직통",
+        "phone": "1544-7900"
+      },
+      {
+        "name": "개인 신용 심사",
+        "phone": "1544-7900 (내선 1)"
+      },
+      {
+        "name": "채무 증빙 서류 팩스",
+        "phone": "1544-7900 (내선 3)"
+      }
+    ]
   },
   {
     "name": "조이크레디트 가계상생콜 고객센터",
@@ -2661,7 +3896,21 @@ export const customerData = [
     "isVerified": true,
     "description": "조이크레디트 가계상생콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.joycredit.co.kr"
+    "web_url": "https://www.joycredit.co.kr",
+    "subtasks": [
+      {
+        "name": "가계상생 지원 센터",
+        "phone": "1566-0008"
+      },
+      {
+        "name": "채무 감면 심사",
+        "phone": "1566-0008 (내선 2)"
+      },
+      {
+        "name": "완납 증빙 서류부",
+        "phone": "1566-0008 (내선 3)"
+      }
+    ]
   },
   {
     "name": "밀리언캐쉬 청년상생콜 고객센터",
@@ -2679,7 +3928,21 @@ export const customerData = [
     "isVerified": true,
     "description": "밀리언캐쉬 청년상생콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.millioncash.co.kr"
+    "web_url": "https://www.millioncash.co.kr",
+    "subtasks": [
+      {
+        "name": "청년상생 지원 종합",
+        "phone": "1566-0500"
+      },
+      {
+        "name": "수동 상환 승인",
+        "phone": "1566-0500 (내선 2)"
+      },
+      {
+        "name": "완납 원장 팩스",
+        "phone": "1566-0500 (내선 3)"
+      }
+    ]
   },
   {
     "name": "리드코프 청년희망안심콜 고객센터",
@@ -2697,7 +3960,21 @@ export const customerData = [
     "isVerified": true,
     "description": "리드코프 청년희망안심콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.leadcorp.co.kr"
+    "web_url": "https://www.leadcorp.co.kr",
+    "subtasks": [
+      {
+        "name": "청년희망 안심 콜",
+        "phone": "1544-2525"
+      },
+      {
+        "name": "원리금 정산 팩스",
+        "phone": "1544-2525 (내선 3)"
+      },
+      {
+        "name": "자체 채무조정 지원",
+        "phone": "02-6908-8403"
+      }
+    ]
   },
   {
     "name": "고려저축 안심대환론 지원 고객센터",
@@ -2715,7 +3992,21 @@ export const customerData = [
     "isVerified": true,
     "description": "고려저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.goryeobank.co.kr"
+    "web_url": "https://www.goryeobank.co.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 직통",
+        "phone": "1877-9000"
+      },
+      {
+        "name": "부산 본점 수신부",
+        "phone": "051-640-9086"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "금화저축 안심대환론 지원 고객센터",
@@ -2733,7 +4024,21 @@ export const customerData = [
     "isVerified": true,
     "description": "금화저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kumhwabank.co.kr"
+    "web_url": "https://www.kumhwabank.co.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 지원팀",
+        "phone": "1899-7033"
+      },
+      {
+        "name": "금화저축 본점 수신",
+        "phone": "032-452-6051"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "모아저축 안심대환론 지원 고객센터",
@@ -2751,7 +4056,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모아저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.moasb.co.kr"
+    "web_url": "https://www.moasb.co.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 전용",
+        "phone": "1566-0007"
+      },
+      {
+        "name": "어르신 전용 쉬운말",
+        "phone": "032-230-3152"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "삼정저축 안심대환론 지원 고객센터",
@@ -2769,7 +4088,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼정저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samjungbank.co.kr"
+    "web_url": "https://www.samjungbank.co.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 직통",
+        "phone": "031-791-6411 (내선 1)"
+      },
+      {
+        "name": "디지털 뱅킹 전용",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 금융사기 즉시신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "상상인저축 안심대환론 지원 고객센터",
@@ -2787,7 +4120,21 @@ export const customerData = [
     "isVerified": true,
     "description": "상상인저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sangsanginbank.co.kr"
+    "web_url": "https://www.sangsanginbank.co.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 전용",
+        "phone": "1577-1771"
+      },
+      {
+        "name": "디지털뱅킹 종합",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "웰컴저축 안심대환론 지원 고객센터",
@@ -2805,7 +4152,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웰컴저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.welcomebank.co.kr"
+    "web_url": "https://www.welcomebank.co.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 지원",
+        "phone": "1661-0001"
+      },
+      {
+        "name": "웰컴 자체 채무조정",
+        "phone": "02-6211-9681"
+      },
+      {
+        "name": "야간 금융사기 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "하나저축 안심대환론 지원 고객센터",
@@ -2823,7 +4184,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanasavings.com"
+    "web_url": "https://www.hanasavings.com",
+    "subtasks": [
+      {
+        "name": "안심대환론 전용",
+        "phone": "1899-1122"
+      },
+      {
+        "name": "하나저축 대표 수신",
+        "phone": "1899-1122 (내선 1)"
+      },
+      {
+        "name": "야간 보이스피싱 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "페퍼저축 안심대환론 지원 고객센터",
@@ -2841,7 +4216,21 @@ export const customerData = [
     "isVerified": true,
     "description": "페퍼저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.pepperbank.kr"
+    "web_url": "https://www.pepperbank.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 전용",
+        "phone": "1599-0722"
+      },
+      {
+        "name": "페퍼저축 대표 수신",
+        "phone": "1599-0722 (내선 1)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신한저축 안심대환론 지원 고객센터",
@@ -2859,7 +4248,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한저축 안심대환론 지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhansb.co.kr"
+    "web_url": "https://www.shinhansb.co.kr",
+    "subtasks": [
+      {
+        "name": "안심대환론 지원",
+        "phone": "1644-7777"
+      },
+      {
+        "name": "신한저축 리테일 지원",
+        "phone": "02-2622-4257"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB국민은행 리브엠 모바일 고객센터",
@@ -2877,7 +4280,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB국민은행 리브엠 모바일 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.liivm.com"
+    "web_url": "https://www.liivm.com",
+    "subtasks": [
+      {
+        "name": "리브엠 개통/이용 상담",
+        "phone": "1522-9999"
+      },
+      {
+        "name": "유심 분실/정지 24시",
+        "phone": "080-860-0040"
+      },
+      {
+        "name": "해외 로밍 전용 문의",
+        "phone": "+82-2-6488-8000"
+      }
+    ]
   },
   {
     "name": "한국투자저축은행 고객센터",
@@ -2895,7 +4312,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국투자저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.koreainvestmentsb.com"
+    "web_url": "https://www.koreainvestmentsb.com",
+    "subtasks": [
+      {
+        "name": "대표 수신/일반 상담",
+        "phone": "1577-6333"
+      },
+      {
+        "name": "신용 및 여신 관리부",
+        "phone": "031-8039-5885"
+      },
+      {
+        "name": "야간 금융사기 즉시신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB저축은행 고객센터",
@@ -2913,7 +4344,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbsavings.com"
+    "web_url": "https://www.kbsavings.com",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1899-0900"
+      },
+      {
+        "name": "해외 이용 고객 상담",
+        "phone": "+82-2-2146-8200"
+      },
+      {
+        "name": "보이스피싱 야간접수",
+        "phone": "02-3978-600"
+      }
+    ]
   },
   {
     "name": "KB캐피탈 고객센터",
@@ -2931,7 +4376,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB캐피탈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbcapital.co.kr"
+    "web_url": "https://www.kbcapital.co.kr",
+    "subtasks": [
+      {
+        "name": "자동차 금융 전용",
+        "phone": "1544-1200"
+      },
+      {
+        "name": "개인 신용/중금리 론",
+        "phone": "1544-1200 (내선 3)"
+      },
+      {
+        "name": "야간 도난/도용 신고",
+        "phone": "1544-1200 (내선 9)"
+      }
+    ]
   },
   {
     "name": "MG새마을금고 고객센터",
@@ -2949,7 +4408,21 @@ export const customerData = [
     "isVerified": true,
     "description": "MG새마을금고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kfcc.co.kr"
+    "web_url": "https://www.kfcc.co.kr",
+    "subtasks": [
+      {
+        "name": "예적금/뱅킹 종합",
+        "phone": "1588-8801"
+      },
+      {
+        "name": "새마을공제 보험 센터",
+        "phone": "1599-9000"
+      },
+      {
+        "name": "카드 분실신고(해외겸용)",
+        "phone": "1588-8801 (내선 9)"
+      }
+    ]
   },
   {
     "name": "BNK 부산은행 고객센터",
@@ -2967,7 +4440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BNK 부산은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.busanbank.co.kr"
+    "web_url": "https://www.busanbank.co.kr",
+    "subtasks": [
+      {
+        "name": "부산 동백전 전용",
+        "phone": "1577-1432"
+      },
+      {
+        "name": "폰뱅킹 전용 조회선",
+        "phone": "1588-2800"
+      },
+      {
+        "name": "보이스피싱 피해신고",
+        "phone": "1588-6200 (단축키 641)"
+      }
+    ]
   },
   {
     "name": "오케이 저축은행 고객센터",
@@ -2985,7 +4472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "오케이 저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.oksavingsbank.com"
+    "web_url": "https://www.oksavingsbank.com",
+    "subtasks": [
+      {
+        "name": "대표 수신/뱅킹 상담",
+        "phone": "1899-7979"
+      },
+      {
+        "name": "자산 및 채권 관리부",
+        "phone": "02-6020-1798"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "사이다뱅크 고객센터",
@@ -3003,7 +4504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "사이다뱅크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.saidabank.co.kr"
+    "web_url": "https://www.saidabank.co.kr",
+    "subtasks": [
+      {
+        "name": "사이다뱅크 대표 상담",
+        "phone": "1644-7114"
+      },
+      {
+        "name": "SBI저축 대표 수신",
+        "phone": "1600-8888"
+      },
+      {
+        "name": "야간 금융사기 긴급접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "DB저축은행 고객센터",
@@ -3021,7 +4536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DB저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.idbsb.co.kr"
+    "web_url": "https://www.idbsb.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1600-4092"
+      },
+      {
+        "name": "개인금융 전용 지원",
+        "phone": "1600-4092 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 안심신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "우리금융저축은행 고객센터",
@@ -3039,7 +4568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우리금융저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.woorisb.co.kr"
+    "web_url": "https://www.woorisb.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신/뱅킹 상담",
+        "phone": "1599-0038"
+      },
+      {
+        "name": "여신 및 채권 관리부",
+        "phone": "02-3011-6911"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "모아저축은행 고객센터",
@@ -3057,7 +4600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모아저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.moasb.co.kr"
+    "web_url": "https://www.moasb.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 예적금 상담",
+        "phone": "1566-0007"
+      },
+      {
+        "name": "어르신 전용 쉬운말",
+        "phone": "032-230-3152"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "농협저축은행 고객센터",
@@ -3075,7 +4632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "농협저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nhsavingsbank.co.kr"
+    "web_url": "https://www.nhsavingsbank.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1566-6633"
+      },
+      {
+        "name": "신용여신 및 심사부",
+        "phone": "02-3016-5916"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "다올저축은행 고객센터",
@@ -3093,7 +4664,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다올저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daolsb.co.kr"
+    "web_url": "https://www.daolsb.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1544-6700"
+      },
+      {
+        "name": "연체차주 안심 관리부",
+        "phone": "02-6445-6304"
+      },
+      {
+        "name": "야간 금융사기 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "예가람저축은행 고객센터",
@@ -3111,7 +4696,21 @@ export const customerData = [
     "isVerified": true,
     "description": "예가람저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yegaramsb.co.kr"
+    "web_url": "https://www.yegaramsb.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 고객 종합센터",
+        "phone": "1877-1000"
+      },
+      {
+        "name": "개인금융 여신 지원",
+        "phone": "070-4570-5306"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "스마트저축은행 고객센터",
@@ -3129,7 +4728,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스마트저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smartbank.co.kr"
+    "web_url": "https://www.smartbank.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1577-3800"
+      },
+      {
+        "name": "기획 및 전산 지원팀",
+        "phone": "070-4364-9666"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "푸른저축은행 고객센터",
@@ -3147,7 +4760,21 @@ export const customerData = [
     "isVerified": true,
     "description": "푸른저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.prsb.co.kr"
+    "web_url": "https://www.prsb.co.kr",
+    "subtasks": [
+      {
+        "name": "본점 대표 수신",
+        "phone": "02-540-3400"
+      },
+      {
+        "name": "관리본부 및 여신팀",
+        "phone": "02-6255-1144"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "키움예스 저축은행 고객센터",
@@ -3165,7 +4792,21 @@ export const customerData = [
     "isVerified": true,
     "description": "키움예스 저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kiwoomyesbank.co.kr"
+    "web_url": "https://www.kiwoomyesbank.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1670-0021"
+      },
+      {
+        "name": "리테일 여신 심사부",
+        "phone": "02-6226-1743"
+      },
+      {
+        "name": "야간 금융사기 긴급신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신한저축은행 고객센터",
@@ -3183,7 +4824,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한저축은행 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhansb.co.kr"
+    "web_url": "https://www.shinhansb.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 고객 종합 센터",
+        "phone": "1644-7777"
+      },
+      {
+        "name": "리테일 영업 전담부",
+        "phone": "02-2622-4257"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대한저축 디지털고객센터",
@@ -3201,7 +4856,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대한저축 디지털고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daehanbank.co.kr"
+    "web_url": "https://www.daehanbank.co.kr",
+    "subtasks": [
+      {
+        "name": "디지털뱅킹 24시 장애",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "대한저축 대표 콜",
+        "phone": "1800-4000"
+      },
+      {
+        "name": "야간 금융사기 피해신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대한저축 텔레뱅킹센터 고객센터",
@@ -3219,7 +4888,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대한저축 텔레뱅킹센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daehanbank.co.kr"
+    "web_url": "https://www.daehanbank.co.kr",
+    "subtasks": [
+      {
+        "name": "텔레뱅킹 수동 송금",
+        "phone": "1800-4000"
+      },
+      {
+        "name": "본점 수신 대표 행정",
+        "phone": "062-520-5905"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "HB저축 여신관리지원팀 고객센터",
@@ -3237,7 +4920,21 @@ export const customerData = [
     "isVerified": true,
     "description": "HB저축 여신관리지원팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hbsb.co.kr"
+    "web_url": "https://www.hbsb.co.kr",
+    "subtasks": [
+      {
+        "name": "여신관리지원 종합",
+        "phone": "1833-8889"
+      },
+      {
+        "name": "자체 채무조정 지원",
+        "phone": "1670-6789"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "BNK저축은행 자산관리팀 고객센터",
@@ -3255,7 +4952,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BNK저축은행 자산관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bnksb.co.kr"
+    "web_url": "https://www.bnksb.co.kr",
+    "subtasks": [
+      {
+        "name": "자산관리팀 직통선",
+        "phone": "051-713-1290"
+      },
+      {
+        "name": "BNK저축 대표 고객",
+        "phone": "1600-8585"
+      },
+      {
+        "name": "야간 보이스피싱 접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "CK저축은행 영업부 자산관리 고객센터",
@@ -3273,7 +4984,21 @@ export const customerData = [
     "isVerified": true,
     "description": "CK저축은행 영업부 자산관리 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cksb.co.kr"
+    "web_url": "https://www.cksb.co.kr",
+    "subtasks": [
+      {
+        "name": "자산관리 직통 상담",
+        "phone": "033-252-8411"
+      },
+      {
+        "name": "춘천본점 대표 행정",
+        "phone": "033-252-8411"
+      },
+      {
+        "name": "야간 금융사기 특별신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "DB저축은행 개인금융팀 고객센터",
@@ -3291,7 +5016,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DB저축은행 개인금융팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.idbsb.co.kr"
+    "web_url": "https://www.idbsb.co.kr",
+    "subtasks": [
+      {
+        "name": "개인금융팀 직통",
+        "phone": "1600-4092"
+      },
+      {
+        "name": "DB저축 대표 수신",
+        "phone": "1600-4092"
+      },
+      {
+        "name": "야간 사기예방 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "HB저축은행 여신관리지원팀 고객센터",
@@ -3309,7 +5048,21 @@ export const customerData = [
     "isVerified": true,
     "description": "HB저축은행 여신관리지원팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hbsb.co.kr"
+    "web_url": "https://www.hbsb.co.kr",
+    "subtasks": [
+      {
+        "name": "여신관리지원팀",
+        "phone": "1833-8889"
+      },
+      {
+        "name": "금융재기 종합 지원",
+        "phone": "1670-5252"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "IBK저축은행 채권관리부 고객센터",
@@ -3327,7 +5080,21 @@ export const customerData = [
     "isVerified": true,
     "description": "IBK저축은행 채권관리부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ibksb.co.kr"
+    "web_url": "https://www.ibksb.co.kr",
+    "subtasks": [
+      {
+        "name": "채권관리부 직통선",
+        "phone": "051-791-4344"
+      },
+      {
+        "name": "IBK저축 대표 고객",
+        "phone": "1522-7900"
+      },
+      {
+        "name": "야간 보이스피싱 긴급신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "JT친애저축 일반채권관리팀 고객센터",
@@ -3345,7 +5112,21 @@ export const customerData = [
     "isVerified": true,
     "description": "JT친애저축 일반채권관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jtchinaesb.co.kr"
+    "web_url": "https://www.jtchinaesb.co.kr",
+    "subtasks": [
+      {
+        "name": "일반채권관리팀",
+        "phone": "02-2173-9361"
+      },
+      {
+        "name": "서울 채권관리 센터",
+        "phone": "1599-0060"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "NH저축은행 신용여신관리부 고객센터",
@@ -3363,7 +5144,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NH저축은행 신용여신관리부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nhsavingsbank.co.kr"
+    "web_url": "https://www.nhsavingsbank.co.kr",
+    "subtasks": [
+      {
+        "name": "신용여신관리부",
+        "phone": "02-3016-5916"
+      },
+      {
+        "name": "NH저축 대표 상담",
+        "phone": "1566-6633"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "OK저축은행 채권관리부 고객센터",
@@ -3381,7 +5176,21 @@ export const customerData = [
     "isVerified": true,
     "description": "OK저축은행 채권관리부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.oksavingsbank.com"
+    "web_url": "https://www.oksavingsbank.com",
+    "subtasks": [
+      {
+        "name": "채권관리부 직통선",
+        "phone": "02-6020-1798"
+      },
+      {
+        "name": "OK 대표 고객상담",
+        "phone": "1899-7979"
+      },
+      {
+        "name": "야간 사기방지 일시정지",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "OSB저축은행 소비자금융팀 고객센터",
@@ -3399,7 +5208,21 @@ export const customerData = [
     "isVerified": true,
     "description": "OSB저축은행 소비자금융팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.osb.co.kr"
+    "web_url": "https://www.osb.co.kr",
+    "subtasks": [
+      {
+        "name": "소비자금융팀",
+        "phone": "1644-0052"
+      },
+      {
+        "name": "여신 승인 관리부",
+        "phone": "1644-8096"
+      },
+      {
+        "name": "야간 금융사기 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "국제저축은행 관리팀 고객센터",
@@ -3417,7 +5240,21 @@ export const customerData = [
     "isVerified": true,
     "description": "국제저축은행 관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kukjesb.co.kr"
+    "web_url": "https://www.kukjesb.co.kr",
+    "subtasks": [
+      {
+        "name": "관리팀 직통 상담",
+        "phone": "051-640-2159"
+      },
+      {
+        "name": "국제저축 대표 예금",
+        "phone": "051-640-2100"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "남양저축은행 관리부 고객센터",
@@ -3435,7 +5272,21 @@ export const customerData = [
     "isVerified": true,
     "description": "남양저축은행 관리부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ny-sb.co.kr"
+    "web_url": "https://www.ny-sb.co.kr",
+    "subtasks": [
+      {
+        "name": "관리부 직통선",
+        "phone": "031-566-3300"
+      },
+      {
+        "name": "디지털 뱅킹 전용",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 금융사기 즉시신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "다올저축은행 연체차주관리팀 고객센터",
@@ -3453,7 +5304,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다올저축은행 연체차주관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daolsb.co.kr"
+    "web_url": "https://www.daolsb.co.kr",
+    "subtasks": [
+      {
+        "name": "연체차주관리팀",
+        "phone": "02-6445-6304"
+      },
+      {
+        "name": "다올 대표 고객상담",
+        "phone": "1544-6700"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대명저축은행 제천본점관리부 고객센터",
@@ -3471,7 +5336,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대명저축은행 제천본점관리부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dmsb.co.kr"
+    "web_url": "https://www.dmsb.co.kr",
+    "subtasks": [
+      {
+        "name": "제천본점 관리부",
+        "phone": "043-640-5117"
+      },
+      {
+        "name": "충주지점 영업 상담",
+        "phone": "043-840-5117"
+      },
+      {
+        "name": "야간 금융사기 특별신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대신저축은행 영업부관리팀 고객센터",
@@ -3489,7 +5368,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대신저축은행 영업부관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daesinsb.co.kr"
+    "web_url": "https://www.daesinsb.co.kr",
+    "subtasks": [
+      {
+        "name": "영업부관리팀",
+        "phone": "02-519-8203"
+      },
+      {
+        "name": "대신저축 대표 수신",
+        "phone": "1644-5600"
+      },
+      {
+        "name": "야간 사기방지 일시정지",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대아저축은행 여신관리부 고객센터",
@@ -3507,7 +5400,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대아저축은행 여신관리부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daeasb.co.kr"
+    "web_url": "https://www.daeasb.co.kr",
+    "subtasks": [
+      {
+        "name": "여신관리부 직통선",
+        "phone": "054-274-4111"
+      },
+      {
+        "name": "포항본점 수신 종합",
+        "phone": "054-274-4111 (내선 1)"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대원저축은행 영업부관리팀 고객센터",
@@ -3525,7 +5432,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대원저축은행 영업부관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daewonsb.co.kr"
+    "web_url": "https://www.daewonsb.co.kr",
+    "subtasks": [
+      {
+        "name": "영업부관리팀",
+        "phone": "054-773-2222"
+      },
+      {
+        "name": "경주지부 수신 종합",
+        "phone": "054-231-5111"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대한저축 소비자금융팀 고객센터",
@@ -3543,7 +5464,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대한저축 소비자금융팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daehanbank.co.kr"
+    "web_url": "https://www.daehanbank.co.kr",
+    "subtasks": [
+      {
+        "name": "소비자금융팀",
+        "phone": "062-520-5905"
+      },
+      {
+        "name": "대표 모바일 상담",
+        "phone": "1800-4000"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동양저축은행 소비자금융팀 고객센터",
@@ -3561,7 +5496,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동양저축은행 소비자금융팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tyfsb.co.kr"
+    "web_url": "https://www.tyfsb.co.kr",
+    "subtasks": [
+      {
+        "name": "소비자금융팀 직통선",
+        "phone": "062-720-0813"
+      },
+      {
+        "name": "본점 영업부 수신",
+        "phone": "062-224-1111"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동원제일저축 고객관리팀 고객센터",
@@ -3579,7 +5528,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동원제일저축 고객관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dwjsb.co.kr"
+    "web_url": "https://www.dwjsb.co.kr",
+    "subtasks": [
+      {
+        "name": "고객관리팀 직통",
+        "phone": "070-5224-3571"
+      },
+      {
+        "name": "경남본사 수신 종합",
+        "phone": "070-5224-3572"
+      },
+      {
+        "name": "야간 금융사기 즉시신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "라온저축은행 관리팀 고객센터",
@@ -3597,7 +5560,21 @@ export const customerData = [
     "isVerified": true,
     "description": "라온저축은행 관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.raonsb.co.kr"
+    "web_url": "https://www.raonsb.co.kr",
+    "subtasks": [
+      {
+        "name": "관리팀 직통 상담",
+        "phone": "070-5020-2916"
+      },
+      {
+        "name": "대표 수신 종합 센터",
+        "phone": "053-663-5000"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "머스트삼일저축 경영관리팀 고객센터",
@@ -3615,7 +5592,21 @@ export const customerData = [
     "isVerified": true,
     "description": "머스트삼일저축 경영관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mustsamil.co.kr"
+    "web_url": "https://www.mustsamil.co.kr",
+    "subtasks": [
+      {
+        "name": "경영관리팀 직통",
+        "phone": "054-700-0321"
+      },
+      {
+        "name": "대표 수신 종합 콜",
+        "phone": "1544-5544"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "부림저축은행 여신관리팀 고객센터",
@@ -3633,7 +5624,21 @@ export const customerData = [
     "isVerified": true,
     "description": "부림저축은행 여신관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.burimsb.co.kr"
+    "web_url": "https://www.burimsb.co.kr",
+    "subtasks": [
+      {
+        "name": "여신관리팀 직통선",
+        "phone": "031-468-9045"
+      },
+      {
+        "name": "안양본점 대표 수신",
+        "phone": "031-468-9001"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "삼호저축은행 영업부관리팀 고객센터",
@@ -3651,7 +5656,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼호저축은행 영업부관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samhosb.co.kr"
+    "web_url": "https://www.samhosb.co.kr",
+    "subtasks": [
+      {
+        "name": "영업부관리팀",
+        "phone": "063-900-2070"
+      },
+      {
+        "name": "전주본점 대표 예금",
+        "phone": "063-900-2000"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "세람저축은행 리테일영업부 고객센터",
@@ -3669,7 +5688,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세람저축은행 리테일영업부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.seramsb.co.kr"
+    "web_url": "https://www.seramsb.co.kr",
+    "subtasks": [
+      {
+        "name": "리테일영업부",
+        "phone": "031-633-8051"
+      },
+      {
+        "name": "세람저축 대표 수신",
+        "phone": "1577-3800"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "스마트저축은행 기획지원팀 고객센터",
@@ -3687,7 +5720,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스마트저축은행 기획지원팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smartbank.co.kr"
+    "web_url": "https://www.smartbank.co.kr",
+    "subtasks": [
+      {
+        "name": "기획지원팀 직통선",
+        "phone": "070-4364-9666"
+      },
+      {
+        "name": "대표 수신 종합 센터",
+        "phone": "1577-3800"
+      },
+      {
+        "name": "야간 보이스피싱 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "스타저축은행 소비자금융부 고객센터",
@@ -3705,7 +5752,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스타저축은행 소비자금융부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.starsb.co.kr"
+    "web_url": "https://www.starsb.co.kr",
+    "subtasks": [
+      {
+        "name": "소비자금융부 직통",
+        "phone": "063-277-1311 (내선 2)"
+      },
+      {
+        "name": "전주지부 대표 수신",
+        "phone": "063-277-9308"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신한저축은행 리테일영업1부 고객센터",
@@ -3723,7 +5784,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한저축은행 리테일영업1부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhansb.co.kr"
+    "web_url": "https://www.shinhansb.co.kr",
+    "subtasks": [
+      {
+        "name": "리테일영업1부 직통",
+        "phone": "02-2622-4257"
+      },
+      {
+        "name": "신한저축 대표 종합",
+        "phone": "1644-7777"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "아산저축은행 영업부지원팀 고객센터",
@@ -3741,7 +5816,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아산저축은행 영업부지원팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.asansb.co.kr"
+    "web_url": "https://www.asansb.co.kr",
+    "subtasks": [
+      {
+        "name": "영업부지원팀",
+        "phone": "041-537-9070"
+      },
+      {
+        "name": "아산본점 대표 예금",
+        "phone": "041-537-9000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "안양저축은행 관리본부팀 고객센터",
@@ -3759,7 +5848,21 @@ export const customerData = [
     "isVerified": true,
     "description": "안양저축은행 관리본부팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aybank.co.kr"
+    "web_url": "https://www.aybank.co.kr",
+    "subtasks": [
+      {
+        "name": "관리본부팀 직통선",
+        "phone": "031-463-7876"
+      },
+      {
+        "name": "안양본점 대표 예금",
+        "phone": "031-463-7875"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "예가람저축 개인금융지원팀 고객센터",
@@ -3777,7 +5880,21 @@ export const customerData = [
     "isVerified": true,
     "description": "예가람저축 개인금융지원팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yegaramsb.co.kr"
+    "web_url": "https://www.yegaramsb.co.kr",
+    "subtasks": [
+      {
+        "name": "개인금융지원 직통",
+        "phone": "070-4570-5306"
+      },
+      {
+        "name": "예가람 대표 수신",
+        "phone": "1877-1000"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "유니온저축 영업부관리팀 고객센터",
@@ -3795,7 +5912,21 @@ export const customerData = [
     "isVerified": true,
     "description": "유니온저축 영업부관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.unionsb.co.kr"
+    "web_url": "https://www.unionsb.co.kr",
+    "subtasks": [
+      {
+        "name": "영업부관리팀",
+        "phone": "053-710-4529"
+      },
+      {
+        "name": "대구본사 대표 수신",
+        "phone": "053-256-4000"
+      },
+      {
+        "name": "야간 금융사기 안심신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "융창저축은행 심사관리팀 고객센터",
@@ -3813,7 +5944,21 @@ export const customerData = [
     "isVerified": true,
     "description": "융창저축은행 심사관리팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ycsb.co.kr"
+    "web_url": "https://www.ycsb.co.kr",
+    "subtasks": [
+      {
+        "name": "심사관리팀 직통선",
+        "phone": "02-2610-8049"
+      },
+      {
+        "name": "대표 수신 종합 센터",
+        "phone": "02-2685-0001"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "인성저축 여신심사관리부 고객센터",
@@ -3831,7 +5976,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인성저축 여신심사관리부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.insungbank.co.kr"
+    "web_url": "https://www.insungbank.co.kr",
+    "subtasks": [
+      {
+        "name": "여신심사관리부",
+        "phone": "032-860-3642"
+      },
+      {
+        "name": "인천본점 대표 예금",
+        "phone": "032-860-3644"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "인천저축 여신영업본부팀 고객센터",
@@ -3849,7 +6008,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인천저축 여신영업본부팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.icbank.co.kr"
+    "web_url": "https://www.icbank.co.kr",
+    "subtasks": [
+      {
+        "name": "여신영업본부팀",
+        "phone": "032-430-2159"
+      },
+      {
+        "name": "인천대표 수신 종합",
+        "phone": "032-421-2111"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "제이티저축 채권관리전담팀 고객센터",
@@ -3867,7 +6040,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제이티저축 채권관리전담팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jtsb.co.kr"
+    "web_url": "https://www.jtsb.co.kr",
+    "subtasks": [
+      {
+        "name": "채권관리전담팀",
+        "phone": "1644-0011"
+      },
+      {
+        "name": "JT저축 대표 수신",
+        "phone": "1644-0011 (내선 1)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "조은저축은행 경영기획지원 고객센터",
@@ -3885,7 +6072,21 @@ export const customerData = [
     "isVerified": true,
     "description": "조은저축은행 경영기획지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.choeunbank.com"
+    "web_url": "https://www.choeunbank.com",
+    "subtasks": [
+      {
+        "name": "경영기획지원팀",
+        "phone": "02-2260-0730"
+      },
+      {
+        "name": "대표 수신 종합 콜",
+        "phone": "1644-7200"
+      },
+      {
+        "name": "야간 보이스피싱 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신라저축 예신웰컴승계콜 고객센터",
@@ -3903,7 +6104,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신라저축 예신웰컴승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.welcomebank.co.kr"
+    "web_url": "https://www.welcomebank.co.kr",
+    "subtasks": [
+      {
+        "name": "웰컴 승계 대행콜",
+        "phone": "1661-0001"
+      },
+      {
+        "name": "디지털 뱅킹 공동",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 금융사기 안심신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "영남저축 예솔IBK승계콜 고객센터",
@@ -3921,7 +6136,21 @@ export const customerData = [
     "isVerified": true,
     "description": "영남저축 예솔IBK승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ibksb.co.kr"
+    "web_url": "https://www.ibksb.co.kr",
+    "subtasks": [
+      {
+        "name": "IBK 승계 대행콜",
+        "phone": "1522-7900"
+      },
+      {
+        "name": "채권 및 법무 관리부",
+        "phone": "051-791-4344"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "경기저축 예한솔KB승계콜 고객센터",
@@ -3939,7 +6168,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경기저축 예한솔KB승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbsavings.com"
+    "web_url": "https://www.kbsavings.com",
+    "subtasks": [
+      {
+        "name": "KB 승계 대행콜",
+        "phone": "1899-0900"
+      },
+      {
+        "name": "자체 채무조정 전용",
+        "phone": "02-2146-8200"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-600"
+      }
+    ]
   },
   {
     "name": "진흥저축 예한별신한승계콜 고객센터",
@@ -3957,7 +6200,21 @@ export const customerData = [
     "isVerified": true,
     "description": "진흥저축 예한별신한승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhansb.co.kr"
+    "web_url": "https://www.shinhansb.co.kr",
+    "subtasks": [
+      {
+        "name": "신한 승계 대행콜",
+        "phone": "1644-7777"
+      },
+      {
+        "name": "리테일 여신부 대환",
+        "phone": "02-2622-4257"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "토마토2저축 예솔IBK승계콜 고객센터",
@@ -3975,7 +6232,21 @@ export const customerData = [
     "isVerified": true,
     "description": "토마토2저축 예솔IBK승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ibksb.co.kr"
+    "web_url": "https://www.ibksb.co.kr",
+    "subtasks": [
+      {
+        "name": "IBK 승계 대행 종합",
+        "phone": "1522-7900"
+      },
+      {
+        "name": "채권 및 법무 관리부",
+        "phone": "051-791-4344"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한국저축 하나저축승계콜 고객센터",
@@ -3993,7 +6264,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국저축 하나저축승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanasavings.com"
+    "web_url": "https://www.hanasavings.com",
+    "subtasks": [
+      {
+        "name": "하나 승계 대행콜",
+        "phone": "1899-1122"
+      },
+      {
+        "name": "디지털 뱅킹 공동",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한주저축 예나래OK승계콜 고객센터",
@@ -4011,7 +6296,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한주저축 예나래OK승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.oksavingsbank.com"
+    "web_url": "https://www.oksavingsbank.com",
+    "subtasks": [
+      {
+        "name": "OK 승계 대행 종합",
+        "phone": "1899-7979"
+      },
+      {
+        "name": "소비자금융 전용 지원",
+        "phone": "02-6020-1798"
+      },
+      {
+        "name": "야간 금융사기 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "제일2저축 하나저축승계콜 고객센터",
@@ -4029,7 +6328,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제일2저축 하나저축승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanasavings.com"
+    "web_url": "https://www.hanasavings.com",
+    "subtasks": [
+      {
+        "name": "하나 승계 대행콜",
+        "phone": "1899-1122"
+      },
+      {
+        "name": "디지털 뱅킹 공동",
+        "phone": "1544-3637"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에이스저축 하나저축승계콜 고객센터",
@@ -4047,7 +6360,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에이스저축 하나저축승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanasavings.com"
+    "web_url": "https://www.hanasavings.com",
+    "subtasks": [
+      {
+        "name": "하나 승계 대행 종합",
+        "phone": "1899-1122"
+      },
+      {
+        "name": "예금 가조회 서비스",
+        "phone": "1899-1122 (내선 1)"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "제일저축 KB저축승계콜 고객센터",
@@ -4065,7 +6392,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제일저축 KB저축승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbsavings.com"
+    "web_url": "https://www.kbsavings.com",
+    "subtasks": [
+      {
+        "name": "KB 승계 대행콜",
+        "phone": "1899-0900"
+      },
+      {
+        "name": "KB저축 대표 수신",
+        "phone": "02-2146-8200"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-600"
+      }
+    ]
   },
   {
     "name": "토마토저축 신한저축승계콜 고객센터",
@@ -4083,7 +6424,21 @@ export const customerData = [
     "isVerified": true,
     "description": "토마토저축 신한저축승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhansb.co.kr"
+    "web_url": "https://www.shinhansb.co.kr",
+    "subtasks": [
+      {
+        "name": "신한 승계 대행콜",
+        "phone": "1644-7777"
+      },
+      {
+        "name": "신한저축 리테일부",
+        "phone": "02-2622-4257"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "프라임저축 BNK저축승계콜 고객센터",
@@ -4101,7 +6456,21 @@ export const customerData = [
     "isVerified": true,
     "description": "프라임저축 BNK저축승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bnksb.co.kr"
+    "web_url": "https://www.bnksb.co.kr",
+    "subtasks": [
+      {
+        "name": "BNK 승계 대행콜",
+        "phone": "051-713-1290"
+      },
+      {
+        "name": "BNK저축 대표 상담",
+        "phone": "1600-8585"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "파랑새저축 BNK저축승계콜 고객센터",
@@ -4119,7 +6488,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파랑새저축 BNK저축승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bnksb.co.kr"
+    "web_url": "https://www.bnksb.co.kr",
+    "subtasks": [
+      {
+        "name": "BNK 승계 대행 종합",
+        "phone": "051-713-1290"
+      },
+      {
+        "name": "대표 수신 종합 콜",
+        "phone": "1600-8585"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "부산저축 예솔IBK승계콜 고객센터",
@@ -4137,7 +6520,21 @@ export const customerData = [
     "isVerified": true,
     "description": "부산저축 예솔IBK승계콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ibksb.co.kr"
+    "web_url": "https://www.ibksb.co.kr",
+    "subtasks": [
+      {
+        "name": "IBK 승계 대행콜",
+        "phone": "1522-7900"
+      },
+      {
+        "name": "채권 및 법무 관리부",
+        "phone": "051-791-4344"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "SK텔레콤 고객센터",
@@ -4155,7 +6552,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK텔레콤 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tworld.co.kr"
+    "web_url": "https://www.tworld.co.kr",
+    "subtasks": [
+      {
+        "name": "이동전화 무료 고객센터",
+        "phone": "080-011-6000"
+      },
+      {
+        "name": "유선 인터넷/TV 고객센터",
+        "phone": "080-816-2000"
+      },
+      {
+        "name": "해외 로밍 긴급 지원",
+        "phone": "+82-2-6343-9000"
+      }
+    ]
   },
   {
     "name": "KT 고객센터",
@@ -4173,7 +6584,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KT 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kt.com"
+    "web_url": "https://www.kt.com",
+    "subtasks": [
+      {
+        "name": "인터넷/TV 무료 상담",
+        "phone": "080-000-1618"
+      },
+      {
+        "name": "외국인 고객 전용 데스크",
+        "phone": "080-448-0100"
+      },
+      {
+        "name": "KT 로밍 긴급 센터",
+        "phone": "+82-2-2190-0901"
+      }
+    ]
   },
   {
     "name": "LG U+ 고객센터",
@@ -4191,7 +6616,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG U+ 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "인터넷 및 IPTV 전용",
+        "phone": "101"
+      },
+      {
+        "name": "기업회선 전문 상담",
+        "phone": "1544-0001"
+      },
+      {
+        "name": "U+ 로밍 긴급 센터",
+        "phone": "+82-2-3416-7010"
+      }
+    ]
   },
   {
     "name": "LGU+ 이동전화 무료센터 고객센터",
@@ -4209,7 +6648,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LGU+ 이동전화 무료센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "모바일 요금 수신자부담",
+        "phone": "080-019-7000"
+      },
+      {
+        "name": "홈상품 수신자부담",
+        "phone": "080-854-7000"
+      },
+      {
+        "name": "LGU+ 기업 전용 수신자부담",
+        "phone": "080-807-0012"
+      }
+    ]
   },
   {
     "name": "LGU+ 인터넷가입 무료콜 고객센터",
@@ -4227,7 +6680,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LGU+ 인터넷가입 무료콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "홈상품 가입 전용 무료콜",
+        "phone": "080-854-7000"
+      },
+      {
+        "name": "LGU+ 기업 회선 가입",
+        "phone": "1544-0001"
+      },
+      {
+        "name": "설치 일정 변경 및 안내",
+        "phone": "101"
+      }
+    ]
   },
   {
     "name": "KT 인터넷스카이라이프 대표 고객센터",
@@ -4245,7 +6712,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KT 인터넷스카이라이프 대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skylife.co.kr"
+    "web_url": "https://www.skylife.co.kr",
+    "subtasks": [
+      {
+        "name": "신규 가입 안내 데스크",
+        "phone": "1588-3002"
+      },
+      {
+        "name": "알뜰폰 모바일 개통 센터",
+        "phone": "1588-3002 (내선 4)"
+      },
+      {
+        "name": "해외 및 단체 가입 문의",
+        "phone": "02-2003-3114"
+      }
+    ]
   },
   {
     "name": "SK브로드밴드 기업고객대표 고객센터",
@@ -4263,7 +6744,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK브로드밴드 기업고객대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skbroadband.com"
+    "web_url": "https://www.skbroadband.com",
+    "subtasks": [
+      {
+        "name": "기업 고객 대표 상담",
+        "phone": "1600-0108"
+      },
+      {
+        "name": "소상공인 결합 할인 지원",
+        "phone": "106"
+      },
+      {
+        "name": "지능망 및 비즈 다이렉트",
+        "phone": "1566-0012"
+      }
+    ]
   },
   {
     "name": "세종텔레콤 고객상담센터 고객센터",
@@ -4281,7 +6776,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세종텔레콤 고객상담센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sejongtelecom.net"
+    "web_url": "https://www.sejongtelecom.net",
+    "subtasks": [
+      {
+        "name": "국제전화 00365 지원",
+        "phone": "1566-3650"
+      },
+      {
+        "name": "지능망 및 전국대표 개통",
+        "phone": "1688-1000"
+      },
+      {
+        "name": "공식 팩스 민원 수신선",
+        "phone": "02-3415-3100"
+      }
+    ]
   },
   {
     "name": "KCT 한국케이블텔레콤 대표 고객센터",
@@ -4299,7 +6808,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KCT 한국케이블텔레콤 대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kctgroup.co.kr"
+    "web_url": "https://www.kctgroup.co.kr",
+    "subtasks": [
+      {
+        "name": "알뜰폰 티플러스 전용",
+        "phone": "1877-9114"
+      },
+      {
+        "name": "인터넷 및 유선전화 장애",
+        "phone": "1877-9100"
+      },
+      {
+        "name": "수신자부담 개통 상담",
+        "phone": "080-818-1114"
+      }
+    ]
   },
   {
     "name": "드림라인 기업회선지원센터 고객센터",
@@ -4317,7 +6840,21 @@ export const customerData = [
     "isVerified": true,
     "description": "드림라인 기업회선지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dreamline.co.kr"
+    "web_url": "https://www.dreamline.co.kr",
+    "subtasks": [
+      {
+        "name": "기업 전용 장애 기술부",
+        "phone": "1566-0051"
+      },
+      {
+        "name": "드림라인 본사 대표",
+        "phone": "02-6007-6000"
+      },
+      {
+        "name": "전용회선 신규 청약처",
+        "phone": "1566-0051 (내선 1)"
+      }
+    ]
   },
   {
     "name": "세종텔레콤 기술지원데스크 고객센터",
@@ -4335,7 +6872,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세종텔레콤 기술지원데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sejongtelecom.net"
+    "web_url": "https://www.sejongtelecom.net",
+    "subtasks": [
+      {
+        "name": "기술지원 데스크",
+        "phone": "1688-1000"
+      },
+      {
+        "name": "웹/클라우드 장애 복구",
+        "phone": "1688-1000 (내선 3)"
+      },
+      {
+        "name": "본사 유선 긴급 연락망",
+        "phone": "02-3415-3000"
+      }
+    ]
   },
   {
     "name": "온세텔레콤 기업안심콜 고객센터",
@@ -4353,7 +6904,21 @@ export const customerData = [
     "isVerified": true,
     "description": "온세텔레콤 기업안심콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sejongtelecom.net"
+    "web_url": "https://www.sejongtelecom.net",
+    "subtasks": [
+      {
+        "name": "통합 기업 안심콜",
+        "phone": "1688-1000"
+      },
+      {
+        "name": "세종 국제전화 지원",
+        "phone": "1566-3650"
+      },
+      {
+        "name": "지능망 전용 청약실",
+        "phone": "1688-1000 (내선 2)"
+      }
+    ]
   },
   {
     "name": "SK텔레콤 유선지원센터 고객센터",
@@ -4371,7 +6936,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK텔레콤 유선지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tworld.co.kr"
+    "web_url": "https://www.tworld.co.kr",
+    "subtasks": [
+      {
+        "name": "유선 고객 대표 상담",
+        "phone": "1600-2000"
+      },
+      {
+        "name": "수신자부담 유선 고장",
+        "phone": "080-816-2000"
+      },
+      {
+        "name": "SKT 모바일 전용 상담",
+        "phone": "1599-0011"
+      }
+    ]
   },
   {
     "name": "LGU+ 유선 장애상담콜 고객센터",
@@ -4389,7 +6968,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LGU+ 유선 장애상담콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "유선 장애 대표 상담",
+        "phone": "101"
+      },
+      {
+        "name": "수신자부담 홈 장애",
+        "phone": "080-854-7000"
+      },
+      {
+        "name": "외국인 유선 장애 대응",
+        "phone": "080-448-0100"
+      }
+    ]
   },
   {
     "name": "SK브로드밴드 장애안심지원 고객센터",
@@ -4407,7 +7000,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK브로드밴드 장애안심지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skbroadband.com"
+    "web_url": "https://www.skbroadband.com",
+    "subtasks": [
+      {
+        "name": "홈 가계 고장 신고",
+        "phone": "106"
+      },
+      {
+        "name": "수신자부담 장애 지원",
+        "phone": "080-816-2000"
+      },
+      {
+        "name": "기업 고객 기술 지원",
+        "phone": "1600-0108"
+      }
+    ]
   },
   {
     "name": "KT 스카이라이프 고장신고 고객센터",
@@ -4425,7 +7032,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KT 스카이라이프 고장신고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skylife.co.kr"
+    "web_url": "https://www.skylife.co.kr",
+    "subtasks": [
+      {
+        "name": "고장 및 수리 예약",
+        "phone": "1588-3002"
+      },
+      {
+        "name": "스카이라이프 모바일 개통",
+        "phone": "1588-3002 (내선 4)"
+      },
+      {
+        "name": "단체 회선 전산 지원",
+        "phone": "02-2003-3114"
+      }
+    ]
   },
   {
     "name": "SK텔레콤 로밍긴급 지원콜 고객센터",
@@ -4443,7 +7064,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK텔레콤 로밍긴급 지원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tworld.co.kr"
+    "web_url": "https://www.tworld.co.kr",
+    "subtasks": [
+      {
+        "name": "로밍 긴급 센터(해외직통)",
+        "phone": "+82-2-6343-9000"
+      },
+      {
+        "name": "국내 요금 로밍 상담",
+        "phone": "1599-0011"
+      },
+      {
+        "name": "수신자부담 유선 고장",
+        "phone": "080-816-2000"
+      }
+    ]
   },
   {
     "name": "LGU+ 로밍안내 긴급데스크 고객센터",
@@ -4461,7 +7096,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LGU+ 로밍안내 긴급데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "로밍 긴급 데스크",
+        "phone": "+82-2-3416-7010"
+      },
+      {
+        "name": "국내 전화 로밍 문의",
+        "phone": "1544-0010"
+      },
+      {
+        "name": "수신자부담 일반 상담",
+        "phone": "080-019-7000"
+      }
+    ]
   },
   {
     "name": "SK텔레콤 분실정지 긴급콜 고객센터",
@@ -4479,7 +7128,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK텔레콤 분실정지 긴급콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tworld.co.kr"
+    "web_url": "https://www.tworld.co.kr",
+    "subtasks": [
+      {
+        "name": "분실 정지 긴급콜",
+        "phone": "1599-0011"
+      },
+      {
+        "name": "해외 로밍 유실 지원",
+        "phone": "+82-2-6343-9000"
+      },
+      {
+        "name": "무선 데이터 긴급 정지",
+        "phone": "080-011-6000"
+      }
+    ]
   },
   {
     "name": "LGU+ 정지신고 긴급콜 고객센터",
@@ -4497,7 +7160,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LGU+ 정지신고 긴급콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "정지 및 분실 긴급콜",
+        "phone": "1544-0010"
+      },
+      {
+        "name": "수신자부담 유실 지원",
+        "phone": "080-019-7000"
+      },
+      {
+        "name": "LGU+ 로밍지 실시간 차단",
+        "phone": "+82-2-3416-7010"
+      }
+    ]
   },
   {
     "name": "SK브로드밴드 전용회선장애 고객센터",
@@ -4515,7 +7192,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK브로드밴드 전용회선장애 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skbroadband.com"
+    "web_url": "https://www.skbroadband.com",
+    "subtasks": [
+      {
+        "name": "전용회선 장애 지원",
+        "phone": "1566-0012"
+      },
+      {
+        "name": "소상공인 비즈 인터넷",
+        "phone": "1600-0108"
+      },
+      {
+        "name": "수신자부담 유선 고장",
+        "phone": "080-816-2000"
+      }
+    ]
   },
   {
     "name": "KT텔레캅 보안고객센터",
@@ -4533,7 +7224,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KT텔레캅 보안고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kttelecop.co.kr"
+    "web_url": "https://www.kttelecop.co.kr",
+    "subtasks": [
+      {
+        "name": "보안 오작동 및 긴급출동",
+        "phone": "1588-0112"
+      },
+      {
+        "name": "KT텔레캅 신규 가입",
+        "phone": "1588-0112 (내선 1)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2112-7000"
+      }
+    ]
   },
   {
     "name": "LGU+ 에스원 안심스마트폰 고객센터",
@@ -4551,7 +7256,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LGU+ 에스원 안심스마트폰 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s1.co.kr"
+    "web_url": "https://www.s1.co.kr",
+    "subtasks": [
+      {
+        "name": "안심 스마트폰 전용",
+        "phone": "1599-7114"
+      },
+      {
+        "name": "에스원 대표 가입 문의",
+        "phone": "1544-3112"
+      },
+      {
+        "name": "에스원 야간 긴급 출동",
+        "phone": "1588-3112"
+      }
+    ]
   },
   {
     "name": "KT 에스원 가입문의콜 고객센터",
@@ -4569,7 +7288,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KT 에스원 가입문의콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s1.co.kr"
+    "web_url": "https://www.s1.co.kr",
+    "subtasks": [
+      {
+        "name": "에스원 종합 가입 문의",
+        "phone": "1544-3112"
+      },
+      {
+        "name": "안심 스마트폰 전용",
+        "phone": "1599-7114"
+      },
+      {
+        "name": "에스원 야간 관제 센터",
+        "phone": "1588-3112"
+      }
+    ]
   },
   {
     "name": "SKT 에스원 가입문의콜 고객센터",
@@ -4587,7 +7320,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SKT 에스원 가입문의콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s1.co.kr"
+    "web_url": "https://www.s1.co.kr",
+    "subtasks": [
+      {
+        "name": "에스원 가입 문의 센터",
+        "phone": "1544-3112"
+      },
+      {
+        "name": "안심 스마트폰 전용",
+        "phone": "1599-7114"
+      },
+      {
+        "name": "야간 보안 신호 차단",
+        "phone": "1588-3112"
+      }
+    ]
   },
   {
     "name": "SK브로드밴드 지능망 대표 고객센터",
@@ -4605,7 +7352,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK브로드밴드 지능망 대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skbroadband.com"
+    "web_url": "https://www.skbroadband.com",
+    "subtasks": [
+      {
+        "name": "지능망 대표 고객선",
+        "phone": "1566-0012"
+      },
+      {
+        "name": "기업 고객 서비스부",
+        "phone": "1600-0108"
+      },
+      {
+        "name": "수신자부담 유선 고장",
+        "phone": "080-816-2000"
+      }
+    ]
   },
   {
     "name": "LGU+ 전국대표번호 개통처 고객센터",
@@ -4623,7 +7384,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LGU+ 전국대표번호 개통처 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "전국대표 개통처",
+        "phone": "1544-0001"
+      },
+      {
+        "name": "수신자부담 가입 무료",
+        "phone": "080-807-0012"
+      },
+      {
+        "name": "LGU+ 기업 장애 상담",
+        "phone": "1544-0010"
+      }
+    ]
   },
   {
     "name": "세종텔레콤 지능망가입센터 고객센터",
@@ -4641,7 +7416,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세종텔레콤 지능망가입센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sejongtelecom.net"
+    "web_url": "https://www.sejongtelecom.net",
+    "subtasks": [
+      {
+        "name": "지능망 가입 센터",
+        "phone": "1688-1000"
+      },
+      {
+        "name": "국제전화 요금 정산",
+        "phone": "1566-3650"
+      },
+      {
+        "name": "세종텔레콤 본사 팩스",
+        "phone": "02-3415-3100"
+      }
+    ]
   },
   {
     "name": "SK7모바일 종합지원고객센터",
@@ -4659,7 +7448,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK7모바일 종합지원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sk7mobile.com"
+    "web_url": "https://www.sk7mobile.com",
+    "subtasks": [
+      {
+        "name": "7모바일 유료 센터",
+        "phone": "1599-3508"
+      },
+      {
+        "name": "개통 전용 수신자부담",
+        "phone": "080-899-0999"
+      },
+      {
+        "name": "휴대폰 분실/도난 24시",
+        "phone": "1599-3508 (내선 9)"
+      }
+    ]
   },
   {
     "name": "SK7모바일 유심가입 개통콜 고객센터",
@@ -4677,7 +7480,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK7모바일 유심가입 개통콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sk7mobile.com"
+    "web_url": "https://www.sk7mobile.com",
+    "subtasks": [
+      {
+        "name": "유심 가입 개통 센터",
+        "phone": "1599-3508"
+      },
+      {
+        "name": "수신자부담 개통 무료",
+        "phone": "080-899-0999"
+      },
+      {
+        "name": "7모바일 도난 정지",
+        "phone": "1599-3508 (내선 9)"
+      }
+    ]
   },
   {
     "name": "kt M모바일 통합고객센터",
@@ -4695,7 +7512,21 @@ export const customerData = [
     "isVerified": true,
     "description": "kt M모바일 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ktmmobile.com"
+    "web_url": "https://www.ktmmobile.com",
+    "subtasks": [
+      {
+        "name": "ktM모바일 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "M모바일 유료 직통",
+        "phone": "1899-5000"
+      },
+      {
+        "name": "야간 도난/도용 분실신고",
+        "phone": "1899-5000 (내선 9)"
+      }
+    ]
   },
   {
     "name": "U+ 유모바일 대표고객센터",
@@ -4713,7 +7544,21 @@ export const customerData = [
     "isVerified": true,
     "description": "U+ 유모바일 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.uplusumobile.com"
+    "web_url": "https://www.uplusumobile.com",
+    "subtasks": [
+      {
+        "name": "유모바일 유료 대표선",
+        "phone": "1644-5353"
+      },
+      {
+        "name": "개통 전용 수신자부담",
+        "phone": "080-800-1635"
+      },
+      {
+        "name": "야간 도난 및 유실 신고",
+        "phone": "1644-5353 (내선 9)"
+      }
+    ]
   },
   {
     "name": "헬로모바일 대표고객센터",
@@ -4731,7 +7576,21 @@ export const customerData = [
     "isVerified": true,
     "description": "헬로모바일 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lghellovision.net"
+    "web_url": "https://www.lghellovision.net",
+    "subtasks": [
+      {
+        "name": "헬로모바일 대표 헬프",
+        "phone": "1855-1144"
+      },
+      {
+        "name": "KT망 알뜰폰 전담선",
+        "phone": "1855-1000"
+      },
+      {
+        "name": "SKT망 알뜰폰 전담선",
+        "phone": "1855-2114"
+      }
+    ]
   },
   {
     "name": "프리티 SKT 알뜰폰센터 고객센터",
@@ -4749,7 +7608,21 @@ export const customerData = [
     "isVerified": true,
     "description": "프리티 SKT 알뜰폰센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.freet.co.kr"
+    "web_url": "https://www.freet.co.kr",
+    "subtasks": [
+      {
+        "name": "프리티 SKT망 직통선",
+        "phone": "1588-3615"
+      },
+      {
+        "name": "수신자부담 유심 개통",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "프리티 KT망 제휴센터",
+        "phone": "1577-4551"
+      }
+    ]
   },
   {
     "name": "프리티 KT 알뜰폰센터 고객센터",
@@ -4767,7 +7640,21 @@ export const customerData = [
     "isVerified": true,
     "description": "프리티 KT 알뜰폰센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.freet.co.kr"
+    "web_url": "https://www.freet.co.kr",
+    "subtasks": [
+      {
+        "name": "프리티 KT망 직통선",
+        "phone": "1577-4551"
+      },
+      {
+        "name": "수신자부담 KT망 개통",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "프리티 LGU+망 제휴",
+        "phone": "1588-1635"
+      }
+    ]
   },
   {
     "name": "프리티 LGU+ 알뜰폰센터 고객센터",
@@ -4785,7 +7672,21 @@ export const customerData = [
     "isVerified": true,
     "description": "프리티 LGU+ 알뜰폰센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.freet.co.kr"
+    "web_url": "https://www.freet.co.kr",
+    "subtasks": [
+      {
+        "name": "프리티 LGU+망 직통",
+        "phone": "1588-1635"
+      },
+      {
+        "name": "개통 전용 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "프리티 SKT망 제휴센터",
+        "phone": "1588-3615"
+      }
+    ]
   },
   {
     "name": "LG헬로비전 SKT망 고객센터",
@@ -4803,7 +7704,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG헬로비전 SKT망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lghellovision.net"
+    "web_url": "https://www.lghellovision.net",
+    "subtasks": [
+      {
+        "name": "헬로모바일 SKT전용선",
+        "phone": "1855-2114"
+      },
+      {
+        "name": "KT망 전용 알뜰폰선",
+        "phone": "1855-1000"
+      },
+      {
+        "name": "헬로 TV/인터넷 고객선",
+        "phone": "1855-1000"
+      }
+    ]
   },
   {
     "name": "LG헬로비전 KT망 고객센터",
@@ -4821,7 +7736,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG헬로비전 KT망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lghellovision.net"
+    "web_url": "https://www.lghellovision.net",
+    "subtasks": [
+      {
+        "name": "헬로모바일 KT전용선",
+        "phone": "1855-1000"
+      },
+      {
+        "name": "SKT망 전용 알뜰폰선",
+        "phone": "1855-2114"
+      },
+      {
+        "name": "LGU+망 알뜰폰 통합",
+        "phone": "1855-1144"
+      }
+    ]
   },
   {
     "name": "LG헬로비전 LGU+망 고객센터",
@@ -4839,7 +7768,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG헬로비전 LGU+망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lghellovision.net"
+    "web_url": "https://www.lghellovision.net",
+    "subtasks": [
+      {
+        "name": "헬로모바일 LGU+전용선",
+        "phone": "1855-1144"
+      },
+      {
+        "name": "KT망 알뜰폰 고객선",
+        "phone": "1855-1000"
+      },
+      {
+        "name": "SKT망 알뜰폰 고객선",
+        "phone": "1855-2114"
+      }
+    ]
   },
   {
     "name": "에스원 안심폰 SKT 전용콜 고객센터",
@@ -4857,7 +7800,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에스원 안심폰 SKT 전용콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s1.co.kr"
+    "web_url": "https://www.s1.co.kr",
+    "subtasks": [
+      {
+        "name": "에스원 안심폰 전용",
+        "phone": "1599-7114"
+      },
+      {
+        "name": "에스원 보안 가입 대표",
+        "phone": "1544-3112"
+      },
+      {
+        "name": "야간 보안 관제실",
+        "phone": "1588-3112"
+      }
+    ]
   },
   {
     "name": "에스원 안심폰 KT 전용콜 고객센터",
@@ -4875,7 +7832,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에스원 안심폰 KT 전용콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s1.co.kr"
+    "web_url": "https://www.s1.co.kr",
+    "subtasks": [
+      {
+        "name": "에스원 안심폰 고객선",
+        "phone": "1599-7114"
+      },
+      {
+        "name": "에스원 종합 가입 문의",
+        "phone": "1544-3112"
+      },
+      {
+        "name": "야간 출동 및 긴급 차단",
+        "phone": "1588-3112"
+      }
+    ]
   },
   {
     "name": "에스원 안심폰 LGU+ 전용콜 고객센터",
@@ -4893,7 +7864,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에스원 안심폰 LGU+ 전용콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s1.co.kr"
+    "web_url": "https://www.s1.co.kr",
+    "subtasks": [
+      {
+        "name": "에스원 안심폰 통합",
+        "phone": "1599-7114"
+      },
+      {
+        "name": "보안 세콤 가입 전용",
+        "phone": "1544-3112"
+      },
+      {
+        "name": "야간 출동 긴급 신고",
+        "phone": "1588-3112"
+      }
+    ]
   },
   {
     "name": "에넥스텔레콤 KT 무료데스크 고객센터",
@@ -4911,7 +7896,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에넥스텔레콤 KT 무료데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.annextele.com"
+    "web_url": "https://www.annextele.com",
+    "subtasks": [
+      {
+        "name": "KT망 전용 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "A모바일 유료 직통선",
+        "phone": "1588-1635"
+      },
+      {
+        "name": "LGU+망 요금 상담실",
+        "phone": "1688-1635"
+      }
+    ]
   },
   {
     "name": "에넥스텔레콤 LGU+ 일반콜 고객센터",
@@ -4929,7 +7928,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에넥스텔레콤 LGU+ 일반콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.annextele.com"
+    "web_url": "https://www.annextele.com",
+    "subtasks": [
+      {
+        "name": "LGU+망 전용 일반콜",
+        "phone": "1688-1635"
+      },
+      {
+        "name": "KT망 수신자부담 무료",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "A모바일 본사 팩스부",
+        "phone": "02-3485-8000"
+      }
+    ]
   },
   {
     "name": "한국케이블텔레콤 SKT 전용콜 고객센터",
@@ -4947,7 +7960,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국케이블텔레콤 SKT 전용콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kctgroup.co.kr"
+    "web_url": "https://www.kctgroup.co.kr",
+    "subtasks": [
+      {
+        "name": "KCT 대표 전용콜",
+        "phone": "1877-9100"
+      },
+      {
+        "name": "티플러스 SKT망 직통",
+        "phone": "1877-9114"
+      },
+      {
+        "name": "개통 전용 수신자부담",
+        "phone": "080-818-1114"
+      }
+    ]
   },
   {
     "name": "한국케이블텔레콤 SKT 무상콜 고객센터",
@@ -4965,7 +7992,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국케이블텔레콤 SKT 무상콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kctgroup.co.kr"
+    "web_url": "https://www.kctgroup.co.kr",
+    "subtasks": [
+      {
+        "name": "KCT 수신자부담 무료",
+        "phone": "080-818-1114"
+      },
+      {
+        "name": "티플러스 SKT망 유료",
+        "phone": "1877-9114"
+      },
+      {
+        "name": "KCT 인터넷 지능망",
+        "phone": "1877-9100"
+      }
+    ]
   },
   {
     "name": "한국케이블텔레콤 KT 무상콜 고객센터",
@@ -4983,7 +8024,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국케이블텔레콤 KT 무상콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kctgroup.co.kr"
+    "web_url": "https://www.kctgroup.co.kr",
+    "subtasks": [
+      {
+        "name": "KCT 수신자부담 무료",
+        "phone": "080-818-1114"
+      },
+      {
+        "name": "티플러스 KT망 유료",
+        "phone": "1877-9114"
+      },
+      {
+        "name": "KCT 시내 유선 기술",
+        "phone": "1877-9100"
+      }
+    ]
   },
   {
     "name": "큰사람커넥트 SKT 전용콜 고객센터",
@@ -5001,7 +8056,21 @@ export const customerData = [
     "isVerified": true,
     "description": "큰사람커넥트 SKT 전용콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyagi.co.kr"
+    "web_url": "https://www.eyagi.co.kr",
+    "subtasks": [
+      {
+        "name": "큰사람 SKT 전용콜",
+        "phone": "1588-6220"
+      },
+      {
+        "name": "KT망 전용 알뜰폰선",
+        "phone": "1688-9300"
+      },
+      {
+        "name": "LGU+망 전용 알뜰폰선",
+        "phone": "1670-4300"
+      }
+    ]
   },
   {
     "name": "큰사람커넥트 KT 전용콜 고객센터",
@@ -5019,7 +8088,21 @@ export const customerData = [
     "isVerified": true,
     "description": "큰사람커넥트 KT 전용콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyagi.co.kr"
+    "web_url": "https://www.eyagi.co.kr",
+    "subtasks": [
+      {
+        "name": "큰사람 KT 전용콜",
+        "phone": "1688-9300"
+      },
+      {
+        "name": "SKT망 전용 알뜰폰선",
+        "phone": "1588-6220"
+      },
+      {
+        "name": "LGU+망 전용 알뜰폰선",
+        "phone": "1670-4300"
+      }
+    ]
   },
   {
     "name": "큰사람커넥트 LGU+ 전용콜 고객센터",
@@ -5037,7 +8120,21 @@ export const customerData = [
     "isVerified": true,
     "description": "큰사람커넥트 LGU+ 전용콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyagi.co.kr"
+    "web_url": "https://www.eyagi.co.kr",
+    "subtasks": [
+      {
+        "name": "큰사람 LGU+ 전용콜",
+        "phone": "1670-4300"
+      },
+      {
+        "name": "SKT망 전용 알뜰폰선",
+        "phone": "1588-6220"
+      },
+      {
+        "name": "KT망 전용 알뜰폰선",
+        "phone": "1688-9300"
+      }
+    ]
   },
   {
     "name": "인스코비 SKT망 지원센터 고객센터",
@@ -5055,7 +8152,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인스코비 SKT망 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.freet.co.kr"
+    "web_url": "https://www.freet.co.kr",
+    "subtasks": [
+      {
+        "name": "인스코비 SKT전용선",
+        "phone": "1588-3615"
+      },
+      {
+        "name": "무료 개통 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "인스코비 KT전용선",
+        "phone": "1577-4551"
+      }
+    ]
   },
   {
     "name": "인스코비 KT망 지원센터 고객센터",
@@ -5073,7 +8184,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인스코비 KT망 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.freet.co.kr"
+    "web_url": "https://www.freet.co.kr",
+    "subtasks": [
+      {
+        "name": "인스코비 KT전용선",
+        "phone": "1577-4551"
+      },
+      {
+        "name": "무료 개통 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "인스코비 LGU+전용선",
+        "phone": "1588-1635"
+      }
+    ]
   },
   {
     "name": "인스코비 LGU+망 지원센터 고객센터",
@@ -5091,7 +8216,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인스코비 LGU+망 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.freet.co.kr"
+    "web_url": "https://www.freet.co.kr",
+    "subtasks": [
+      {
+        "name": "인스코비 LGU+전용",
+        "phone": "1588-1635"
+      },
+      {
+        "name": "개통 전용 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "인스코비 SKT전용선",
+        "phone": "1588-3615"
+      }
+    ]
   },
   {
     "name": "아이즈모바일 SKT 가입센터 고객센터",
@@ -5109,7 +8248,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아이즈모바일 SKT 가입센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyes.co.kr"
+    "web_url": "https://www.eyes.co.kr",
+    "subtasks": [
+      {
+        "name": "아이즈 SKT 전용콜",
+        "phone": "1800-6100"
+      },
+      {
+        "name": "KT망 알뜰폰 가입선",
+        "phone": "1800-6200"
+      },
+      {
+        "name": "LGU+망 알뜰폰 가입선",
+        "phone": "1800-2400"
+      }
+    ]
   },
   {
     "name": "아이즈모바일 KT 가입지원 고객센터",
@@ -5127,7 +8280,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아이즈모바일 KT 가입지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyes.co.kr"
+    "web_url": "https://www.eyes.co.kr",
+    "subtasks": [
+      {
+        "name": "아이즈 KT 가입지원",
+        "phone": "1800-6200"
+      },
+      {
+        "name": "SKT망 가입 센터",
+        "phone": "1800-6100"
+      },
+      {
+        "name": "LGU+망 가입 센터",
+        "phone": "1800-2400"
+      }
+    ]
   },
   {
     "name": "아이즈모바일 LGU+ 가입센터 고객센터",
@@ -5145,7 +8312,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아이즈모바일 LGU+ 가입센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyes.co.kr"
+    "web_url": "https://www.eyes.co.kr",
+    "subtasks": [
+      {
+        "name": "아이즈 LGU+ 가입선",
+        "phone": "1800-2400"
+      },
+      {
+        "name": "SKT망 개통 상담",
+        "phone": "1800-6100"
+      },
+      {
+        "name": "KT망 개통 상담",
+        "phone": "1800-6200"
+      }
+    ]
   },
   {
     "name": "모빙 SKT 알뜰폰 지원센터 고객센터",
@@ -5163,7 +8344,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모빙 SKT 알뜰폰 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mobing.co.kr"
+    "web_url": "https://www.mobing.co.kr",
+    "subtasks": [
+      {
+        "name": "모빙 SKT 지원센터",
+        "phone": "1899-3666"
+      },
+      {
+        "name": "KT망 가입 지원선",
+        "phone": "1666-9970"
+      },
+      {
+        "name": "LGU+망 가입 지원선",
+        "phone": "1688-2906"
+      }
+    ]
   },
   {
     "name": "모빙 KT 알뜰폰 지원센터 고객센터",
@@ -5181,7 +8376,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모빙 KT 알뜰폰 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mobing.co.kr"
+    "web_url": "https://www.mobing.co.kr",
+    "subtasks": [
+      {
+        "name": "모빙 KT 지원센터",
+        "phone": "1666-9970"
+      },
+      {
+        "name": "SKT망 가입 지원선",
+        "phone": "1899-3666"
+      },
+      {
+        "name": "LGU+망 가입 지원선",
+        "phone": "1688-2906"
+      }
+    ]
   },
   {
     "name": "모빙 LGU+ 알뜰폰 지원센터 고객센터",
@@ -5199,7 +8408,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모빙 LGU+ 알뜰폰 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mobing.co.kr"
+    "web_url": "https://www.mobing.co.kr",
+    "subtasks": [
+      {
+        "name": "모빙 LGU+ 지원선",
+        "phone": "1688-2906"
+      },
+      {
+        "name": "SKT망 가입 지원선",
+        "phone": "1899-3666"
+      },
+      {
+        "name": "KT망 가입 지원선",
+        "phone": "1666-9970"
+      }
+    ]
   },
   {
     "name": "티플러스 SKT망 지원센터 고객센터",
@@ -5217,7 +8440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "티플러스 SKT망 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tplusmobile.com"
+    "web_url": "https://www.tplusmobile.com",
+    "subtasks": [
+      {
+        "name": "티플러스 SKT망 직통",
+        "phone": "1877-9114"
+      },
+      {
+        "name": "LGU+망 제휴 전용선",
+        "phone": "1811-9114"
+      },
+      {
+        "name": "무료 개통 수신자부담",
+        "phone": "080-818-1114"
+      }
+    ]
   },
   {
     "name": "티플러스 LGU+망 지원센터 고객센터",
@@ -5235,7 +8472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "티플러스 LGU+망 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tplusmobile.com"
+    "web_url": "https://www.tplusmobile.com",
+    "subtasks": [
+      {
+        "name": "티플러스 LGU+ 직통",
+        "phone": "1811-9114"
+      },
+      {
+        "name": "SKT망 제휴 전용선",
+        "phone": "1877-9114"
+      },
+      {
+        "name": "개통 전용 수신자부담",
+        "phone": "080-818-1114"
+      }
+    ]
   },
   {
     "name": "위너스텔 KT망 알뜰폰콜 고객센터",
@@ -5253,7 +8504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "위너스텔 KT망 알뜰폰콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wellmobile.co.kr"
+    "web_url": "https://www.wellmobile.co.kr",
+    "subtasks": [
+      {
+        "name": "웰모바일 대표 상담",
+        "phone": "1688-9114"
+      },
+      {
+        "name": "위너스텔 본사 행정",
+        "phone": "02-1688-9114"
+      },
+      {
+        "name": "야간 분실도난 안심콜",
+        "phone": "1688-9114 (내선 9)"
+      }
+    ]
   },
   {
     "name": "세종네트웍스 스노우맨 알뜰 고객센터",
@@ -5271,7 +8536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세종네트웍스 스노우맨 알뜰 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.snowman.co.kr"
+    "web_url": "https://www.snowman.co.kr",
+    "subtasks": [
+      {
+        "name": "스노우맨 대표 상담",
+        "phone": "1688-9300"
+      },
+      {
+        "name": "수신자부담 유심 상담",
+        "phone": "080-880-9300"
+      },
+      {
+        "name": "세종네트웍스 대표선",
+        "phone": "1688-1000"
+      }
+    ]
   },
   {
     "name": "여유텔레콤 LGU+망 고객센터",
@@ -5289,7 +8568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "여유텔레콤 LGU+망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yeoyoutelecom.com"
+    "web_url": "https://www.yeoyoutelecom.com",
+    "subtasks": [
+      {
+        "name": "여유 LGU+ 일반콜",
+        "phone": "1661-5511"
+      },
+      {
+        "name": "KT망 전용 알뜰폰선",
+        "phone": "1661-5577"
+      },
+      {
+        "name": "야간 도난 및 유실 신고",
+        "phone": "1661-5511 (내선 9)"
+      }
+    ]
   },
   {
     "name": "에이프러스모바일 LGU+망 고객센터",
@@ -5307,7 +8600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에이프러스모바일 LGU+망 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aplusmobile.co.kr"
+    "web_url": "https://www.aplusmobile.co.kr",
+    "subtasks": [
+      {
+        "name": "에이프러스 LGU+ 전용",
+        "phone": "1833-2550"
+      },
+      {
+        "name": "수신자부담 유심 가입",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "야간 분실 긴급 정지",
+        "phone": "1833-2550 (내선 9)"
+      }
+    ]
   },
   {
     "name": "한국통신 알뜰유심 가입지원 고객센터",
@@ -5325,7 +8632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국통신 알뜰유심 가입지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ktmmobile.com"
+    "web_url": "https://www.ktmmobile.com",
+    "subtasks": [
+      {
+        "name": "알뜰유심 유료 직통선",
+        "phone": "1899-5000"
+      },
+      {
+        "name": "KT망 무료 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "야간 도난 및 유실 신고",
+        "phone": "1899-5000 (내선 9)"
+      }
+    ]
   },
   {
     "name": "마이월드 KT망 알뜰폰콜 고객센터",
@@ -5343,7 +8664,21 @@ export const customerData = [
     "isVerified": true,
     "description": "마이월드 KT망 알뜰폰콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.myworldmobile.com"
+    "web_url": "https://www.myworldmobile.com",
+    "subtasks": [
+      {
+        "name": "마이월드 KT전용선",
+        "phone": "1600-4100"
+      },
+      {
+        "name": "LGU+망 제휴 전용선",
+        "phone": "1670-4300"
+      },
+      {
+        "name": "무료 개통 수신자부담",
+        "phone": "080-850-1114"
+      }
+    ]
   },
   {
     "name": "마이월드 LGU+망 알뜰폰콜 고객센터",
@@ -5361,7 +8696,21 @@ export const customerData = [
     "isVerified": true,
     "description": "마이월드 LGU+망 알뜰폰콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.myworldmobile.com"
+    "web_url": "https://www.myworldmobile.com",
+    "subtasks": [
+      {
+        "name": "마이월드 LGU+전용",
+        "phone": "1600-4100"
+      },
+      {
+        "name": "KT망 제휴 전용선",
+        "phone": "1600-4100"
+      },
+      {
+        "name": "수신자부담 유심 가입",
+        "phone": "080-850-1114"
+      }
+    ]
   },
   {
     "name": "한국케이블 알뜰웹 개통센터 고객센터",
@@ -5379,7 +8728,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국케이블 알뜰웹 개통센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kctgroup.co.kr"
+    "web_url": "https://www.kctgroup.co.kr",
+    "subtasks": [
+      {
+        "name": "알뜰웹 통합 개통선",
+        "phone": "1877-9100"
+      },
+      {
+        "name": "수신자부담 무상콜",
+        "phone": "080-818-1114"
+      },
+      {
+        "name": "시내 유선 회선 기술",
+        "phone": "1877-9100 (내선 2)"
+      }
+    ]
   },
   {
     "name": "이야기알뜰폰 SKT 가입센터 고객센터",
@@ -5397,7 +8760,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이야기알뜰폰 SKT 가입센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyagi.co.kr"
+    "web_url": "https://www.eyagi.co.kr",
+    "subtasks": [
+      {
+        "name": "이야기 SKT 가입선",
+        "phone": "1588-6220"
+      },
+      {
+        "name": "KT망 가입전용 데스크",
+        "phone": "1688-9300"
+      },
+      {
+        "name": "LGU+망 가입전용 데스크",
+        "phone": "1670-4300"
+      }
+    ]
   },
   {
     "name": "이야기알뜰폰 KT 가입센터 고객센터",
@@ -5415,7 +8792,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이야기알뜰폰 KT 가입센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyagi.co.kr"
+    "web_url": "https://www.eyagi.co.kr",
+    "subtasks": [
+      {
+        "name": "이야기 KT 가입선",
+        "phone": "1688-9300"
+      },
+      {
+        "name": "SKT망 가입전용 데스크",
+        "phone": "1588-6220"
+      },
+      {
+        "name": "LGU+망 가입전용 데스크",
+        "phone": "1670-4300"
+      }
+    ]
   },
   {
     "name": "이야기알뜰폰 LGU+ 가입센터 고객센터",
@@ -5433,7 +8824,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이야기알뜰폰 LGU+ 가입센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eyagi.co.kr"
+    "web_url": "https://www.eyagi.co.kr",
+    "subtasks": [
+      {
+        "name": "이야기 LGU+ 가입선",
+        "phone": "1670-4300"
+      },
+      {
+        "name": "SKT망 가입전용 데스크",
+        "phone": "1588-6220"
+      },
+      {
+        "name": "KT망 가입전용 데스크",
+        "phone": "1688-9300"
+      }
+    ]
   },
   {
     "name": "스마트로 VAN 대리점안내 고객센터",
@@ -5451,7 +8856,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스마트로 VAN 대리점안내 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smartro.co.kr"
+    "web_url": "https://www.smartro.co.kr",
+    "subtasks": [
+      {
+        "name": "스마트로 VAN 대리점",
+        "phone": "1661-0555"
+      },
+      {
+        "name": "스마트로 본사 대표",
+        "phone": "02-1661-0555"
+      },
+      {
+        "name": "가맹점 포스 장애 접수",
+        "phone": "1661-0555 (내선 3)"
+      }
+    ]
   },
   {
     "name": "프리티 가입제휴 문의데스크 고객센터",
@@ -5469,7 +8888,21 @@ export const customerData = [
     "isVerified": true,
     "description": "프리티 가입제휴 문의데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.freet.co.kr"
+    "web_url": "https://www.freet.co.kr",
+    "subtasks": [
+      {
+        "name": "프리티 가입제휴 데스크",
+        "phone": "1588-3615"
+      },
+      {
+        "name": "무료 개통 수신자부담",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "프리티 LGU+ 전용선",
+        "phone": "1588-1635"
+      }
+    ]
   },
   {
     "name": "KT스카이라이프 모바일 개통 고객센터",
@@ -5487,7 +8920,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KT스카이라이프 모바일 개통 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skylife.co.kr"
+    "web_url": "https://www.skylife.co.kr",
+    "subtasks": [
+      {
+        "name": "모바일 개통/가입 센터",
+        "phone": "1588-3002"
+      },
+      {
+        "name": "위성 TV/인터넷 고장",
+        "phone": "1588-3002 (내선 3)"
+      },
+      {
+        "name": "단체 개통 비즈니스",
+        "phone": "02-2003-3114"
+      }
+    ]
   },
   {
     "name": "모요 고객센터",
@@ -5505,7 +8952,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모요 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.moyo.apm.co.kr"
+    "web_url": "https://www.moyo.apm.co.kr",
+    "subtasks": [
+      {
+        "name": "모요 고객 온라인 채팅",
+        "phone": "앱 내 일대일 채팅"
+      },
+      {
+        "name": "모요 이메일 기술 지원",
+        "phone": "support@moyo.co.kr"
+      },
+      {
+        "name": "모요 본사 기업 제휴",
+        "phone": "02-6953-6232"
+      }
+    ]
   },
   {
     "name": "KT 알파쇼핑 고객센터",
@@ -5523,7 +8984,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KT 알파쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ktalphashopping.co.kr"
+    "web_url": "https://www.ktalphashopping.co.kr",
+    "subtasks": [
+      {
+        "name": "KT알파 쇼핑 주문 센터",
+        "phone": "1800-1111"
+      },
+      {
+        "name": "적립금 및 모바일 앱",
+        "phone": "1800-1111 (내선 2)"
+      },
+      {
+        "name": "수신자부담 유선 고장",
+        "phone": "080-816-2000"
+      }
+    ]
   },
   {
     "name": "엘지유플러스 TV 고객센터",
@@ -5541,7 +9016,21 @@ export const customerData = [
     "isVerified": true,
     "description": "엘지유플러스 TV 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lguplus.com"
+    "web_url": "https://www.lguplus.com",
+    "subtasks": [
+      {
+        "name": "U+ TV/인터넷 고객선",
+        "phone": "101"
+      },
+      {
+        "name": "수신자부담 가계 장애",
+        "phone": "080-854-7000"
+      },
+      {
+        "name": "외국인 TV 장애 접수",
+        "phone": "080-448-0100"
+      }
+    ]
   },
   {
     "name": "케이티 티비 인터넷 고객센터",
@@ -5559,7 +9048,21 @@ export const customerData = [
     "isVerified": true,
     "description": "케이티 티비 인터넷 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kt.com"
+    "web_url": "https://www.kt.com",
+    "subtasks": [
+      {
+        "name": "KT TV/인터넷 통합",
+        "phone": "100"
+      },
+      {
+        "name": "수신자부담 유선 고장",
+        "phone": "080-000-1618"
+      },
+      {
+        "name": "올레tv 단체 가입 센터",
+        "phone": "1588-0010"
+      }
+    ]
   },
   {
     "name": "삼성전자서비스 고객센터",
@@ -5577,7 +9080,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성전자서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungsvc.co.kr"
+    "web_url": "https://www.samsungsvc.co.kr",
+    "subtasks": [
+      {
+        "name": "가전제품 출장 접수",
+        "phone": "1588-3366"
+      },
+      {
+        "name": "모바일/태블릿 기술 지원",
+        "phone": "1588-3366 (내선 1)"
+      },
+      {
+        "name": "대형 B2B 비즈니스 상담",
+        "phone": "02-1588-3366"
+      }
+    ]
   },
   {
     "name": "LG전자 고객센터",
@@ -5595,7 +9112,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG전자 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lge.co.kr"
+    "web_url": "https://www.lge.co.kr",
+    "subtasks": [
+      {
+        "name": "출장서비스 및 고장 접수",
+        "phone": "1544-7777"
+      },
+      {
+        "name": "소모품 및 자재 구매",
+        "phone": "1544-7777 (내선 2)"
+      },
+      {
+        "name": "B2B 전문 솔루션",
+        "phone": "1544-8777"
+      }
+    ]
   },
   {
     "name": "코웨이 고객센터",
@@ -5613,7 +9144,21 @@ export const customerData = [
     "isVerified": true,
     "description": "코웨이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.coway.co.kr"
+    "web_url": "https://www.coway.co.kr",
+    "subtasks": [
+      {
+        "name": "렌탈 가입 및 수납 변경",
+        "phone": "1588-5200"
+      },
+      {
+        "name": "제품 고장 및 출장 신청",
+        "phone": "1588-5200 (내선 3)"
+      },
+      {
+        "name": "코웨이 비즈니스 기업지원",
+        "phone": "1544-5100"
+      }
+    ]
   },
   {
     "name": "다이슨 코리아 고객센터",
@@ -5631,7 +9176,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다이슨 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dyson.co.kr"
+    "web_url": "https://www.dyson.co.kr",
+    "subtasks": [
+      {
+        "name": "다이슨 헬프라인 직통",
+        "phone": "1588-4253"
+      },
+      {
+        "name": "수신자부담 가전 상담",
+        "phone": "080-300-4253"
+      },
+      {
+        "name": "부품 및 액세서리 문의",
+        "phone": "1588-4253 (내선 2)"
+      }
+    ]
   },
   {
     "name": "쿠쿠 고객센터",
@@ -5649,7 +9208,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쿠쿠 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cuckoo.co.kr"
+    "web_url": "https://www.cuckoo.co.kr",
+    "subtasks": [
+      {
+        "name": "쿠쿠 가전 및 밥솥 서비스",
+        "phone": "1588-8899"
+      },
+      {
+        "name": "쿠쿠 홈시스 렌탈 케어",
+        "phone": "1577-0010"
+      },
+      {
+        "name": "소모품 개별 주문 센터",
+        "phone": "1588-8899 (내선 3)"
+      }
+    ]
   },
   {
     "name": "바디프랜드 고객센터",
@@ -5667,7 +9240,21 @@ export const customerData = [
     "isVerified": true,
     "description": "바디프랜드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bodyfriend.co.kr"
+    "web_url": "https://www.bodyfriend.co.kr",
+    "subtasks": [
+      {
+        "name": "안마의자 A/S 종합",
+        "phone": "02-3448-8980"
+      },
+      {
+        "name": "안마의자 이전 및 설치",
+        "phone": "02-3448-8981"
+      },
+      {
+        "name": "바디프랜드 렌탈 수납",
+        "phone": "02-3448-8982"
+      }
+    ]
   },
   {
     "name": "위니아딤채 고객센터",
@@ -5685,7 +9272,21 @@ export const customerData = [
     "isVerified": true,
     "description": "위니아딤채 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.winiasvc.co.kr"
+    "web_url": "https://www.winiasvc.co.kr",
+    "subtasks": [
+      {
+        "name": "딤채 및 가전 출장수리",
+        "phone": "1588-9588"
+      },
+      {
+        "name": "노후 김치냉장고 자진리콜",
+        "phone": "1588-9588 (내선 9)"
+      },
+      {
+        "name": "위니아 소모품 정품몰",
+        "phone": "1588-9588 (내선 2)"
+      }
+    ]
   },
   {
     "name": "한성컴퓨터 고객센터",
@@ -5703,7 +9304,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한성컴퓨터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.monsterlabs.co.kr"
+    "web_url": "https://www.monsterlabs.co.kr",
+    "subtasks": [
+      {
+        "name": "노트북/데스크톱 AS",
+        "phone": "02-3272-1002"
+      },
+      {
+        "name": "모니터/주변기기 기술",
+        "phone": "02-3272-1002 (내선 2)"
+      },
+      {
+        "name": "용산 내방 서비스 센터",
+        "phone": "02-3272-1002"
+      }
+    ]
   },
   {
     "name": "청호나이스 고객센터",
@@ -5721,7 +9336,21 @@ export const customerData = [
     "isVerified": true,
     "description": "청호나이스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chunghonice.co.kr"
+    "web_url": "https://www.chunghonice.co.kr",
+    "subtasks": [
+      {
+        "name": "청호 렌탈 및 수납 관리",
+        "phone": "1588-2290"
+      },
+      {
+        "name": "출장 수리 및 정기 점검",
+        "phone": "1588-2290 (내선 3)"
+      },
+      {
+        "name": "청호나이스 기업 전용",
+        "phone": "1544-1188"
+      }
+    ]
   },
   {
     "name": "쿠첸 고객센터",
@@ -5739,7 +9368,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쿠첸 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cuchen.com"
+    "web_url": "https://www.cuchen.com",
+    "subtasks": [
+      {
+        "name": "주방 가전 출장 및 수리",
+        "phone": "1577-2797"
+      },
+      {
+        "name": "소모품 고무 패킹 몰",
+        "phone": "1577-2797 (내선 2)"
+      },
+      {
+        "name": "B2B 대량 조리기 기술",
+        "phone": "02-1577-2797"
+      }
+    ]
   },
   {
     "name": "경동나비엔 고객센터",
@@ -5757,7 +9400,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경동나비엔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kdnavien.co.kr"
+    "web_url": "https://www.kdnavien.co.kr",
+    "subtasks": [
+      {
+        "name": "보일러/온수 고장 접수",
+        "phone": "1588-1144"
+      },
+      {
+        "name": "온수매트 전문 상담실",
+        "phone": "1588-1144 (내선 2)"
+      },
+      {
+        "name": "보일러 정기 가입 케어",
+        "phone": "1588-1144"
+      }
+    ]
   },
   {
     "name": "필립스 코리아 고객센터",
@@ -5775,7 +9432,21 @@ export const customerData = [
     "isVerified": true,
     "description": "필립스 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.philips.co.kr"
+    "web_url": "https://www.philips.co.kr",
+    "subtasks": [
+      {
+        "name": "수신자부담 개인 가전",
+        "phone": "080-600-6600"
+      },
+      {
+        "name": "유선전화 가전 상담",
+        "phone": "02-709-1200"
+      },
+      {
+        "name": "커피머신 기술 전용선",
+        "phone": "080-600-6600 (내선 3)"
+      }
+    ]
   },
   {
     "name": "샤오미 코리아 고객센터",
@@ -5793,7 +9464,21 @@ export const customerData = [
     "isVerified": true,
     "description": "샤오미 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mi.com/kr"
+    "web_url": "https://www.mi.com/kr",
+    "subtasks": [
+      {
+        "name": "샤오미 국내 통합 AS",
+        "phone": "1566-8106"
+      },
+      {
+        "name": "로봇청소기 수리 지부",
+        "phone": "1566-8106 (내선 2)"
+      },
+      {
+        "name": "샤오미 한국 공식 본사",
+        "phone": "02-1566-8106"
+      }
+    ]
   },
   {
     "name": "위닉스 고객센터",
@@ -5811,7 +9496,21 @@ export const customerData = [
     "isVerified": true,
     "description": "위닉스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.winix.com"
+    "web_url": "https://www.winix.com",
+    "subtasks": [
+      {
+        "name": "뽀송 제습기 AS 전용",
+        "phone": "1544-5081"
+      },
+      {
+        "name": "공기청정기 정품 필터몰",
+        "phone": "1544-5081 (내선 2)"
+      },
+      {
+        "name": "위닉스 텀블 건조기팀",
+        "phone": "1544-5081 (내선 3)"
+      }
+    ]
   },
   {
     "name": "귀뚜라미 고객센터",
@@ -5829,7 +9528,21 @@ export const customerData = [
     "isVerified": true,
     "description": "귀뚜라미 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.krb.co.kr"
+    "web_url": "https://www.krb.co.kr",
+    "subtasks": [
+      {
+        "name": "보일러 고장 접수실",
+        "phone": "1588-9000"
+      },
+      {
+        "name": "카본매트 전문 케어",
+        "phone": "1588-9000 (내선 2)"
+      },
+      {
+        "name": "귀뚜라미 홈시스 기술",
+        "phone": "1588-9000"
+      }
+    ]
   },
   {
     "name": "교원 웰스 고객센터",
@@ -5847,7 +9560,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교원 웰스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyowonwells.com"
+    "web_url": "https://www.kyowonwells.com",
+    "subtasks": [
+      {
+        "name": "웰스 렌탈 대표 상담",
+        "phone": "1588-4113"
+      },
+      {
+        "name": "출장 AS 및 필터 교체",
+        "phone": "1588-4113 (내선 3)"
+      },
+      {
+        "name": "웰스 렌탈 수납 관리",
+        "phone": "1588-4113 (내선 2)"
+      }
+    ]
   },
   {
     "name": "린나이 고객센터",
@@ -5865,7 +9592,21 @@ export const customerData = [
     "isVerified": true,
     "description": "린나이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.rinnai.co.kr"
+    "web_url": "https://www.rinnai.co.kr",
+    "subtasks": [
+      {
+        "name": "린나이 AS 고장 접수",
+        "phone": "1544-3651"
+      },
+      {
+        "name": "보일러 이전/설치 기술",
+        "phone": "1544-3651 (내선 2)"
+      },
+      {
+        "name": "수업용 업소용 오븐팀",
+        "phone": "1544-3651 (내선 4)"
+      }
+    ]
   },
   {
     "name": "소니코리아 고객센터",
@@ -5883,7 +9624,21 @@ export const customerData = [
     "isVerified": true,
     "description": "소니코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sony.co.kr"
+    "web_url": "https://www.sony.co.kr",
+    "subtasks": [
+      {
+        "name": "카메라/오디오 수리부",
+        "phone": "1588-0911"
+      },
+      {
+        "name": "플레이스테이션 하드웨어",
+        "phone": "02-6677-7771"
+      },
+      {
+        "name": "소니 공식 액세서리 쇼핑",
+        "phone": "1588-0911"
+      }
+    ]
   },
   {
     "name": "세라젬 고객센터",
@@ -5901,7 +9656,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세라젬 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ceragem.co.kr"
+    "web_url": "https://www.ceragem.co.kr",
+    "subtasks": [
+      {
+        "name": "세라젬 의료기기 A/S",
+        "phone": "1577-5570"
+      },
+      {
+        "name": "파우제 안마의자 전용",
+        "phone": "1577-5570 (내선 2)"
+      },
+      {
+        "name": "웰카페 체험 신청 데스크",
+        "phone": "1577-5570"
+      }
+    ]
   },
   {
     "name": "신일전자 고객센터",
@@ -5919,7 +9688,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신일전자 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinil.co.kr"
+    "web_url": "https://www.shinil.co.kr",
+    "subtasks": [
+      {
+        "name": "신일 선풍기/가전 AS",
+        "phone": "1577-3300"
+      },
+      {
+        "name": "신일 펫가전 퍼비 전용",
+        "phone": "1577-3300 (내선 2)"
+      },
+      {
+        "name": "본사 수신 대표 종합",
+        "phone": "02-6303-0001"
+      }
+    ]
   },
   {
     "name": "발뮤다 코리아 고객센터",
@@ -5937,7 +9720,21 @@ export const customerData = [
     "isVerified": true,
     "description": "발뮤다 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.balmuda.co.kr"
+    "web_url": "https://www.balmuda.co.kr",
+    "subtasks": [
+      {
+        "name": "발뮤다 가전 수리부",
+        "phone": "02-710-4100 (내선 2)"
+      },
+      {
+        "name": "한국리모텍 본사 대표",
+        "phone": "02-710-4100"
+      },
+      {
+        "name": "정품 부속 기기 소모품",
+        "phone": "02-710-4100 (내선 3)"
+      }
+    ]
   },
   {
     "name": "브라운(가전) 고객센터",
@@ -5955,7 +9752,21 @@ export const customerData = [
     "isVerified": true,
     "description": "브라운(가전) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.braun.kr"
+    "web_url": "https://www.braun.kr",
+    "subtasks": [
+      {
+        "name": "브라운 가전 AS 직통",
+        "phone": "1577-5571"
+      },
+      {
+        "name": "오랄비 전동칫솔 AS",
+        "phone": "080-023-3333"
+      },
+      {
+        "name": "피앤지 소비자 민원실",
+        "phone": "080-023-3333"
+      }
+    ]
   },
   {
     "name": "드롱기 코리아 고객센터",
@@ -5973,7 +9784,21 @@ export const customerData = [
     "isVerified": true,
     "description": "드롱기 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.delonghi.com/ko-kr"
+    "web_url": "https://www.delonghi.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "드롱기 수신자부담",
+        "phone": "080-488-7711"
+      },
+      {
+        "name": "드롱기 클럽 멤버십",
+        "phone": "080-488-7711 (내선 2)"
+      },
+      {
+        "name": "가전 정품 부품 쇼핑",
+        "phone": "02-2051-2244"
+      }
+    ]
   },
   {
     "name": "테팔(그룹세브) 고객센터",
@@ -5991,7 +9816,21 @@ export const customerData = [
     "isVerified": true,
     "description": "테팔(그룹세브) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tefal.co.kr"
+    "web_url": "https://www.tefal.co.kr",
+    "subtasks": [
+      {
+        "name": "테팔 수신자부담 무료",
+        "phone": "080-733-7878"
+      },
+      {
+        "name": "테팔 유선 일반 상담",
+        "phone": "02-317-0050"
+      },
+      {
+        "name": "세브코리아 부품 대리점",
+        "phone": "080-733-7878"
+      }
+    ]
   },
   {
     "name": "롯데정보통신 기술고객센터",
@@ -6009,7 +9848,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데정보통신 기술고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ldcc.co.kr"
+    "web_url": "https://www.ldcc.co.kr",
+    "subtasks": [
+      {
+        "name": "롯데 IT 통합 헬프데스크",
+        "phone": "02-2626-6114"
+      },
+      {
+        "name": "롯데정보통신 가상 메일",
+        "phone": "02-2626-6114 (내선 2)"
+      },
+      {
+        "name": "지능형 클라우드 전산",
+        "phone": "02-2626-6114"
+      }
+    ]
   },
   {
     "name": "SK C&C 통합기술지원센터 고객센터",
@@ -6027,7 +9880,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK C&C 통합기술지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skcc.co.kr"
+    "web_url": "https://www.skcc.co.kr",
+    "subtasks": [
+      {
+        "name": "통합 기술지원 데스크",
+        "phone": "02-6400-0114"
+      },
+      {
+        "name": "SK C&C 분당 본사",
+        "phone": "02-6400-2114"
+      },
+      {
+        "name": "지능형 ERP 시스템 지원",
+        "phone": "02-6400-0114"
+      }
+    ]
   },
   {
     "name": "쌍용정보통신 기술지원센터 고객센터",
@@ -6045,7 +9912,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쌍용정보통신 기술지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sicc.co.kr"
+    "web_url": "https://www.sicc.co.kr",
+    "subtasks": [
+      {
+        "name": "쌍용 기술지원 센터",
+        "phone": "02-3434-7114"
+      },
+      {
+        "name": "본사 기획 및 세무실",
+        "phone": "02-3434-7114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3434-7009"
+      }
+    ]
   },
   {
     "name": "애플코리아 고객지원콜 고객센터",
@@ -6063,7 +9944,21 @@ export const customerData = [
     "isVerified": true,
     "description": "애플코리아 고객지원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.apple.com/ko"
+    "web_url": "https://www.apple.com/ko",
+    "subtasks": [
+      {
+        "name": "애플 공식 무상 지원콜",
+        "phone": "080-333-4000"
+      },
+      {
+        "name": "애플 스토어 여의도 지부",
+        "phone": "080-500-0013"
+      },
+      {
+        "name": "애플 가로수길 매장",
+        "phone": "080-500-0013"
+      }
+    ]
   },
   {
     "name": "HP코리아 기술고객센터",
@@ -6081,7 +9976,21 @@ export const customerData = [
     "isVerified": true,
     "description": "HP코리아 기술고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hp.com/kr-ko"
+    "web_url": "https://www.hp.com/kr-ko",
+    "subtasks": [
+      {
+        "name": "HP 개인 기술 고객센터",
+        "phone": "1588-3003"
+      },
+      {
+        "name": "HP 기업 법인 서버 상담",
+        "phone": "1588-3003 (내선 3)"
+      },
+      {
+        "name": "해외 직구 리퍼 확인실",
+        "phone": "1588-3003"
+      }
+    ]
   },
   {
     "name": "한국레노버 서비스고객콜 고객센터",
@@ -6099,7 +10008,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국레노버 서비스고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lenovo.com/kr/ko"
+    "web_url": "https://www.lenovo.com/kr/ko",
+    "subtasks": [
+      {
+        "name": "레노버 통합 서비스",
+        "phone": "1670-0077"
+      },
+      {
+        "name": "싱크패드 비즈니스 전용",
+        "phone": "1670-0077 (내선 2)"
+      },
+      {
+        "name": "강남 테크센터 직접 연결",
+        "phone": "02-1670-0077"
+      }
+    ]
   },
   {
     "name": "델코리아 개인고객서비스 고객센터",
@@ -6117,7 +10040,21 @@ export const customerData = [
     "isVerified": true,
     "description": "델코리아 개인고객서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dell.com/ko-kr"
+    "web_url": "https://www.dell.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "델 개인 고객 무료콜",
+        "phone": "080-850-5050"
+      },
+      {
+        "name": "델 기업 솔루션 유료선",
+        "phone": "02-2194-6000"
+      },
+      {
+        "name": "델 아웃렛 리퍼 확인실",
+        "phone": "080-850-5050"
+      }
+    ]
   },
   {
     "name": "TG삼보 서비스대표콜 고객센터",
@@ -6135,7 +10072,21 @@ export const customerData = [
     "isVerified": true,
     "description": "TG삼보 서비스대표콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.trigem.co.kr"
+    "web_url": "https://www.trigem.co.kr",
+    "subtasks": [
+      {
+        "name": "삼보 대표 서비스",
+        "phone": "1588-3582"
+      },
+      {
+        "name": "삼보 홈 전산 가습부",
+        "phone": "1588-3582 (내선 2)"
+      },
+      {
+        "name": "단체 및 법인 영업 지원",
+        "phone": "02-1588-3582"
+      }
+    ]
   },
   {
     "name": "캐논코리아 고객상담센터 고객센터",
@@ -6153,7 +10104,21 @@ export const customerData = [
     "isVerified": true,
     "description": "캐논코리아 고객상담센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.canon-ci.co.kr"
+    "web_url": "https://www.canon-ci.co.kr",
+    "subtasks": [
+      {
+        "name": "캐논 가전 및 카메라",
+        "phone": "1533-3355"
+      },
+      {
+        "name": "사무용 프린터 전용선",
+        "phone": "1588-2500"
+      },
+      {
+        "name": "정품 등록 리리콜 안내",
+        "phone": "1533-3355 (내선 4)"
+      }
+    ]
   },
   {
     "name": "한국앱손 고객상담센터 고객센터",
@@ -6171,7 +10136,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국앱손 고객상담센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.epson.co.kr"
+    "web_url": "https://www.epson.co.kr",
+    "subtasks": [
+      {
+        "name": "엡손 프린터/복합기",
+        "phone": "1566-5499"
+      },
+      {
+        "name": "엡손 프로젝터 가전",
+        "phone": "1566-5499 (내선 2)"
+      },
+      {
+        "name": "본사 수신 대표 종합",
+        "phone": "02-553-3001"
+      }
+    ]
   },
   {
     "name": "신일전자 대표서비스센터 고객센터",
@@ -6189,7 +10168,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신일전자 대표서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinil.co.kr"
+    "web_url": "https://www.shinil.co.kr",
+    "subtasks": [
+      {
+        "name": "신일 대표 서비스",
+        "phone": "1577-3300"
+      },
+      {
+        "name": "선풍기 전용 부품 몰",
+        "phone": "1577-3300 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6303-0020"
+      }
+    ]
   },
   {
     "name": "바디프랜드 안심케어센터 고객센터",
@@ -6207,7 +10200,21 @@ export const customerData = [
     "isVerified": true,
     "description": "바디프랜드 안심케어센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bodyfriend.co.kr"
+    "web_url": "https://www.bodyfriend.co.kr",
+    "subtasks": [
+      {
+        "name": "안심케어 가죽 소독",
+        "phone": "02-3448-8980 (내선 2)"
+      },
+      {
+        "name": "안마의자 수리 종합",
+        "phone": "02-3448-8980"
+      },
+      {
+        "name": "침대 프레임 이전설치",
+        "phone": "02-3448-8981"
+      }
+    ]
   },
   {
     "name": "휴테크 산업고객케어센터 고객센터",
@@ -6225,7 +10232,21 @@ export const customerData = [
     "isVerified": true,
     "description": "휴테크 산업고객케어센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.i-hutech.com"
+    "web_url": "https://www.i-hutech.com",
+    "subtasks": [
+      {
+        "name": "휴테크 안마의자 AS",
+        "phone": "1599-7775"
+      },
+      {
+        "name": "휴테크 렌탈 수납부",
+        "phone": "1599-7775 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "브라운 한국서비스센터 고객센터",
@@ -6243,7 +10264,21 @@ export const customerData = [
     "isVerified": true,
     "description": "브라운 한국서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.braun.kr"
+    "web_url": "https://www.braun.kr",
+    "subtasks": [
+      {
+        "name": "브라운 서비스 종합",
+        "phone": "1577-5571"
+      },
+      {
+        "name": "오랄비 전동 칫솔 AS",
+        "phone": "080-023-3333"
+      },
+      {
+        "name": "피앤지 소비자 민원",
+        "phone": "080-023-3333"
+      }
+    ]
   },
   {
     "name": "오랄비 고객케어지원콜 고객센터",
@@ -6261,7 +10296,21 @@ export const customerData = [
     "isVerified": true,
     "description": "오랄비 고객케어지원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.oralb.co.kr"
+    "web_url": "https://www.oralb.co.kr",
+    "subtasks": [
+      {
+        "name": "오랄비 수신자부담",
+        "phone": "080-023-3333"
+      },
+      {
+        "name": "브라운 면도기 AS",
+        "phone": "1577-5571"
+      },
+      {
+        "name": "오랄비 교체모 대리점",
+        "phone": "080-023-3333"
+      }
+    ]
   },
   {
     "name": "네스프레소 클럽 고객센터",
@@ -6279,7 +10328,21 @@ export const customerData = [
     "isVerified": true,
     "description": "네스프레소 클럽 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nespresso.com/kr"
+    "web_url": "https://www.nespresso.com/kr",
+    "subtasks": [
+      {
+        "name": "네스프레소 수신자부담",
+        "phone": "080-734-3111"
+      },
+      {
+        "name": "버추오 머신 기술 지원",
+        "phone": "080-734-3111 (내선 2)"
+      },
+      {
+        "name": "네스프레소 기업 전용",
+        "phone": "080-734-3112"
+      }
+    ]
   },
   {
     "name": "돌체구스토 클럽 고객콜 고객센터",
@@ -6297,7 +10360,21 @@ export const customerData = [
     "isVerified": true,
     "description": "돌체구스토 클럽 고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dolce-gusto.co.kr"
+    "web_url": "https://www.dolce-gusto.co.kr",
+    "subtasks": [
+      {
+        "name": "돌체구스토 수신자부담",
+        "phone": "080-234-0070"
+      },
+      {
+        "name": "네스카페 정기 구독팀",
+        "phone": "080-234-0070 (내선 2)"
+      },
+      {
+        "name": "네스프레소 클럽 제휴",
+        "phone": "080-734-3111"
+      }
+    ]
   },
   {
     "name": "유라 커피머신 고객콜 고객센터",
@@ -6315,7 +10392,21 @@ export const customerData = [
     "isVerified": true,
     "description": "유라 커피머신 고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jura.co.kr"
+    "web_url": "https://www.jura.co.kr",
+    "subtasks": [
+      {
+        "name": "유라 가정용 머신 AS",
+        "phone": "1644-1357"
+      },
+      {
+        "name": "유라 업소용/상업용 AS",
+        "phone": "1644-1357 (내선 2)"
+      },
+      {
+        "name": "알라카르테 정품 원두",
+        "phone": "02-3452-2125"
+      }
+    ]
   },
   {
     "name": "로보락 한국서비스센터 고객센터",
@@ -6333,7 +10424,21 @@ export const customerData = [
     "isVerified": true,
     "description": "로보락 한국서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.roborock.co.kr"
+    "web_url": "https://www.roborock.co.kr",
+    "subtasks": [
+      {
+        "name": "로보락 국내 통합 AS",
+        "phone": "1566-0928"
+      },
+      {
+        "name": "아이나비 위탁 수리 안내",
+        "phone": "1577-4242"
+      },
+      {
+        "name": "공식 소모품 세트 쇼핑",
+        "phone": "1566-0928"
+      }
+    ]
   },
   {
     "name": "에브리봇 로봇청소기 서비스 고객센터",
@@ -6351,7 +10456,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에브리봇 로봇청소기 서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.everybot.co.kr"
+    "web_url": "https://www.everybot.co.kr",
+    "subtasks": [
+      {
+        "name": "에브리봇 물걸레 AS",
+        "phone": "1577-6215"
+      },
+      {
+        "name": "에브리봇 쓰리스핀 지원",
+        "phone": "1577-6215 (내선 2)"
+      },
+      {
+        "name": "공식 배터리/소모품 구매",
+        "phone": "1577-6215"
+      }
+    ]
   },
   {
     "name": "에코백스 로봇서비스센터 고객센터",
@@ -6369,7 +10488,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에코백스 로봇서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ecovacs.com/kr"
+    "web_url": "https://www.ecovacs.com/kr",
+    "subtasks": [
+      {
+        "name": "에코백스 국내 수리 종합",
+        "phone": "1588-3774"
+      },
+      {
+        "name": "여의도 테크지부 예약",
+        "phone": "1588-3774 (내선 2)"
+      },
+      {
+        "name": "정품 먼지봉투 소모품",
+        "phone": "1588-3774"
+      }
+    ]
   },
   {
     "name": "브라더인터내셔널 테크콜 고객센터",
@@ -6387,7 +10520,21 @@ export const customerData = [
     "isVerified": true,
     "description": "브라더인터내셔널 테크콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.brother-korea.com"
+    "web_url": "https://www.brother-korea.com",
+    "subtasks": [
+      {
+        "name": "브라더 테크콜 종합",
+        "phone": "1577-3340"
+      },
+      {
+        "name": "라벨프린터 기술 전담",
+        "phone": "1577-3340 (내선 3)"
+      },
+      {
+        "name": "본사 B2B 솔루션 사업",
+        "phone": "02-518-3340"
+      }
+    ]
   },
   {
     "name": "후지필름 서비스센터 고객센터",
@@ -6405,7 +10552,21 @@ export const customerData = [
     "isVerified": true,
     "description": "후지필름 서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.fujifilm-korea.co.kr"
+    "web_url": "https://www.fujifilm-korea.co.kr",
+    "subtasks": [
+      {
+        "name": "후지필름 카메라 AS",
+        "phone": "1577-4793"
+      },
+      {
+        "name": "인스탁스 폴라로이드 AS",
+        "phone": "02-3272-1002"
+      },
+      {
+        "name": "압구정 직영 서비스센터",
+        "phone": "02-1577-4793"
+      }
+    ]
   },
   {
     "name": "닌텐도 한국고객지원콜 고객센터",
@@ -6423,7 +10584,21 @@ export const customerData = [
     "isVerified": true,
     "description": "닌텐도 한국고객지원콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nintendo.co.kr"
+    "web_url": "https://www.nintendo.co.kr",
+    "subtasks": [
+      {
+        "name": "닌텐도 고객 지원 센터",
+        "phone": "1670-9900"
+      },
+      {
+        "name": "온라인 이숍 결제 오류",
+        "phone": "1670-9900 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6240-9900"
+      }
+    ]
   },
   {
     "name": "마이크로소프트 한국고객콜 고객센터",
@@ -6441,7 +10616,21 @@ export const customerData = [
     "isVerified": true,
     "description": "마이크로소프트 한국고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.microsoft.com/ko-kr"
+    "web_url": "https://www.microsoft.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "마이크로소프트 고객 종합",
+        "phone": "1577-9700"
+      },
+      {
+        "name": "서피스 하드웨어 AS",
+        "phone": "1577-9700 (내선 3)"
+      },
+      {
+        "name": "Xbox 게임 콘솔 부서",
+        "phone": "1577-9700 (내선 4)"
+      }
+    ]
   },
   {
     "name": "웨스턴디지털 한국AS센터 고객센터",
@@ -6459,7 +10648,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웨스턴디지털 한국AS센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.westerndigital.com/ko-kr"
+    "web_url": "https://www.westerndigital.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "WD 외장하드 수리부",
+        "phone": "02-703-6550"
+      },
+      {
+        "name": "대원씨티에스 보증 부서",
+        "phone": "1577-7706"
+      },
+      {
+        "name": "샌디스크 테크센터 직통",
+        "phone": "02-703-6550"
+      }
+    ]
   },
   {
     "name": "아이피타임 이에프엠콜 고객센터",
@@ -6477,7 +10680,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아이피타임 이에프엠콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://iptime.com"
+    "web_url": "https://iptime.com",
+    "subtasks": [
+      {
+        "name": "아이피타임 공유기 AS",
+        "phone": "1544-2821"
+      },
+      {
+        "name": "NAS 서버 전문 기술부",
+        "phone": "1544-2821 (내선 2)"
+      },
+      {
+        "name": "공식 팩스 민원 수신선",
+        "phone": "031-903-6115"
+      }
+    ]
   },
   {
     "name": "넷기어코리아 기술서비스 고객센터",
@@ -6495,7 +10712,21 @@ export const customerData = [
     "isVerified": true,
     "description": "넷기어코리아 기술서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.netgear.com/ko"
+    "web_url": "https://www.netgear.com/ko",
+    "subtasks": [
+      {
+        "name": "넷기어 기술서비스 직통",
+        "phone": "02-555-0764"
+      },
+      {
+        "name": "넷기어 본사 대표 전화",
+        "phone": "02-555-0764"
+      },
+      {
+        "name": "기업 및 대형 장비 기술",
+        "phone": "02-555-0764 (내선 2)"
+      }
+    ]
   },
   {
     "name": "한국링크시스 고객케어콜 고객센터",
@@ -6513,7 +10744,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국링크시스 고객케어콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.linksys.com/kr"
+    "web_url": "https://www.linksys.com/kr",
+    "subtasks": [
+      {
+        "name": "한국링크시스 기술 지원",
+        "phone": "02-3481-6114"
+      },
+      {
+        "name": "링크프로 대리 유통사",
+        "phone": "02-3481-6114"
+      },
+      {
+        "name": "해외 직구 장비 보증",
+        "phone": "02-3481-6114"
+      }
+    ]
   },
   {
     "name": "한글과컴퓨터 고객지원센터 고객센터",
@@ -6531,7 +10776,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한글과컴퓨터 고객지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hancom.com"
+    "web_url": "https://www.hancom.com",
+    "subtasks": [
+      {
+        "name": "한컴 개인 고객 지원",
+        "phone": "1566-5192"
+      },
+      {
+        "name": "한컴 법인/기업 전용선",
+        "phone": "1566-5192 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "031-627-7000"
+      }
+    ]
   },
   {
     "name": "안랩 안심고객케어센터 고객센터",
@@ -6549,7 +10808,21 @@ export const customerData = [
     "isVerified": true,
     "description": "안랩 안심고객케어센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ahnlab.com"
+    "web_url": "https://www.ahnlab.com",
+    "subtasks": [
+      {
+        "name": "V3 개인 고객 전용",
+        "phone": "1588-3096"
+      },
+      {
+        "name": "V3 기업 및 관공서 전문",
+        "phone": "1588-3096 (내선 2)"
+      },
+      {
+        "name": "본사 수신 대표 종합",
+        "phone": "031-722-8000"
+      }
+    ]
   },
   {
     "name": "이스트소프트 알약 고객콜 고객센터",
@@ -6567,7 +10840,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이스트소프트 알약 고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.alyac.co.kr"
+    "web_url": "https://www.alyac.co.kr",
+    "subtasks": [
+      {
+        "name": "알약 개인 기술 상담",
+        "phone": "1544-3746"
+      },
+      {
+        "name": "알툴즈 라이선스 기업",
+        "phone": "1544-3746 (내선 2)"
+      },
+      {
+        "name": "본사 수신 대표 종합",
+        "phone": "02-1544-3746"
+      }
+    ]
   },
   {
     "name": "제닉스 게이밍AS센터 고객센터",
@@ -6585,7 +10872,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제닉스 게이밍AS센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.xenics.co.kr"
+    "web_url": "https://www.xenics.co.kr",
+    "subtasks": [
+      {
+        "name": "게이밍 의자 전문 AS",
+        "phone": "02-3667-6644 (내선 1)"
+      },
+      {
+        "name": "키보드/마우스 기술부",
+        "phone": "02-3667-6644 (내선 2)"
+      },
+      {
+        "name": "제닉스 공식 직영 쇼핑",
+        "phone": "02-3667-6644"
+      }
+    ]
   },
   {
     "name": "씰리침대 대표고객콜 고객센터",
@@ -6603,7 +10904,21 @@ export const customerData = [
     "isVerified": true,
     "description": "씰리침대 대표고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sealy.co.kr"
+    "web_url": "https://www.sealy.co.kr",
+    "subtasks": [
+      {
+        "name": "씰리 대표 고객 센터",
+        "phone": "02-3112-7000"
+      },
+      {
+        "name": "씰리 백화점 전문 지부",
+        "phone": "02-3112-7000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3112-7009"
+      }
+    ]
   },
   {
     "name": "템퍼코리아 대표고객콜 고객센터",
@@ -6621,7 +10936,21 @@ export const customerData = [
     "isVerified": true,
     "description": "템퍼코리아 대표고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tempur.com/ko-kr"
+    "web_url": "https://www.tempur.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "템퍼 대표 가전 케어",
+        "phone": "02-2183-2283"
+      },
+      {
+        "name": "템퍼 전동 침대 프레임",
+        "phone": "02-2183-2283 (내선 2)"
+      },
+      {
+        "name": "템퍼 백화점 유통 관리",
+        "phone": "02-2183-2283"
+      }
+    ]
   },
   {
     "name": "린나이코리아 대표AS콜 고객센터",
@@ -6639,7 +10968,21 @@ export const customerData = [
     "isVerified": true,
     "description": "린나이코리아 대표AS콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.rinnai.co.kr"
+    "web_url": "https://www.rinnai.co.kr",
+    "subtasks": [
+      {
+        "name": "보일러 가스 AS 직통",
+        "phone": "1544-3651"
+      },
+      {
+        "name": "스마트 스마트가습 가전",
+        "phone": "1544-3651 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3270-3001"
+      }
+    ]
   },
   {
     "name": "대성셀틱 에너시스 서비스 고객센터",
@@ -6657,7 +11000,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대성셀틱 에너시스 서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dsr.co.kr"
+    "web_url": "https://www.dsr.co.kr",
+    "subtasks": [
+      {
+        "name": "에너시스 대표 AS",
+        "phone": "1588-8577"
+      },
+      {
+        "name": "친환경 지원금 보조안내",
+        "phone": "1588-8577 (내선 3)"
+      },
+      {
+        "name": "보일러 수동 자가 조치",
+        "phone": "02-2619-0001"
+      }
+    ]
   },
   {
     "name": "알톤스포츠 대표자전거콜 고객센터",
@@ -6675,7 +11032,21 @@ export const customerData = [
     "isVerified": true,
     "description": "알톤스포츠 대표자전거콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.altonsports.com"
+    "web_url": "https://www.altonsports.com",
+    "subtasks": [
+      {
+        "name": "알톤 대표 자전거 AS",
+        "phone": "031-859-0100"
+      },
+      {
+        "name": "전기자전거 배터리 부서",
+        "phone": "031-859-0100 (내선 2)"
+      },
+      {
+        "name": "공식 대리 제휴 문의",
+        "phone": "02-1544-5544"
+      }
+    ]
   },
   {
     "name": "삼천리자전거 대표서비스 고객센터",
@@ -6693,7 +11064,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼천리자전거 대표서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samchuly.co.kr"
+    "web_url": "https://www.samchuly.co.kr",
+    "subtasks": [
+      {
+        "name": "삼천리 대표 서비스",
+        "phone": "02-2671-3232"
+      },
+      {
+        "name": "팬텀 전기자전거 전담",
+        "phone": "02-2671-3232 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2671-3239"
+      }
+    ]
   },
   {
     "name": "영창뮤직 서비스센터 고객센터",
@@ -6711,7 +11096,21 @@ export const customerData = [
     "isVerified": true,
     "description": "영창뮤직 서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ycfb.co.kr"
+    "web_url": "https://www.ycfb.co.kr",
+    "subtasks": [
+      {
+        "name": "영창 커즈와일 AS",
+        "phone": "1588-3342"
+      },
+      {
+        "name": "일반 어쿠스틱 피아노",
+        "phone": "1588-3342 (내선 2)"
+      },
+      {
+        "name": "HDC영창 인천 본부",
+        "phone": "032-570-1000"
+      }
+    ]
   },
   {
     "name": "야마하뮤직코리아 고객콜 고객센터",
@@ -6729,7 +11128,21 @@ export const customerData = [
     "isVerified": true,
     "description": "야마하뮤직코리아 고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kr.yamaha.com"
+    "web_url": "https://kr.yamaha.com",
+    "subtasks": [
+      {
+        "name": "야마하 뮤직 AS 직통",
+        "phone": "02-3467-3300"
+      },
+      {
+        "name": "수취 증명 팩스 수신선",
+        "phone": "02-3467-3399"
+      },
+      {
+        "name": "야마하 피아노 조율부",
+        "phone": "02-3467-3300 (내선 3)"
+      }
+    ]
   },
   {
     "name": "웰릭스 렌탈 통합고객콜 고객센터",
@@ -6747,7 +11160,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웰릭스 렌탈 통합고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.welixrental.co.kr"
+    "web_url": "https://www.welixrental.co.kr",
+    "subtasks": [
+      {
+        "name": "웰릭스 렌탈 대표 상담",
+        "phone": "1670-0202"
+      },
+      {
+        "name": "음식물처리기 수리부",
+        "phone": "1670-0202 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에코체 음식물처리기 서비스 고객센터",
@@ -6765,7 +11192,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에코체 음식물처리기 서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ecoce.co.kr"
+    "web_url": "https://www.ecoce.co.kr",
+    "subtasks": [
+      {
+        "name": "에코체 대표 AS",
+        "phone": "1588-2511"
+      },
+      {
+        "name": "에코체 카본필터 정품",
+        "phone": "1588-2511 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2619-0020"
+      }
+    ]
   },
   {
     "name": "에브리봇 물걸레AS콜 고객센터",
@@ -6783,7 +11224,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에브리봇 물걸레AS콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.everybot.co.kr"
+    "web_url": "https://www.everybot.co.kr",
+    "subtasks": [
+      {
+        "name": "에브리봇 물걸레 AS",
+        "phone": "1577-6215"
+      },
+      {
+        "name": "에브리봇 쓰리스핀 수리",
+        "phone": "1577-6215 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "유진로봇 아이클레보 서비스 고객센터",
@@ -6801,7 +11256,21 @@ export const customerData = [
     "isVerified": true,
     "description": "유진로봇 아이클레보 서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.iclebo.com"
+    "web_url": "https://www.iclebo.com",
+    "subtasks": [
+      {
+        "name": "아이클레보 대표 AS",
+        "phone": "1566-3292"
+      },
+      {
+        "name": "유진로봇 송도 본사",
+        "phone": "032-550-2500"
+      },
+      {
+        "name": "공식 소모품 및 필터",
+        "phone": "1566-3292"
+      }
+    ]
   },
   {
     "name": "조지루시 한국서비스센터 고객센터",
@@ -6819,7 +11288,21 @@ export const customerData = [
     "isVerified": true,
     "description": "조지루시 한국서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.zojirushi.co.kr"
+    "web_url": "https://www.zojirushi.co.kr",
+    "subtasks": [
+      {
+        "name": "조지루시 서비스 직통",
+        "phone": "02-3444-2555"
+      },
+      {
+        "name": "가습기 정품 밸브 가스",
+        "phone": "02-3444-2555"
+      },
+      {
+        "name": "공식 유통 수입사 대표",
+        "phone": "02-3444-2555"
+      }
+    ]
   },
   {
     "name": "드롱기코리아 가전AS콜 고객센터",
@@ -6837,7 +11320,21 @@ export const customerData = [
     "isVerified": true,
     "description": "드롱기코리아 가전AS콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.delonghi.com/ko-kr"
+    "web_url": "https://www.delonghi.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "드롱기 수신자부담",
+        "phone": "080-488-7711"
+      },
+      {
+        "name": "드롱기VIP 멤버십케어",
+        "phone": "080-488-7711"
+      },
+      {
+        "name": "공식 정품 부속 쇼핑",
+        "phone": "02-2051-2244"
+      }
+    ]
   },
   {
     "name": "스메그코리아 가전AS콜 고객센터",
@@ -6855,7 +11352,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스메그코리아 가전AS콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smegkorea.com"
+    "web_url": "https://www.smegkorea.com",
+    "subtasks": [
+      {
+        "name": "스메그 가전수리 직통",
+        "phone": "1588-2644"
+      },
+      {
+        "name": "스메그 빌트인 시공팀",
+        "phone": "1588-2644 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-516-2644"
+      }
+    ]
   },
   {
     "name": "계양전기 대표서비스센터 고객센터",
@@ -6873,7 +11384,21 @@ export const customerData = [
     "isVerified": true,
     "description": "계양전기 대표서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.keyang.co.kr"
+    "web_url": "https://www.keyang.co.kr",
+    "subtasks": [
+      {
+        "name": "계양전기 대표 서비스",
+        "phone": "1588-0660"
+      },
+      {
+        "name": "본사 기획재무 관리실",
+        "phone": "02-528-1114"
+      },
+      {
+        "name": "야간 금융사기 특별신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "디월트 한국서비스센터 고객센터",
@@ -6891,7 +11416,21 @@ export const customerData = [
     "isVerified": true,
     "description": "디월트 한국서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dewalt.co.kr"
+    "web_url": "https://www.dewalt.co.kr",
+    "subtasks": [
+      {
+        "name": "디월트 대표 서비스",
+        "phone": "1577-0933"
+      },
+      {
+        "name": "스탠리 수동공구 전용",
+        "phone": "1577-0933 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-515-3001"
+      }
+    ]
   },
   {
     "name": "마키타 한국서비스센터 고객센터",
@@ -6909,7 +11448,21 @@ export const customerData = [
     "isVerified": true,
     "description": "마키타 한국서비스센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lctool.co.kr"
+    "web_url": "https://www.lctool.co.kr",
+    "subtasks": [
+      {
+        "name": "마키타 기술 전담 AS",
+        "phone": "1588-0909"
+      },
+      {
+        "name": "수취 증명 팩스 수신선",
+        "phone": "02-1588-0909"
+      },
+      {
+        "name": "마키타 한국지사 대표",
+        "phone": "1588-0909 (내선 2)"
+      }
+    ]
   },
   {
     "name": "툴앤툴 전동공구 고객콜 고객센터",
@@ -6927,7 +11480,21 @@ export const customerData = [
     "isVerified": true,
     "description": "툴앤툴 전동공구 고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.toolntool.com"
+    "web_url": "https://www.toolntool.com",
+    "subtasks": [
+      {
+        "name": "툴앤툴 기술 서비스",
+        "phone": "1522-8321"
+      },
+      {
+        "name": "무선 가습 피톤치드",
+        "phone": "1522-8321 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "아임삭 전동공구 AS콜 고객센터",
@@ -6945,7 +11512,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아임삭 전동공구 AS콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aimsak.co.kr"
+    "web_url": "https://www.aimsak.co.kr",
+    "subtasks": [
+      {
+        "name": "아임삭 청주본사 AS",
+        "phone": "043-211-1311"
+      },
+      {
+        "name": "아임삭 서울사무소",
+        "phone": "02-2619-3351"
+      },
+      {
+        "name": "공식 대리 제휴 문의",
+        "phone": "043-211-1311 (내선 3)"
+      }
+    ]
   },
   {
     "name": "에스오일 윤활유 고객센터",
@@ -6963,7 +11544,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에스오일 윤활유 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.s-oil7.com"
+    "web_url": "https://www.s-oil7.com",
+    "subtasks": [
+      {
+        "name": "세븐 윤활유 기술문의",
+        "phone": "1644-5151"
+      },
+      {
+        "name": "윤활유 마케팅 영업부",
+        "phone": "02-3772-5151"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3772-5159"
+      }
+    ]
   },
   {
     "name": "발보린 한국AS고객콜 고객센터",
@@ -6981,7 +11576,21 @@ export const customerData = [
     "isVerified": true,
     "description": "발보린 한국AS고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.valvoline.com/ko-kr"
+    "web_url": "https://www.valvoline.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "발보린 기술 상담",
+        "phone": "02-564-0012"
+      },
+      {
+        "name": "수취 증명 팩스 수신선",
+        "phone": "02-564-0019"
+      },
+      {
+        "name": "한국 윤활유 공식 제휴",
+        "phone": "02-564-0012"
+      }
+    ]
   },
   {
     "name": "지크 루브리컨츠 대표콜 고객센터",
@@ -6999,7 +11608,21 @@ export const customerData = [
     "isVerified": true,
     "description": "지크 루브리컨츠 대표콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skzic.com"
+    "web_url": "https://www.skzic.com",
+    "subtasks": [
+      {
+        "name": "SK엔무브 ZIC 본사",
+        "phone": "02-2121-5114"
+      },
+      {
+        "name": "ZIC 기술 가이드라인",
+        "phone": "02-2121-5114 (내선 3)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "만도 부품종합고객센터",
@@ -7017,7 +11640,21 @@ export const customerData = [
     "isVerified": true,
     "description": "만도 부품종합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hlmando.com"
+    "web_url": "https://www.hlmando.com",
+    "subtasks": [
+      {
+        "name": "만도 가전/풋루스 AS",
+        "phone": "1544-3040"
+      },
+      {
+        "name": "만도 오토비 블랙박스",
+        "phone": "1544-4250"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-1544-3040"
+      }
+    ]
   },
   {
     "name": "한일전기 고객센터",
@@ -7035,7 +11672,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한일전기 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.myhanil.co.kr"
+    "web_url": "https://www.myhanil.co.kr",
+    "subtasks": [
+      {
+        "name": "한일 가전 대표 AS",
+        "phone": "1588-1183"
+      },
+      {
+        "name": "한일 아기바람 선풍기",
+        "phone": "1588-1183 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2619-0020"
+      }
+    ]
   },
   {
     "name": "파세코 고객센터",
@@ -7053,7 +11704,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파세코 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.paseco.co.kr"
+    "web_url": "https://www.paseco.co.kr",
+    "subtasks": [
+      {
+        "name": "파세코 창문형 에어컨",
+        "phone": "1588-1336"
+      },
+      {
+        "name": "파세코 캠핑 난로 AS",
+        "phone": "1588-1336 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "031-492-3333"
+      }
+    ]
   },
   {
     "name": "파나소닉코리아 고객센터",
@@ -7071,7 +11736,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파나소닉코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.panasonic.co.kr"
+    "web_url": "https://www.panasonic.co.kr",
+    "subtasks": [
+      {
+        "name": "파나소닉 통합 AS",
+        "phone": "1588-8452"
+      },
+      {
+        "name": "루믹스 카메라 기술부",
+        "phone": "1588-8452 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-1588-8452"
+      }
+    ]
   },
   {
     "name": "대성쎌틱 고객센터",
@@ -7089,7 +11768,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대성쎌틱 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dsr.co.kr"
+    "web_url": "https://www.dsr.co.kr",
+    "subtasks": [
+      {
+        "name": "대성쎌틱 대표 AS",
+        "phone": "1588-8577"
+      },
+      {
+        "name": "보일러 온수 매트팀",
+        "phone": "1588-8577 (내선 2)"
+      },
+      {
+        "name": "수동 자가 조치 지원",
+        "phone": "02-2619-0001"
+      }
+    ]
   },
   {
     "name": "코지마 고객센터",
@@ -7107,7 +11800,21 @@ export const customerData = [
     "isVerified": true,
     "description": "코지마 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.cozyma.co.kr"
+    "web_url": "http://www.cozyma.co.kr",
+    "subtasks": [
+      {
+        "name": "코지마 대표 수리부",
+        "phone": "1588-8543"
+      },
+      {
+        "name": "코지마 렌탈 수납 관리",
+        "phone": "1588-8543 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한경희생활과학 고객센터",
@@ -7125,7 +11832,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한경희생활과학 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.haan.com"
+    "web_url": "http://www.haan.com",
+    "subtasks": [
+      {
+        "name": "한경희 스팀가전 AS",
+        "phone": "1577-3555"
+      },
+      {
+        "name": "한경희 주방가전 AS",
+        "phone": "1577-3555 (내선 2)"
+      },
+      {
+        "name": "공식 소모 패드 정품몰",
+        "phone": "1577-3555"
+      }
+    ]
   },
   {
     "name": "휴테크 고객센터",
@@ -7143,7 +11864,21 @@ export const customerData = [
     "isVerified": true,
     "description": "휴테크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.i-hutech.com"
+    "web_url": "https://www.i-hutech.com",
+    "subtasks": [
+      {
+        "name": "휴테크 가전 수리부",
+        "phone": "1599-7775"
+      },
+      {
+        "name": "휴테크 렌탈 계약 수납",
+        "phone": "1599-7775 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "일렉트로룩스 코리아 고객센터",
@@ -7161,7 +11896,21 @@ export const customerData = [
     "isVerified": true,
     "description": "일렉트로룩스 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.electrolux.co.kr"
+    "web_url": "https://www.electrolux.co.kr",
+    "subtasks": [
+      {
+        "name": "일렉트로룩스 가전 AS",
+        "phone": "1566-5015"
+      },
+      {
+        "name": "인덕션/빌트인 전담",
+        "phone": "1566-5015 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-566-5015"
+      }
+    ]
   },
   {
     "name": "밀레 코리아 고객센터",
@@ -7179,7 +11928,21 @@ export const customerData = [
     "isVerified": true,
     "description": "밀레 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.miele.co.kr"
+    "web_url": "https://www.miele.co.kr",
+    "subtasks": [
+      {
+        "name": "밀레 가전수리 직통",
+        "phone": "1577-1599"
+      },
+      {
+        "name": "밀레 빌트인 설치 기술",
+        "phone": "1577-1599 (내선 2)"
+      },
+      {
+        "name": "밀레 러브 멤버십 관리",
+        "phone": "1577-1599"
+      }
+    ]
   },
   {
     "name": "보쉬 가전 고객센터",
@@ -7197,7 +11960,21 @@ export const customerData = [
     "isVerified": true,
     "description": "보쉬 가전 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bosch-home.co.kr"
+    "web_url": "https://www.bosch-home.co.kr",
+    "subtasks": [
+      {
+        "name": "보쉬 가전 대표 AS",
+        "phone": "1800-4751"
+      },
+      {
+        "name": "보쉬 식기세척기 기술",
+        "phone": "1800-4751 (내선 2)"
+      },
+      {
+        "name": "공식 소모 부속품 쇼핑",
+        "phone": "1800-4751"
+      }
+    ]
   },
   {
     "name": "스메그 코리아 고객센터",
@@ -7215,7 +11992,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스메그 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smegkorea.com"
+    "web_url": "https://www.smegkorea.com",
+    "subtasks": [
+      {
+        "name": "스메그 가전수리 직통",
+        "phone": "1588-2644"
+      },
+      {
+        "name": "스메그 홈 카페 전용",
+        "phone": "1588-2644 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-516-2644"
+      }
+    ]
   },
   {
     "name": "LG 프라엘 고객센터",
@@ -7233,7 +12024,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG 프라엘 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lge.co.kr"
+    "web_url": "https://www.lge.co.kr",
+    "subtasks": [
+      {
+        "name": "프라엘 뷰티가전 AS",
+        "phone": "1544-7777 (내선 4)"
+      },
+      {
+        "name": "LG전자 통합 가전수리",
+        "phone": "1544-7777"
+      },
+      {
+        "name": "소모 액세서리 구매몰",
+        "phone": "1544-7777 (내선 2)"
+      }
+    ]
   },
   {
     "name": "Lotts 메르비 고객센터",
@@ -7251,7 +12056,21 @@ export const customerData = [
     "isVerified": true,
     "description": "Lotts 메르비 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.lotts.co.kr"
+    "web_url": "http://www.lotts.co.kr",
+    "subtasks": [
+      {
+        "name": "로츠 메르비 수리 직통",
+        "phone": "02-565-8757"
+      },
+      {
+        "name": "메르비 충전기 부품",
+        "phone": "02-565-8757 (내선 2)"
+      },
+      {
+        "name": "로츠 본사 기획재무",
+        "phone": "02-565-8757"
+      }
+    ]
   },
   {
     "name": "쿠진아트 고객센터",
@@ -7269,7 +12088,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쿠진아트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.cuisinart.co.kr"
+    "web_url": "http://www.cuisinart.co.kr",
+    "subtasks": [
+      {
+        "name": "쿠진아트 대표 AS",
+        "phone": "1899-0210"
+      },
+      {
+        "name": "오븐 기술 상담 지원",
+        "phone": "1899-0210 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-3485-8000"
+      }
+    ]
   },
   {
     "name": "에코백스 고객센터",
@@ -7287,7 +12120,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에코백스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ecovacs.com/kr"
+    "web_url": "https://www.ecovacs.com/kr",
+    "subtasks": [
+      {
+        "name": "에코백스 대표 수리",
+        "phone": "1588-3774"
+      },
+      {
+        "name": "윈봇 창문청소기 전용",
+        "phone": "1588-3774 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "듀얼소닉 고객센터",
@@ -7305,7 +12152,21 @@ export const customerData = [
     "isVerified": true,
     "description": "듀얼소닉 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dualsonic.com"
+    "web_url": "https://www.dualsonic.com",
+    "subtasks": [
+      {
+        "name": "듀얼소닉 대표 AS",
+        "phone": "031-8018-8777"
+      },
+      {
+        "name": "카트리지 충전 안내",
+        "phone": "031-8018-8777 (내선 2)"
+      },
+      {
+        "name": "지온메디텍 본사 대표",
+        "phone": "031-8018-8777"
+      }
+    ]
   },
   {
     "name": "메디큐브 고객센터",
@@ -7323,7 +12184,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메디큐브 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.themedicube.co.kr"
+    "web_url": "https://www.themedicube.co.kr",
+    "subtasks": [
+      {
+        "name": "에이지알 미용기 AS",
+        "phone": "1577-0343 (내선 2)"
+      },
+      {
+        "name": "에이피알 본사 수신",
+        "phone": "1577-0343"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6442-4115"
+      }
+    ]
   },
   {
     "name": "안방그릴 고객센터",
@@ -7341,7 +12216,21 @@ export const customerData = [
     "isVerified": true,
     "description": "안방그릴 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.anbanggrill.co.kr"
+    "web_url": "http://www.anbanggrill.co.kr",
+    "subtasks": [
+      {
+        "name": "안방그릴 기술 서비스",
+        "phone": "1522-0941"
+      },
+      {
+        "name": "정합 카본필터 구매",
+        "phone": "1522-0941 (내선 2)"
+      },
+      {
+        "name": "디엔글로벌 대표 종합",
+        "phone": "1522-0941"
+      }
+    ]
   },
   {
     "name": "쿠쿠 전기 고객센터",
@@ -7359,7 +12248,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쿠쿠 전기 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cuckoo.co.kr"
+    "web_url": "https://www.cuckoo.co.kr",
+    "subtasks": [
+      {
+        "name": "쿠쿠 전기 대표 수신",
+        "phone": "1588-8899"
+      },
+      {
+        "name": "쿠쿠 홈시스 가습부",
+        "phone": "1577-0010"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "하츠 고객센터",
@@ -7377,7 +12280,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하츠 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.haatz.co.kr"
+    "web_url": "https://www.haatz.co.kr",
+    "subtasks": [
+      {
+        "name": "하츠 대표 후드 AS",
+        "phone": "1644-0806"
+      },
+      {
+        "name": "하츠 빌트인 인덕션",
+        "phone": "1644-0806 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3485-8008"
+      }
+    ]
   },
   {
     "name": "노비타 고객센터",
@@ -7395,7 +12312,21 @@ export const customerData = [
     "isVerified": true,
     "description": "노비타 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.novita.co.kr"
+    "web_url": "https://www.novita.co.kr",
+    "subtasks": [
+      {
+        "name": "노비타 대표 비데 AS",
+        "phone": "1588-6560"
+      },
+      {
+        "name": "노비타 수납 정산 부서",
+        "phone": "1588-6560 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-6560"
+      }
+    ]
   },
   {
     "name": "캐논 고객센터",
@@ -7413,7 +12344,21 @@ export const customerData = [
     "isVerified": true,
     "description": "캐논 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.canon-ci.co.kr"
+    "web_url": "https://www.canon-ci.co.kr",
+    "subtasks": [
+      {
+        "name": "캐논 카메라 AS 직통",
+        "phone": "1533-3355"
+      },
+      {
+        "name": "사무용 프린터 전용선",
+        "phone": "1588-2500"
+      },
+      {
+        "name": "정품 등록 리리콜 안내",
+        "phone": "1533-3355 (내선 4)"
+      }
+    ]
   },
   {
     "name": "이노크아든 고객센터",
@@ -7431,7 +12376,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이노크아든 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.inock.co.kr"
+    "web_url": "http://www.inock.co.kr",
+    "subtasks": [
+      {
+        "name": "이노크아든 대표 AS",
+        "phone": "1688-6134"
+      },
+      {
+        "name": "이노크 전기요 문의",
+        "phone": "1688-6134 (내선 2)"
+      },
+      {
+        "name": "소모 액세서리 구매몰",
+        "phone": "1688-6134"
+      }
+    ]
   },
   {
     "name": "대성쎌틱 에스라인 고객센터",
@@ -7449,7 +12408,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대성쎌틱 에스라인 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dsr.co.kr"
+    "web_url": "https://www.dsr.co.kr",
+    "subtasks": [
+      {
+        "name": "에스라인 대표 AS",
+        "phone": "1588-8577"
+      },
+      {
+        "name": "에스라인 콘덴싱 지원",
+        "phone": "1588-8577 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2619-0001"
+      }
+    ]
   },
   {
     "name": "엡손 고객센터",
@@ -7467,7 +12440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "엡손 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.epson.co.kr"
+    "web_url": "https://www.epson.co.kr",
+    "subtasks": [
+      {
+        "name": "엡손 프린터 AS 대표",
+        "phone": "1566-5499"
+      },
+      {
+        "name": "프로젝터 기술 가이드",
+        "phone": "1566-5499 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-553-3001"
+      }
+    ]
   },
   {
     "name": "윤남텍 고객센터",
@@ -7485,7 +12472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "윤남텍 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.younnamtech.com"
+    "web_url": "http://www.younnamtech.com",
+    "subtasks": [
+      {
+        "name": "윤남텍 가습기 AS",
+        "phone": "070-8677-4131"
+      },
+      {
+        "name": "가습기 뚜껑/솔 부품",
+        "phone": "070-8677-4132"
+      },
+      {
+        "name": "본사 기획 행정 지원",
+        "phone": "070-8677-4131"
+      }
+    ]
   },
   {
     "name": "일월 고객센터",
@@ -7503,7 +12504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "일월 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.ilwol.co.kr"
+    "web_url": "http://www.ilwol.co.kr",
+    "subtasks": [
+      {
+        "name": "일월 매트 대표 AS",
+        "phone": "1588-3595"
+      },
+      {
+        "name": "온수 조절기 전문 몰",
+        "phone": "1588-3595 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-3595"
+      }
+    ]
   },
   {
     "name": "한일의료기 고객센터",
@@ -7521,7 +12536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한일의료기 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.hanilmed.co.kr"
+    "web_url": "http://www.hanilmed.co.kr",
+    "subtasks": [
+      {
+        "name": "한일의료기 대표 AS",
+        "phone": "1544-9321"
+      },
+      {
+        "name": "온열 황토매트 전용",
+        "phone": "1544-9321 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-1544-9321"
+      }
+    ]
   },
   {
     "name": "LG 고객센터",
@@ -7539,7 +12568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lge.co.kr"
+    "web_url": "https://www.lge.co.kr",
+    "subtasks": [
+      {
+        "name": "LG 가전 대표 AS",
+        "phone": "1544-7777"
+      },
+      {
+        "name": "소모품/정품 자재 구매",
+        "phone": "1544-7777 (내선 2)"
+      },
+      {
+        "name": "LG전자 B2B 솔루션",
+        "phone": "1544-8777"
+      }
+    ]
   },
   {
     "name": "일렉트로룩스 고객센터",
@@ -7557,7 +12600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "일렉트로룩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.electrolux.co.kr"
+    "web_url": "https://www.electrolux.co.kr",
+    "subtasks": [
+      {
+        "name": "일렉트로룩스 가전 AS",
+        "phone": "1566-5015"
+      },
+      {
+        "name": "식기세척기/인덕션",
+        "phone": "1566-5015 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-566-5015"
+      }
+    ]
   },
   {
     "name": "보국전자 고객센터",
@@ -7575,7 +12632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "보국전자 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.bke.co.kr"
+    "web_url": "http://www.bke.co.kr",
+    "subtasks": [
+      {
+        "name": "보국 가전 대표 AS",
+        "phone": "1588-2301"
+      },
+      {
+        "name": "보국 에어셀 전기요",
+        "phone": "1588-2301 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "053-582-2301"
+      }
+    ]
   },
   {
     "name": "대림통상 도비도스 고객센터",
@@ -7593,7 +12664,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대림통상 도비도스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.dobytech.co.kr"
+    "web_url": "http://www.dobytech.co.kr",
+    "subtasks": [
+      {
+        "name": "도비도스 비데 AS",
+        "phone": "1588-4333"
+      },
+      {
+        "name": "도비도스 수납부",
+        "phone": "1588-4333 (내선 2)"
+      },
+      {
+        "name": "대림통상 서울 본사",
+        "phone": "02-3014-2200"
+      }
+    ]
   },
   {
     "name": "대림바스 고객센터",
@@ -7611,7 +12696,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대림바스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daelimbath.com"
+    "web_url": "https://www.daelimbath.com",
+    "subtasks": [
+      {
+        "name": "대림바스 비데 AS",
+        "phone": "1588-1952"
+      },
+      {
+        "name": "대림바스 욕실 수리",
+        "phone": "1588-1952 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-1952"
+      }
+    ]
   },
   {
     "name": "한일오토 가전 고객센터",
@@ -7629,7 +12728,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한일오토 가전 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.myhanil.co.kr"
+    "web_url": "https://www.myhanil.co.kr",
+    "subtasks": [
+      {
+        "name": "한일 가전 대표 AS",
+        "phone": "1588-1183"
+      },
+      {
+        "name": "한일 짤순이 전문 AS",
+        "phone": "1588-1183 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-2619-0020"
+      }
+    ]
   },
   {
     "name": "게이트맨 고객센터",
@@ -7647,7 +12760,21 @@ export const customerData = [
     "isVerified": true,
     "description": "게이트맨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.egateman.co.kr"
+    "web_url": "https://www.egateman.co.kr",
+    "subtasks": [
+      {
+        "name": "게이트맨 긴급 AS",
+        "phone": "1544-3232"
+      },
+      {
+        "name": "게이트맨 B2B 단체",
+        "phone": "1544-3232 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-3232"
+      }
+    ]
   },
   {
     "name": "델키 고객센터",
@@ -7665,7 +12792,21 @@ export const customerData = [
     "isVerified": true,
     "description": "델키 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.delki.co.kr"
+    "web_url": "http://www.delki.co.kr",
+    "subtasks": [
+      {
+        "name": "델키 주방가전 AS",
+        "phone": "031-903-7744"
+      },
+      {
+        "name": "델키 튀김기 기술부",
+        "phone": "031-903-7744 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "031-903-7749"
+      }
+    ]
   },
   {
     "name": "딤채 고객센터",
@@ -7683,7 +12824,21 @@ export const customerData = [
     "isVerified": true,
     "description": "딤채 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.winiasvc.co.kr"
+    "web_url": "https://www.winiasvc.co.kr",
+    "subtasks": [
+      {
+        "name": "딤채 가전 수리 직통",
+        "phone": "1588-9588"
+      },
+      {
+        "name": "노후 딤채 무상 리콜",
+        "phone": "1588-9588 (내선 9)"
+      },
+      {
+        "name": "위니아 가전 부속몰",
+        "phone": "1588-9588 (내선 2)"
+      }
+    ]
   },
   {
     "name": "테팔 고객센터",
@@ -7701,7 +12856,21 @@ export const customerData = [
     "isVerified": true,
     "description": "테팔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tefal.co.kr"
+    "web_url": "https://www.tefal.co.kr",
+    "subtasks": [
+      {
+        "name": "테팔 수신자부담 무료",
+        "phone": "080-733-7878"
+      },
+      {
+        "name": "테팔 유선 대표 상담",
+        "phone": "02-317-0050"
+      },
+      {
+        "name": "공식 부속품 쇼핑몰",
+        "phone": "080-733-7878"
+      }
+    ]
   },
   {
     "name": "해피콜 고객센터",
@@ -7719,7 +12888,21 @@ export const customerData = [
     "isVerified": true,
     "description": "해피콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.happycall.co.kr"
+    "web_url": "http://www.happycall.co.kr",
+    "subtasks": [
+      {
+        "name": "해피콜 초고속 블렌더",
+        "phone": "1688-8424"
+      },
+      {
+        "name": "프라이팬 코팅 AS",
+        "phone": "1688-8424 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1688-8424"
+      }
+    ]
   },
   {
     "name": "풍년 고객센터",
@@ -7737,7 +12920,21 @@ export const customerData = [
     "isVerified": true,
     "description": "풍년 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://pn.co.kr"
+    "web_url": "https://pn.co.kr",
+    "subtasks": [
+      {
+        "name": "풍년 압력솥 대표 AS",
+        "phone": "1588-9717"
+      },
+      {
+        "name": "풍년 전기밥솥 AS",
+        "phone": "1588-9717 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "031-492-3333"
+      }
+    ]
   },
   {
     "name": "제스파 고객센터",
@@ -7755,7 +12952,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제스파 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.zespa.co.kr"
+    "web_url": "http://www.zespa.co.kr",
+    "subtasks": [
+      {
+        "name": "제스파 마사기 대표 AS",
+        "phone": "1544-2451"
+      },
+      {
+        "name": "제스파 안마의자 전문",
+        "phone": "1544-2451 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-2451"
+      }
+    ]
   },
   {
     "name": "삼성 고객센터",
@@ -7773,7 +12984,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungsvc.co.kr"
+    "web_url": "https://www.samsungsvc.co.kr",
+    "subtasks": [
+      {
+        "name": "삼성 가전 대표 AS",
+        "phone": "1588-3366"
+      },
+      {
+        "name": "이동전화 전문 상담",
+        "phone": "1588-3366 (내선 1)"
+      },
+      {
+        "name": "컴퓨터/IT 기술부",
+        "phone": "1588-3366 (내선 2)"
+      }
+    ]
   },
   {
     "name": "브람스 고객센터",
@@ -7791,7 +13016,21 @@ export const customerData = [
     "isVerified": true,
     "description": "브람스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://brams.co.kr"
+    "web_url": "http://brams.co.kr",
+    "subtasks": [
+      {
+        "name": "브람스 안마의자 AS",
+        "phone": "1544-1240"
+      },
+      {
+        "name": "브람스 소형 안마기",
+        "phone": "1544-1240 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "웰스 고객센터",
@@ -7809,7 +13048,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웰스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyowonwells.com"
+    "web_url": "https://www.kyowonwells.com",
+    "subtasks": [
+      {
+        "name": "웰스 렌탈 대표 상담",
+        "phone": "1588-4113"
+      },
+      {
+        "name": "필터 자동 발송 안내",
+        "phone": "1588-4113 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-4113"
+      }
+    ]
   },
   {
     "name": "엘지 고객센터",
@@ -7827,7 +13080,21 @@ export const customerData = [
     "isVerified": true,
     "description": "엘지 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lge.co.kr"
+    "web_url": "https://www.lge.co.kr",
+    "subtasks": [
+      {
+        "name": "LG 가전 출장수리",
+        "phone": "1544-7777"
+      },
+      {
+        "name": "소모품 전산 구매부",
+        "phone": "1544-7777 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "소니 플레이스테이션 고객센터",
@@ -7845,7 +13112,21 @@ export const customerData = [
     "isVerified": true,
     "description": "소니 플레이스테이션 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.playstation.com/ko-kr"
+    "web_url": "https://www.playstation.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "플레이스테이션 AS",
+        "phone": "02-6677-7771"
+      },
+      {
+        "name": "PSN 네트워크 결제",
+        "phone": "02-6677-7771 (내선 2)"
+      },
+      {
+        "name": "소니코리아 가전 종합",
+        "phone": "1588-0911"
+      }
+    ]
   },
   {
     "name": "소니 고객센터",
@@ -7863,7 +13144,21 @@ export const customerData = [
     "isVerified": true,
     "description": "소니 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sony.co.kr"
+    "web_url": "https://www.sony.co.kr",
+    "subtasks": [
+      {
+        "name": "소니 카메라 기술 AS",
+        "phone": "1588-0911"
+      },
+      {
+        "name": "플레이스테이션 AS",
+        "phone": "02-6677-7771"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-0911"
+      }
+    ]
   },
   {
     "name": "캐치웰 고객센터",
@@ -7881,7 +13176,21 @@ export const customerData = [
     "isVerified": true,
     "description": "캐치웰 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.catchwell.co.kr"
+    "web_url": "http://www.catchwell.co.kr",
+    "subtasks": [
+      {
+        "name": "캐치웰 대표 서비스",
+        "phone": "1899-7225"
+      },
+      {
+        "name": "청소기 필터/부속 몰",
+        "phone": "1899-7225 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1899-7225"
+      }
+    ]
   },
   {
     "name": "위닉스 뽀송 고객센터",
@@ -7899,7 +13208,21 @@ export const customerData = [
     "isVerified": true,
     "description": "위닉스 뽀송 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.winix.com"
+    "web_url": "https://www.winix.com",
+    "subtasks": [
+      {
+        "name": "위닉스 제습기 AS",
+        "phone": "1544-5081"
+      },
+      {
+        "name": "뽀송 전용 소모 필터",
+        "phone": "1544-5081 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에버홈 고객센터",
@@ -7917,7 +13240,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에버홈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.everhome.co.kr"
+    "web_url": "http://www.everhome.co.kr",
+    "subtasks": [
+      {
+        "name": "에버홈 주방가전 AS",
+        "phone": "1577-1644"
+      },
+      {
+        "name": "에버홈 짤순이 전문 AS",
+        "phone": "1577-1644 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1577-1644"
+      }
+    ]
   },
   {
     "name": "신일 고객센터",
@@ -7935,7 +13272,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신일 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinil.co.kr"
+    "web_url": "https://www.shinil.co.kr",
+    "subtasks": [
+      {
+        "name": "신일 가전 대표 AS",
+        "phone": "1577-3300"
+      },
+      {
+        "name": "서큘레이터 부속 몰",
+        "phone": "1577-3300 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6303-0020"
+      }
+    ]
   },
   {
     "name": "루메나 고객센터",
@@ -7953,7 +13304,21 @@ export const customerData = [
     "isVerified": true,
     "description": "루메나 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lumena.co.kr"
+    "web_url": "https://www.lumena.co.kr",
+    "subtasks": [
+      {
+        "name": "루메나 무선가전 AS",
+        "phone": "1800-4740"
+      },
+      {
+        "name": "루메나 대표 수신 상담",
+        "phone": "1800-4740"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1800-4740"
+      }
+    ]
   },
   {
     "name": "농협정보시스템 기술상담 고객센터",
@@ -7971,7 +13336,21 @@ export const customerData = [
     "isVerified": true,
     "description": "농협정보시스템 기술상담 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.nonghyup.com"
+    "web_url": "http://www.nonghyup.com",
+    "subtasks": [
+      {
+        "name": "농협 IT 기술상담",
+        "phone": "02-2144-8114"
+      },
+      {
+        "name": "인터넷뱅킹 전용 지원",
+        "phone": "1566-2566"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2144-8119"
+      }
+    ]
   },
   {
     "name": "파인드라이브 기술고객콜 고객센터",
@@ -7989,7 +13368,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파인드라이브 기술고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.finedigital.com"
+    "web_url": "http://www.finedigital.com",
+    "subtasks": [
+      {
+        "name": "파인드라이브 수리",
+        "phone": "1588-4458"
+      },
+      {
+        "name": "파인뷰 블랙박스 기술",
+        "phone": "1588-4458 (내선 3)"
+      },
+      {
+        "name": "공식 정품 자재 쇼핑몰",
+        "phone": "1588-4458"
+      }
+    ]
   },
   {
     "name": "시게이트 한국기술고객콜 고객센터",
@@ -8007,7 +13400,21 @@ export const customerData = [
     "isVerified": true,
     "description": "시게이트 한국기술고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.seagate.com/kr/ko"
+    "web_url": "https://www.seagate.com/kr/ko",
+    "subtasks": [
+      {
+        "name": "시게이트 대표 무상콜",
+        "phone": "080-579-0080"
+      },
+      {
+        "name": "시게이트 데이터복구팀",
+        "phone": "080-579-0080 (내선 2)"
+      },
+      {
+        "name": "피씨디렉트 공인 보증",
+        "phone": "1588-3877"
+      }
+    ]
   },
   {
     "name": "쿠팡 고객센터",
@@ -8025,7 +13432,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쿠팡 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.coupang.com"
+    "web_url": "https://www.coupang.com",
+    "subtasks": [
+      {
+        "name": "로켓배송 반품접수",
+        "phone": "1577-7011"
+      },
+      {
+        "name": "와우멤버십 해지팀",
+        "phone": "1577-7011"
+      },
+      {
+        "name": "쿠팡 여행/티켓",
+        "phone": "1577-7011"
+      }
+    ]
   },
   {
     "name": "배달의민족 고객센터",
@@ -8043,7 +13464,21 @@ export const customerData = [
     "isVerified": true,
     "description": "배달의민족 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.baemin.com"
+    "web_url": "https://www.baemin.com",
+    "subtasks": [
+      {
+        "name": "배달민원 상담센터",
+        "phone": "1600-0987"
+      },
+      {
+        "name": "배민 사장님 광장",
+        "phone": "1600-9097"
+      },
+      {
+        "name": "배달 파트너 지원",
+        "phone": "1600-0220"
+      }
+    ]
   },
   {
     "name": "쿠팡이츠 고객센터",
@@ -8061,7 +13496,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쿠팡이츠 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.coupangeats.com"
+    "web_url": "https://www.coupangeats.com",
+    "subtasks": [
+      {
+        "name": "쿠팡이츠 스토어센터",
+        "phone": "1670-9827"
+      },
+      {
+        "name": "배달 파트너 문의",
+        "phone": "1599-9827"
+      },
+      {
+        "name": "쿠팡이츠 고객민원",
+        "phone": "1577-7011"
+      }
+    ]
   },
   {
     "name": "CJ대한통운 고객센터",
@@ -8079,7 +13528,21 @@ export const customerData = [
     "isVerified": true,
     "description": "CJ대한통운 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cjlogistics.com"
+    "web_url": "https://www.cjlogistics.com",
+    "subtasks": [
+      {
+        "name": "택배 배송 및 반품",
+        "phone": "1588-1255"
+      },
+      {
+        "name": "기업 물류(B2B)",
+        "phone": "1588-1255"
+      },
+      {
+        "name": "해외 직구 통관데스크",
+        "phone": "1588-1255"
+      }
+    ]
   },
   {
     "name": "무신사 고객센터",
@@ -8097,7 +13560,21 @@ export const customerData = [
     "isVerified": true,
     "description": "무신사 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.musinsa.com"
+    "web_url": "https://www.musinsa.com",
+    "subtasks": [
+      {
+        "name": "무신사 스토어 일반",
+        "phone": "1544-7199"
+      },
+      {
+        "name": "한정판 솔드아웃 센터",
+        "phone": "1644-3323"
+      },
+      {
+        "name": "무신사 뷰티 전용",
+        "phone": "1544-7199"
+      }
+    ]
   },
   {
     "name": "알리익스프레스 고객센터",
@@ -8115,7 +13592,21 @@ export const customerData = [
     "isVerified": true,
     "description": "알리익스프레스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aliexpress.com"
+    "web_url": "https://www.aliexpress.com",
+    "subtasks": [
+      {
+        "name": "알리 한국 콜센터",
+        "phone": "1533-6727"
+      },
+      {
+        "name": "해외 직구 분쟁지원",
+        "phone": "앱 내 EVA 챗봇"
+      },
+      {
+        "name": "무료 반품 수거데스크",
+        "phone": "1533-6727"
+      }
+    ]
   },
   {
     "name": "요기요 고객센터",
@@ -8133,7 +13624,21 @@ export const customerData = [
     "isVerified": true,
     "description": "요기요 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yogiyo.co.kr"
+    "web_url": "https://www.yogiyo.co.kr",
+    "subtasks": [
+      {
+        "name": "요기요 고객 전용",
+        "phone": "1661-5270"
+      },
+      {
+        "name": "요기요 사장님 센터",
+        "phone": "1661-5250"
+      },
+      {
+        "name": "배달 파트너 지원",
+        "phone": "1661-5270"
+      }
+    ]
   },
   {
     "name": "한진택배 고객센터",
@@ -8151,7 +13656,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한진택배 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanjin.com"
+    "web_url": "https://www.hanjin.com",
+    "subtasks": [
+      {
+        "name": "한진 국내택배 접수",
+        "phone": "1588-0011"
+      },
+      {
+        "name": "한진 국제특송(직구)",
+        "phone": "1588-1612"
+      },
+      {
+        "name": "기업 물류 대량계약",
+        "phone": "1588-0011"
+      }
+    ]
   },
   {
     "name": "11번가 고객센터",
@@ -8169,7 +13688,21 @@ export const customerData = [
     "isVerified": true,
     "description": "11번가 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.11st.co.kr"
+    "web_url": "https://www.11st.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 구매자 센터",
+        "phone": "1599-0110"
+      },
+      {
+        "name": "아마존 글로벌 전용",
+        "phone": "1566-7171"
+      },
+      {
+        "name": "11번가 판매자 센터",
+        "phone": "1599-0110"
+      }
+    ]
   },
   {
     "name": "롯데택배 고객센터",
@@ -8187,7 +13720,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데택배 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteglogis.com"
+    "web_url": "https://www.lotteglogis.com",
+    "subtasks": [
+      {
+        "name": "국내택배 배송 및 예약",
+        "phone": "1588-2121"
+      },
+      {
+        "name": "해외 배송 및 특송",
+        "phone": "1588-2121"
+      },
+      {
+        "name": "기업 대량 물류 상담",
+        "phone": "1588-2121"
+      }
+    ]
   },
   {
     "name": "스타필드 고객센터",
@@ -8205,7 +13752,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스타필드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.starfield.co.kr"
+    "web_url": "https://www.starfield.co.kr",
+    "subtasks": [
+      {
+        "name": "스타필드 하남 대표",
+        "phone": "1833-9001"
+      },
+      {
+        "name": "스타필드 고양 대표",
+        "phone": "1833-9001"
+      },
+      {
+        "name": "스타필드 안성 대표",
+        "phone": "1833-9001"
+      }
+    ]
   },
   {
     "name": "로젠택배 고객센터",
@@ -8223,7 +13784,21 @@ export const customerData = [
     "isVerified": true,
     "description": "로젠택배 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ilogen.com"
+    "web_url": "https://www.ilogen.com",
+    "subtasks": [
+      {
+        "name": "배송 및 기사 배정",
+        "phone": "1588-9988"
+      },
+      {
+        "name": "파손/유실 보상접수",
+        "phone": "1588-9988"
+      },
+      {
+        "name": "기업 물류 연간 계약",
+        "phone": "1588-9988"
+      }
+    ]
   },
   {
     "name": "29CM 고객센터",
@@ -8241,7 +13816,21 @@ export const customerData = [
     "isVerified": true,
     "description": "29CM 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.29cm.co.kr"
+    "web_url": "https://www.29cm.co.kr",
+    "subtasks": [
+      {
+        "name": "구매자 전용 고객선",
+        "phone": "1544-7129"
+      },
+      {
+        "name": "오프라인 성수 큐레이션",
+        "phone": "1644-3320"
+      },
+      {
+        "name": "입점 제휴 파트너센터",
+        "phone": "1544-7129"
+      }
+    ]
   },
   {
     "name": "더현대 서울 고객센터",
@@ -8259,7 +13848,21 @@ export const customerData = [
     "isVerified": true,
     "description": "더현대 서울 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ehyundai.com"
+    "web_url": "https://www.ehyundai.com",
+    "subtasks": [
+      {
+        "name": "더현대 서울 대표안내",
+        "phone": "02-767-2233"
+      },
+      {
+        "name": "주차 및 발렛 서비스",
+        "phone": "02-767-2233 (내선 2)"
+      },
+      {
+        "name": "백화점 상품권 데스크",
+        "phone": "02-767-2233"
+      }
+    ]
   },
   {
     "name": "롯데아울렛 고객센터",
@@ -8277,7 +13880,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데아울렛 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteshopping.com"
+    "web_url": "https://www.lotteshopping.com",
+    "subtasks": [
+      {
+        "name": "롯데쇼핑 통합고객선",
+        "phone": "1577-0001"
+      },
+      {
+        "name": "기프티 카드 정산부",
+        "phone": "1577-0001"
+      },
+      {
+        "name": "지점별 안내 통합데스크",
+        "phone": "1577-0001"
+      }
+    ]
   },
   {
     "name": "G마켓 고객센터",
@@ -8295,7 +13912,21 @@ export const customerData = [
     "isVerified": true,
     "description": "G마켓 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gmarket.co.kr"
+    "web_url": "https://www.gmarket.co.kr",
+    "subtasks": [
+      {
+        "name": "지마켓 구매자 전용",
+        "phone": "1566-5701"
+      },
+      {
+        "name": "스마일배송 전용데스크",
+        "phone": "1566-5701"
+      },
+      {
+        "name": "G마켓 판매자 센터",
+        "phone": "1566-5702"
+      }
+    ]
   },
   {
     "name": "W컨셉 고객센터",
@@ -8313,7 +13944,21 @@ export const customerData = [
     "isVerified": true,
     "description": "W컨셉 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wconcept.co.kr"
+    "web_url": "https://www.wconcept.co.kr",
+    "subtasks": [
+      {
+        "name": "W컨셉 구매고객 전용",
+        "phone": "1566-5027"
+      },
+      {
+        "name": "W컨셉 삼성카드 전용",
+        "phone": "1566-5027"
+      },
+      {
+        "name": "입점 및 브랜드 제휴",
+        "phone": "070-7842-1513"
+      }
+    ]
   },
   {
     "name": "SSF샵 고객센터",
@@ -8331,7 +13976,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SSF샵 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ssfshop.com"
+    "web_url": "https://www.ssfshop.com",
+    "subtasks": [
+      {
+        "name": "SSF샵 대표 고객센터",
+        "phone": "1599-0007"
+      },
+      {
+        "name": "무료 통화 수신자부담",
+        "phone": "080-700-1472"
+      },
+      {
+        "name": "매장 직접 수선 상담",
+        "phone": "1599-0007"
+      }
+    ]
   },
   {
     "name": "땡겨요 고객센터",
@@ -8349,7 +14008,21 @@ export const customerData = [
     "isVerified": true,
     "description": "땡겨요 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ddangyo.com"
+    "web_url": "https://www.ddangyo.com",
+    "subtasks": [
+      {
+        "name": "땡겨요 주문고객 상담",
+        "phone": "1661-5489"
+      },
+      {
+        "name": "땡겨요 가맹점 사장님",
+        "phone": "1661-5489 (내선 2)"
+      },
+      {
+        "name": "신한은행 제휴 쿠폰",
+        "phone": "1599-8000"
+      }
+    ]
   },
   {
     "name": "롯데시네마 고객센터",
@@ -8367,7 +14040,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데시네마 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lottecinema.co.kr"
+    "web_url": "https://www.lottecinema.co.kr",
+    "subtasks": [
+      {
+        "name": "롯데시네마 예약 확인",
+        "phone": "1544-8855"
+      },
+      {
+        "name": "티켓 오결제 환불",
+        "phone": "1544-8855"
+      },
+      {
+        "name": "단체 대관 및 이벤트",
+        "phone": "1544-8855"
+      }
+    ]
   },
   {
     "name": "DHL 고객센터",
@@ -8385,7 +14072,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DHL 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dhl.com"
+    "web_url": "https://www.dhl.com",
+    "subtasks": [
+      {
+        "name": "DHL 해외배송 예약",
+        "phone": "1588-0001"
+      },
+      {
+        "name": "수출입 관세 통관부",
+        "phone": "1588-0001 (내선 2)"
+      },
+      {
+        "name": "DHL 비즈니스 정산",
+        "phone": "02-6220-1500"
+      }
+    ]
   },
   {
     "name": "신세계사이먼 프리미엄아울렛 고객센터",
@@ -8403,7 +14104,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신세계사이먼 프리미엄아울렛 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.premiumoutlets.co.kr"
+    "web_url": "https://www.premiumoutlets.co.kr",
+    "subtasks": [
+      {
+        "name": "신세계사이먼 여주점",
+        "phone": "1644-4001"
+      },
+      {
+        "name": "신세계사이먼 파주점",
+        "phone": "1644-4001"
+      },
+      {
+        "name": "신세계사이먼 시흥점",
+        "phone": "1644-4001"
+      }
+    ]
   },
   {
     "name": "위메프 고객센터",
@@ -8421,7 +14136,21 @@ export const customerData = [
     "isVerified": true,
     "description": "위메프 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wemakeprice.com"
+    "web_url": "https://www.wemakeprice.com",
+    "subtasks": [
+      {
+        "name": "배송 및 쇼핑 상담",
+        "phone": "1588-4763"
+      },
+      {
+        "name": "공연/레저/E쿠폰 전용",
+        "phone": "1661-4764"
+      },
+      {
+        "name": "위메프 파트너 센터",
+        "phone": "1644-4796"
+      }
+    ]
   },
   {
     "name": "컬리 마켓컬리 고객센터",
@@ -8439,7 +14168,21 @@ export const customerData = [
     "isVerified": true,
     "description": "컬리 마켓컬리 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kurly.com"
+    "web_url": "https://www.kurly.com",
+    "subtasks": [
+      {
+        "name": "컬리 샛별배송 긴급",
+        "phone": "1644-1107"
+      },
+      {
+        "name": "컬리 렌탈 큐레이션",
+        "phone": "1644-1107"
+      },
+      {
+        "name": "컬리 비즈니스 파트너",
+        "phone": "1644-1107"
+      }
+    ]
   },
   {
     "name": "대형택배 안심물류센터 고객센터",
@@ -8457,7 +14200,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대형택배 안심물류센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cjlogistics.com"
+    "web_url": "https://www.cjlogistics.com",
+    "subtasks": [
+      {
+        "name": "중량물 배송 수거",
+        "phone": "1899-1255"
+      },
+      {
+        "name": "화물 파손 피해보상",
+        "phone": "1899-1255"
+      },
+      {
+        "name": "안심물류 정산 데스크",
+        "phone": "1899-1255"
+      }
+    ]
   },
   {
     "name": "발반(BALAAN) 고객센터",
@@ -8475,7 +14232,21 @@ export const customerData = [
     "isVerified": true,
     "description": "발반(BALAAN) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.balaan.co.kr"
+    "web_url": "https://www.balaan.co.kr",
+    "subtasks": [
+      {
+        "name": "발란 고객 상담",
+        "phone": "02-6254-2000"
+      },
+      {
+        "name": "카카오싱크 제휴 지원",
+        "phone": "02-566-0860"
+      },
+      {
+        "name": "정품 감정 전담부서",
+        "phone": "02-6254-2000"
+      }
+    ]
   },
   {
     "name": "트렌비(TRENBE) 고객센터",
@@ -8493,7 +14264,21 @@ export const customerData = [
     "isVerified": true,
     "description": "트렌비(TRENBE) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.trenbe.com"
+    "web_url": "https://www.trenbe.com",
+    "subtasks": [
+      {
+        "name": "트렌비 고객 전용",
+        "phone": "1522-2538"
+      },
+      {
+        "name": "중고 명품 매입위탁",
+        "phone": "010-4358-3340"
+      },
+      {
+        "name": "글로벌 해외 바잉팀",
+        "phone": "1522-2538"
+      }
+    ]
   },
   {
     "name": "FedEx 고객센터",
@@ -8511,7 +14296,21 @@ export const customerData = [
     "isVerified": true,
     "description": "FedEx 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.fedex.com"
+    "web_url": "https://www.fedex.com",
+    "subtasks": [
+      {
+        "name": "페덱스 국내 대표선",
+        "phone": "02-3496-7777"
+      },
+      {
+        "name": "수신자부담 무료개통",
+        "phone": "080-023-8000"
+      },
+      {
+        "name": "페덱스 기술 지원부",
+        "phone": "02-3496-7777 (내선 5)"
+      }
+    ]
   },
   {
     "name": "먹깨비 고객센터",
@@ -8529,7 +14328,21 @@ export const customerData = [
     "isVerified": true,
     "description": "먹깨비 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mukkebi.com"
+    "web_url": "https://www.mukkebi.com",
+    "subtasks": [
+      {
+        "name": "먹깨비 통합 콜센터",
+        "phone": "1644-7817"
+      },
+      {
+        "name": "가맹점 사장님 지원",
+        "phone": "1644-7817"
+      },
+      {
+        "name": "지자체 공공 배달팀",
+        "phone": "1644-7817"
+      }
+    ]
   },
   {
     "name": "대신택배 고객센터",
@@ -8547,7 +14360,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대신택배 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daesinlogistics.co.kr"
+    "web_url": "https://www.daesinlogistics.co.kr",
+    "subtasks": [
+      {
+        "name": "대신화물 대표 안내",
+        "phone": "043-222-4581"
+      },
+      {
+        "name": "중량물 픽업 전용",
+        "phone": "043-222-4581"
+      },
+      {
+        "name": "파손 유실 보상부",
+        "phone": "043-222-4581"
+      }
+    ]
   },
   {
     "name": "대구로 고객센터",
@@ -8565,7 +14392,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대구로 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://daeguro.co.kr"
+    "web_url": "https://daeguro.co.kr",
+    "subtasks": [
+      {
+        "name": "대구로 대표 상담",
+        "phone": "1661-3773"
+      },
+      {
+        "name": "대구로 사장님 센터",
+        "phone": "1661-3773"
+      },
+      {
+        "name": "대구로 택시 및 호출",
+        "phone": "1661-3773"
+      }
+    ]
   },
   {
     "name": "테무 고객센터",
@@ -8583,7 +14424,21 @@ export const customerData = [
     "isVerified": true,
     "description": "테무 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.temu.com"
+    "web_url": "https://www.temu.com",
+    "subtasks": [
+      {
+        "name": "테무 앱 1:1 채팅",
+        "phone": "앱 내 고객센터"
+      },
+      {
+        "name": "수입 통관 장애",
+        "phone": "관세청 125"
+      },
+      {
+        "name": "테무 이메일 지원",
+        "phone": "help@temu.com"
+      }
+    ]
   },
   {
     "name": "삼성화재 고객센터",
@@ -8601,7 +14456,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성화재 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungfire.com"
+    "web_url": "https://www.samsungfire.com",
+    "subtasks": [
+      {
+        "name": "자동차 사고 및 긴급출동",
+        "phone": "1588-5114 (내선 1)"
+      },
+      {
+        "name": "보험금 청구 팩스",
+        "phone": "0505-161-1114"
+      },
+      {
+        "name": "삼성화재 다이렉트 가입",
+        "phone": "1577-3333"
+      }
+    ]
   },
   {
     "name": "현대해상 고객센터",
@@ -8619,7 +14488,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대해상 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hi.co.kr"
+    "web_url": "https://www.hi.co.kr",
+    "subtasks": [
+      {
+        "name": "하이카 긴급출동/사고",
+        "phone": "1588-5656 (내선 1)"
+      },
+      {
+        "name": "질병/상해 보험금 청구",
+        "phone": "1588-5656 (내선 2)"
+      },
+      {
+        "name": "다이렉트 신규 가입",
+        "phone": "1899-6611"
+      }
+    ]
   },
   {
     "name": "DB손해보험 고객센터",
@@ -8637,7 +14520,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DB손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.idb.co.kr"
+    "web_url": "https://www.idb.co.kr",
+    "subtasks": [
+      {
+        "name": "프로미카 긴급출동",
+        "phone": "1588-0100 (내선 1)"
+      },
+      {
+        "name": "질병상해 보험금 청구",
+        "phone": "1588-0100 (내선 2)"
+      },
+      {
+        "name": "DB손보 다이렉트 가입",
+        "phone": "1600-0100"
+      }
+    ]
   },
   {
     "name": "KB손해보험 고객센터",
@@ -8655,7 +14552,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": [
+      {
+        "name": "매직카 긴급출동",
+        "phone": "1544-0114 (내선 1)"
+      },
+      {
+        "name": "질병상해 보험금 청구",
+        "phone": "1544-0114 (내선 2)"
+      },
+      {
+        "name": "다이렉트 가입처",
+        "phone": "1544-0077"
+      }
+    ]
   },
   {
     "name": "메리츠화재 고객센터",
@@ -8673,7 +14584,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메리츠화재 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.meritzfire.com"
+    "web_url": "https://www.meritzfire.com",
+    "subtasks": [
+      {
+        "name": "자동차 긴급출동",
+        "phone": "1566-7711 (내선 1)"
+      },
+      {
+        "name": "질병상해 보험금 청구",
+        "phone": "1566-7711 (내선 2)"
+      },
+      {
+        "name": "다이렉트 상품 가입",
+        "phone": "1566-7711 (내선 3)"
+      }
+    ]
   },
   {
     "name": "삼성생명 고객센터",
@@ -8691,7 +14616,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsunglife.com"
+    "web_url": "https://www.samsunglife.com",
+    "subtasks": [
+      {
+        "name": "생명보험금 청구 전용",
+        "phone": "1588-3114 (내선 2)"
+      },
+      {
+        "name": "융자/대출 상담센터",
+        "phone": "1588-4114"
+      },
+      {
+        "name": "퇴직연금 전문 센터",
+        "phone": "1588-3114 (내선 3)"
+      }
+    ]
   },
   {
     "name": "한화손해보험 고객센터",
@@ -8709,7 +14648,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한화손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hwgeneralins.com"
+    "web_url": "https://www.hwgeneralins.com",
+    "subtasks": [
+      {
+        "name": "자동차 긴급출동",
+        "phone": "1566-8000 (내선 1)"
+      },
+      {
+        "name": "보험금 청구 팩스",
+        "phone": "0502-779-1004"
+      },
+      {
+        "name": "다이렉트 가입처",
+        "phone": "1522-1100"
+      }
+    ]
   },
   {
     "name": "한화생명 고객센터",
@@ -8727,7 +14680,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한화생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanwhalife.com"
+    "web_url": "https://www.hanwhalife.com",
+    "subtasks": [
+      {
+        "name": "생명보험금 청구접수",
+        "phone": "1588-6363"
+      },
+      {
+        "name": "융자/신용대출 상담",
+        "phone": "1588-6363 (내선 4)"
+      },
+      {
+        "name": "한화생명 민원상담",
+        "phone": "1588-6363 (내선 9)"
+      }
+    ]
   },
   {
     "name": "롯데손해보험 고객센터",
@@ -8745,7 +14712,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteins.co.kr"
+    "web_url": "https://www.lotteins.co.kr",
+    "subtasks": [
+      {
+        "name": "자동차 사고 긴급출동",
+        "phone": "1588-3344 (내선 1)"
+      },
+      {
+        "name": "질병상해 보상 신청",
+        "phone": "1588-3344 (내선 2)"
+      },
+      {
+        "name": "롯데손보 다이렉트",
+        "phone": "1599-2200"
+      }
+    ]
   },
   {
     "name": "교보생명 고객센터",
@@ -8763,7 +14744,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교보생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyobo.co.kr"
+    "web_url": "https://www.kyobo.co.kr",
+    "subtasks": [
+      {
+        "name": "보험금 지급 청구",
+        "phone": "1588-1001 (내선 2)"
+      },
+      {
+        "name": "보험계약 대출 지원",
+        "phone": "1588-1001 (내선 3)"
+      },
+      {
+        "name": "교보 다이렉트 청구",
+        "phone": "1588-1001"
+      }
+    ]
   },
   {
     "name": "신한라이프 고객센터",
@@ -8781,7 +14776,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한라이프 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhanlife.co.kr"
+    "web_url": "https://www.shinhanlife.co.kr",
+    "subtasks": [
+      {
+        "name": "신한라이프 수신 종합",
+        "phone": "1588-5500"
+      },
+      {
+        "name": "보험금 간편 청구",
+        "phone": "1588-5500 (내선 2)"
+      },
+      {
+        "name": "변액 및 펀드 관리",
+        "phone": "1588-5500 (내선 4)"
+      }
+    ]
   },
   {
     "name": "흥국화재 고객센터",
@@ -8799,7 +14808,21 @@ export const customerData = [
     "isVerified": true,
     "description": "흥국화재 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.heungkukfire.co.kr"
+    "web_url": "https://www.heungkukfire.co.kr",
+    "subtasks": [
+      {
+        "name": "자동차 사고 긴급출동",
+        "phone": "1688-1688 (내선 1)"
+      },
+      {
+        "name": "장기보험 질병 청구",
+        "phone": "1688-1688 (내선 2)"
+      },
+      {
+        "name": "다이렉트 가입 전용",
+        "phone": "1688-2688"
+      }
+    ]
   },
   {
     "name": "AXA손해보험 고객센터",
@@ -8817,7 +14840,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AXA손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.axa.co.kr"
+    "web_url": "https://www.axa.co.kr",
+    "subtasks": [
+      {
+        "name": "악사 긴급출동 접수",
+        "phone": "1566-1566 (내선 1)"
+      },
+      {
+        "name": "다이렉트 신규 가입",
+        "phone": "1566-2566"
+      },
+      {
+        "name": "장기보험 보상 청구",
+        "phone": "1566-1566 (내선 3)"
+      }
+    ]
   },
   {
     "name": "미래에셋생명 고객센터",
@@ -8835,7 +14872,21 @@ export const customerData = [
     "isVerified": true,
     "description": "미래에셋생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://life.miraeasset.com"
+    "web_url": "https://life.miraeasset.com",
+    "subtasks": [
+      {
+        "name": "변액/연금 대표 상담",
+        "phone": "1588-0220"
+      },
+      {
+        "name": "보험금 간편 청구",
+        "phone": "1588-0220 (내선 2)"
+      },
+      {
+        "name": "미래에셋생명 융자부",
+        "phone": "1588-0220 (내선 3)"
+      }
+    ]
   },
   {
     "name": "캐롯손해보험 고객센터",
@@ -8853,7 +14904,21 @@ export const customerData = [
     "isVerified": true,
     "description": "캐롯손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.carrotins.com"
+    "web_url": "https://www.carrotins.com",
+    "subtasks": [
+      {
+        "name": "퍼마일 긴급출동",
+        "phone": "1566-0300 (내선 1)"
+      },
+      {
+        "name": "퍼마일 기기오류 기술",
+        "phone": "1566-0300 (내선 4)"
+      },
+      {
+        "name": "여행자보험 보상청구",
+        "phone": "1566-0300 (내선 2)"
+      }
+    ]
   },
   {
     "name": "MG손해보험 고객센터",
@@ -8871,7 +14936,21 @@ export const customerData = [
     "isVerified": true,
     "description": "MG손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mggeneins.com"
+    "web_url": "https://www.mggeneins.com",
+    "subtasks": [
+      {
+        "name": "자동차 사고 긴급출동",
+        "phone": "1588-5959 (내선 1)"
+      },
+      {
+        "name": "장기보험 질병 청구",
+        "phone": "1588-5959 (내선 2)"
+      },
+      {
+        "name": "다이렉트 상품 가입",
+        "phone": "1588-5959"
+      }
+    ]
   },
   {
     "name": "흥국생명 고객센터",
@@ -8889,7 +14968,21 @@ export const customerData = [
     "isVerified": true,
     "description": "흥국생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.heungkuklife.co.kr"
+    "web_url": "https://www.heungkuklife.co.kr",
+    "subtasks": [
+      {
+        "name": "생명보험금 지급 청구",
+        "phone": "1588-2288 (내선 2)"
+      },
+      {
+        "name": "흥국생명 융자/대출",
+        "phone": "1588-2288 (내선 4)"
+      },
+      {
+        "name": "민원상담 직통센터",
+        "phone": "02-6901-2288"
+      }
+    ]
   },
   {
     "name": "우체국보험 고객센터",
@@ -8907,7 +15000,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우체국보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.epostlife.go.kr"
+    "web_url": "https://www.epostlife.go.kr",
+    "subtasks": [
+      {
+        "name": "우체국보험 통합상담",
+        "phone": "1588-1600"
+      },
+      {
+        "name": "보험금 자동 팩스청구",
+        "phone": "1588-1600"
+      },
+      {
+        "name": "금융사기 피해 구제",
+        "phone": "1588-1900 (내선 1)"
+      }
+    ]
   },
   {
     "name": "라이나생명 고객센터",
@@ -8925,7 +15032,21 @@ export const customerData = [
     "isVerified": true,
     "description": "라이나생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lina.co.kr"
+    "web_url": "https://www.lina.co.kr",
+    "subtasks": [
+      {
+        "name": "치아/암 보상 상담",
+        "phone": "1588-0058 (내선 1)"
+      },
+      {
+        "name": "실버 안심케어 전용",
+        "phone": "1588-0058 (내선 2)"
+      },
+      {
+        "name": "보험금 팩스 수신선",
+        "phone": "02-6944-1100"
+      }
+    ]
   },
   {
     "name": "NH농협손해보험 고객센터",
@@ -8943,7 +15064,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NH농협손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nhfire.co.kr"
+    "web_url": "https://www.nhfire.co.kr",
+    "subtasks": [
+      {
+        "name": "장기보험 질병 청구",
+        "phone": "1644-9000 (내선 1)"
+      },
+      {
+        "name": "영농재해 화재 보상",
+        "phone": "1644-9000 (내선 2)"
+      },
+      {
+        "name": "농협손보 다이렉트",
+        "phone": "1644-9000"
+      }
+    ]
   },
   {
     "name": "NH농협생명 고객센터",
@@ -8961,7 +15096,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NH농협생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nhlife.co.kr"
+    "web_url": "https://www.nhlife.co.kr",
+    "subtasks": [
+      {
+        "name": "보험금 지급 지급청구",
+        "phone": "1544-4000"
+      },
+      {
+        "name": "보험계약 대출 전용",
+        "phone": "1544-4000 (내선 3)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동양생명 고객센터",
@@ -8979,7 +15128,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동양생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.myangel.co.kr"
+    "web_url": "https://www.myangel.co.kr",
+    "subtasks": [
+      {
+        "name": "수호천사 보상 청구",
+        "phone": "1577-1004"
+      },
+      {
+        "name": "약관대출 한도 심사",
+        "phone": "1577-1004 (내선 3)"
+      },
+      {
+        "name": "동양생명 팩스 접수",
+        "phone": "02-2114-1114"
+      }
+    ]
   },
   {
     "name": "메트라이프생명 고객센터",
@@ -8997,7 +15160,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메트라이프생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.metlife.co.kr"
+    "web_url": "https://www.metlife.co.kr",
+    "subtasks": [
+      {
+        "name": "달러보험 전문 상담",
+        "phone": "1588-3374"
+      },
+      {
+        "name": "보험금 간편 팩스청구",
+        "phone": "02-3469-9000"
+      },
+      {
+        "name": "메트라이프 융자지원",
+        "phone": "1588-3374"
+      }
+    ]
   },
   {
     "name": "KB라이프생명 고객센터",
@@ -9015,7 +15192,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB라이프생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kblife.co.kr"
+    "web_url": "https://www.kblife.co.kr",
+    "subtasks": [
+      {
+        "name": "생명보험금 청구 접수",
+        "phone": "1588-3374"
+      },
+      {
+        "name": "KB라이프 융자 대출",
+        "phone": "1588-3374 (내선 3)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "하나손해보험 고객센터",
@@ -9033,7 +15224,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나손해보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanainsure.co.kr"
+    "web_url": "https://www.hanainsure.co.kr",
+    "subtasks": [
+      {
+        "name": "에듀카 긴급출동",
+        "phone": "1566-3000 (내선 1)"
+      },
+      {
+        "name": "질병상해 보상 신청",
+        "phone": "1566-3000 (내선 2)"
+      },
+      {
+        "name": "원데이보험 다이렉트",
+        "phone": "1566-3000"
+      }
+    ]
   },
   {
     "name": "한국무역보험공사 고객센터",
@@ -9051,7 +15256,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국무역보험공사 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ksure.or.kr"
+    "web_url": "https://www.ksure.or.kr",
+    "subtasks": [
+      {
+        "name": "수출신용 보증 지원",
+        "phone": "1588-3884"
+      },
+      {
+        "name": "해외 수입업자 신용조사",
+        "phone": "1588-3884"
+      },
+      {
+        "name": "중소기업 상생 보증",
+        "phone": "1588-3884"
+      }
+    ]
   },
   {
     "name": "한화생명보험 대표전화 고객센터",
@@ -9069,7 +15288,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한화생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanwhalife.com"
+    "web_url": "https://www.hanwhalife.com",
+    "subtasks": [
+      {
+        "name": "종신/연금 대표 안내",
+        "phone": "1588-6363"
+      },
+      {
+        "name": "보험금 구두 청구",
+        "phone": "1588-6363 (내선 2)"
+      },
+      {
+        "name": "변액 펀드 전산 관리",
+        "phone": "1588-6363"
+      }
+    ]
   },
   {
     "name": "한화생명보험 민원고객센터",
@@ -9087,7 +15320,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한화생명보험 민원고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanwhalife.com"
+    "web_url": "https://www.hanwhalife.com",
+    "subtasks": [
+      {
+        "name": "민원접수 특별 관리",
+        "phone": "1588-6363 (내선 9)"
+      },
+      {
+        "name": "소비자보호 지원팀",
+        "phone": "1588-6363"
+      },
+      {
+        "name": "야간 보이스피싱 대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "ABL생명보험 대표전화 고객센터",
@@ -9105,7 +15352,21 @@ export const customerData = [
     "isVerified": true,
     "description": "ABL생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.abllife.co.kr"
+    "web_url": "https://www.abllife.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1588-6500"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-3788-1114"
+      },
+      {
+        "name": "약관대출 유선 심사",
+        "phone": "1588-6500"
+      }
+    ]
   },
   {
     "name": "흥국생명보험 대표전화 고객센터",
@@ -9123,7 +15384,21 @@ export const customerData = [
     "isVerified": true,
     "description": "흥국생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.heungkuklife.co.kr"
+    "web_url": "https://www.heungkuklife.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 종신/연금 가입",
+        "phone": "1588-2288"
+      },
+      {
+        "name": "흥국생명 보험청구 팩스",
+        "phone": "02-6901-2288"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "교보생명보험 대표전화 고객센터",
@@ -9141,7 +15416,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교보생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyobo.co.kr"
+    "web_url": "https://www.kyobo.co.kr",
+    "subtasks": [
+      {
+        "name": "교보 대표 수신 종합",
+        "phone": "1588-1001"
+      },
+      {
+        "name": "보험청구 전용 팩스선",
+        "phone": "02-2260-2212"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "교보생명보험 전용민원팩스 고객센터",
@@ -9159,7 +15448,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교보생명보험 전용민원팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyobo.co.kr"
+    "web_url": "https://www.kyobo.co.kr",
+    "subtasks": [
+      {
+        "name": "전용 민원 팩스",
+        "phone": "02-2260-2212"
+      },
+      {
+        "name": "교보 대표 종합 센터",
+        "phone": "1588-1001"
+      },
+      {
+        "name": "소비자보호 기획팀",
+        "phone": "1588-1001 (내선 9)"
+      }
+    ]
   },
   {
     "name": "iM라이프생명 대표전화 고객센터",
@@ -9177,7 +15480,21 @@ export const customerData = [
     "isVerified": true,
     "description": "iM라이프생명 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.imlife.co.kr"
+    "web_url": "https://www.imlife.co.kr",
+    "subtasks": [
+      {
+        "name": "iM라이프 대표 수신",
+        "phone": "1588-2280"
+      },
+      {
+        "name": "보험금 청구 팩스",
+        "phone": "02-3786-8114"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "미래에셋생명 대표전화 고객센터",
@@ -9195,7 +15512,21 @@ export const customerData = [
     "isVerified": true,
     "description": "미래에셋생명 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://life.miraeasset.com"
+    "web_url": "https://life.miraeasset.com",
+    "subtasks": [
+      {
+        "name": "미래에셋 대표 수신",
+        "phone": "1588-0220"
+      },
+      {
+        "name": "보험금 간편 청구",
+        "phone": "1588-0220 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KDB생명보험 대표전화 고객센터",
@@ -9213,7 +15544,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KDB생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kdblife.co.kr"
+    "web_url": "https://www.kdblife.co.kr",
+    "subtasks": [
+      {
+        "name": "KDB생명 대표 수신",
+        "phone": "1588-4040"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-6226-1743"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KDB생명보험 전용민원센터 고객센터",
@@ -9231,7 +15576,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KDB생명보험 전용민원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kdblife.co.kr"
+    "web_url": "https://www.kdblife.co.kr",
+    "subtasks": [
+      {
+        "name": "민원 전용 상담",
+        "phone": "1588-4040 (내선 9)"
+      },
+      {
+        "name": "KDB생명 대표 수신",
+        "phone": "1588-4040"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "DB생명보험 대표고객센터",
@@ -9249,7 +15608,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DB생명보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.idblife.com"
+    "web_url": "https://www.idblife.com",
+    "subtasks": [
+      {
+        "name": "DB생명 대표 수신",
+        "phone": "1588-3131"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-3011-6911"
+      },
+      {
+        "name": "야간 보이스피싱 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "메트라이프생명 대표전화 고객센터",
@@ -9267,7 +15640,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메트라이프생명 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.metlife.co.kr"
+    "web_url": "https://www.metlife.co.kr",
+    "subtasks": [
+      {
+        "name": "메트라이프 대표 수신",
+        "phone": "1588-3374"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-3469-9000"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB라이프생명 대표고객센터",
@@ -9285,7 +15672,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB라이프생명 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kblife.co.kr"
+    "web_url": "https://www.kblife.co.kr",
+    "subtasks": [
+      {
+        "name": "KB라이프 대표 수신",
+        "phone": "1588-3374"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-2146-8200"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "처브라이프생명 대표고객센터",
@@ -9303,7 +15704,21 @@ export const customerData = [
     "isVerified": true,
     "description": "처브라이프생명 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chubblife.co.kr"
+    "web_url": "https://www.chubblife.co.kr",
+    "subtasks": [
+      {
+        "name": "처브라이프 대표 수신",
+        "phone": "1599-4600"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-2146-8200"
+      },
+      {
+        "name": "야간 보이스피싱 접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "하나생명보험 대표고객센터",
@@ -9321,7 +15736,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나생명보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanalife.co.kr"
+    "web_url": "https://www.hanalife.co.kr",
+    "subtasks": [
+      {
+        "name": "하나생명 대표 수신",
+        "phone": "1577-1112"
+      },
+      {
+        "name": "보험청구 전용 팩스선",
+        "phone": "02-2114-1114"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "하나생명보험 대표전화 고객센터",
@@ -9339,7 +15768,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanalife.co.kr"
+    "web_url": "https://www.hanalife.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1577-1112"
+      },
+      {
+        "name": "하나생명 보험청구 팩스",
+        "phone": "02-2114-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "BNP파리바카디프 대표센터 고객센터",
@@ -9357,7 +15800,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BNP파리바카디프 대표센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cardif.co.kr"
+    "web_url": "https://www.cardif.co.kr",
+    "subtasks": [
+      {
+        "name": "BNP파리바 대표 수신",
+        "phone": "1688-1118"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-3485-8000"
+      },
+      {
+        "name": "야간 금융사기 즉시신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "BNP파리바카디프 대표전화 고객센터",
@@ -9375,7 +15832,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BNP파리바카디프 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cardif.co.kr"
+    "web_url": "https://www.cardif.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1688-1118"
+      },
+      {
+        "name": "카디프 융자 대출",
+        "phone": "1688-1118 (내선 3)"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "푸본현대생명 대표고객센터",
@@ -9393,7 +15864,21 @@ export const customerData = [
     "isVerified": true,
     "description": "푸본현대생명 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.fubonhyundai.com"
+    "web_url": "https://www.fubonhyundai.com",
+    "subtasks": [
+      {
+        "name": "푸본현대 대표 수신",
+        "phone": "1577-4624"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-3485-2377"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "푸본현대생명 대표전화 고객센터",
@@ -9411,7 +15896,21 @@ export const customerData = [
     "isVerified": true,
     "description": "푸본현대생명 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.fubonhyundai.com"
+    "web_url": "https://www.fubonhyundai.com",
+    "subtasks": [
+      {
+        "name": "푸본현대 대표 수신",
+        "phone": "1577-4624"
+      },
+      {
+        "name": "보험금 청구 팩스",
+        "phone": "02-3485-2303"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "라이나생명보험 대표전화 고객센터",
@@ -9429,7 +15928,21 @@ export const customerData = [
     "isVerified": true,
     "description": "라이나생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lina.co.kr"
+    "web_url": "https://www.lina.co.kr",
+    "subtasks": [
+      {
+        "name": "라이나생명 대표 수신",
+        "phone": "1588-0058"
+      },
+      {
+        "name": "치아 보증 보험청구",
+        "phone": "1588-0058 (내선 2)"
+      },
+      {
+        "name": "보험금 팩스 수신선",
+        "phone": "02-6944-1100"
+      }
+    ]
   },
   {
     "name": "AIA생명보험 대표고객센터",
@@ -9447,7 +15960,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AIA생명보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aia.co.kr"
+    "web_url": "https://www.aia.co.kr",
+    "subtasks": [
+      {
+        "name": "AIA 대표 수신 종합",
+        "phone": "1588-9898"
+      },
+      {
+        "name": "보험청구 전용 팩스선",
+        "phone": "02-2260-2212"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "AIA생명보험 대표전화 고객센터",
@@ -9465,7 +15992,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AIA생명보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aia.co.kr"
+    "web_url": "https://www.aia.co.kr",
+    "subtasks": [
+      {
+        "name": "AIA생명 대표 수신",
+        "phone": "1588-9898"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-6901-2288"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "IBK연금보험 대표전화 고객센터",
@@ -9483,7 +16024,21 @@ export const customerData = [
     "isVerified": true,
     "description": "IBK연금보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ibklife.co.kr"
+    "web_url": "https://www.ibklife.co.kr",
+    "subtasks": [
+      {
+        "name": "IBK연금 대표 수신",
+        "phone": "1577-1155"
+      },
+      {
+        "name": "연금보험 팩스 청구",
+        "phone": "02-3786-8114"
+      },
+      {
+        "name": "야간 보이스피싱 대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "코리안리재보험 대표전화 고객센터",
@@ -9501,7 +16056,21 @@ export const customerData = [
     "isVerified": true,
     "description": "코리안리재보험 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.koreanre.co.kr"
+    "web_url": "https://www.koreanre.co.kr",
+    "subtasks": [
+      {
+        "name": "코리안리 대표 본사",
+        "phone": "02-3702-8000"
+      },
+      {
+        "name": "재보험 계약 전산부",
+        "phone": "02-3702-8000 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3702-8009"
+      }
+    ]
   },
   {
     "name": "RGA재보험 한국지점 대표 고객센터",
@@ -9519,7 +16088,21 @@ export const customerData = [
     "isVerified": true,
     "description": "RGA재보험 한국지점 대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.rgare.com"
+    "web_url": "https://www.rgare.com",
+    "subtasks": [
+      {
+        "name": "RGA 한국지점 대표",
+        "phone": "02-6730-1300"
+      },
+      {
+        "name": "한국지점 팩스 수신",
+        "phone": "02-6730-1399"
+      },
+      {
+        "name": "RGA 글로벌 제휴협력",
+        "phone": "02-6730-1300"
+      }
+    ]
   },
   {
     "name": "KB손해보험 다이렉트 가입처 고객센터",
@@ -9537,7 +16120,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB손해보험 다이렉트 가입처 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": [
+      {
+        "name": "다이렉트 가입 전용",
+        "phone": "1544-0077"
+      },
+      {
+        "name": "블랙박스 특약 등록",
+        "phone": "1544-0077 (내선 2)"
+      },
+      {
+        "name": "야간 도난/분실 정지",
+        "phone": "1544-0114"
+      }
+    ]
   },
   {
     "name": "KB손해보험 다이렉트 장기가입 고객센터",
@@ -9555,7 +16152,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB손해보험 다이렉트 장기가입 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": [
+      {
+        "name": "장기보험 다이렉트",
+        "phone": "1544-0077 (내선 2)"
+      },
+      {
+        "name": "다이렉트 신규 가입",
+        "phone": "1544-0077"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB손해보험 보험상품 가입콜 고객센터",
@@ -9573,7 +16184,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB손해보험 보험상품 가입콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": [
+      {
+        "name": "오프라인 가입 상담",
+        "phone": "1544-0114 (내선 3)"
+      },
+      {
+        "name": "다이렉트 가입 전용",
+        "phone": "1544-0077"
+      },
+      {
+        "name": "야간 보이스피싱 구제접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB손해보험 외국인전용 서비스 고객센터",
@@ -9591,7 +16216,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB손해보험 외국인전용 서비스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": [
+      {
+        "name": "외국인 영어 지원",
+        "phone": "1544-0114 (내선 5)"
+      },
+      {
+        "name": "다이렉트 가입 상담",
+        "phone": "1544-0077"
+      },
+      {
+        "name": "야간 도난 및 유실 신고",
+        "phone": "1544-0114 (내선 9)"
+      }
+    ]
   },
   {
     "name": "KB손해보험 손해조사 민원센터 고객센터",
@@ -9609,7 +16248,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB손해보험 손해조사 민원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": [
+      {
+        "name": "소비자보호 민원상담",
+        "phone": "1544-0114 (내선 9)"
+      },
+      {
+        "name": "다이렉트 가입 지원",
+        "phone": "1544-0077"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "AIG손해보험 보상 및 계약조회 고객센터",
@@ -9627,7 +16280,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AIG손해보험 보상 및 계약조회 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aig.co.kr"
+    "web_url": "https://www.aig.co.kr",
+    "subtasks": [
+      {
+        "name": "AIG 보상 및 계약조회",
+        "phone": "1544-0911"
+      },
+      {
+        "name": "보험금 팩스 수신선",
+        "phone": "02-2011-4600"
+      },
+      {
+        "name": "AIG 대표 가입 상담",
+        "phone": "1544-0911"
+      }
+    ]
   },
   {
     "name": "AIG손해보험 상품가입콜 고객센터",
@@ -9645,7 +16312,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AIG손해보험 상품가입콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aig.co.kr"
+    "web_url": "https://www.aig.co.kr",
+    "subtasks": [
+      {
+        "name": "AIG 상품가입콜",
+        "phone": "1544-0911"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-2011-4400"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "삼성화재 개인전용 ARS센터 고객센터",
@@ -9663,7 +16344,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성화재 개인전용 ARS센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungfire.com"
+    "web_url": "https://www.samsungfire.com",
+    "subtasks": [
+      {
+        "name": "개인전용 ARS",
+        "phone": "1588-5114"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "0505-161-1114"
+      },
+      {
+        "name": "삼성화재 다이렉트 가입",
+        "phone": "1577-3333"
+      }
+    ]
   },
   {
     "name": "현대해상화재 개인보상 ARS 고객센터",
@@ -9681,7 +16376,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대해상화재 개인보상 ARS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hi.co.kr"
+    "web_url": "https://www.hi.co.kr",
+    "subtasks": [
+      {
+        "name": "개인보상 대표 상담",
+        "phone": "1588-5656"
+      },
+      {
+        "name": "질병상해 보상 신청",
+        "phone": "1588-5656 (내선 2)"
+      },
+      {
+        "name": "다이렉트 신규 가입",
+        "phone": "1899-6611"
+      }
+    ]
   },
   {
     "name": "라이나손해보험 대표고객센터",
@@ -9699,7 +16408,21 @@ export const customerData = [
     "isVerified": true,
     "description": "라이나손해보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lina.co.kr"
+    "web_url": "https://www.lina.co.kr",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1588-0058"
+      },
+      {
+        "name": "보험금 팩스 수신선",
+        "phone": "02-6944-1100"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에이스손해보험 대표고객센터",
@@ -9717,7 +16440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에이스손해보험 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chubb.com/kr-ko"
+    "web_url": "https://www.chubb.com/kr-ko",
+    "subtasks": [
+      {
+        "name": "에이스손보 대표 수신",
+        "phone": "1566-5800"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-2011-4600"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "건설공제조합 대표민원센터 고객센터",
@@ -9735,7 +16472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "건설공제조합 대표민원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cgnt.co.kr"
+    "web_url": "https://www.cgnt.co.kr",
+    "subtasks": [
+      {
+        "name": "건설공제 대표 본사",
+        "phone": "1588-1444"
+      },
+      {
+        "name": "건설보증 전산부",
+        "phone": "1588-1444 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3702-8009"
+      }
+    ]
   },
   {
     "name": "전문건설공제조합 대표센터 고객센터",
@@ -9753,7 +16504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "전문건설공제조합 대표센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kscfc.co.kr"
+    "web_url": "https://www.kscfc.co.kr",
+    "subtasks": [
+      {
+        "name": "전문건설공제 대표",
+        "phone": "1599-2000"
+      },
+      {
+        "name": "보증서 및 증명서 발급",
+        "phone": "1599-2000 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3434-7009"
+      }
+    ]
   },
   {
     "name": "한국해운조합 대표고객센터",
@@ -9771,7 +16536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국해운조합 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.theksa.or.kr"
+    "web_url": "https://www.theksa.or.kr",
+    "subtasks": [
+      {
+        "name": "해운조합 대표 본사",
+        "phone": "02-6096-2000"
+      },
+      {
+        "name": "해상공제 수납 관리",
+        "phone": "02-6096-2000 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "화물자동차공제조합 고객센터",
@@ -9789,7 +16568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "화물자동차공제조합 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kfda.or.kr"
+    "web_url": "https://www.kfda.or.kr",
+    "subtasks": [
+      {
+        "name": "화물 사고 긴급출동",
+        "phone": "1577-0990 (내선 1)"
+      },
+      {
+        "name": "질병상해 보상 신청",
+        "phone": "1577-0990 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "개인택시공제조합 대표콜 고객센터",
@@ -9807,7 +16600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "개인택시공제조합 대표콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kpatg.or.kr"
+    "web_url": "https://www.kpatg.or.kr",
+    "subtasks": [
+      {
+        "name": "개인택시 공제 대표",
+        "phone": "1544-7773"
+      },
+      {
+        "name": "사고 피해보상 심사",
+        "phone": "1544-7773 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "법인택시공제조합 종합센터 고객센터",
@@ -9825,7 +16632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "법인택시공제조합 종합센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.taxi.or.kr"
+    "web_url": "https://www.taxi.or.kr",
+    "subtasks": [
+      {
+        "name": "법인택시 공제 대표",
+        "phone": "1544-7771"
+      },
+      {
+        "name": "피해 보상 및 합의",
+        "phone": "1544-7771 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 안심콜",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "교직원공제회 대표고객센터",
@@ -9843,7 +16664,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교직원공제회 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ktcu.or.kr"
+    "web_url": "https://www.ktcu.or.kr",
+    "subtasks": [
+      {
+        "name": "교직원공제 대표 상담",
+        "phone": "1577-3400"
+      },
+      {
+        "name": "대여 및 저축 상품",
+        "phone": "1577-3400 (내선 2)"
+      },
+      {
+        "name": "해지 증명 서류부",
+        "phone": "1577-3400 (내선 3)"
+      }
+    ]
   },
   {
     "name": "군인공제회 대표고객센터",
@@ -9861,7 +16696,21 @@ export const customerData = [
     "isVerified": true,
     "description": "군인공제회 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mscaa.or.kr"
+    "web_url": "https://www.mscaa.or.kr",
+    "subtasks": [
+      {
+        "name": "군인공제 대표 상담",
+        "phone": "1599-9090"
+      },
+      {
+        "name": "대여/이자 정산 부서",
+        "phone": "1599-9090 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "경찰공제회 대표고객센터",
@@ -9879,7 +16728,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경찰공제회 대표고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.poma.or.kr"
+    "web_url": "http://www.poma.or.kr",
+    "subtasks": [
+      {
+        "name": "경찰공제 대표 상담",
+        "phone": "1577-0112"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-2074-0114"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에이스침대 대표고객콜 고객센터",
@@ -9897,7 +16760,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에이스침대 대표고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.acebed.com"
+    "web_url": "https://www.acebed.com",
+    "subtasks": [
+      {
+        "name": "에이스침대 대표 서비스",
+        "phone": "1599-7121"
+      },
+      {
+        "name": "침대 이전설치 예약",
+        "phone": "1599-7121 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-514-1121"
+      }
+    ]
   },
   {
     "name": "ABL생명 고객센터",
@@ -9915,7 +16792,21 @@ export const customerData = [
     "isVerified": true,
     "description": "ABL생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.abllife.co.kr"
+    "web_url": "https://www.abllife.co.kr",
+    "subtasks": [
+      {
+        "name": "ABL생명 대표 수신",
+        "phone": "1588-6500"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-3788-1114"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "보람상조 고객센터",
@@ -9933,7 +16824,21 @@ export const customerData = [
     "isVerified": true,
     "description": "보람상조 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.boram.com"
+    "web_url": "https://www.boram.com",
+    "subtasks": [
+      {
+        "name": "보람상조 대표 수신",
+        "phone": "1588-6551"
+      },
+      {
+        "name": "의전 및 장례 긴급",
+        "phone": "1588-6551 (내선 1)"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-3485-8000"
+      }
+    ]
   },
   {
     "name": "프리드라이프 고객센터",
@@ -9951,7 +16856,21 @@ export const customerData = [
     "isVerified": true,
     "description": "프리드라이프 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.preedlife.com"
+    "web_url": "https://www.preedlife.com",
+    "subtasks": [
+      {
+        "name": "프리드라이프 대표",
+        "phone": "1588-3740"
+      },
+      {
+        "name": "의전 및 장례 긴급",
+        "phone": "1588-3740 (내선 1)"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-2260-2212"
+      }
+    ]
   },
   {
     "name": "대명아임레디 고객센터",
@@ -9969,7 +16888,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대명아임레디 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daemyungimready.com"
+    "web_url": "https://www.daemyungimready.com",
+    "subtasks": [
+      {
+        "name": "대명아임레디 대표",
+        "phone": "1588-8511"
+      },
+      {
+        "name": "장례 긴급 의전선",
+        "phone": "1588-8511 (내선 1)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "하나생명 고객센터",
@@ -9987,7 +16920,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanalife.co.kr"
+    "web_url": "https://www.hanalife.co.kr",
+    "subtasks": [
+      {
+        "name": "하나생명 대표 수신",
+        "phone": "1577-1112"
+      },
+      {
+        "name": "보험청구 전용 팩스선",
+        "phone": "02-2114-1114"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KDB생명 고객센터",
@@ -10005,7 +16952,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KDB생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kdblife.co.kr"
+    "web_url": "https://www.kdblife.co.kr",
+    "subtasks": [
+      {
+        "name": "KDB생명 대표 수신",
+        "phone": "1588-4040"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-6226-1743"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "교원라이프 고객센터",
@@ -10023,7 +16984,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교원라이프 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyowonlife.co.kr"
+    "web_url": "https://www.kyowonlife.co.kr",
+    "subtasks": [
+      {
+        "name": "교원라이프 대표",
+        "phone": "1588-2233"
+      },
+      {
+        "name": "장례 긴급 의전선",
+        "phone": "1588-2233 (내선 1)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "iM라이프(DGB생명) 고객센터",
@@ -10041,7 +17016,21 @@ export const customerData = [
     "isVerified": true,
     "description": "iM라이프(DGB생명) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.imlife.co.kr"
+    "web_url": "https://www.imlife.co.kr",
+    "subtasks": [
+      {
+        "name": "iM라이프 대표 수신",
+        "phone": "1588-2280"
+      },
+      {
+        "name": "보험금 청구 팩스",
+        "phone": "02-3786-8114"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "화물공제조합 고객센터",
@@ -10059,7 +17048,21 @@ export const customerData = [
     "isVerified": true,
     "description": "화물공제조합 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kfda.or.kr"
+    "web_url": "https://www.kfda.or.kr",
+    "subtasks": [
+      {
+        "name": "화물 사고 긴급출동",
+        "phone": "1577-0990 (내선 1)"
+      },
+      {
+        "name": "질병상해 보상 신청",
+        "phone": "1577-0990 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "건설근로자공제회 고객센터",
@@ -10077,7 +17080,21 @@ export const customerData = [
     "isVerified": true,
     "description": "건설근로자공제회 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cw.or.kr"
+    "web_url": "https://www.cw.or.kr",
+    "subtasks": [
+      {
+        "name": "퇴직공제금 청구",
+        "phone": "1666-1122 (내선 1)"
+      },
+      {
+        "name": "복지 서비스 안내",
+        "phone": "1666-1122 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-519-2000"
+      }
+    ]
   },
   {
     "name": "에이스보험 고객센터",
@@ -10095,7 +17112,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에이스보험 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chubb.com/kr-ko"
+    "web_url": "https://www.chubb.com/kr-ko",
+    "subtasks": [
+      {
+        "name": "에이스손보 대표 수신",
+        "phone": "1566-5800"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-2011-4600"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "악사 고객센터",
@@ -10113,7 +17144,21 @@ export const customerData = [
     "isVerified": true,
     "description": "악사 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.axa.co.kr"
+    "web_url": "https://www.axa.co.kr",
+    "subtasks": [
+      {
+        "name": "악사 긴급출동 접수",
+        "phone": "1566-1566 (내선 1)"
+      },
+      {
+        "name": "다이렉트 신규 가입",
+        "phone": "1566-2566"
+      },
+      {
+        "name": "장기보험 보상 청구",
+        "phone": "1566-1566 (내선 3)"
+      }
+    ]
   },
   {
     "name": "캐롯 퍼마일 고객센터",
@@ -10131,7 +17176,21 @@ export const customerData = [
     "isVerified": true,
     "description": "캐롯 퍼마일 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.carrotins.com"
+    "web_url": "https://www.carrotins.com",
+    "subtasks": [
+      {
+        "name": "퍼마일 긴급출동",
+        "phone": "1566-0300 (내선 1)"
+      },
+      {
+        "name": "퍼마일 기기오류 기술",
+        "phone": "1566-0300 (내선 4)"
+      },
+      {
+        "name": "여행자보험 보상청구",
+        "phone": "1566-0300 (내선 2)"
+      }
+    ]
   },
   {
     "name": "DGB생명 고객센터",
@@ -10149,7 +17208,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DGB생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.imlife.co.kr"
+    "web_url": "https://www.imlife.co.kr",
+    "subtasks": [
+      {
+        "name": "iM라이프 대표 수신",
+        "phone": "1588-2280"
+      },
+      {
+        "name": "보험금 청구 팩스",
+        "phone": "02-3786-8114"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB생명 고객센터",
@@ -10167,7 +17240,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kblife.co.kr"
+    "web_url": "https://www.kblife.co.kr",
+    "subtasks": [
+      {
+        "name": "KB라이프 대표 수신",
+        "phone": "1588-3374"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-2146-8200"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "DB생명 고객센터",
@@ -10185,7 +17272,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DB생명 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.idblife.com"
+    "web_url": "https://www.idblife.com",
+    "subtasks": [
+      {
+        "name": "DB생명 대표 수신",
+        "phone": "1588-3131"
+      },
+      {
+        "name": "보험금 팩스 청구선",
+        "phone": "02-3011-6911"
+      },
+      {
+        "name": "야간 보이스피싱 긴급대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KB 고객센터",
@@ -10203,7 +17304,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbinsure.co.kr"
+    "web_url": "https://www.kbinsure.co.kr",
+    "subtasks": [
+      {
+        "name": "매직카 긴급출동",
+        "phone": "1544-0114 (내선 1)"
+      },
+      {
+        "name": "질병상해 보험금 청구",
+        "phone": "1544-0114 (내선 2)"
+      },
+      {
+        "name": "다이렉트 가입처",
+        "phone": "1544-0077"
+      }
+    ]
   },
   {
     "name": "ABL생명보험 보험청구팩스 고객센터",
@@ -10221,7 +17336,21 @@ export const customerData = [
     "isVerified": true,
     "description": "ABL생명보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.abllife.co.kr"
+    "web_url": "https://www.abllife.co.kr",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-3788-1114"
+      },
+      {
+        "name": "ABL 대표 종합 센터",
+        "phone": "1588-6500"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-6500"
+      }
+    ]
   },
   {
     "name": "흥국생명보험 보험청구팩스 고객센터",
@@ -10239,7 +17368,21 @@ export const customerData = [
     "isVerified": true,
     "description": "흥국생명보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.heungkuklife.co.kr"
+    "web_url": "https://www.heungkuklife.co.kr",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-6901-2288"
+      },
+      {
+        "name": "흥국 대표 종합 센터",
+        "phone": "1588-2288"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-2288"
+      }
+    ]
   },
   {
     "name": "흥국생명보험 민원상담센터 고객센터",
@@ -10257,7 +17400,21 @@ export const customerData = [
     "isVerified": true,
     "description": "흥국생명보험 민원상담센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.heungkuklife.co.kr"
+    "web_url": "https://www.heungkuklife.co.kr",
+    "subtasks": [
+      {
+        "name": "민원 전용 상담",
+        "phone": "1588-2288 (내선 9)"
+      },
+      {
+        "name": "흥국생명 대표 수신",
+        "phone": "1588-2288"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KDB생명보험 보험청구팩스 고객센터",
@@ -10275,7 +17432,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KDB생명보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kdblife.co.kr"
+    "web_url": "https://www.kdblife.co.kr",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-6226-1743"
+      },
+      {
+        "name": "KDB 대표 종합 센터",
+        "phone": "1588-4040"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-4040"
+      }
+    ]
   },
   {
     "name": "DB생명보험 보험청구팩스 고객센터",
@@ -10293,7 +17464,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DB생명보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.idblife.com"
+    "web_url": "https://www.idblife.com",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-3011-6911"
+      },
+      {
+        "name": "DB 대표 종합 센터",
+        "phone": "1588-3131"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-3131"
+      }
+    ]
   },
   {
     "name": "하나생명보험 보험청구팩스 고객센터",
@@ -10311,7 +17496,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나생명보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanalife.co.kr"
+    "web_url": "https://www.hanalife.co.kr",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-2114-1114"
+      },
+      {
+        "name": "하나 대표 종합 센터",
+        "phone": "1577-1112"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1577-1112"
+      }
+    ]
   },
   {
     "name": "푸본현대생명 보험청구팩스 고객센터",
@@ -10329,7 +17528,21 @@ export const customerData = [
     "isVerified": true,
     "description": "푸본현대생명 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.fubonhyundai.com"
+    "web_url": "https://www.fubonhyundai.com",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-3485-2377"
+      },
+      {
+        "name": "푸본현대 대표 종합",
+        "phone": "1577-4624"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1577-4624"
+      }
+    ]
   },
   {
     "name": "라이나생명보험 보험청구팩스 고객센터",
@@ -10347,7 +17560,21 @@ export const customerData = [
     "isVerified": true,
     "description": "라이나생명보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lina.co.kr"
+    "web_url": "https://www.lina.co.kr",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-6944-1100"
+      },
+      {
+        "name": "라이나 대표 종합 센터",
+        "phone": "1588-0058"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-0058"
+      }
+    ]
   },
   {
     "name": "AIA생명보험 보험청구팩스 고객센터",
@@ -10365,7 +17592,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AIA생명보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aia.co.kr"
+    "web_url": "https://www.aia.co.kr",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-2260-2212"
+      },
+      {
+        "name": "AIA 대표 종합 센터",
+        "phone": "1588-9898"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-9898"
+      }
+    ]
   },
   {
     "name": "AIG손해보험 민원신청 데스크 고객센터",
@@ -10383,7 +17624,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AIG손해보험 민원신청 데스크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aig.co.kr"
+    "web_url": "https://www.aig.co.kr",
+    "subtasks": [
+      {
+        "name": "민원 전용 상담",
+        "phone": "1544-0911 (내선 9)"
+      },
+      {
+        "name": "AIG손보 대표 수신",
+        "phone": "1544-0911"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "AIG손해보험 보험청구팩스 고객센터",
@@ -10401,7 +17656,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AIG손해보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aig.co.kr"
+    "web_url": "https://www.aig.co.kr",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "02-2011-4400"
+      },
+      {
+        "name": "AIG 대표 종합 센터",
+        "phone": "1544-0911"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1544-0911"
+      }
+    ]
   },
   {
     "name": "삼성화재 보험청구팩스 고객센터",
@@ -10419,7 +17688,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성화재 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungfire.com"
+    "web_url": "https://www.samsungfire.com",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "0505-161-1114"
+      },
+      {
+        "name": "삼성화재 대표 종합",
+        "phone": "1588-5114"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-5114"
+      }
+    ]
   },
   {
     "name": "DB손해보험 긴급출동 민원접수 고객센터",
@@ -10437,7 +17720,21 @@ export const customerData = [
     "isVerified": true,
     "description": "DB손해보험 긴급출동 민원접수 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.idb.co.kr"
+    "web_url": "https://www.idb.co.kr",
+    "subtasks": [
+      {
+        "name": "프로미카 긴급출동",
+        "phone": "1588-0100 (내선 1)"
+      },
+      {
+        "name": "질병상해 보상 신청",
+        "phone": "1588-0100 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한화손해보험 보험청구팩스 고객센터",
@@ -10455,7 +17752,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한화손해보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hwgeneralins.com"
+    "web_url": "https://www.hwgeneralins.com",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "0502-779-1004"
+      },
+      {
+        "name": "한화손보 대표 종합",
+        "phone": "1566-8000"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1566-8000"
+      }
+    ]
   },
   {
     "name": "MG손해보험 보험청구팩스 고객센터",
@@ -10473,7 +17784,21 @@ export const customerData = [
     "isVerified": true,
     "description": "MG손해보험 보험청구팩스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mggeneins.com"
+    "web_url": "https://www.mggeneins.com",
+    "subtasks": [
+      {
+        "name": "보험청구 전용 팩스",
+        "phone": "0505-022-9595"
+      },
+      {
+        "name": "MG손보 대표 종합",
+        "phone": "1588-5959"
+      },
+      {
+        "name": "수신 확인 자동 문자",
+        "phone": "1588-5959"
+      }
+    ]
   },
   {
     "name": "코레일 고객센터",
@@ -10491,7 +17816,21 @@ export const customerData = [
     "isVerified": true,
     "description": "코레일 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.letskorail.com"
+    "web_url": "https://www.letskorail.com",
+    "subtasks": [
+      {
+        "name": "기차표 예매 및 안내",
+        "phone": "1544-7788"
+      },
+      {
+        "name": "철도 회원등록/탈퇴",
+        "phone": "1544-7788"
+      },
+      {
+        "name": "유실물 센터 종합",
+        "phone": "1544-7788"
+      }
+    ]
   },
   {
     "name": "아시아나항공 고객센터",
@@ -10509,7 +17848,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아시아나항공 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.flyasiana.com"
+    "web_url": "https://www.flyasiana.com",
+    "subtasks": [
+      {
+        "name": "국내/국제 예약발권",
+        "phone": "1588-8000"
+      },
+      {
+        "name": "아시아나클럽 회원",
+        "phone": "1588-8188"
+      },
+      {
+        "name": "수하물 분실/사고",
+        "phone": "1588-8000"
+      }
+    ]
   },
   {
     "name": "제주항공 고객센터",
@@ -10527,7 +17880,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제주항공 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jejuair.net"
+    "web_url": "https://www.jejuair.net",
+    "subtasks": [
+      {
+        "name": "제주항공 예약/발권",
+        "phone": "1599-1500"
+      },
+      {
+        "name": "회원가입/포인트문의",
+        "phone": "1599-1500"
+      },
+      {
+        "name": "단체 및 전세기 문의",
+        "phone": "1599-1500"
+      }
+    ]
   },
   {
     "name": "야놀자 고객센터",
@@ -10545,7 +17912,21 @@ export const customerData = [
     "isVerified": true,
     "description": "야놀자 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yanolja.com"
+    "web_url": "https://www.yanolja.com",
+    "subtasks": [
+      {
+        "name": "야놀자 고객 전용",
+        "phone": "1644-1346"
+      },
+      {
+        "name": "야놀자 제휴 사장님",
+        "phone": "1644-1346 (내선 2)"
+      },
+      {
+        "name": "티켓/레저 통합상담",
+        "phone": "1644-1346"
+      }
+    ]
   },
   {
     "name": "SRT 고객센터",
@@ -10563,7 +17944,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SRT 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://etk.srail.kr"
+    "web_url": "https://etk.srail.kr",
+    "subtasks": [
+      {
+        "name": "SRT 승차권 및 안내",
+        "phone": "1800-1472"
+      },
+      {
+        "name": "SRT 유실물 센터",
+        "phone": "1800-1472"
+      },
+      {
+        "name": "에스알 본사 대표선",
+        "phone": "02-6177-8000"
+      }
+    ]
   },
   {
     "name": "대한항공 고객센터",
@@ -10581,7 +17976,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대한항공 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.koreanair.com"
+    "web_url": "https://www.koreanair.com",
+    "subtasks": [
+      {
+        "name": "대한항공 예약 발권",
+        "phone": "1588-2001"
+      },
+      {
+        "name": "스카이패스 우수회원",
+        "phone": "1588-2001 (내선 3)"
+      },
+      {
+        "name": "화물 특송 및 물류",
+        "phone": "1588-2001"
+      }
+    ]
   },
   {
     "name": "여기어때 고객센터",
@@ -10599,7 +18008,21 @@ export const customerData = [
     "isVerified": true,
     "description": "여기어때 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yeogi.com"
+    "web_url": "https://www.yeogi.com",
+    "subtasks": [
+      {
+        "name": "여기어때 구매고객",
+        "phone": "1670-6250"
+      },
+      {
+        "name": "여기어때 제휴점 사장님",
+        "phone": "1670-6250 (내선 2)"
+      },
+      {
+        "name": "비즈니스 제휴 문의",
+        "phone": "1670-6250"
+      }
+    ]
   },
   {
     "name": "인터파크 티켓 고객센터",
@@ -10617,7 +18040,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인터파크 티켓 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://ticket.interpark.com"
+    "web_url": "https://ticket.interpark.com",
+    "subtasks": [
+      {
+        "name": "티켓 예매 및 취소",
+        "phone": "1544-1555"
+      },
+      {
+        "name": "인터파크 패밀리 케어",
+        "phone": "1588-1555"
+      },
+      {
+        "name": "티켓 단체관람 문의",
+        "phone": "1544-1555"
+      }
+    ]
   },
   {
     "name": "신라호텔 고객센터",
@@ -10635,7 +18072,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신라호텔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shillahotels.com"
+    "web_url": "https://www.shillahotels.com",
+    "subtasks": [
+      {
+        "name": "신라호텔 대표 안내",
+        "phone": "02-2233-3131"
+      },
+      {
+        "name": "서울점 객실 예약실",
+        "phone": "02-2230-3310"
+      },
+      {
+        "name": "더 파크뷰 뷔페예약",
+        "phone": "02-2230-3374"
+      }
+    ]
   },
   {
     "name": "하나투어 고객센터",
@@ -10653,7 +18104,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나투어 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanatour.com"
+    "web_url": "https://www.hanatour.com",
+    "subtasks": [
+      {
+        "name": "패키지 가입 및 취소",
+        "phone": "1577-1233"
+      },
+      {
+        "name": "하나투어 항공권 전용",
+        "phone": "1577-1233 (내선 2)"
+      },
+      {
+        "name": "하나클럽 마일리지",
+        "phone": "1577-1233"
+      }
+    ]
   },
   {
     "name": "롯데호텔 고객센터",
@@ -10671,7 +18136,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데호텔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lottehotel.com"
+    "web_url": "https://www.lottehotel.com",
+    "subtasks": [
+      {
+        "name": "롯데호텔 서울 대표",
+        "phone": "02-771-1000"
+      },
+      {
+        "name": "통합 객실 예약 센터",
+        "phone": "02-759-7311"
+      },
+      {
+        "name": "라세느 뷔페 예약실",
+        "phone": "02-317-7171"
+      }
+    ]
   },
   {
     "name": "티웨이항공 고객센터",
@@ -10689,7 +18168,21 @@ export const customerData = [
     "isVerified": true,
     "description": "티웨이항공 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.twayair.com"
+    "web_url": "https://www.twayair.com",
+    "subtasks": [
+      {
+        "name": "티웨이 항공권 예약",
+        "phone": "1688-8686"
+      },
+      {
+        "name": "단체 항공권 예약실",
+        "phone": "1688-8686 (내선 3)"
+      },
+      {
+        "name": "유실물 수하물 센터",
+        "phone": "1688-8686"
+      }
+    ]
   },
   {
     "name": "진에어 고객센터",
@@ -10707,7 +18200,21 @@ export const customerData = [
     "isVerified": true,
     "description": "진에어 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jinair.com"
+    "web_url": "https://www.jinair.com",
+    "subtasks": [
+      {
+        "name": "진에어 국내외 예약",
+        "phone": "1600-6200"
+      },
+      {
+        "name": "나비포인트 적립센터",
+        "phone": "1600-6200 (내선 2)"
+      },
+      {
+        "name": "진에어 그룹 전송팩스",
+        "phone": "02-3660-5500"
+      }
+    ]
   },
   {
     "name": "인터파크 투어 고객센터",
@@ -10725,7 +18232,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인터파크 투어 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://tour.interpark.com"
+    "web_url": "https://tour.interpark.com",
+    "subtasks": [
+      {
+        "name": "해외 자유/패키지 예약",
+        "phone": "1588-3443"
+      },
+      {
+        "name": "인터파크 국내 호텔",
+        "phone": "1588-3443 (내선 2)"
+      },
+      {
+        "name": "항공권 예매 전용선",
+        "phone": "1544-1555"
+      }
+    ]
   },
   {
     "name": "모두투어 고객센터",
@@ -10743,7 +18264,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모두투어 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.modetour.com"
+    "web_url": "https://www.modetour.com",
+    "subtasks": [
+      {
+        "name": "해외 패키지 가입취소",
+        "phone": "1544-5252"
+      },
+      {
+        "name": "모두투어 항공권 직통",
+        "phone": "1544-5252 (내선 2)"
+      },
+      {
+        "name": "모두멤버스 마일리지",
+        "phone": "1544-5252"
+      }
+    ]
   },
   {
     "name": "에어부산 고객센터",
@@ -10761,7 +18296,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에어부산 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.airbusan.com"
+    "web_url": "https://www.airbusan.com",
+    "subtasks": [
+      {
+        "name": "에어부산 국내외 예약",
+        "phone": "1661-2627"
+      },
+      {
+        "name": "에어부산 기업 우대선",
+        "phone": "1661-2627 (내선 3)"
+      },
+      {
+        "name": "김해공항 수하물 분실",
+        "phone": "1661-2627"
+      }
+    ]
   },
   {
     "name": "조선호텔(웨스틴조선) 고객센터",
@@ -10779,7 +18328,21 @@ export const customerData = [
     "isVerified": true,
     "description": "조선호텔(웨스틴조선) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://josunhotel.com"
+    "web_url": "https://josunhotel.com",
+    "subtasks": [
+      {
+        "name": "웨스틴조선 서울 대표",
+        "phone": "02-771-0500"
+      },
+      {
+        "name": "아리아 뷔페 예약실",
+        "phone": "02-317-0357"
+      },
+      {
+        "name": "클럽 조선 멤버십",
+        "phone": "02-317-0400"
+      }
+    ]
   },
   {
     "name": "트립닷컴 고객센터",
@@ -10797,7 +18360,21 @@ export const customerData = [
     "isVerified": true,
     "description": "트립닷컴 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kr.trip.com"
+    "web_url": "https://kr.trip.com",
+    "subtasks": [
+      {
+        "name": "트립닷컴 대표 고객선",
+        "phone": "1666-0060"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-6901-2288"
+      },
+      {
+        "name": "해외 직구 결제해제",
+        "phone": "1666-0060"
+      }
+    ]
   },
   {
     "name": "그랜드하얏트서울 고객센터",
@@ -10815,7 +18392,21 @@ export const customerData = [
     "isVerified": true,
     "description": "그랜드하얏트서울 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyatt.com/ko-KR/hotel/south-korea/grand-hyatt-seoul/selrs"
+    "web_url": "https://www.hyatt.com/ko-KR/hotel/south-korea/grand-hyatt-seoul/selrs",
+    "subtasks": [
+      {
+        "name": "그랜드하얏트 대표",
+        "phone": "02-797-1234"
+      },
+      {
+        "name": "호텔 객실 예약실",
+        "phone": "02-799-8888"
+      },
+      {
+        "name": "야간 보안 및 발렛",
+        "phone": "02-797-1234"
+      }
+    ]
   },
   {
     "name": "에어서울 고객센터",
@@ -10833,7 +18424,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에어서울 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://flyairseoul.com"
+    "web_url": "https://flyairseoul.com",
+    "subtasks": [
+      {
+        "name": "에어서울 예약 발권",
+        "phone": "1800-8100"
+      },
+      {
+        "name": "특약 주차 및 제신고",
+        "phone": "1800-8100 (내선 2)"
+      },
+      {
+        "name": "수하물 분실 센터",
+        "phone": "1800-8100"
+      }
+    ]
   },
   {
     "name": "이스타항공 고객센터",
@@ -10851,7 +18456,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이스타항공 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eastarjet.com"
+    "web_url": "https://www.eastarjet.com",
+    "subtasks": [
+      {
+        "name": "이스타 항공 예약",
+        "phone": "1544-0080"
+      },
+      {
+        "name": "소아 유모차 케어",
+        "phone": "1544-0080 (내선 2)"
+      },
+      {
+        "name": "화물 정산 수하물",
+        "phone": "1544-0080"
+      }
+    ]
   },
   {
     "name": "고속버스 통합예매(코버스) 고객센터",
@@ -10869,7 +18488,21 @@ export const customerData = [
     "isVerified": true,
     "description": "고속버스 통합예매(코버스) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kobus.co.kr"
+    "web_url": "https://www.kobus.co.kr",
+    "subtasks": [
+      {
+        "name": "코버스 통합 고객선",
+        "phone": "1644-9030"
+      },
+      {
+        "name": "이지티켓 예매 문의",
+        "phone": "1644-9030"
+      },
+      {
+        "name": "유실물 보관 센터",
+        "phone": "1644-9030 (내선 3)"
+      }
+    ]
   },
   {
     "name": "서울메리어트호텔 고객센터",
@@ -10887,7 +18520,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울메리어트호텔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.marriott.co.kr"
+    "web_url": "https://www.marriott.co.kr",
+    "subtasks": [
+      {
+        "name": "JW메리어트 서울 대표",
+        "phone": "02-6282-6262"
+      },
+      {
+        "name": "플레이버즈 뷔페 예약",
+        "phone": "02-6282-6262 (내선 2)"
+      },
+      {
+        "name": "호텔 멤버십 포인트",
+        "phone": "02-6282-6262"
+      }
+    ]
   },
   {
     "name": "워커힐호텔 고객센터",
@@ -10905,7 +18552,21 @@ export const customerData = [
     "isVerified": true,
     "description": "워커힐호텔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.walkerhill.com"
+    "web_url": "https://www.walkerhill.com",
+    "subtasks": [
+      {
+        "name": "그랜드 워커힐 대표",
+        "phone": "02-455-5000"
+      },
+      {
+        "name": "피자힐 레스토랑 예약",
+        "phone": "02-455-5000 (내선 2)"
+      },
+      {
+        "name": "비스타 워커힐 안내",
+        "phone": "02-455-5000"
+      }
+    ]
   },
   {
     "name": "노랑풍선 고객센터",
@@ -10923,7 +18584,21 @@ export const customerData = [
     "isVerified": true,
     "description": "노랑풍선 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ybtour.co.kr"
+    "web_url": "https://www.ybtour.co.kr",
+    "subtasks": [
+      {
+        "name": "노랑풍선 대표 수신",
+        "phone": "1544-2288"
+      },
+      {
+        "name": "항공권 예매 전용선",
+        "phone": "1544-2288 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2127-1114"
+      }
+    ]
   },
   {
     "name": "파라다이스호텔 고객센터",
@@ -10941,7 +18616,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파라다이스호텔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.p-city.com"
+    "web_url": "https://www.p-city.com",
+    "subtasks": [
+      {
+        "name": "파라다이스시티 대표",
+        "phone": "1833-8855"
+      },
+      {
+        "name": "씨메르 스파 이용실",
+        "phone": "1833-8855 (내선 2)"
+      },
+      {
+        "name": "호텔 멤버십 포인트",
+        "phone": "1833-8855"
+      }
+    ]
   },
   {
     "name": "SK렌터카 고객센터",
@@ -10959,7 +18648,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK렌터카 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skcarrental.com"
+    "web_url": "https://www.skcarrental.com",
+    "subtasks": [
+      {
+        "name": "장기렌트 신규가입",
+        "phone": "1599-9111"
+      },
+      {
+        "name": "사고 접수 및 긴급출동",
+        "phone": "1599-9111 (내선 1)"
+      },
+      {
+        "name": "야간 도난/분실 정지",
+        "phone": "1599-9111"
+      }
+    ]
   },
   {
     "name": "롯데렌터카 고객센터",
@@ -10977,7 +18680,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데렌터카 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotterentacar.net"
+    "web_url": "https://www.lotterentacar.net",
+    "subtasks": [
+      {
+        "name": "단기렌트 예약안내",
+        "phone": "1588-1230"
+      },
+      {
+        "name": "긴급출동 및 사고접수",
+        "phone": "1588-1230 (내선 1)"
+      },
+      {
+        "name": "장기렌트 수납관리",
+        "phone": "1588-1230 (내선 2)"
+      }
+    ]
   },
   {
     "name": "아시아나IDT 솔루션콜 고객센터",
@@ -10995,7 +18712,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아시아나IDT 솔루션콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.asianaidt.com"
+    "web_url": "http://www.asianaidt.com",
+    "subtasks": [
+      {
+        "name": "아시아나IDT 기술지원",
+        "phone": "02-2127-8000"
+      },
+      {
+        "name": "항공 시스템 전담부",
+        "phone": "02-2127-8000 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2127-8009"
+      }
+    ]
   },
   {
     "name": "타다 택시 드라이버케어 고객센터",
@@ -11013,7 +18744,21 @@ export const customerData = [
     "isVerified": true,
     "description": "타다 택시 드라이버케어 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://tada.to"
+    "web_url": "https://tada.to",
+    "subtasks": [
+      {
+        "name": "타다 드라이버 케어",
+        "phone": "1644-4282"
+      },
+      {
+        "name": "타다 크루 가입 전용",
+        "phone": "1644-4282"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "카카오T 블루 통합드라이버 고객센터",
@@ -11031,7 +18776,21 @@ export const customerData = [
     "isVerified": true,
     "description": "카카오T 블루 통합드라이버 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kakaomobility.com"
+    "web_url": "https://www.kakaomobility.com",
+    "subtasks": [
+      {
+        "name": "카카오T 블루 드라이버",
+        "phone": "1599-9400"
+      },
+      {
+        "name": "가맹점 포스 장애 접수",
+        "phone": "1599-9400 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-500-0013"
+      }
+    ]
   },
   {
     "name": "아이엠택시 통합드라이버 고객센터",
@@ -11049,7 +18808,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아이엠택시 통합드라이버 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.imforyou.co.kr"
+    "web_url": "https://www.imforyou.co.kr",
+    "subtasks": [
+      {
+        "name": "아이엠 드라이버 종합",
+        "phone": "1800-0112"
+      },
+      {
+        "name": "아이엠 콜택시 호출",
+        "phone": "1800-0112"
+      },
+      {
+        "name": "유실물 보관 센터",
+        "phone": "1800-0112"
+      }
+    ]
   },
   {
     "name": "파파택시 드라이버케어 고객센터",
@@ -11067,7 +18840,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파파택시 드라이버케어 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.papamobility.com"
+    "web_url": "https://www.papamobility.com",
+    "subtasks": [
+      {
+        "name": "파파 드라이버 케어",
+        "phone": "1544-9040"
+      },
+      {
+        "name": "파파 택시 예약 콜",
+        "phone": "1544-9040"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "우티 UT 통합드라이버콜 고객센터",
@@ -11085,7 +18872,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우티 UT 통합드라이버콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.uber.com/ko-KR/blog/seoul"
+    "web_url": "https://www.uber.com/ko-KR/blog/seoul",
+    "subtasks": [
+      {
+        "name": "우티 드라이버 통합",
+        "phone": "1800-2646"
+      },
+      {
+        "name": "우버 택시 가맹 문의",
+        "phone": "1800-2646"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "그린카 고객센터",
@@ -11103,7 +18904,21 @@ export const customerData = [
     "isVerified": true,
     "description": "그린카 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.greencar.co.kr"
+    "web_url": "https://www.greencar.co.kr",
+    "subtasks": [
+      {
+        "name": "그린카 대표 수리",
+        "phone": "1899-2770"
+      },
+      {
+        "name": "제주지부 예약 전용",
+        "phone": "1899-2770"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "힐튼호텔 고객센터",
@@ -11121,7 +18936,21 @@ export const customerData = [
     "isVerified": true,
     "description": "힐튼호텔 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hilton.com"
+    "web_url": "https://www.hilton.com",
+    "subtasks": [
+      {
+        "name": "콘래드 서울 대표",
+        "phone": "02-6137-7000"
+      },
+      {
+        "name": "제스트 뷔페 예약실",
+        "phone": "02-6137-7100"
+      },
+      {
+        "name": "힐튼 아너스 멤버십",
+        "phone": "00798-8521-1234"
+      }
+    ]
   },
   {
     "name": "에어로케이항공 고객센터",
@@ -11139,7 +18968,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에어로케이항공 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aerok.com"
+    "web_url": "https://www.aerok.com",
+    "subtasks": [
+      {
+        "name": "에어로케이 대표 예약",
+        "phone": "1899-2299"
+      },
+      {
+        "name": "청주공항 수하물 분실",
+        "phone": "1899-2299"
+      },
+      {
+        "name": "단체 전세기 청약실",
+        "phone": "1899-2299"
+      }
+    ]
   },
   {
     "name": "Hotels.com(호텔스닷컴) 고객센터",
@@ -11157,7 +19000,21 @@ export const customerData = [
     "isVerified": true,
     "description": "Hotels.com(호텔스닷컴) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kr.hotels.com"
+    "web_url": "https://kr.hotels.com",
+    "subtasks": [
+      {
+        "name": "호텔스닷컴 한국어",
+        "phone": "02-3480-0145"
+      },
+      {
+        "name": "익스피디아 공용 센터",
+        "phone": "02-3480-0118"
+      },
+      {
+        "name": "해외 직구 결제해제",
+        "phone": "02-3480-0145"
+      }
+    ]
   },
   {
     "name": "제주국제공항 고객센터",
@@ -11175,7 +19032,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제주국제공항 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.airport.co.kr/jeju/index.do"
+    "web_url": "https://www.airport.co.kr/jeju/index.do",
+    "subtasks": [
+      {
+        "name": "제주공항 통합 안내",
+        "phone": "1661-2626"
+      },
+      {
+        "name": "제주공항 유실물 센터",
+        "phone": "064-797-2521"
+      },
+      {
+        "name": "제주공항 주차 정산",
+        "phone": "064-797-2701"
+      }
+    ]
   },
   {
     "name": "익스피디아 고객센터",
@@ -11193,7 +19064,21 @@ export const customerData = [
     "isVerified": true,
     "description": "익스피디아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.expedia.co.kr"
+    "web_url": "https://www.expedia.co.kr",
+    "subtasks": [
+      {
+        "name": "익스피디아 한국어",
+        "phone": "02-3480-0118"
+      },
+      {
+        "name": "호텔스닷컴 제휴센터",
+        "phone": "02-3480-0145"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에어프랑스 고객센터",
@@ -11211,7 +19096,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에어프랑스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.airfrance.co.kr"
+    "web_url": "https://www.airfrance.co.kr",
+    "subtasks": [
+      {
+        "name": "에어프랑스 한국 예약",
+        "phone": "02-3483-1033"
+      },
+      {
+        "name": "네덜란드항공 공동 데스크",
+        "phone": "02-3483-1033"
+      },
+      {
+        "name": "유럽 환승 기술 지원",
+        "phone": "02-3483-1033"
+      }
+    ]
   },
   {
     "name": "아고다 고객센터",
@@ -11229,7 +19128,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아고다 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.agoda.com"
+    "web_url": "https://www.agoda.com",
+    "subtasks": [
+      {
+        "name": "아고다 한국어 상담",
+        "phone": "02-6022-2444"
+      },
+      {
+        "name": "영어 및 일본어 지원",
+        "phone": "+82-2-6022-2444"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6022-2449"
+      }
+    ]
   },
   {
     "name": "마이리얼트립 고객센터",
@@ -11247,7 +19160,21 @@ export const customerData = [
     "isVerified": true,
     "description": "마이리얼트립 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.myrealtrip.com"
+    "web_url": "https://www.myrealtrip.com",
+    "subtasks": [
+      {
+        "name": "마이리얼트립 대표선",
+        "phone": "1670-1375"
+      },
+      {
+        "name": "해외 현지 긴급 지원",
+        "phone": "1670-1375"
+      },
+      {
+        "name": "파트너 가맹 및 입점",
+        "phone": "1670-1375 (내선 3)"
+      }
+    ]
   },
   {
     "name": "인스파이어 엔터테인먼트 리조트 고객센터",
@@ -11265,7 +19192,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인스파이어 엔터테인먼트 리조트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.inspireer.com"
+    "web_url": "https://www.inspireer.com",
+    "subtasks": [
+      {
+        "name": "인스파이어 리조트 대표",
+        "phone": "032-580-9000"
+      },
+      {
+        "name": "스플래시 베이 전용",
+        "phone": "032-580-9000 (내선 2)"
+      },
+      {
+        "name": "야간 보안 및 주차",
+        "phone": "032-580-9000"
+      }
+    ]
   },
   {
     "name": "비엣젯항공 고객센터",
@@ -11283,7 +19224,21 @@ export const customerData = [
     "isVerified": true,
     "description": "비엣젯항공 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.vietjetair.com"
+    "web_url": "https://www.vietjetair.com",
+    "subtasks": [
+      {
+        "name": "한국 GSA 대표 예약",
+        "phone": "02-318-4924"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-318-4929"
+      },
+      {
+        "name": "인천공항 수하물 수거",
+        "phone": "02-318-4924"
+      }
+    ]
   },
   {
     "name": "플라이강원 고객센터",
@@ -11301,7 +19256,21 @@ export const customerData = [
     "isVerified": true,
     "description": "플라이강원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.flygangwon.com"
+    "web_url": "http://www.flygangwon.com",
+    "subtasks": [
+      {
+        "name": "대표 수신 종합 상담",
+        "phone": "1800-1160"
+      },
+      {
+        "name": "양양공항 수하물 지부",
+        "phone": "1800-1160 (내선 2)"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "호텔스컴바인 고객센터",
@@ -11319,7 +19288,21 @@ export const customerData = [
     "isVerified": true,
     "description": "호텔스컴바인 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hotelscombined.co.kr"
+    "web_url": "https://www.hotelscombined.co.kr",
+    "subtasks": [
+      {
+        "name": "아고다 제휴 예약선",
+        "phone": "02-6022-2444"
+      },
+      {
+        "name": "부킹닷컴 제휴 예약선",
+        "phone": "02-3480-0118"
+      },
+      {
+        "name": "야간 사기방지 일시정지",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "내일투어 고객센터",
@@ -11337,7 +19320,21 @@ export const customerData = [
     "isVerified": true,
     "description": "내일투어 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.naeiltour.co.kr"
+    "web_url": "http://www.naeiltour.co.kr",
+    "subtasks": [
+      {
+        "name": "내일투어 대표 수신",
+        "phone": "02-6262-1111"
+      },
+      {
+        "name": "금까기 자유여행 전용",
+        "phone": "02-6262-1111 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한진관광 고객센터",
@@ -11355,7 +19352,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한진관광 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.kaltour.com"
+    "web_url": "http://www.kaltour.com",
+    "subtasks": [
+      {
+        "name": "한진관광 대표 AS",
+        "phone": "1566-1155"
+      },
+      {
+        "name": "대한항공 전산 마일리지",
+        "phone": "1566-1155 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-726-5500"
+      }
+    ]
   },
   {
     "name": "롯데관광 고객센터",
@@ -11373,7 +19384,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데관광 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.lottetour.com"
+    "web_url": "http://www.lottetour.com",
+    "subtasks": [
+      {
+        "name": "롯데관광 대표 수신",
+        "phone": "1577-3000"
+      },
+      {
+        "name": "크루즈 특화 예약실",
+        "phone": "1577-3000 (내선 3)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "예스24티켓 고객센터",
@@ -11391,7 +19416,21 @@ export const customerData = [
     "isVerified": true,
     "description": "예스24티켓 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://ticket.yes24.com"
+    "web_url": "http://ticket.yes24.com",
+    "subtasks": [
+      {
+        "name": "예스24티켓 대표수신",
+        "phone": "1544-6399"
+      },
+      {
+        "name": "예스24 도서 가습부",
+        "phone": "1544-3800"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "토스 (앱·송금·결제) 고객센터",
@@ -11409,7 +19448,21 @@ export const customerData = [
     "isVerified": true,
     "description": "토스 (앱·송금·결제) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://toss.im"
+    "web_url": "https://toss.im",
+    "subtasks": [
+      {
+        "name": "토스 앱 장애/송금",
+        "phone": "1599-4905"
+      },
+      {
+        "name": "토스 안심보상 접수",
+        "phone": "1599-4905"
+      },
+      {
+        "name": "보이스피싱 피해신고",
+        "phone": "1599-4905 (내선 1)"
+      }
+    ]
   },
   {
     "name": "카카오 고객센터",
@@ -11427,7 +19480,21 @@ export const customerData = [
     "isVerified": true,
     "description": "카카오 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kakaocorp.com"
+    "web_url": "https://www.kakaocorp.com",
+    "subtasks": [
+      {
+        "name": "카카오 통합고객선",
+        "phone": "1577-3754"
+      },
+      {
+        "name": "카카오페이 고객센터",
+        "phone": "1644-7405"
+      },
+      {
+        "name": "카카오 T 드라이버",
+        "phone": "1599-9400"
+      }
+    ]
   },
   {
     "name": "네이버페이 고객센터",
@@ -11445,7 +19512,21 @@ export const customerData = [
     "isVerified": true,
     "description": "네이버페이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://pay.naver.com"
+    "web_url": "https://pay.naver.com",
+    "subtasks": [
+      {
+        "name": "네이버페이 개인고객",
+        "phone": "1588-3819"
+      },
+      {
+        "name": "네이버페이 가맹점",
+        "phone": "1588-3816"
+      },
+      {
+        "name": "네이버 일반 고객센터",
+        "phone": "1588-3820"
+      }
+    ]
   },
   {
     "name": "넷플릭스 고객센터",
@@ -11463,7 +19544,21 @@ export const customerData = [
     "isVerified": true,
     "description": "넷플릭스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.netflix.com"
+    "web_url": "https://www.netflix.com",
+    "subtasks": [
+      {
+        "name": "넷플릭스 한국어 상담",
+        "phone": "080-001-9587"
+      },
+      {
+        "name": "영어 지원 긴급센터",
+        "phone": "080-001-9587 (내선 2)"
+      },
+      {
+        "name": "넷플릭스 앱 원격조치",
+        "phone": "앱 내 고객센터"
+      }
+    ]
   },
   {
     "name": "네이버 고객센터",
@@ -11481,7 +19576,21 @@ export const customerData = [
     "isVerified": true,
     "description": "네이버 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.naver.com"
+    "web_url": "https://www.naver.com",
+    "subtasks": [
+      {
+        "name": "네이버 일반 통합센터",
+        "phone": "1588-3820"
+      },
+      {
+        "name": "네이버페이 전용데스크",
+        "phone": "1588-3819"
+      },
+      {
+        "name": "네이버 쇼핑 파트너",
+        "phone": "1588-3816"
+      }
+    ]
   },
   {
     "name": "토스 고객센터",
@@ -11499,7 +19608,21 @@ export const customerData = [
     "isVerified": true,
     "description": "토스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://toss.im"
+    "web_url": "https://toss.im",
+    "subtasks": [
+      {
+        "name": "토스 간편 뱅킹 상담",
+        "phone": "1599-4905"
+      },
+      {
+        "name": "토스증권 주식 문의",
+        "phone": "1599-7987"
+      },
+      {
+        "name": "토스뱅크 전용 상담",
+        "phone": "1661-7654"
+      }
+    ]
   },
   {
     "name": "업비트 고객센터",
@@ -11517,7 +19640,21 @@ export const customerData = [
     "isVerified": true,
     "description": "업비트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://upbit.com"
+    "web_url": "https://upbit.com",
+    "subtasks": [
+      {
+        "name": "업비트 대표 고객선",
+        "phone": "1588-5682"
+      },
+      {
+        "name": "오입금 회수 특별데스크",
+        "phone": "1588-5682 (내선 2)"
+      },
+      {
+        "name": "케이뱅크 연동 제휴처",
+        "phone": "1522-1000"
+      }
+    ]
   },
   {
     "name": "쿠팡플레이 고객센터",
@@ -11535,7 +19672,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쿠팡플레이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.coupangplay.com"
+    "web_url": "https://www.coupangplay.com",
+    "subtasks": [
+      {
+        "name": "쿠팡플레이 전용 수리",
+        "phone": "1600-9800"
+      },
+      {
+        "name": "쿠팡 와우멤버십 연동",
+        "phone": "1577-7011"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "직방 고객센터",
@@ -11553,7 +19704,21 @@ export const customerData = [
     "isVerified": true,
     "description": "직방 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.zigbang.com"
+    "web_url": "https://www.zigbang.com",
+    "subtasks": [
+      {
+        "name": "직방 대표 고객 센터",
+        "phone": "1661-9073"
+      },
+      {
+        "name": "중개인 파트너 전용선",
+        "phone": "1661-9073 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1661-9073"
+      }
+    ]
   },
   {
     "name": "티빙 고객센터",
@@ -11571,7 +19736,21 @@ export const customerData = [
     "isVerified": true,
     "description": "티빙 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tving.com"
+    "web_url": "https://www.tving.com",
+    "subtasks": [
+      {
+        "name": "티빙 대표 고객 센터",
+        "phone": "1670-1525"
+      },
+      {
+        "name": "티빙 수납 정산 부서",
+        "phone": "1670-1525 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1670-1525"
+      }
+    ]
   },
   {
     "name": "닥터나우 고객센터",
@@ -11589,7 +19768,21 @@ export const customerData = [
     "isVerified": true,
     "description": "닥터나우 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.doctornow.co.kr"
+    "web_url": "https://www.doctornow.co.kr",
+    "subtasks": [
+      {
+        "name": "닥터나우 기술 서비스",
+        "phone": "1670-9171"
+      },
+      {
+        "name": "의료진 전용 파트너",
+        "phone": "1670-9171 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1670-9171"
+      }
+    ]
   },
   {
     "name": "디즈니플러스 고객센터",
@@ -11607,7 +19800,21 @@ export const customerData = [
     "isVerified": true,
     "description": "디즈니플러스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.disneyplus.com"
+    "web_url": "https://www.disneyplus.com",
+    "subtasks": [
+      {
+        "name": "디즈니플러스 한국어",
+        "phone": "080-822-1416"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "080-822-1416"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "페이코 고객센터",
@@ -11625,7 +19832,21 @@ export const customerData = [
     "isVerified": true,
     "description": "페이코 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.payco.com"
+    "web_url": "https://www.payco.com",
+    "subtasks": [
+      {
+        "name": "페이코 대표 수신",
+        "phone": "1544-6891"
+      },
+      {
+        "name": "페이코 카드 승인오류",
+        "phone": "1544-6891 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "웨이브(wavve) 고객센터",
@@ -11643,7 +19864,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웨이브(wavve) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wavve.com"
+    "web_url": "https://www.wavve.com",
+    "subtasks": [
+      {
+        "name": "웨이브 기술 서비스",
+        "phone": "1599-3709"
+      },
+      {
+        "name": "웨이브 결제 및 정산",
+        "phone": "1599-3709 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1599-3709"
+      }
+    ]
   },
   {
     "name": "다방 고객센터",
@@ -11661,7 +19896,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다방 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dabangapp.com"
+    "web_url": "https://www.dabangapp.com",
+    "subtasks": [
+      {
+        "name": "다방 고객 대표선",
+        "phone": "1899-1060"
+      },
+      {
+        "name": "중개사 회원 전용선",
+        "phone": "1899-1060 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1899-1060"
+      }
+    ]
   },
   {
     "name": "똑닥 고객센터",
@@ -11679,7 +19928,21 @@ export const customerData = [
     "isVerified": true,
     "description": "똑닥 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ddocdoc.com"
+    "web_url": "https://www.ddocdoc.com",
+    "subtasks": [
+      {
+        "name": "똑닥 대표 서비스",
+        "phone": "1899-9351"
+      },
+      {
+        "name": "병원 전용 파트너쉽",
+        "phone": "1899-9351 (내선 3)"
+      },
+      {
+        "name": "야간 도난 및 유실 신고",
+        "phone": "1899-9351"
+      }
+    ]
   },
   {
     "name": "왓챠 고객센터",
@@ -11697,7 +19960,21 @@ export const customerData = [
     "isVerified": true,
     "description": "왓챠 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://watcha.com"
+    "web_url": "https://watcha.com",
+    "subtasks": [
+      {
+        "name": "왓챠 대표 서비스",
+        "phone": "02-515-9985"
+      },
+      {
+        "name": "수신자부담 유심 가입",
+        "phone": "080-850-1114"
+      },
+      {
+        "name": "야간 분실 긴급 정지",
+        "phone": "02-515-9985 (내선 9)"
+      }
+    ]
   },
   {
     "name": "굿닥 고객센터",
@@ -11715,7 +19992,21 @@ export const customerData = [
     "isVerified": true,
     "description": "굿닥 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.goodoc.co.kr"
+    "web_url": "https://www.goodoc.co.kr",
+    "subtasks": [
+      {
+        "name": "굿닥 대표 서비스",
+        "phone": "1661-3954"
+      },
+      {
+        "name": "병원 제휴 마케팅",
+        "phone": "1661-3954 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1661-3954"
+      }
+    ]
   },
   {
     "name": "포스코DX 솔루션 지원센터 고객센터",
@@ -11733,7 +20024,21 @@ export const customerData = [
     "isVerified": true,
     "description": "포스코DX 솔루션 지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.poscodx.com"
+    "web_url": "https://www.poscodx.com",
+    "subtasks": [
+      {
+        "name": "포스코DX 기술 헬프",
+        "phone": "031-723-1114"
+      },
+      {
+        "name": "스마트팩토리 전용",
+        "phone": "031-723-1114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "031-723-1009"
+      }
+    ]
   },
   {
     "name": "현대오토에버 솔루션지원 고객센터",
@@ -11751,7 +20056,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대오토에버 솔루션지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyundai-autoever.com"
+    "web_url": "https://www.hyundai-autoever.com",
+    "subtasks": [
+      {
+        "name": "오토에버 기술 서비스",
+        "phone": "1566-6114"
+      },
+      {
+        "name": "현대 블루링크 제휴처",
+        "phone": "1899-0606"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6296-6114"
+      }
+    ]
   },
   {
     "name": "CJ올리브네트웍스 기술콜 고객센터",
@@ -11769,7 +20088,21 @@ export const customerData = [
     "isVerified": true,
     "description": "CJ올리브네트웍스 기술콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cjolivenetworks.co.kr"
+    "web_url": "https://www.cjolivenetworks.co.kr",
+    "subtasks": [
+      {
+        "name": "올리브넷 기술 지원",
+        "phone": "02-6252-1114"
+      },
+      {
+        "name": "올리브영 POS 시스템",
+        "phone": "02-6252-1114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6252-0119"
+      }
+    ]
   },
   {
     "name": "한화시스템 ICT고객센터",
@@ -11787,7 +20120,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한화시스템 ICT고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanwhasystems.com"
+    "web_url": "https://www.hanwhasystems.com",
+    "subtasks": [
+      {
+        "name": "한화 ICT 대표 지원",
+        "phone": "1544-1114"
+      },
+      {
+        "name": "한화 방산 시스템 지원",
+        "phone": "02-729-1114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-1114"
+      }
+    ]
   },
   {
     "name": "다우기술 고객지원센터 고객센터",
@@ -11805,7 +20152,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다우기술 고객지원센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daou.co.kr"
+    "web_url": "https://www.daou.co.kr",
+    "subtasks": [
+      {
+        "name": "다우오피스 가이드",
+        "phone": "1588-6012 (내선 1)"
+      },
+      {
+        "name": "뿌리오 가맹점 전송",
+        "phone": "1588-6012 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3484-5114"
+      }
+    ]
   },
   {
     "name": "스마트피싱보호 고객센터",
@@ -11823,7 +20184,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스마트피싱보호 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smartphishing.co.kr"
+    "web_url": "https://www.smartphishing.co.kr",
+    "subtasks": [
+      {
+        "name": "피싱보호 해지 접수",
+        "phone": "1811-0044"
+      },
+      {
+        "name": "피싱 보상 청구 심사",
+        "phone": "1811-0044 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "스포티파이 고객센터",
@@ -11841,7 +20216,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스포티파이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.spotify.com/kr-ko"
+    "web_url": "https://www.spotify.com/kr-ko",
+    "subtasks": [
+      {
+        "name": "스포티파이 온라인 헬프",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "결제 오류 수취 메일",
+        "phone": "support-kr@spotify.com"
+      },
+      {
+        "name": "글로벌 공식 제휴처",
+        "phone": "웹 내 고객센터"
+      }
+    ]
   },
   {
     "name": "로지텍 고객센터",
@@ -11859,7 +20248,21 @@ export const customerData = [
     "isVerified": true,
     "description": "로지텍 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.logitech.com/ko-kr"
+    "web_url": "https://www.logitech.com/ko-kr",
+    "subtasks": [
+      {
+        "name": "로지텍 개인 수리부",
+        "phone": "02-3143-9429"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-3143-9420"
+      },
+      {
+        "name": "아스트로 헤드셋 기술",
+        "phone": "02-3143-9429"
+      }
+    ]
   },
   {
     "name": "멜론티켓 고객센터",
@@ -11877,7 +20280,21 @@ export const customerData = [
     "isVerified": true,
     "description": "멜론티켓 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://ticket.melon.com"
+    "web_url": "https://ticket.melon.com",
+    "subtasks": [
+      {
+        "name": "멜론티켓 예매 전용",
+        "phone": "1899-0042"
+      },
+      {
+        "name": "멜론 음원 서비스부",
+        "phone": "1566-7727"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "모두의주차장 고객센터",
@@ -11895,7 +20312,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모두의주차장 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.moduparking.com"
+    "web_url": "https://www.moduparking.com",
+    "subtasks": [
+      {
+        "name": "모두의주차장 대표",
+        "phone": "1899-8242"
+      },
+      {
+        "name": "공유주차장 신규 가맹",
+        "phone": "1899-8242 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "캐시노트 고객센터",
@@ -11913,7 +20344,21 @@ export const customerData = [
     "isVerified": true,
     "description": "캐시노트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://cashnote.kr"
+    "web_url": "https://cashnote.kr",
+    "subtasks": [
+      {
+        "name": "캐시노트 대표 수신",
+        "phone": "1522-9386"
+      },
+      {
+        "name": "매출 분석 오류 문의",
+        "phone": "1522-9386 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1522-9386"
+      }
+    ]
   },
   {
     "name": "숨고 고객센터",
@@ -11931,7 +20376,21 @@ export const customerData = [
     "isVerified": true,
     "description": "숨고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://soomgo.com"
+    "web_url": "https://soomgo.com",
+    "subtasks": [
+      {
+        "name": "숨고 통합 헬프데스크",
+        "phone": "1599-5262"
+      },
+      {
+        "name": "숨고 고수 회원 가입",
+        "phone": "1599-5262"
+      },
+      {
+        "name": "야간 보이스피싱 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "자리톡 고객센터",
@@ -11949,7 +20408,21 @@ export const customerData = [
     "isVerified": true,
     "description": "자리톡 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://zaritalk.com"
+    "web_url": "https://zaritalk.com",
+    "subtasks": [
+      {
+        "name": "자리톡 대표 수신",
+        "phone": "1661-4235"
+      },
+      {
+        "name": "임대 관리 정산",
+        "phone": "1661-4235"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "삼쩜삼 고객센터",
@@ -11967,7 +20440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼쩜삼 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.3o3.co.kr"
+    "web_url": "https://www.3o3.co.kr",
+    "subtasks": [
+      {
+        "name": "삼쩜삼 대표 수신",
+        "phone": "1544-3031"
+      },
+      {
+        "name": "세무 대리인 해지부",
+        "phone": "1544-3031"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "리본택시 고객센터",
@@ -11985,7 +20472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "리본택시 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.reborntaxi.co.kr"
+    "web_url": "https://www.reborntaxi.co.kr",
+    "subtasks": [
+      {
+        "name": "리본택시 고객 상담",
+        "phone": "1644-1234"
+      },
+      {
+        "name": "리본택시 기사 전용선",
+        "phone": "1877-0114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "다우데이타 고객센터",
@@ -12003,7 +20504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다우데이타 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daoudata.co.kr"
+    "web_url": "https://www.daoudata.co.kr",
+    "subtasks": [
+      {
+        "name": "어도비 기술 직통선",
+        "phone": "1577-9003"
+      },
+      {
+        "name": "오토데스크 기술 지원",
+        "phone": "1577-9003 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3484-5119"
+      }
+    ]
   },
   {
     "name": "TikTok(틱톡) 고객센터",
@@ -12021,7 +20536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "TikTok(틱톡) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tiktok.com"
+    "web_url": "https://www.tiktok.com",
+    "subtasks": [
+      {
+        "name": "틱톡 한국 비즈니스 제휴",
+        "phone": "피드백 양식 전용"
+      },
+      {
+        "name": "크리에이터 리워드 정산",
+        "phone": "앱 내 지원 센터"
+      },
+      {
+        "name": "공식 개인정보 문의 메일",
+        "phone": "privacy@tiktok.com"
+      }
+    ]
   },
   {
     "name": "티맵 대리운전 고객센터",
@@ -12039,7 +20568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "티맵 대리운전 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tmapmobility.com"
+    "web_url": "https://www.tmapmobility.com",
+    "subtasks": [
+      {
+        "name": "대리운전 배차 및 상담",
+        "phone": "1522-1110"
+      },
+      {
+        "name": "대리 기사 전용 고객선",
+        "phone": "1522-4575"
+      },
+      {
+        "name": "티맵 택시 및 주차",
+        "phone": "1599-0007"
+      }
+    ]
   },
   {
     "name": "비즈넵 고객센터",
@@ -12057,7 +20600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "비즈넵 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bzp.co.kr"
+    "web_url": "https://www.bzp.co.kr",
+    "subtasks": [
+      {
+        "name": "비즈넵 대표 서비스",
+        "phone": "1544-1423"
+      },
+      {
+        "name": "소상공인 세무 상담",
+        "phone": "1544-1423"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "롯데 원티비 홈쇼핑 고객센터",
@@ -12075,7 +20632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데 원티비 홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteimall.com"
+    "web_url": "https://www.lotteimall.com",
+    "subtasks": [
+      {
+        "name": "원티비 대표 주문",
+        "phone": "1899-4000"
+      },
+      {
+        "name": "배송 및 교환 반품",
+        "phone": "1899-4000"
+      },
+      {
+        "name": "롯데홈쇼핑 대표 종합",
+        "phone": "1899-4000"
+      }
+    ]
   },
   {
     "name": "지마켓 고객센터",
@@ -12093,7 +20664,21 @@ export const customerData = [
     "isVerified": true,
     "description": "지마켓 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gmarket.co.kr"
+    "web_url": "https://www.gmarket.co.kr",
+    "subtasks": [
+      {
+        "name": "지마켓 개인 구매자",
+        "phone": "1566-5701"
+      },
+      {
+        "name": "스마일배송 전용데스크",
+        "phone": "1566-5701 (내선 2)"
+      },
+      {
+        "name": "G마켓 법인 판매자",
+        "phone": "1566-5702"
+      }
+    ]
   },
   {
     "name": "마켓컬리 고객센터",
@@ -12111,7 +20696,21 @@ export const customerData = [
     "isVerified": true,
     "description": "마켓컬리 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kurly.com"
+    "web_url": "https://www.kurly.com",
+    "subtasks": [
+      {
+        "name": "컬리 샛별배송 긴급",
+        "phone": "1644-1107"
+      },
+      {
+        "name": "컬리 멤버스 패스",
+        "phone": "1644-1107"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "W 쇼핑 고객센터",
@@ -12129,7 +20728,21 @@ export const customerData = [
     "isVerified": true,
     "description": "W 쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wsf.co.kr"
+    "web_url": "https://www.wsf.co.kr",
+    "subtasks": [
+      {
+        "name": "더블유쇼핑 주문",
+        "phone": "1800-3333"
+      },
+      {
+        "name": "배송 지연 반품 문의",
+        "phone": "1800-3333 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "홈앤쇼핑 고객센터",
@@ -12147,7 +20760,21 @@ export const customerData = [
     "isVerified": true,
     "description": "홈앤쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hnsmall.com"
+    "web_url": "https://www.hnsmall.com",
+    "subtasks": [
+      {
+        "name": "홈앤쇼핑 대표 주문",
+        "phone": "1800-1111"
+      },
+      {
+        "name": "모바일 적립금 정산",
+        "phone": "1800-1111 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "쇼핑엔티 홈쇼핑 고객센터",
@@ -12165,7 +20792,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쇼핑엔티 홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shoppingnt.co.kr"
+    "web_url": "https://www.shoppingnt.co.kr",
+    "subtasks": [
+      {
+        "name": "쇼핑엔티 대표 주문",
+        "phone": "1800-3000"
+      },
+      {
+        "name": "배송 및 교환 반품",
+        "phone": "1800-3000 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "공영쇼핑 고객센터",
@@ -12183,7 +20824,21 @@ export const customerData = [
     "isVerified": true,
     "description": "공영쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gongyoungshop.kr"
+    "web_url": "https://www.gongyoungshop.kr",
+    "subtasks": [
+      {
+        "name": "공영쇼핑 대표 주문",
+        "phone": "1566-7700"
+      },
+      {
+        "name": "농수산물 특약 등록",
+        "phone": "1566-7700"
+      },
+      {
+        "name": "공영쇼핑 파트너 지원",
+        "phone": "1566-5000"
+      }
+    ]
   },
   {
     "name": "CJ홈쇼핑 고객센터",
@@ -12201,7 +20856,21 @@ export const customerData = [
     "isVerified": true,
     "description": "CJ홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://display.cjonstyle.com"
+    "web_url": "https://display.cjonstyle.com",
+    "subtasks": [
+      {
+        "name": "CJ온스타일 대표 주문",
+        "phone": "1644-2525"
+      },
+      {
+        "name": "모바일 적립 포인트",
+        "phone": "1644-2525 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2127-1114"
+      }
+    ]
   },
   {
     "name": "현대홈쇼핑 고객센터",
@@ -12219,7 +20888,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hmall.com"
+    "web_url": "https://www.hmall.com",
+    "subtasks": [
+      {
+        "name": "현대홈쇼핑 대표주문",
+        "phone": "1600-0000"
+      },
+      {
+        "name": "H포인트 전용 연동",
+        "phone": "1600-0000 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "지에스샵 홈쇼핑 고객센터",
@@ -12237,7 +20920,21 @@ export const customerData = [
     "isVerified": true,
     "description": "지에스샵 홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gsshop.com"
+    "web_url": "https://www.gsshop.com",
+    "subtasks": [
+      {
+        "name": "GS샵 통합 대표주문",
+        "phone": "1899-4455"
+      },
+      {
+        "name": "GS포인트 통합 고객",
+        "phone": "1544-4250"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신한증권 고객센터",
@@ -12255,7 +20952,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhansec.com"
+    "web_url": "https://www.shinhansec.com",
+    "subtasks": [
+      {
+        "name": "신한투자 주식 거래",
+        "phone": "1588-0365"
+      },
+      {
+        "name": "MTS 전산 오류 기술",
+        "phone": "1588-0365 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3772-1114"
+      }
+    ]
   },
   {
     "name": "나무증권 고객센터",
@@ -12273,7 +20984,21 @@ export const customerData = [
     "isVerified": true,
     "description": "나무증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mynamuh.com"
+    "web_url": "https://www.mynamuh.com",
+    "subtasks": [
+      {
+        "name": "나무 디지털 대표상담",
+        "phone": "1544-0000"
+      },
+      {
+        "name": "나무 MTS 전산 기술",
+        "phone": "1544-0000 (내선 3)"
+      },
+      {
+        "name": "NH투자증권 본부 통합",
+        "phone": "1588-2323"
+      }
+    ]
   },
   {
     "name": "NS홈쇼핑 고객센터",
@@ -12291,7 +21016,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NS홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nsmall.com"
+    "web_url": "https://www.nsmall.com",
+    "subtasks": [
+      {
+        "name": "NS홈쇼핑 대표 주문",
+        "phone": "1688-7700"
+      },
+      {
+        "name": "식품 신선 보증 케어",
+        "phone": "1688-7700 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3485-8008"
+      }
+    ]
   },
   {
     "name": "신세계쇼핑 TV홈쇼핑 고객센터",
@@ -12309,7 +21048,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신세계쇼핑 TV홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sgshopping.co.kr"
+    "web_url": "https://www.sgshopping.co.kr",
+    "subtasks": [
+      {
+        "name": "신세계라이브쇼핑 주문",
+        "phone": "1600-0000"
+      },
+      {
+        "name": "배송 지연 반품 문의",
+        "phone": "1600-0000 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "롯데홈쇼핑 고객센터",
@@ -12327,7 +21080,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데홈쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteimall.com"
+    "web_url": "https://www.lotteimall.com",
+    "subtasks": [
+      {
+        "name": "롯데홈쇼핑 대표주문",
+        "phone": "1899-4000"
+      },
+      {
+        "name": "배송 및 교환 반품",
+        "phone": "1899-4000 (내선 2)"
+      },
+      {
+        "name": "엘포인트 제휴 가인증",
+        "phone": "1899-8900"
+      }
+    ]
   },
   {
     "name": "한화증권 고객센터",
@@ -12345,7 +21112,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한화증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanwhawm.com"
+    "web_url": "https://www.hanwhawm.com",
+    "subtasks": [
+      {
+        "name": "한화투자 대표 수신",
+        "phone": "1544-9000"
+      },
+      {
+        "name": "MTS 시스템 전산오류",
+        "phone": "1544-9000 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3772-7800"
+      }
+    ]
   },
   {
     "name": "키움증권 고객센터",
@@ -12363,7 +21144,21 @@ export const customerData = [
     "isVerified": true,
     "description": "키움증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kiwoom.com"
+    "web_url": "https://www.kiwoom.com",
+    "subtasks": [
+      {
+        "name": "국내주식 일반문의",
+        "phone": "1544-9000"
+      },
+      {
+        "name": "해외주식/야간지원",
+        "phone": "1544-9400"
+      },
+      {
+        "name": "금융상품 및 펀드",
+        "phone": "1544-9000 (내선 3)"
+      }
+    ]
   },
   {
     "name": "삼성증권 고객센터",
@@ -12381,7 +21176,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsungpop.com"
+    "web_url": "https://www.samsungpop.com",
+    "subtasks": [
+      {
+        "name": "국내/해외 주식 상담",
+        "phone": "1588-2323"
+      },
+      {
+        "name": "퇴직연금(IRP) 센터",
+        "phone": "1644-5500"
+      },
+      {
+        "name": "패밀리오피스 자산관리",
+        "phone": "02-1588-2323"
+      }
+    ]
   },
   {
     "name": "한국투자증권 고객센터",
@@ -12399,7 +21208,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국투자증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.truefriend.com"
+    "web_url": "https://www.truefriend.com",
+    "subtasks": [
+      {
+        "name": "한국투자 뱅키스 상담",
+        "phone": "1544-5000"
+      },
+      {
+        "name": "해외주식 야간데스크",
+        "phone": "1544-5000 (내선 2)"
+      },
+      {
+        "name": "퇴직연금 상담센터",
+        "phone": "1588-0012"
+      }
+    ]
   },
   {
     "name": "미래에셋증권 고객센터",
@@ -12417,7 +21240,21 @@ export const customerData = [
     "isVerified": true,
     "description": "미래에셋증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://securities.miraeasset.com"
+    "web_url": "https://securities.miraeasset.com",
+    "subtasks": [
+      {
+        "name": "미래에셋 주식/MTS",
+        "phone": "1588-6800"
+      },
+      {
+        "name": "연금자산 전담센터",
+        "phone": "1588-5533"
+      },
+      {
+        "name": "전자금융 장애 기술부",
+        "phone": "1588-6800 (내선 5)"
+      }
+    ]
   },
   {
     "name": "NH투자증권 고객센터",
@@ -12435,7 +21272,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NH투자증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nhqv.com"
+    "web_url": "https://www.nhqv.com",
+    "subtasks": [
+      {
+        "name": "NH투자 나무 대표상담",
+        "phone": "1544-0000"
+      },
+      {
+        "name": "해외주식 야간지원",
+        "phone": "1544-0000 (내선 2)"
+      },
+      {
+        "name": "NH투자 퇴직연금센터",
+        "phone": "1588-2323"
+      }
+    ]
   },
   {
     "name": "KB증권 고객센터",
@@ -12453,7 +21304,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KB증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbsec.com"
+    "web_url": "https://www.kbsec.com",
+    "subtasks": [
+      {
+        "name": "KB증권 마블 대표선",
+        "phone": "1588-6611"
+      },
+      {
+        "name": "퇴직연금 전담센터",
+        "phone": "1588-6611 (내선 4)"
+      },
+      {
+        "name": "해외주식 야간데스크",
+        "phone": "1588-6611 (내선 2)"
+      }
+    ]
   },
   {
     "name": "신한투자증권 고객센터",
@@ -12471,7 +21336,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신한투자증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinhansec.com"
+    "web_url": "https://www.shinhansec.com",
+    "subtasks": [
+      {
+        "name": "신한투자 주식 거래",
+        "phone": "1588-0365"
+      },
+      {
+        "name": "MTS 시스템 전산오류",
+        "phone": "1588-0365 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3772-1114"
+      }
+    ]
   },
   {
     "name": "하나증권 고객센터",
@@ -12489,7 +21368,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanaw.com"
+    "web_url": "https://www.hanaw.com",
+    "subtasks": [
+      {
+        "name": "하나증권 대표 수리",
+        "phone": "1588-3111"
+      },
+      {
+        "name": "하나증권 연금 자산",
+        "phone": "1588-3111 (내선 3)"
+      },
+      {
+        "name": "해외주식 야간데스크",
+        "phone": "1588-3111 (내선 2)"
+      }
+    ]
   },
   {
     "name": "대신증권 고객센터",
@@ -12507,7 +21400,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대신증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daeshin.com"
+    "web_url": "https://www.daeshin.com",
+    "subtasks": [
+      {
+        "name": "대신증권 대표 콜",
+        "phone": "1588-4488"
+      },
+      {
+        "name": "크레온 전용 고객센터",
+        "phone": "1544-2000"
+      },
+      {
+        "name": "야간 해외주식 데스크",
+        "phone": "1588-4488 (내선 2)"
+      }
+    ]
   },
   {
     "name": "메리츠증권 고객센터",
@@ -12525,7 +21432,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메리츠증권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://sec.meritz.com"
+    "web_url": "https://sec.meritz.com",
+    "subtasks": [
+      {
+        "name": "메리츠증권 대표 콜",
+        "phone": "1588-3400"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-6303-0001"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "잡코리아 고객센터",
@@ -12543,7 +21464,21 @@ export const customerData = [
     "isVerified": true,
     "description": "잡코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jobkorea.co.kr"
+    "web_url": "https://www.jobkorea.co.kr",
+    "subtasks": [
+      {
+        "name": "개인 구직회원",
+        "phone": "1588-9350"
+      },
+      {
+        "name": "기업 광고주회원",
+        "phone": "1588-9350 (내선 2)"
+      },
+      {
+        "name": "정품 보증 조달 수탁",
+        "phone": "02-1588-9350"
+      }
+    ]
   },
   {
     "name": "사람인 고객센터",
@@ -12561,7 +21496,21 @@ export const customerData = [
     "isVerified": true,
     "description": "사람인 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.saramin.co.kr"
+    "web_url": "https://www.saramin.co.kr",
+    "subtasks": [
+      {
+        "name": "사람인 대표 서비스",
+        "phone": "1588-0342"
+      },
+      {
+        "name": "인재매칭 및 기업회원",
+        "phone": "1588-0342 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2025-4733"
+      }
+    ]
   },
   {
     "name": "알바몬 고객센터",
@@ -12579,7 +21528,21 @@ export const customerData = [
     "isVerified": true,
     "description": "알바몬 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.albamon.com"
+    "web_url": "https://www.albamon.com",
+    "subtasks": [
+      {
+        "name": "알바몬 대표 서비스",
+        "phone": "1588-9351"
+      },
+      {
+        "name": "간편이력서 및 구직자",
+        "phone": "1588-9351 (내선 1)"
+      },
+      {
+        "name": "잡코리아 본사 제휴처",
+        "phone": "1588-9350"
+      }
+    ]
   },
   {
     "name": "알바천국 고객센터",
@@ -12597,7 +21560,21 @@ export const customerData = [
     "isVerified": true,
     "description": "알바천국 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.alba.co.kr"
+    "web_url": "https://www.alba.co.kr",
+    "subtasks": [
+      {
+        "name": "알바천국 대표 서비스",
+        "phone": "1588-5185"
+      },
+      {
+        "name": "개인 구직자 케어",
+        "phone": "1588-5185 (내선 1)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2187-2114"
+      }
+    ]
   },
   {
     "name": "인크루트 고객센터",
@@ -12615,7 +21592,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인크루트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.incruit.com"
+    "web_url": "https://www.incruit.com",
+    "subtasks": [
+      {
+        "name": "인크루트 통합 헬프",
+        "phone": "1588-5577"
+      },
+      {
+        "name": "취업지원/공공사업부",
+        "phone": "02-2186-9000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-567-5009"
+      }
+    ]
   },
   {
     "name": "넥슨 고객센터",
@@ -12633,7 +21624,21 @@ export const customerData = [
     "isVerified": true,
     "description": "넥슨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nexon.com"
+    "web_url": "https://www.nexon.com",
+    "subtasks": [
+      {
+        "name": "넥슨 통합 보안 센터",
+        "phone": "1588-7701"
+      },
+      {
+        "name": "넥슨플레이 모바일 결제",
+        "phone": "1588-7701 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-540-3400"
+      }
+    ]
   },
   {
     "name": "엔씨소프트 고객센터",
@@ -12651,7 +21656,21 @@ export const customerData = [
     "isVerified": true,
     "description": "엔씨소프트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.plaync.com"
+    "web_url": "https://www.plaync.com",
+    "subtasks": [
+      {
+        "name": "엔씨소프트 대표 상담",
+        "phone": "1600-0020"
+      },
+      {
+        "name": "리니지 전담 보안실",
+        "phone": "1600-0020 (내선 1)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2186-3000"
+      }
+    ]
   },
   {
     "name": "넷마블 고객센터",
@@ -12669,7 +21688,21 @@ export const customerData = [
     "isVerified": true,
     "description": "넷마블 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.netmarble.net"
+    "web_url": "https://www.netmarble.net",
+    "subtasks": [
+      {
+        "name": "넷마블 통합 고객선",
+        "phone": "1588-3995"
+      },
+      {
+        "name": "모바일 결제 전용데스크",
+        "phone": "1588-3995 (내선 2)"
+      },
+      {
+        "name": "넷마블 본사 대표전화",
+        "phone": "02-2185-1000"
+      }
+    ]
   },
   {
     "name": "카카오게임즈 고객센터",
@@ -12687,7 +21720,21 @@ export const customerData = [
     "isVerified": true,
     "description": "카카오게임즈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kakaogames.com"
+    "web_url": "https://www.kakaogames.com",
+    "subtasks": [
+      {
+        "name": "카카오게임즈 대표",
+        "phone": "1566-8834"
+      },
+      {
+        "name": "보이스피싱 야간 신고",
+        "phone": "1599-8883"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1566-8834"
+      }
+    ]
   },
   {
     "name": "스마일게이트 고객센터",
@@ -12705,7 +21752,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스마일게이트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smilegate.com"
+    "web_url": "https://www.smilegate.com",
+    "subtasks": [
+      {
+        "name": "스토브 플랫폼 서비스",
+        "phone": "1566-9600"
+      },
+      {
+        "name": "로스트아크 기술전담",
+        "phone": "1566-9600 (내선 2)"
+      },
+      {
+        "name": "야간 해킹 사고신고",
+        "phone": "1566-9600"
+      }
+    ]
   },
   {
     "name": "블리자드 고객센터",
@@ -12723,7 +21784,21 @@ export const customerData = [
     "isVerified": true,
     "description": "블리자드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kr.battle.net/support/ko"
+    "web_url": "https://kr.battle.net/support/ko",
+    "subtasks": [
+      {
+        "name": "배틀넷 온라인 기술헬프",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "오결제 취소 수취 메일",
+        "phone": "billing-support@blizzard.com"
+      },
+      {
+        "name": "블리자드 한국지사",
+        "phone": "1644-0752"
+      }
+    ]
   },
   {
     "name": "엑스박스 고객센터",
@@ -12741,7 +21816,21 @@ export const customerData = [
     "isVerified": true,
     "description": "엑스박스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://support.xbox.com/ko-KR"
+    "web_url": "https://support.xbox.com/ko-KR",
+    "subtasks": [
+      {
+        "name": "Xbox 하드웨어 AS",
+        "phone": "1577-9700 (내선 2-2)"
+      },
+      {
+        "name": "MS 윈도우 정품인증",
+        "phone": "1577-9700"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1577-9700"
+      }
+    ]
   },
   {
     "name": "디스코드 고객센터",
@@ -12759,7 +21848,21 @@ export const customerData = [
     "isVerified": true,
     "description": "디스코드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://support.discord.com"
+    "web_url": "https://support.discord.com",
+    "subtasks": [
+      {
+        "name": "니트로 결제 온라인 헬프",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "해외 직구 결제해제",
+        "phone": "support@discordapp.com"
+      },
+      {
+        "name": "공식 개인정보 문의 메일",
+        "phone": "privacy@discord.com"
+      }
+    ]
   },
   {
     "name": "트위치 고객센터",
@@ -12777,7 +21880,21 @@ export const customerData = [
     "isVerified": true,
     "description": "트위치 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://help.twitch.tv"
+    "web_url": "https://help.twitch.tv",
+    "subtasks": [
+      {
+        "name": "트위치 헬프센터 온라인",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "글로벌 비즈니스 연계",
+        "phone": "support@twitch.tv"
+      },
+      {
+        "name": "개인정보보호 권익보장",
+        "phone": "privacy@twitch.tv"
+      }
+    ]
   },
   {
     "name": "로블록스 고객센터",
@@ -12795,7 +21912,21 @@ export const customerData = [
     "isVerified": true,
     "description": "로블록스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://en.help.roblox.com"
+    "web_url": "https://en.help.roblox.com",
+    "subtasks": [
+      {
+        "name": "로블록스 지원 온라인",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "로벅스 환불 문의 메일",
+        "phone": "info-kr@roblox.com"
+      },
+      {
+        "name": "소비자 가해 해제 센터",
+        "phone": "웹 내 고객센터"
+      }
+    ]
   },
   {
     "name": "스팀(Steam) 고객센터",
@@ -12813,7 +21944,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스팀(Steam) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://help.steampowered.com/ko"
+    "web_url": "https://help.steampowered.com/ko",
+    "subtasks": [
+      {
+        "name": "스팀 상점 온라인 헬프",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "스팀 계정 해킹 복구",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "라이엇게임즈 고객센터",
@@ -12831,7 +21976,21 @@ export const customerData = [
     "isVerified": true,
     "description": "라이엇게임즈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://support.riotgames.com/hc/ko"
+    "web_url": "https://support.riotgames.com/hc/ko",
+    "subtasks": [
+      {
+        "name": "라이엇코리아 대표전화",
+        "phone": "02-2127-1000"
+      },
+      {
+        "name": "발로란트 기술 지원부",
+        "phone": "02-2127-1000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2127-1009"
+      }
+    ]
   },
   {
     "name": "이마트 고객센터",
@@ -12849,7 +22008,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이마트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.emart.com"
+    "web_url": "https://www.emart.com",
+    "subtasks": [
+      {
+        "name": "이마트 대표 콜센터",
+        "phone": "1577-1234"
+      },
+      {
+        "name": "이마트 트레이더스",
+        "phone": "1899-2222"
+      },
+      {
+        "name": "이마트 문화센터",
+        "phone": "1577-1234"
+      }
+    ]
   },
   {
     "name": "한샘 고객센터",
@@ -12867,7 +22040,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한샘 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://mall.hanssem.com"
+    "web_url": "https://mall.hanssem.com",
+    "subtasks": [
+      {
+        "name": "한샘 가구 및 인테리어",
+        "phone": "1588-0900"
+      },
+      {
+        "name": "한샘 부엌/바스 전용",
+        "phone": "1588-0900 (내선 2)"
+      },
+      {
+        "name": "한샘몰 온라인 쇼핑",
+        "phone": "1688-4945"
+      }
+    ]
   },
   {
     "name": "코스트코 고객센터",
@@ -12885,7 +22072,21 @@ export const customerData = [
     "isVerified": true,
     "description": "코스트코 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.costco.co.kr"
+    "web_url": "https://www.costco.co.kr",
+    "subtasks": [
+      {
+        "name": "코스트코 통합 안내",
+        "phone": "1899-9900"
+      },
+      {
+        "name": "온라인몰 결제 취소",
+        "phone": "1899-9900 (내선 2)"
+      },
+      {
+        "name": "삼성카드 제휴 탈퇴",
+        "phone": "1588-8700"
+      }
+    ]
   },
   {
     "name": "홈플러스 고객센터",
@@ -12903,7 +22104,21 @@ export const customerData = [
     "isVerified": true,
     "description": "홈플러스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.homeplus.co.kr"
+    "web_url": "https://www.homeplus.co.kr",
+    "subtasks": [
+      {
+        "name": "홈플러스 마트 대표",
+        "phone": "1577-3355"
+      },
+      {
+        "name": "홈플러스 익스프레스",
+        "phone": "1577-3355 (내선 2)"
+      },
+      {
+        "name": "문화센터 수강 문의",
+        "phone": "1577-3355"
+      }
+    ]
   },
   {
     "name": "롯데하이마트 고객센터",
@@ -12921,7 +22136,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데하이마트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.himart.co.kr"
+    "web_url": "https://www.himart.co.kr",
+    "subtasks": [
+      {
+        "name": "하이마트 가전 배송",
+        "phone": "1588-0070"
+      },
+      {
+        "name": "에어컨 클리닝 홈케어",
+        "phone": "1588-0070 (내선 3)"
+      },
+      {
+        "name": "온라인쇼핑 결제 취소",
+        "phone": "1588-0070 (내선 2)"
+      }
+    ]
   },
   {
     "name": "무인양품(MUJI) 고객센터",
@@ -12939,7 +22168,21 @@ export const customerData = [
     "isVerified": true,
     "description": "무인양품(MUJI) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mujikorea.net"
+    "web_url": "https://www.mujikorea.net",
+    "subtasks": [
+      {
+        "name": "무인양품 대표 가전",
+        "phone": "1577-2892"
+      },
+      {
+        "name": "가구 조립 설치 예약",
+        "phone": "1577-2892 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1577-2892"
+      }
+    ]
   },
   {
     "name": "롯데마트 고객센터",
@@ -12957,7 +22200,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데마트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lottemart.com"
+    "web_url": "https://www.lottemart.com",
+    "subtasks": [
+      {
+        "name": "롯데마트 통합 상담",
+        "phone": "1899-3000"
+      },
+      {
+        "name": "롯데마트 토이저러스",
+        "phone": "1899-3000"
+      },
+      {
+        "name": "엘포인트 제휴 정산",
+        "phone": "1899-8900"
+      }
+    ]
   },
   {
     "name": "롯데백화점 고객센터",
@@ -12975,7 +22232,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데백화점 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteshopping.com"
+    "web_url": "https://www.lotteshopping.com",
+    "subtasks": [
+      {
+        "name": "롯데쇼핑 통합고객선",
+        "phone": "1577-0001"
+      },
+      {
+        "name": "롯데백화점 본점안내",
+        "phone": "02-771-2500"
+      },
+      {
+        "name": "백화점 상품권 실무",
+        "phone": "1577-0001"
+      }
+    ]
   },
   {
     "name": "신세계백화점 고객센터",
@@ -12993,7 +22264,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신세계백화점 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinsegae.com"
+    "web_url": "https://www.shinsegae.com",
+    "subtasks": [
+      {
+        "name": "신세계 대표 교환선",
+        "phone": "1588-1234"
+      },
+      {
+        "name": "강남점 대표 안내선",
+        "phone": "02-3479-1234"
+      },
+      {
+        "name": "신세계 상품권 데스크",
+        "phone": "1588-1234"
+      }
+    ]
   },
   {
     "name": "다이소 고객센터",
@@ -13011,7 +22296,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다이소 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daiso.co.kr"
+    "web_url": "https://www.daiso.co.kr",
+    "subtasks": [
+      {
+        "name": "다이소 통합 고객선",
+        "phone": "1522-4400"
+      },
+      {
+        "name": "다이소몰 온라인 쇼핑",
+        "phone": "1522-4400 (내선 2)"
+      },
+      {
+        "name": "아성다이소 서울 본사",
+        "phone": "02-405-0800"
+      }
+    ]
   },
   {
     "name": "시몬스 침대 고객센터",
@@ -13029,7 +22328,21 @@ export const customerData = [
     "isVerified": true,
     "description": "시몬스 침대 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.simmons.co.kr"
+    "web_url": "https://www.simmons.co.kr",
+    "subtasks": [
+      {
+        "name": "시몬스 침대 대표 AS",
+        "phone": "1544-4003"
+      },
+      {
+        "name": "대리점 상생 금융지원",
+        "phone": "1544-4003 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-4003"
+      }
+    ]
   },
   {
     "name": "현대백화점 고객센터",
@@ -13047,7 +22360,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대백화점 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ehyundai.com"
+    "web_url": "https://www.ehyundai.com",
+    "subtasks": [
+      {
+        "name": "현대백화점 대표교환",
+        "phone": "1588-2233"
+      },
+      {
+        "name": "압구정본점 대표 안내",
+        "phone": "02-549-2233"
+      },
+      {
+        "name": "현대백화점 상품권",
+        "phone": "1588-2233"
+      }
+    ]
   },
   {
     "name": "이케아 코리아 고객센터",
@@ -13065,7 +22392,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이케아 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ikea.com/kr/ko"
+    "web_url": "https://www.ikea.com/kr/ko",
+    "subtasks": [
+      {
+        "name": "이케아 통합 고객선",
+        "phone": "1670-4532"
+      },
+      {
+        "name": "조립/설치 대행 지원",
+        "phone": "1670-4532 (내선 3)"
+      },
+      {
+        "name": "가구 환불/교환 데스크",
+        "phone": "1670-4532 (내선 2)"
+      }
+    ]
   },
   {
     "name": "일룸 고객센터",
@@ -13083,7 +22424,21 @@ export const customerData = [
     "isVerified": true,
     "description": "일룸 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.iloom.com"
+    "web_url": "https://www.iloom.com",
+    "subtasks": [
+      {
+        "name": "일룸 대표 수리부",
+        "phone": "1577-5670"
+      },
+      {
+        "name": "모션베드 기술 전담",
+        "phone": "1577-5670 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1577-5679"
+      }
+    ]
   },
   {
     "name": "ABC마트 고객센터",
@@ -13101,7 +22456,21 @@ export const customerData = [
     "isVerified": true,
     "description": "ABC마트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://abcmart.a-rt.com"
+    "web_url": "https://abcmart.a-rt.com",
+    "subtasks": [
+      {
+        "name": "ABC마트 대표 수신",
+        "phone": "1588-9667"
+      },
+      {
+        "name": "아트닷컴 배송 안내",
+        "phone": "1588-9667 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신세계까사(까사미아) 고객센터",
@@ -13119,7 +22488,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신세계까사(까사미아) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.guha.co.kr"
+    "web_url": "https://www.guha.co.kr",
+    "subtasks": [
+      {
+        "name": "까사미아 대표 AS",
+        "phone": "1566-1178"
+      },
+      {
+        "name": "소파 가죽 교체 전용",
+        "phone": "1566-1178 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1566-1179"
+      }
+    ]
   },
   {
     "name": "데스커 고객센터",
@@ -13137,7 +22520,21 @@ export const customerData = [
     "isVerified": true,
     "description": "데스커 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.desker.co.kr"
+    "web_url": "https://www.desker.co.kr",
+    "subtasks": [
+      {
+        "name": "데스커 대표 수리부",
+        "phone": "1588-1233"
+      },
+      {
+        "name": "데스커 모션데스크",
+        "phone": "1588-1233 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-1239"
+      }
+    ]
   },
   {
     "name": "자주(JAJU) 고객센터",
@@ -13155,7 +22552,21 @@ export const customerData = [
     "isVerified": true,
     "description": "자주(JAJU) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sivillage.com"
+    "web_url": "https://www.sivillage.com",
+    "subtasks": [
+      {
+        "name": "자주 대표 수신",
+        "phone": "1644-4551"
+      },
+      {
+        "name": "신세계인터내셔날 통합",
+        "phone": "1644-4551"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "모던하우스 고객센터",
@@ -13173,7 +22584,21 @@ export const customerData = [
     "isVerified": true,
     "description": "모던하우스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.modernhouse.co.kr"
+    "web_url": "https://www.modernhouse.co.kr",
+    "subtasks": [
+      {
+        "name": "모던하우스 대표 AS",
+        "phone": "1899-0811"
+      },
+      {
+        "name": "가구 조립 설치 예약",
+        "phone": "1899-0811 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1899-0819"
+      }
+    ]
   },
   {
     "name": "이마트 통합고객센터",
@@ -13191,7 +22616,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이마트 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.emart.com"
+    "web_url": "https://www.emart.com",
+    "subtasks": [
+      {
+        "name": "이마트 대표 콜센터",
+        "phone": "1577-1234"
+      },
+      {
+        "name": "이마트 트레이더스",
+        "phone": "1899-2222"
+      },
+      {
+        "name": "이마트 문화센터",
+        "phone": "1577-1234"
+      }
+    ]
   },
   {
     "name": "이마트트레이더스 고객콜 고객센터",
@@ -13209,7 +22648,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이마트트레이더스 고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.traders.co.kr"
+    "web_url": "https://www.traders.co.kr",
+    "subtasks": [
+      {
+        "name": "트레이더스 대표 콜",
+        "phone": "1899-2222"
+      },
+      {
+        "name": "이마트 대표 헬프",
+        "phone": "1577-1234"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "현대백화점 통합고객센터",
@@ -13227,7 +22680,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대백화점 통합고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ehyundai.com"
+    "web_url": "https://www.ehyundai.com",
+    "subtasks": [
+      {
+        "name": "현대백화점 대표교환",
+        "phone": "1588-2233"
+      },
+      {
+        "name": "압구정본점 대표 안내",
+        "phone": "02-549-2233"
+      },
+      {
+        "name": "현대백화점 상품권",
+        "phone": "1588-2233"
+      }
+    ]
   },
   {
     "name": "갤러리아백화점 통합고객콜 고객센터",
@@ -13245,7 +22712,21 @@ export const customerData = [
     "isVerified": true,
     "description": "갤러리아백화점 통합고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://dept.galleria.co.kr"
+    "web_url": "https://dept.galleria.co.kr",
+    "subtasks": [
+      {
+        "name": "갤러리아 대표 교환",
+        "phone": "1588-0001"
+      },
+      {
+        "name": "압구정 명품관 전용",
+        "phone": "02-3449-4114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "NC백화점 이랜드리테일콜 고객센터",
@@ -13263,7 +22744,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NC백화점 이랜드리테일콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.elandretail.com"
+    "web_url": "https://www.elandretail.com",
+    "subtasks": [
+      {
+        "name": "이랜드리테일 대표",
+        "phone": "1899-9500"
+      },
+      {
+        "name": "NC백화점 송파점",
+        "phone": "02-2157-5000"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신라면세점 통합고객콜 고객센터",
@@ -13281,7 +22776,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신라면세점 통합고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shilladfs.com"
+    "web_url": "https://www.shilladfs.com",
+    "subtasks": [
+      {
+        "name": "신라면세점 대표 콜",
+        "phone": "1600-1110"
+      },
+      {
+        "name": "인천공항 인도장 기술",
+        "phone": "1600-1110 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "롯데면세점 통합고객콜 고객센터",
@@ -13299,7 +22808,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데면세점 통합고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kr.lottedfs.com"
+    "web_url": "https://kr.lottedfs.com",
+    "subtasks": [
+      {
+        "name": "롯데면세점 대표 콜",
+        "phone": "1688-3000"
+      },
+      {
+        "name": "인천공항 인도장 전용",
+        "phone": "1688-3000 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신세계면세점 통합고객콜 고객센터",
@@ -13317,7 +22840,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신세계면세점 통합고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ssgdfs.com"
+    "web_url": "https://www.ssgdfs.com",
+    "subtasks": [
+      {
+        "name": "신세계면세점 대표",
+        "phone": "1661-8778"
+      },
+      {
+        "name": "명동본점 대표 안내",
+        "phone": "02-2003-0888"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "현대백화점면세점 통합콜 고객센터",
@@ -13335,7 +22872,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대백화점면세점 통합콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hddfs.com"
+    "web_url": "https://www.hddfs.com",
+    "subtasks": [
+      {
+        "name": "현대면세점 대표 콜",
+        "phone": "1811-6688"
+      },
+      {
+        "name": "무역센터점 대표 안내",
+        "phone": "02-2142-6000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "현대리바트 통합고객콜 고객센터",
@@ -13353,7 +22904,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대리바트 통합고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyundailivart.co.kr"
+    "web_url": "https://www.hyundailivart.co.kr",
+    "subtasks": [
+      {
+        "name": "리바트 대표 수리부",
+        "phone": "1577-3332"
+      },
+      {
+        "name": "리바트 키친 기술전담",
+        "phone": "1577-3332 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1577-3332"
+      }
+    ]
   },
   {
     "name": "AK플라자 고객센터",
@@ -13371,7 +22936,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AK플라자 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.akplaza.com"
+    "web_url": "https://www.akplaza.com",
+    "subtasks": [
+      {
+        "name": "AK플라자 통합 콜",
+        "phone": "1668-2300"
+      },
+      {
+        "name": "분당점 대표 안내선",
+        "phone": "1668-2300"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "현대자동차 고객센터",
@@ -13389,7 +22968,21 @@ export const customerData = [
     "isVerified": true,
     "description": "현대자동차 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hyundai.com"
+    "web_url": "https://www.hyundai.com",
+    "subtasks": [
+      {
+        "name": "현대차 긴급출동 무료",
+        "phone": "080-600-6000"
+      },
+      {
+        "name": "블루링크 전산 기술부",
+        "phone": "1899-0606"
+      },
+      {
+        "name": "구매 혜택 계약 상담",
+        "phone": "080-600-6000 (내선 2)"
+      }
+    ]
   },
   {
     "name": "기아 고객센터",
@@ -13407,7 +23000,21 @@ export const customerData = [
     "isVerified": true,
     "description": "기아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kia.com"
+    "web_url": "https://www.kia.com",
+    "subtasks": [
+      {
+        "name": "기아차 긴급출동 무료",
+        "phone": "080-200-2000"
+      },
+      {
+        "name": "기아 커넥트 기술 지원",
+        "phone": "1899-1818"
+      },
+      {
+        "name": "소모 정품 부속 센터",
+        "phone": "1588-5190"
+      }
+    ]
   },
   {
     "name": "쏘카 고객센터",
@@ -13425,7 +23032,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쏘카 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.socar.kr"
+    "web_url": "https://www.socar.kr",
+    "subtasks": [
+      {
+        "name": "쏘카 사고 긴급출동",
+        "phone": "1661-3315 (내선 1)"
+      },
+      {
+        "name": "스마트키 락 제어부",
+        "phone": "1661-3315 (내선 2)"
+      },
+      {
+        "name": "쏘카 비즈니스 정산",
+        "phone": "1661-3315"
+      }
+    ]
   },
   {
     "name": "벤츠코리아 고객센터",
@@ -13443,7 +23064,21 @@ export const customerData = [
     "isVerified": true,
     "description": "벤츠코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mercedes-benz.co.kr"
+    "web_url": "https://www.mercedes-benz.co.kr",
+    "subtasks": [
+      {
+        "name": "벤츠 모빌리티 무료",
+        "phone": "080-001-1886"
+      },
+      {
+        "name": "벤츠 미 전산 기술부",
+        "phone": "080-001-1886"
+      },
+      {
+        "name": "공식 전시장 위치 안내",
+        "phone": "02-1588-0001"
+      }
+    ]
   },
   {
     "name": "제네시스 고객센터",
@@ -13461,7 +23096,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제네시스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.genesis.com"
+    "web_url": "https://www.genesis.com",
+    "subtasks": [
+      {
+        "name": "제네시스 홈투홈 예약",
+        "phone": "080-700-6000"
+      },
+      {
+        "name": "제네시스 커넥티드",
+        "phone": "1899-0606"
+      },
+      {
+        "name": "안심 보상 및 사고접수",
+        "phone": "080-700-6000 (내선 1)"
+      }
+    ]
   },
   {
     "name": "BMW코리아 고객센터",
@@ -13479,7 +23128,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BMW코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bmw.co.kr"
+    "web_url": "https://www.bmw.co.kr",
+    "subtasks": [
+      {
+        "name": "BMW 모빌리티 무료",
+        "phone": "080-269-2200"
+      },
+      {
+        "name": "커넥티드드라이브 기술",
+        "phone": "080-269-2200 (내선 3)"
+      },
+      {
+        "name": "야간 사고/도난 긴급",
+        "phone": "080-269-2200"
+      }
+    ]
   },
   {
     "name": "테슬라코리아 고객센터",
@@ -13497,7 +23160,21 @@ export const customerData = [
     "isVerified": true,
     "description": "테슬라코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tesla.com/ko_kr"
+    "web_url": "https://www.tesla.com/ko_kr",
+    "subtasks": [
+      {
+        "name": "테슬라 로드사이드 지원",
+        "phone": "080-617-1388"
+      },
+      {
+        "name": "슈퍼차저 이용 장애",
+        "phone": "080-617-1388 (내선 2)"
+      },
+      {
+        "name": "테슬라 차량 인도 데스크",
+        "phone": "02-1588-0001"
+      }
+    ]
   },
   {
     "name": "아우디코리아 고객센터",
@@ -13515,7 +23192,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아우디코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.audi.co.kr"
+    "web_url": "https://www.audi.co.kr",
+    "subtasks": [
+      {
+        "name": "아우디 어시스턴스 무료",
+        "phone": "080-760-2834"
+      },
+      {
+        "name": "보증 연장 및 리콜",
+        "phone": "080-760-2834 (내선 2)"
+      },
+      {
+        "name": "아우디 태안모터스 지부",
+        "phone": "02-1588-0001"
+      }
+    ]
   },
   {
     "name": "토요타코리아 고객센터",
@@ -13533,7 +23224,21 @@ export const customerData = [
     "isVerified": true,
     "description": "토요타코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.toyota.co.kr"
+    "web_url": "https://www.toyota.co.kr",
+    "subtasks": [
+      {
+        "name": "토요타 대표 수신",
+        "phone": "080-4300-7400"
+      },
+      {
+        "name": "토요타 렉서스 연계",
+        "phone": "080-4300-2300"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "렉서스코리아 고객센터",
@@ -13551,7 +23256,21 @@ export const customerData = [
     "isVerified": true,
     "description": "렉서스코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lexus.co.kr"
+    "web_url": "https://www.lexus.co.kr",
+    "subtasks": [
+      {
+        "name": "렉서스 대표 수신",
+        "phone": "080-4300-2300"
+      },
+      {
+        "name": "하이브리드 시스템 보증",
+        "phone": "080-4300-2300"
+      },
+      {
+        "name": "공식 전시장 안내",
+        "phone": "080-4300-2300"
+      }
+    ]
   },
   {
     "name": "KG모빌리티 고객센터",
@@ -13569,7 +23288,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KG모빌리티 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kg-mobility.com"
+    "web_url": "https://www.kg-mobility.com",
+    "subtasks": [
+      {
+        "name": "KG모빌리티 정비예약",
+        "phone": "080-500-5582"
+      },
+      {
+        "name": "부품 기술 상담부",
+        "phone": "1588-5582"
+      },
+      {
+        "name": "야간 긴급 구제 접수",
+        "phone": "080-500-5582"
+      }
+    ]
   },
   {
     "name": "쉐보레(한국GM) 고객센터",
@@ -13587,7 +23320,21 @@ export const customerData = [
     "isVerified": true,
     "description": "쉐보레(한국GM) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chevrolet.co.kr"
+    "web_url": "https://www.chevrolet.co.kr",
+    "subtasks": [
+      {
+        "name": "쉐보레 대표 수리부",
+        "phone": "080-3000-5000"
+      },
+      {
+        "name": "쉐보레 긴급출동",
+        "phone": "080-3000-5000 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-0000"
+      }
+    ]
   },
   {
     "name": "르노코리아 고객센터",
@@ -13605,7 +23352,21 @@ export const customerData = [
     "isVerified": true,
     "description": "르노코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.renaultkorea.com"
+    "web_url": "https://www.renaultkorea.com",
+    "subtasks": [
+      {
+        "name": "르노코리아 대표 AS",
+        "phone": "080-300-3000"
+      },
+      {
+        "name": "긴급 모빌리티 출동",
+        "phone": "080-300-3000 (내선 2)"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-1588-0000"
+      }
+    ]
   },
   {
     "name": "폭스바겐코리아 고객센터",
@@ -13623,7 +23384,21 @@ export const customerData = [
     "isVerified": true,
     "description": "폭스바겐코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.volkswagen.co.kr"
+    "web_url": "https://www.volkswagen.co.kr",
+    "subtasks": [
+      {
+        "name": "폭스바겐 어시스턴스",
+        "phone": "080-767-0089"
+      },
+      {
+        "name": "보증 수리/예약 센터",
+        "phone": "080-767-0089 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "포르쉐코리아 고객센터",
@@ -13641,7 +23416,21 @@ export const customerData = [
     "isVerified": true,
     "description": "포르쉐코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.porsche.com/korea"
+    "web_url": "https://www.porsche.com/korea",
+    "subtasks": [
+      {
+        "name": "포르쉐 어시스턴스",
+        "phone": "080-8100-911"
+      },
+      {
+        "name": "대치/서초 센터 예약",
+        "phone": "02-2051-0911"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "혼다코리아 고객센터",
@@ -13659,7 +23448,21 @@ export const customerData = [
     "isVerified": true,
     "description": "혼다코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hondakorea.co.kr"
+    "web_url": "https://www.hondakorea.co.kr",
+    "subtasks": [
+      {
+        "name": "혼다 자동차 AS",
+        "phone": "080-360-0505"
+      },
+      {
+        "name": "혼다 모터사이클 AS",
+        "phone": "080-322-9900"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-1588-0000"
+      }
+    ]
   },
   {
     "name": "GS렌터카 고객센터",
@@ -13677,7 +23480,21 @@ export const customerData = [
     "isVerified": true,
     "description": "GS렌터카 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotterentacar.net"
+    "web_url": "https://www.lotterentacar.net",
+    "subtasks": [
+      {
+        "name": "오토오아시스 정비예약",
+        "phone": "1588-3939"
+      },
+      {
+        "name": "사고 접수 및 긴급출동",
+        "phone": "1588-3939 (내선 1)"
+      },
+      {
+        "name": "롯데렌터카 통합 연계",
+        "phone": "1588-1230"
+      }
+    ]
   },
   {
     "name": "스타벅스 코리아 고객센터",
@@ -13695,7 +23512,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스타벅스 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.starbucks.co.kr"
+    "web_url": "https://www.starbucks.co.kr",
+    "subtasks": [
+      {
+        "name": "스타벅스 대표 고객선",
+        "phone": "1522-3232"
+      },
+      {
+        "name": "모바일 상품권 및 팩스",
+        "phone": "02-3015-1100"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "맥도날드 고객센터",
@@ -13713,7 +23544,21 @@ export const customerData = [
     "isVerified": true,
     "description": "맥도날드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mcdonalds.co.kr"
+    "web_url": "https://www.mcdonalds.co.kr",
+    "subtasks": [
+      {
+        "name": "맥딜리버리 주문 접수",
+        "phone": "1600-5252"
+      },
+      {
+        "name": "맥도날드 코리아 대표",
+        "phone": "02-3788-3000"
+      },
+      {
+        "name": "수취 증명 팩스 수신선",
+        "phone": "02-3788-3009"
+      }
+    ]
   },
   {
     "name": "GS25 고객센터",
@@ -13731,7 +23576,21 @@ export const customerData = [
     "isVerified": true,
     "description": "GS25 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://gs25.gsretail.com"
+    "web_url": "https://gs25.gsretail.com",
+    "subtasks": [
+      {
+        "name": "GS25 편의점 일반문의",
+        "phone": "1544-2525"
+      },
+      {
+        "name": "GS포스트박스 반값택배",
+        "phone": "1577-1287"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "CU(씨유) 고객센터",
@@ -13749,7 +23608,21 @@ export const customerData = [
     "isVerified": true,
     "description": "CU(씨유) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bgfretail.com"
+    "web_url": "https://www.bgfretail.com",
+    "subtasks": [
+      {
+        "name": "CU 편의점 대표 센터",
+        "phone": "1577-8007"
+      },
+      {
+        "name": "CU 끼리택배 배송조회",
+        "phone": "1577-8007 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "파리바게뜨 고객센터",
@@ -13767,7 +23640,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파리바게뜨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.paris.co.kr"
+    "web_url": "https://www.paris.co.kr",
+    "subtasks": [
+      {
+        "name": "파리바게뜨 수신자부담",
+        "phone": "080-731-2130"
+      },
+      {
+        "name": "SPC 해피포인트 센터",
+        "phone": "080-320-1234"
+      },
+      {
+        "name": "파리크라상 대표 전화",
+        "phone": "02-2187-2114"
+      }
+    ]
   },
   {
     "name": "BBQ치킨 고객센터",
@@ -13785,7 +23672,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BBQ치킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bbq.co.kr"
+    "web_url": "https://www.bbq.co.kr",
+    "subtasks": [
+      {
+        "name": "BBQ 통합 고객 센터",
+        "phone": "1588-9282"
+      },
+      {
+        "name": "BBQ 가맹점 개설 문의",
+        "phone": "080-3436-0000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "BHC치킨 고객센터",
@@ -13803,7 +23704,21 @@ export const customerData = [
     "isVerified": true,
     "description": "BHC치킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bhc.co.kr"
+    "web_url": "https://www.bhc.co.kr",
+    "subtasks": [
+      {
+        "name": "BHC 대표 주문 센터",
+        "phone": "1577-9108"
+      },
+      {
+        "name": "가맹점 상생 협력 데스크",
+        "phone": "080-3111-9282"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "교촌치킨 고객센터",
@@ -13821,7 +23736,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교촌치킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyochon.com"
+    "web_url": "https://www.kyochon.com",
+    "subtasks": [
+      {
+        "name": "교촌치킨 수신자부담",
+        "phone": "080-320-3000"
+      },
+      {
+        "name": "교촌에프앤비 본사",
+        "phone": "031-371-3500"
+      },
+      {
+        "name": "교촌 가맹점 개설문의",
+        "phone": "02-540-3400"
+      }
+    ]
   },
   {
     "name": "롯데리아 고객센터",
@@ -13839,7 +23768,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteria.com"
+    "web_url": "https://www.lotteria.com",
+    "subtasks": [
+      {
+        "name": "롯데리아 수신자부담",
+        "phone": "080-550-0005"
+      },
+      {
+        "name": "롯데GRS 서울 본사",
+        "phone": "02-709-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "맘스터치 고객센터",
@@ -13857,7 +23800,21 @@ export const customerData = [
     "isVerified": true,
     "description": "맘스터치 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://momstouch.co.kr"
+    "web_url": "https://momstouch.co.kr",
+    "subtasks": [
+      {
+        "name": "맘스터치 대표 콜",
+        "phone": "1661-4205"
+      },
+      {
+        "name": "맘스터치 가맹 개설",
+        "phone": "1661-4205 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1661-4205"
+      }
+    ]
   },
   {
     "name": "메가MGC커피 고객센터",
@@ -13875,7 +23832,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메가MGC커피 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.megacoffee.me"
+    "web_url": "https://www.megacoffee.me",
+    "subtasks": [
+      {
+        "name": "메가커피 대표 콜",
+        "phone": "1588-0656"
+      },
+      {
+        "name": "메가커피 가맹점문의",
+        "phone": "1588-0656 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "버거킹 고객센터",
@@ -13893,7 +23864,21 @@ export const customerData = [
     "isVerified": true,
     "description": "버거킹 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.burgerking.co.kr"
+    "web_url": "https://www.burgerking.co.kr",
+    "subtasks": [
+      {
+        "name": "버거킹 수신자부담",
+        "phone": "080-022-8163"
+      },
+      {
+        "name": "비케이알 서울 본사",
+        "phone": "02-6331-8163"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "도미노피자 고객센터",
@@ -13911,7 +23896,21 @@ export const customerData = [
     "isVerified": true,
     "description": "도미노피자 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://web.dominos.co.kr"
+    "web_url": "https://web.dominos.co.kr",
+    "subtasks": [
+      {
+        "name": "도미노 수신자부담",
+        "phone": "080-860-3082"
+      },
+      {
+        "name": "청오디피케이 본사",
+        "phone": "02-540-3082"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "세븐일레븐 고객센터",
@@ -13929,7 +23928,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세븐일레븐 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.7-eleven.co.kr"
+    "web_url": "https://www.7-eleven.co.kr",
+    "subtasks": [
+      {
+        "name": "세븐일레븐 대표 콜",
+        "phone": "1577-0711"
+      },
+      {
+        "name": "롯데 L포인트 연동",
+        "phone": "1899-8900"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "투썸플레이스 고객센터",
@@ -13947,7 +23960,21 @@ export const customerData = [
     "isVerified": true,
     "description": "투썸플레이스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.atwosomeplace.com"
+    "web_url": "https://www.atwosomeplace.com",
+    "subtasks": [
+      {
+        "name": "투썸플레이스 대표",
+        "phone": "1577-4410"
+      },
+      {
+        "name": "가맹점 개설 문의",
+        "phone": "02-540-3400"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "컴포즈커피 고객센터",
@@ -13965,7 +23992,21 @@ export const customerData = [
     "isVerified": true,
     "description": "컴포즈커피 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://composecoffee.com"
+    "web_url": "https://composecoffee.com",
+    "subtasks": [
+      {
+        "name": "컴포즈커피 대표",
+        "phone": "1522-0941"
+      },
+      {
+        "name": "컴포즈 가맹 개설",
+        "phone": "1522-0941 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "빽다방 고객센터",
@@ -13983,7 +24024,21 @@ export const customerData = [
     "isVerified": true,
     "description": "빽다방 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://paikscoffee.com"
+    "web_url": "https://paikscoffee.com",
+    "subtasks": [
+      {
+        "name": "빽다방 대표 콜",
+        "phone": "1544-2360"
+      },
+      {
+        "name": "더본코리아 대표 폰",
+        "phone": "02-549-3864"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "뚜레쥬르 고객센터",
@@ -14001,7 +24056,21 @@ export const customerData = [
     "isVerified": true,
     "description": "뚜레쥬르 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.touslesjours.co.kr"
+    "web_url": "https://www.touslesjours.co.kr",
+    "subtasks": [
+      {
+        "name": "뚜레쥬르 수신자부담",
+        "phone": "080-860-2200"
+      },
+      {
+        "name": "CJ푸드빌 대표 전화",
+        "phone": "1577-0700"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2187-2114"
+      }
+    ]
   },
   {
     "name": "본죽·본도시락(본아이에프) 고객센터",
@@ -14019,7 +24088,21 @@ export const customerData = [
     "isVerified": true,
     "description": "본죽·본도시락(본아이에프) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bonif.co.kr"
+    "web_url": "https://www.bonif.co.kr",
+    "subtasks": [
+      {
+        "name": "본아이에프 대표 콜",
+        "phone": "1644-6282"
+      },
+      {
+        "name": "가맹 개설 상담",
+        "phone": "1644-6282 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1644-6282"
+      }
+    ]
   },
   {
     "name": "이마트24 고객센터",
@@ -14037,7 +24120,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이마트24 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.emart24.co.kr"
+    "web_url": "https://www.emart24.co.kr",
+    "subtasks": [
+      {
+        "name": "이마트24 대표 콜",
+        "phone": "1588-1234"
+      },
+      {
+        "name": "신세계 포인트 연계",
+        "phone": "1899-2222"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "이디야커피 고객센터",
@@ -14055,7 +24152,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이디야커피 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ediya.com"
+    "web_url": "https://www.ediya.com",
+    "subtasks": [
+      {
+        "name": "이디야커피 대표 콜",
+        "phone": "02-728-1500"
+      },
+      {
+        "name": "가맹점개설 문의전용",
+        "phone": "02-543-1500"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "KFC 코리아 고객센터",
@@ -14073,7 +24184,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KFC 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kfckorea.com"
+    "web_url": "https://www.kfckorea.com",
+    "subtasks": [
+      {
+        "name": "KFC 대표 주문",
+        "phone": "1599-8499"
+      },
+      {
+        "name": "KFC 코리아 본사",
+        "phone": "02-6331-8163"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "피자헛 고객센터",
@@ -14091,7 +24216,21 @@ export const customerData = [
     "isVerified": true,
     "description": "피자헛 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.pizzahut.co.kr"
+    "web_url": "https://www.pizzahut.co.kr",
+    "subtasks": [
+      {
+        "name": "피자헛 대표 주문",
+        "phone": "1588-5588"
+      },
+      {
+        "name": "피자헛 코리아 본사",
+        "phone": "02-540-3082"
+      },
+      {
+        "name": "야간 보이스피싱 구제",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "노브랜드 버거 고객센터",
@@ -14109,7 +24248,21 @@ export const customerData = [
     "isVerified": true,
     "description": "노브랜드 버거 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.shinsegaefood.com"
+    "web_url": "https://www.shinsegaefood.com",
+    "subtasks": [
+      {
+        "name": "신세계푸드 대표",
+        "phone": "02-3397-6000"
+      },
+      {
+        "name": "노브랜드 가맹 개설",
+        "phone": "02-3397-6000 (내선 3)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "굽네치킨 고객센터",
@@ -14127,7 +24280,21 @@ export const customerData = [
     "isVerified": true,
     "description": "굽네치킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.goobne.co.kr"
+    "web_url": "https://www.goobne.co.kr",
+    "subtasks": [
+      {
+        "name": "굽네치킨 대표",
+        "phone": "1599-9292"
+      },
+      {
+        "name": "지앤푸드 본사 행정",
+        "phone": "02-540-3082"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "폴 바셋 고객센터",
@@ -14145,7 +24312,21 @@ export const customerData = [
     "isVerified": true,
     "description": "폴 바셋 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.baristapaulbassett.co.kr"
+    "web_url": "https://www.baristapaulbassett.co.kr",
+    "subtasks": [
+      {
+        "name": "폴 바셋 대표 콜",
+        "phone": "1899-8816"
+      },
+      {
+        "name": "매일유업 통합 고객",
+        "phone": "1588-1539"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "던킨 고객센터",
@@ -14163,7 +24344,21 @@ export const customerData = [
     "isVerified": true,
     "description": "던킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dunkindonuts.co.kr"
+    "web_url": "https://www.dunkindonuts.co.kr",
+    "subtasks": [
+      {
+        "name": "던킨 수신자부담",
+        "phone": "080-555-3131"
+      },
+      {
+        "name": "비알코리아 대표 전화",
+        "phone": "02-2187-2114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2187-2119"
+      }
+    ]
   },
   {
     "name": "투썸플레이스 고객케어콜 고객센터",
@@ -14181,7 +24376,21 @@ export const customerData = [
     "isVerified": true,
     "description": "투썸플레이스 고객케어콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.atwosomeplace.com"
+    "web_url": "https://www.atwosomeplace.com",
+    "subtasks": [
+      {
+        "name": "투썸플레이스 대표",
+        "phone": "1577-4410"
+      },
+      {
+        "name": "가맹점 개설 문의",
+        "phone": "02-540-3400"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "메가커피 통합고객지원 고객센터",
@@ -14199,7 +24408,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메가커피 통합고객지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.megacoffee.me"
+    "web_url": "https://www.megacoffee.me",
+    "subtasks": [
+      {
+        "name": "메가커피 대표 콜",
+        "phone": "1588-0656"
+      },
+      {
+        "name": "메가커피 가맹점문의",
+        "phone": "1588-0656 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "컴포즈커피 통합고객지원 고객센터",
@@ -14217,7 +24440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "컴포즈커피 통합고객지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://composecoffee.com"
+    "web_url": "https://composecoffee.com",
+    "subtasks": [
+      {
+        "name": "컴포즈커피 대표",
+        "phone": "1522-0941"
+      },
+      {
+        "name": "컴포즈 가맹 개설",
+        "phone": "1522-0941 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "파리바게뜨 대표고객콜 고객센터",
@@ -14235,7 +24472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파리바게뜨 대표고객콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.paris.co.kr"
+    "web_url": "https://www.paris.co.kr",
+    "subtasks": [
+      {
+        "name": "파리바게뜨 수신자부담",
+        "phone": "080-731-2130"
+      },
+      {
+        "name": "SPC 해피포인트 센터",
+        "phone": "080-320-1234"
+      },
+      {
+        "name": "파리크라상 대표 전화",
+        "phone": "02-2187-2114"
+      }
+    ]
   },
   {
     "name": "네네치킨 고객센터",
@@ -14253,7 +24504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "네네치킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://nenechicken.com"
+    "web_url": "https://nenechicken.com",
+    "subtasks": [
+      {
+        "name": "네네치킨 대표 주문",
+        "phone": "1599-4479"
+      },
+      {
+        "name": "가맹점 개설 상담",
+        "phone": "1599-4479 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "커피빈 고객센터",
@@ -14271,7 +24536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "커피빈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.coffeebeankorea.com"
+    "web_url": "https://www.coffeebeankorea.com",
+    "subtasks": [
+      {
+        "name": "커피빈 대표 콜",
+        "phone": "02-1577-4708"
+      },
+      {
+        "name": "커피빈 강남본사",
+        "phone": "02-535-6114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "할리스커피 고객센터",
@@ -14289,7 +24568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "할리스커피 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hollys.co.kr"
+    "web_url": "https://www.hollys.co.kr",
+    "subtasks": [
+      {
+        "name": "할리스 대표 콜",
+        "phone": "02-2188-7100"
+      },
+      {
+        "name": "케이지할리스 본사",
+        "phone": "02-2188-7100 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "처갓집양념치킨 고객센터",
@@ -14307,7 +24600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "처갓집양념치킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cheogajip.co.kr"
+    "web_url": "https://www.cheogajip.co.kr",
+    "subtasks": [
+      {
+        "name": "처갓집 대표 주문",
+        "phone": "1588-9282"
+      },
+      {
+        "name": "가맹점 개설 상담",
+        "phone": "1588-9282 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "파파존스 고객센터",
@@ -14325,7 +24632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "파파존스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://pji.co.kr"
+    "web_url": "https://pji.co.kr",
+    "subtasks": [
+      {
+        "name": "파파존스 대표 주문",
+        "phone": "1577-8080"
+      },
+      {
+        "name": "배송 및 교환 반품",
+        "phone": "1577-8080 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "엔제리너스 고객센터",
@@ -14343,7 +24664,21 @@ export const customerData = [
     "isVerified": true,
     "description": "엔제리너스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.angelinus.com"
+    "web_url": "https://www.angelinus.com",
+    "subtasks": [
+      {
+        "name": "엔제리너스 수신자부담",
+        "phone": "080-550-0005"
+      },
+      {
+        "name": "롯데GRS 서울 본사",
+        "phone": "02-709-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "설빙 고객센터",
@@ -14361,7 +24696,21 @@ export const customerData = [
     "isVerified": true,
     "description": "설빙 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://sulbing.com"
+    "web_url": "https://sulbing.com",
+    "subtasks": [
+      {
+        "name": "설빙 대표 주문",
+        "phone": "02-3401-7900"
+      },
+      {
+        "name": "가맹점 개설 상담",
+        "phone": "02-3401-7900 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "호식이두마리치킨 고객센터",
@@ -14379,7 +24728,21 @@ export const customerData = [
     "isVerified": true,
     "description": "호식이두마리치킨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.9922.co.kr"
+    "web_url": "https://www.9922.co.kr",
+    "subtasks": [
+      {
+        "name": "호식이 대표 주문",
+        "phone": "02-518-2003"
+      },
+      {
+        "name": "가맹점 개설 상담",
+        "phone": "02-518-2003 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "미스터피자 고객센터",
@@ -14397,7 +24760,21 @@ export const customerData = [
     "isVerified": true,
     "description": "미스터피자 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mrpizza.co.kr"
+    "web_url": "https://www.mrpizza.co.kr",
+    "subtasks": [
+      {
+        "name": "미스터피자 대표 주문",
+        "phone": "1577-0077"
+      },
+      {
+        "name": "배송 및 교환 반품",
+        "phone": "1577-0077 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "크리스피크림도넛 고객센터",
@@ -14415,7 +24792,21 @@ export const customerData = [
     "isVerified": true,
     "description": "크리스피크림도넛 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.krispykreme.co.kr"
+    "web_url": "https://www.krispykreme.co.kr",
+    "subtasks": [
+      {
+        "name": "크리스피 수신자부담",
+        "phone": "080-550-0005"
+      },
+      {
+        "name": "롯데GRS 서울 본사",
+        "phone": "02-709-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "블루보틀 고객센터",
@@ -14433,7 +24824,21 @@ export const customerData = [
     "isVerified": true,
     "description": "블루보틀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bluebottlecoffeekorea.com"
+    "web_url": "https://www.bluebottlecoffeekorea.com",
+    "subtasks": [
+      {
+        "name": "블루보틀 온라인 문의",
+        "phone": "support@bluebottlecoffee.com"
+      },
+      {
+        "name": "성수 카페 대표 지점",
+        "phone": "02-1588-0000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-540-3400"
+      }
+    ]
   },
   {
     "name": "나이키 코리아 고객센터",
@@ -14451,7 +24856,21 @@ export const customerData = [
     "isVerified": true,
     "description": "나이키 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nike.com/ko"
+    "web_url": "https://www.nike.com/ko",
+    "subtasks": [
+      {
+        "name": "나이키 대표 수신",
+        "phone": "080-022-0182"
+      },
+      {
+        "name": "나이키 매장 안내데스크",
+        "phone": "080-022-0182 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "유니클로 고객센터",
@@ -14469,7 +24888,21 @@ export const customerData = [
     "isVerified": true,
     "description": "유니클로 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.uniqlo.com/kr"
+    "web_url": "https://www.uniqlo.com/kr",
+    "subtasks": [
+      {
+        "name": "유니클로 대표 수리부",
+        "phone": "1544-3966"
+      },
+      {
+        "name": "유니클로 수납 정산",
+        "phone": "1544-3966 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "올리브영 고객센터",
@@ -14487,7 +24920,21 @@ export const customerData = [
     "isVerified": true,
     "description": "올리브영 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.oliveyoung.co.kr"
+    "web_url": "https://www.oliveyoung.co.kr",
+    "subtasks": [
+      {
+        "name": "올리브영 대표 서비스",
+        "phone": "1522-0882"
+      },
+      {
+        "name": "오늘드림 배송 기술",
+        "phone": "1522-0882 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "아디다스 코리아 고객센터",
@@ -14505,7 +24952,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아디다스 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.adidas.co.kr"
+    "web_url": "https://www.adidas.co.kr",
+    "subtasks": [
+      {
+        "name": "아디다스 대표 수리부",
+        "phone": "1588-8241"
+      },
+      {
+        "name": "아디클럽 수납 정산",
+        "phone": "1588-8241 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-8241"
+      }
+    ]
   },
   {
     "name": "자라(ZARA) 고객센터",
@@ -14523,7 +24984,21 @@ export const customerData = [
     "isVerified": true,
     "description": "자라(ZARA) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.zara.com/kr"
+    "web_url": "https://www.zara.com/kr",
+    "subtasks": [
+      {
+        "name": "자라 대표 수신",
+        "phone": "080-479-0880"
+      },
+      {
+        "name": "자라 코리아 본사",
+        "phone": "02-1588-0000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "노스페이스 고객센터",
@@ -14541,7 +25016,21 @@ export const customerData = [
     "isVerified": true,
     "description": "노스페이스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.thenorthfacekorea.co.kr"
+    "web_url": "https://www.thenorthfacekorea.co.kr",
+    "subtasks": [
+      {
+        "name": "노스페이스 대표 AS",
+        "phone": "1899-2626"
+      },
+      {
+        "name": "아웃도어 수선 전용",
+        "phone": "1899-2626 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "뉴발란스 코리아 고객센터",
@@ -14559,7 +25048,21 @@ export const customerData = [
     "isVerified": true,
     "description": "뉴발란스 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nbkorea.com"
+    "web_url": "https://www.nbkorea.com",
+    "subtasks": [
+      {
+        "name": "이랜드 뉴발란스 대표",
+        "phone": "1566-0086"
+      },
+      {
+        "name": "뉴발란스 가맹 개설",
+        "phone": "1566-0086"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "아모레퍼시픽 고객센터",
@@ -14577,7 +25080,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아모레퍼시픽 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.apgroup.com"
+    "web_url": "https://www.apgroup.com",
+    "subtasks": [
+      {
+        "name": "아모레 대표 수신",
+        "phone": "080-023-5454"
+      },
+      {
+        "name": "설화수 전용 데스크",
+        "phone": "080-023-5454 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "이니스프리 고객센터",
@@ -14595,7 +25112,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이니스프리 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.innisfree.com"
+    "web_url": "https://www.innisfree.com",
+    "subtasks": [
+      {
+        "name": "이니스프리 수신자부담",
+        "phone": "080-380-0114"
+      },
+      {
+        "name": "아모레 통합 포인트",
+        "phone": "080-023-5454"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "H&M 코리아 고객센터",
@@ -14613,7 +25144,21 @@ export const customerData = [
     "isVerified": true,
     "description": "H&M 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www2.hm.com/ko_kr"
+    "web_url": "https://www2.hm.com/ko_kr",
+    "subtasks": [
+      {
+        "name": "에이치앤엠 수신자부담",
+        "phone": "080-822-0220"
+      },
+      {
+        "name": "H&M 서울 본사전화",
+        "phone": "02-1588-0000"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-2187-2114"
+      }
+    ]
   },
   {
     "name": "디스커버리 익스페디션 고객센터",
@@ -14631,7 +25176,21 @@ export const customerData = [
     "isVerified": true,
     "description": "디스커버리 익스페디션 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.discovery-expedition.com"
+    "web_url": "https://www.discovery-expedition.com",
+    "subtasks": [
+      {
+        "name": "디스커버리 수신자부담",
+        "phone": "080-820-8802"
+      },
+      {
+        "name": "에프앤에프 본사 대표",
+        "phone": "02-520-0900"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "설화수 고객센터",
@@ -14649,7 +25208,21 @@ export const customerData = [
     "isVerified": true,
     "description": "설화수 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sulwhasoo.com/kr/ko"
+    "web_url": "https://www.sulwhasoo.com/kr/ko",
+    "subtasks": [
+      {
+        "name": "설화수 대표 수신",
+        "phone": "080-023-5454"
+      },
+      {
+        "name": "아모레 통합 포인트",
+        "phone": "080-023-5454 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "MLB 코리아 고객센터",
@@ -14667,7 +25240,21 @@ export const customerData = [
     "isVerified": true,
     "description": "MLB 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mlb-korea.com"
+    "web_url": "https://www.mlb-korea.com",
+    "subtasks": [
+      {
+        "name": "MLB 수신자부담",
+        "phone": "080-807-0012"
+      },
+      {
+        "name": "에프앤에프 대표 본사",
+        "phone": "02-520-0900"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "스파오(SPAO) 고객센터",
@@ -14685,7 +25272,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스파오(SPAO) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://spao.com"
+    "web_url": "https://spao.com",
+    "subtasks": [
+      {
+        "name": "스파오 이랜드 대표",
+        "phone": "1566-0086"
+      },
+      {
+        "name": "이랜드클럽 수납전용",
+        "phone": "1899-9500"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2025-4733"
+      }
+    ]
   },
   {
     "name": "아식스 코리아 고객센터",
@@ -14703,7 +25304,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아식스 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.asics.com/kr/ko-kr"
+    "web_url": "https://www.asics.com/kr/ko-kr",
+    "subtasks": [
+      {
+        "name": "아식스 대표 수리부",
+        "phone": "02-6303-3000"
+      },
+      {
+        "name": "아식스 스포츠 영업",
+        "phone": "02-6303-3000 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6303-3009"
+      }
+    ]
   },
   {
     "name": "라네즈 고객센터",
@@ -14721,7 +25336,21 @@ export const customerData = [
     "isVerified": true,
     "description": "라네즈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.laneige.com/kr/ko"
+    "web_url": "https://www.laneige.com/kr/ko",
+    "subtasks": [
+      {
+        "name": "라네즈 대표 수신",
+        "phone": "080-023-5454"
+      },
+      {
+        "name": "아모레 통합 포인트",
+        "phone": "080-023-5454 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "헤라 고객센터",
@@ -14739,7 +25368,21 @@ export const customerData = [
     "isVerified": true,
     "description": "헤라 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hera.com/kr/ko"
+    "web_url": "https://www.hera.com/kr/ko",
+    "subtasks": [
+      {
+        "name": "헤라 대표 수신",
+        "phone": "080-023-5454"
+      },
+      {
+        "name": "아모레 통합 포인트",
+        "phone": "080-023-5454 (내선 2)"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "닥터자르트 고객센터",
@@ -14757,7 +25400,21 @@ export const customerData = [
     "isVerified": true,
     "description": "닥터자르트 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.drjart.co.kr"
+    "web_url": "https://www.drjart.co.kr",
+    "subtasks": [
+      {
+        "name": "닥터자르트 대표 콜",
+        "phone": "1544-7077"
+      },
+      {
+        "name": "해브앤비 본사 행정",
+        "phone": "02-1544-7077"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "클리오 고객센터",
@@ -14775,7 +25432,21 @@ export const customerData = [
     "isVerified": true,
     "description": "클리오 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.clubclio.co.kr"
+    "web_url": "https://www.clubclio.co.kr",
+    "subtasks": [
+      {
+        "name": "클리오 수신자부담",
+        "phone": "080-080-7500"
+      },
+      {
+        "name": "클리오 서울 본사",
+        "phone": "02-518-6100"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-518-6109"
+      }
+    ]
   },
   {
     "name": "에잇세컨즈(8SECONDS) 고객센터",
@@ -14793,7 +25464,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에잇세컨즈(8SECONDS) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ssfshop.com"
+    "web_url": "https://www.ssfshop.com",
+    "subtasks": [
+      {
+        "name": "에잇세컨즈 대표 콜",
+        "phone": "1599-0007"
+      },
+      {
+        "name": "무료 통화 수신자부담",
+        "phone": "080-700-1472"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2025-4733"
+      }
+    ]
   },
   {
     "name": "K2 고객센터",
@@ -14811,7 +25496,21 @@ export const customerData = [
     "isVerified": true,
     "description": "K2 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.k2.co.kr"
+    "web_url": "https://www.k2.co.kr",
+    "subtasks": [
+      {
+        "name": "K2 대표 수리부",
+        "phone": "1644-7781"
+      },
+      {
+        "name": "K2 서울 성수본사",
+        "phone": "02-3408-9700"
+      },
+      {
+        "name": "야간 도난 및 유실 신고",
+        "phone": "1644-7781 (내선 9)"
+      }
+    ]
   },
   {
     "name": "코오롱스포츠 고객센터",
@@ -14829,7 +25528,21 @@ export const customerData = [
     "isVerified": true,
     "description": "코오롱스포츠 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kolonsport.com"
+    "web_url": "https://www.kolonsport.com",
+    "subtasks": [
+      {
+        "name": "코오롱스포츠 대표",
+        "phone": "1588-7667"
+      },
+      {
+        "name": "수취 증명 팩스 수신선",
+        "phone": "02-3677-7667"
+      },
+      {
+        "name": "코오롱 멤버십 포인트",
+        "phone": "1588-7667"
+      }
+    ]
   },
   {
     "name": "푸마 코리아 고객센터",
@@ -14847,7 +25560,21 @@ export const customerData = [
     "isVerified": true,
     "description": "푸마 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kr.puma.com"
+    "web_url": "https://kr.puma.com",
+    "subtasks": [
+      {
+        "name": "푸마 대표 수리부",
+        "phone": "080-870-0088"
+      },
+      {
+        "name": "푸마코리아 서울지부",
+        "phone": "02-1588-0000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "미샤(에이블샵) 고객센터",
@@ -14865,7 +25592,21 @@ export const customerData = [
     "isVerified": true,
     "description": "미샤(에이블샵) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ableshop.kr"
+    "web_url": "https://www.ableshop.kr",
+    "subtasks": [
+      {
+        "name": "미샤 수신자부담",
+        "phone": "080-080-4936"
+      },
+      {
+        "name": "에이블씨엔씨 본사",
+        "phone": "02-2146-8200"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "AHC(카버코리아) 고객센터",
@@ -14883,7 +25624,21 @@ export const customerData = [
     "isVerified": true,
     "description": "AHC(카버코리아) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ahc.co.kr"
+    "web_url": "https://www.ahc.co.kr",
+    "subtasks": [
+      {
+        "name": "AHC 수신자부담",
+        "phone": "080-332-0855"
+      },
+      {
+        "name": "카버코리아 서울 본사",
+        "phone": "02-518-6100"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-518-6109"
+      }
+    ]
   },
   {
     "name": "지그재그 통합고객지원 고객센터",
@@ -14901,7 +25656,21 @@ export const customerData = [
     "isVerified": true,
     "description": "지그재그 통합고객지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://zigzag.kr"
+    "web_url": "https://zigzag.kr",
+    "subtasks": [
+      {
+        "name": "지그재그 대표 고객선",
+        "phone": "1670-8050"
+      },
+      {
+        "name": "지그재그 파트너 전용",
+        "phone": "1670-8050"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에이블리 통합고객지원 고객센터",
@@ -14919,7 +25688,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에이블리 통합고객지원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://a-bly.com"
+    "web_url": "https://a-bly.com",
+    "subtasks": [
+      {
+        "name": "에이블리 대표 수신",
+        "phone": "1833-8021"
+      },
+      {
+        "name": "에이블리 셀러 센터",
+        "phone": "1833-8021 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "발란 명품케어 통합콜 고객센터",
@@ -14937,7 +25720,21 @@ export const customerData = [
     "isVerified": true,
     "description": "발란 명품케어 통합콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.balaan.co.kr"
+    "web_url": "https://www.balaan.co.kr",
+    "subtasks": [
+      {
+        "name": "발란 대표 고객 센터",
+        "phone": "02-6254-2000"
+      },
+      {
+        "name": "정품 감정 전담부서",
+        "phone": "02-6254-2000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-6254-2009"
+      }
+    ]
   },
   {
     "name": "트렌비 명품케어 통합콜 고객센터",
@@ -14955,7 +25752,21 @@ export const customerData = [
     "isVerified": true,
     "description": "트렌비 명품케어 통합콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.trenbe.com"
+    "web_url": "https://www.trenbe.com",
+    "subtasks": [
+      {
+        "name": "트렌비 대표 수리부",
+        "phone": "1522-2538"
+      },
+      {
+        "name": "트렌비 리세일 센터",
+        "phone": "1522-2538 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1522-2538"
+      }
+    ]
   },
   {
     "name": "머스트잇 명품 통합콜 고객센터",
@@ -14973,7 +25784,21 @@ export const customerData = [
     "isVerified": true,
     "description": "머스트잇 명품 통합콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://mustit.co.kr"
+    "web_url": "https://mustit.co.kr",
+    "subtasks": [
+      {
+        "name": "머스트잇 대표 수신",
+        "phone": "1566-0558"
+      },
+      {
+        "name": "머스트잇 판매자 전용",
+        "phone": "1566-0558"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에뛰드 고객센터",
@@ -14991,7 +25816,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에뛰드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.etude.com"
+    "web_url": "https://www.etude.com",
+    "subtasks": [
+      {
+        "name": "에뛰드 수신자부담",
+        "phone": "080-022-2285"
+      },
+      {
+        "name": "아모레 통합 포인트",
+        "phone": "080-023-5454"
+      },
+      {
+        "name": "야간 사기예방 사고신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "바닐라코 고객센터",
@@ -15009,7 +25848,21 @@ export const customerData = [
     "isVerified": true,
     "description": "바닐라코 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.banilaco.com"
+    "web_url": "https://www.banilaco.com",
+    "subtasks": [
+      {
+        "name": "바닐라코 수신자부담",
+        "phone": "080-225-6500"
+      },
+      {
+        "name": "에프앤코 서울 본사",
+        "phone": "02-518-6100"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-518-6109"
+      }
+    ]
   },
   {
     "name": "네이처리퍼블릭 고객센터",
@@ -15027,7 +25880,21 @@ export const customerData = [
     "isVerified": true,
     "description": "네이처리퍼블릭 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.naturerepublic.com"
+    "web_url": "https://www.naturerepublic.com",
+    "subtasks": [
+      {
+        "name": "네이처 수신자부담",
+        "phone": "080-890-6000"
+      },
+      {
+        "name": "네이처리퍼블릭 본사",
+        "phone": "02-3496-2200"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "시코르(CHICOR) 고객센터",
@@ -15045,7 +25912,21 @@ export const customerData = [
     "isVerified": true,
     "description": "시코르(CHICOR) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://chicor.com"
+    "web_url": "https://chicor.com",
+    "subtasks": [
+      {
+        "name": "시코르 대표 교환선",
+        "phone": "1588-1234"
+      },
+      {
+        "name": "신세계백화점 강남점",
+        "phone": "02-3479-1234"
+      },
+      {
+        "name": "신세계 상품권",
+        "phone": "1588-1234"
+      }
+    ]
   },
   {
     "name": "더페이스샵 고객센터",
@@ -15063,7 +25944,21 @@ export const customerData = [
     "isVerified": true,
     "description": "더페이스샵 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.thefaceshop.com"
+    "web_url": "https://www.thefaceshop.com",
+    "subtasks": [
+      {
+        "name": "더페이스샵 수신자부담",
+        "phone": "080-050-3300"
+      },
+      {
+        "name": "LG생활건강 통합",
+        "phone": "080-023-7007"
+      },
+      {
+        "name": "본사 수취 팩스 수신선",
+        "phone": "02-2187-2114"
+      }
+    ]
   },
   {
     "name": "키엘 코리아 고객센터",
@@ -15081,7 +25976,21 @@ export const customerData = [
     "isVerified": true,
     "description": "키엘 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kiehls.co.kr"
+    "web_url": "https://www.kiehls.co.kr",
+    "subtasks": [
+      {
+        "name": "키엘 수신자부담",
+        "phone": "080-022-3332"
+      },
+      {
+        "name": "로레알코리아 대표본사",
+        "phone": "02-3497-9500"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "토니모리 고객센터",
@@ -15099,7 +26008,21 @@ export const customerData = [
     "isVerified": true,
     "description": "토니모리 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.tonymoly.com"
+    "web_url": "https://www.tonymoly.com",
+    "subtasks": [
+      {
+        "name": "토니모리 수신자부담",
+        "phone": "080-356-2222"
+      },
+      {
+        "name": "토니모리 서울 본사",
+        "phone": "02-585-0999"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "스킨푸드 고객센터",
@@ -15117,7 +26040,21 @@ export const customerData = [
     "isVerified": true,
     "description": "스킨푸드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.theskinfood.com"
+    "web_url": "https://www.theskinfood.com",
+    "subtasks": [
+      {
+        "name": "스킨푸드 수신자부담",
+        "phone": "080-012-7878"
+      },
+      {
+        "name": "스킨푸드 본사 행정",
+        "phone": "02-518-6100"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "후아유(WHO.A.U) 고객센터",
@@ -15135,7 +26072,21 @@ export const customerData = [
     "isVerified": true,
     "description": "후아유(WHO.A.U) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://whoau.com"
+    "web_url": "https://whoau.com",
+    "subtasks": [
+      {
+        "name": "후아유 이랜드 대표",
+        "phone": "1566-0086"
+      },
+      {
+        "name": "이랜드클럽 수납전용",
+        "phone": "1899-9500"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2025-4733"
+      }
+    ]
   },
   {
     "name": "록시땅 코리아 고객센터",
@@ -15153,7 +26104,21 @@ export const customerData = [
     "isVerified": true,
     "description": "록시땅 코리아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kr.loccitane.com"
+    "web_url": "https://kr.loccitane.com",
+    "subtasks": [
+      {
+        "name": "록시땅 대표 수신",
+        "phone": "02-2054-0500"
+      },
+      {
+        "name": "록시땅 코리아 본사",
+        "phone": "02-2054-0500"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "퀸잇 고객센터",
@@ -15171,7 +26136,21 @@ export const customerData = [
     "isVerified": true,
     "description": "퀸잇 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://queeneit.com"
+    "web_url": "https://queeneit.com",
+    "subtasks": [
+      {
+        "name": "퀸잇 대표 수신",
+        "phone": "1644-4282"
+      },
+      {
+        "name": "라포랩스 본사 대표",
+        "phone": "1644-4282"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "메가스터디 고객센터",
@@ -15189,7 +26168,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메가스터디 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.megastudy.net"
+    "web_url": "https://www.megastudy.net",
+    "subtasks": [
+      {
+        "name": "고등인강 대표 안내",
+        "phone": "1599-1010"
+      },
+      {
+        "name": "메가스터디 엠베스트",
+        "phone": "1544-2300"
+      },
+      {
+        "name": "엘리하이 초등 전용",
+        "phone": "1544-2300"
+      }
+    ]
   },
   {
     "name": "해커스 고객센터",
@@ -15207,7 +26200,21 @@ export const customerData = [
     "isVerified": true,
     "description": "해커스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hackers.com"
+    "web_url": "https://www.hackers.com",
+    "subtasks": [
+      {
+        "name": "해커스 인강 챔프",
+        "phone": "1588-3400"
+      },
+      {
+        "name": "해커스 어학원 강남",
+        "phone": "02-566-0001"
+      },
+      {
+        "name": "해커스 공무원 인강",
+        "phone": "1588-3400 (내선 3)"
+      }
+    ]
   },
   {
     "name": "대교(눈높이) 고객센터",
@@ -15225,7 +26232,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대교(눈높이) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daekyo.com"
+    "web_url": "https://www.daekyo.com",
+    "subtasks": [
+      {
+        "name": "눈높이 수신자부담",
+        "phone": "080-222-0900"
+      },
+      {
+        "name": "대교 차이홍 중국어",
+        "phone": "080-222-0900 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "YBM 고객센터",
@@ -15243,7 +26264,21 @@ export const customerData = [
     "isVerified": true,
     "description": "YBM 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ybmsisa.com"
+    "web_url": "https://www.ybmsisa.com",
+    "subtasks": [
+      {
+        "name": "토익 시험 접수 취소",
+        "phone": "1544-0000"
+      },
+      {
+        "name": "YBM 어학원 종합선",
+        "phone": "1544-0000 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "웅진씽크빅 고객센터",
@@ -15261,7 +26296,21 @@ export const customerData = [
     "isVerified": true,
     "description": "웅진씽크빅 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wjthinkbig.com"
+    "web_url": "https://www.wjthinkbig.com",
+    "subtasks": [
+      {
+        "name": "웅진씽크빅 대표 AS",
+        "phone": "1577-1500"
+      },
+      {
+        "name": "북클럽 렌탈 수납 관리",
+        "phone": "1577-1500 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1577-1500"
+      }
+    ]
   },
   {
     "name": "에듀윌 고객센터",
@@ -15279,7 +26328,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에듀윌 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eduwill.net"
+    "web_url": "https://www.eduwill.net",
+    "subtasks": [
+      {
+        "name": "에듀윌 인강 대표",
+        "phone": "1600-6700"
+      },
+      {
+        "name": "에듀윌 학원 강남",
+        "phone": "02-566-0001"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1600-6700"
+      }
+    ]
   },
   {
     "name": "시원스쿨 고객센터",
@@ -15297,7 +26360,21 @@ export const customerData = [
     "isVerified": true,
     "description": "시원스쿨 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.siwonschool.com"
+    "web_url": "https://www.siwonschool.com",
+    "subtasks": [
+      {
+        "name": "시원스쿨 대표 가전",
+        "phone": "02-6409-0012"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-6409-0019"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "천재교육 고객센터",
@@ -15315,7 +26392,21 @@ export const customerData = [
     "isVerified": true,
     "description": "천재교육 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chunjae.co.kr"
+    "web_url": "https://www.chunjae.co.kr",
+    "subtasks": [
+      {
+        "name": "천재교육 대표 수신",
+        "phone": "1577-0906"
+      },
+      {
+        "name": "밀크T 초등 스마트패드",
+        "phone": "1577-1111"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1577-0906"
+      }
+    ]
   },
   {
     "name": "비상교육 고객센터",
@@ -15333,7 +26424,21 @@ export const customerData = [
     "isVerified": true,
     "description": "비상교육 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.visang.com"
+    "web_url": "https://www.visang.com",
+    "subtasks": [
+      {
+        "name": "비상교육 대표 수신",
+        "phone": "1544-0554"
+      },
+      {
+        "name": "와이즈캠프 전용선",
+        "phone": "1522-3000"
+      },
+      {
+        "name": "야간 보이스피싱 안심대응",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "NE능률 고객센터",
@@ -15351,7 +26456,21 @@ export const customerData = [
     "isVerified": true,
     "description": "NE능률 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.neungyule.com"
+    "web_url": "https://www.neungyule.com",
+    "subtasks": [
+      {
+        "name": "NE능률 대표 교환",
+        "phone": "02-2012-7000"
+      },
+      {
+        "name": "능률 주니어랩 영어",
+        "phone": "1577-0515"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "공단기 고객센터",
@@ -15369,7 +26488,21 @@ export const customerData = [
     "isVerified": true,
     "description": "공단기 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://gong.conects.com"
+    "web_url": "https://gong.conects.com",
+    "subtasks": [
+      {
+        "name": "공단기 대표 수신",
+        "phone": "1670-6531"
+      },
+      {
+        "name": "공단기 강남학원",
+        "phone": "02-540-3400"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한솔교육 고객센터",
@@ -15387,7 +26520,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한솔교육 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.eduhansol.co.kr"
+    "web_url": "https://www.eduhansol.co.kr",
+    "subtasks": [
+      {
+        "name": "한솔교육 대표 AS",
+        "phone": "1588-1185"
+      },
+      {
+        "name": "한글나라 전용 부품",
+        "phone": "1588-1185 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-1185"
+      }
+    ]
   },
   {
     "name": "재능교육 고객센터",
@@ -15405,7 +26552,21 @@ export const customerData = [
     "isVerified": true,
     "description": "재능교육 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jei.com"
+    "web_url": "https://www.jei.com",
+    "subtasks": [
+      {
+        "name": "재능교육 대표 콜",
+        "phone": "1588-1132"
+      },
+      {
+        "name": "재능 피자지 학습지",
+        "phone": "1588-1132"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "가야대학교 대표전화 고객센터",
@@ -15423,7 +26584,21 @@ export const customerData = [
     "isVerified": true,
     "description": "가야대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gaya.ac.kr"
+    "web_url": "https://www.gaya.ac.kr",
+    "subtasks": [
+      {
+        "name": "가야대학교 교학처",
+        "phone": "055-330-1011"
+      },
+      {
+        "name": "입학 지원처 상담선",
+        "phone": "055-330-1144"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "055-330-1009"
+      }
+    ]
   },
   {
     "name": "가천대학교 대표전화 고객센터",
@@ -15441,7 +26616,21 @@ export const customerData = [
     "isVerified": true,
     "description": "가천대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gachon.ac.kr"
+    "web_url": "https://www.gachon.ac.kr",
+    "subtasks": [
+      {
+        "name": "가천대학교 입학처",
+        "phone": "031-750-5114"
+      },
+      {
+        "name": "교학처 및 학생복지",
+        "phone": "031-750-5114 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "가톨릭관동대학교 대표전화 고객센터",
@@ -15459,7 +26648,21 @@ export const customerData = [
     "isVerified": true,
     "description": "가톨릭관동대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cku.ac.kr"
+    "web_url": "https://www.cku.ac.kr",
+    "subtasks": [
+      {
+        "name": "가톨릭관동대 입학처",
+        "phone": "033-649-7114"
+      },
+      {
+        "name": "학생 지원 종합",
+        "phone": "033-649-7114 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "가톨릭꽃동네대학교 대표전화 고객센터",
@@ -15477,7 +26680,21 @@ export const customerData = [
     "isVerified": true,
     "description": "가톨릭꽃동네대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kkot.ac.kr"
+    "web_url": "https://www.kkot.ac.kr",
+    "subtasks": [
+      {
+        "name": "꽃동네대 입학 지원",
+        "phone": "043-270-0114"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "043-270-0119"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "가톨릭대학교 대표전화 고객센터",
@@ -15495,7 +26712,21 @@ export const customerData = [
     "isVerified": true,
     "description": "가톨릭대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.catholic.ac.kr"
+    "web_url": "https://www.catholic.ac.kr",
+    "subtasks": [
+      {
+        "name": "가톨릭대 성심교정",
+        "phone": "02-2164-4114"
+      },
+      {
+        "name": "가톨릭대 융자지원",
+        "phone": "02-2164-4114 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2164-4119"
+      }
+    ]
   },
   {
     "name": "감리교신학대학교 대표전화 고객센터",
@@ -15513,7 +26744,21 @@ export const customerData = [
     "isVerified": true,
     "description": "감리교신학대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mtu.ac.kr"
+    "web_url": "https://www.mtu.ac.kr",
+    "subtasks": [
+      {
+        "name": "감리교신학대 입학처",
+        "phone": "02-361-9114"
+      },
+      {
+        "name": "기숙사 행정 지원",
+        "phone": "02-361-9114 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시신고",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "강남대학교 대표전화 고객센터",
@@ -15531,7 +26776,21 @@ export const customerData = [
     "isVerified": true,
     "description": "강남대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kangnam.ac.kr"
+    "web_url": "https://www.kangnam.ac.kr",
+    "subtasks": [
+      {
+        "name": "강남대학교 입학처",
+        "phone": "031-280-3500"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "031-280-3500 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "031-280-3509"
+      }
+    ]
   },
   {
     "name": "강서대학교 대표전화 고객센터",
@@ -15549,7 +26808,21 @@ export const customerData = [
     "isVerified": true,
     "description": "강서대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gangseo.ac.kr"
+    "web_url": "https://www.gangseo.ac.kr",
+    "subtasks": [
+      {
+        "name": "강서대학교 입학처",
+        "phone": "02-2600-2400"
+      },
+      {
+        "name": "강서대 교학 종합",
+        "phone": "02-2600-2400 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "강원대학교 대표전화 고객센터",
@@ -15567,7 +26840,21 @@ export const customerData = [
     "isVerified": true,
     "description": "강원대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kangwon.ac.kr"
+    "web_url": "https://www.kangwon.ac.kr",
+    "subtasks": [
+      {
+        "name": "강원대학교 입학처",
+        "phone": "033-250-6114"
+      },
+      {
+        "name": "강원대 춘천교정 교학",
+        "phone": "033-250-6114 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "건국대학교 대표전화 고객센터",
@@ -15585,7 +26872,21 @@ export const customerData = [
     "isVerified": true,
     "description": "건국대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.konkuk.ac.kr"
+    "web_url": "https://www.konkuk.ac.kr",
+    "subtasks": [
+      {
+        "name": "건국대학교 입학처",
+        "phone": "02-450-3114"
+      },
+      {
+        "name": "쿨하우스 기숙사 지원",
+        "phone": "02-450-3114 (내선 3)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "서울대학교 대표전화 고객센터",
@@ -15603,7 +26904,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.snu.ac.kr"
+    "web_url": "https://www.snu.ac.kr",
+    "subtasks": [
+      {
+        "name": "서울대학교 입학처",
+        "phone": "02-880-5022"
+      },
+      {
+        "name": "관악학생생활관 기숙사",
+        "phone": "02-881-9000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-880-5009"
+      }
+    ]
   },
   {
     "name": "연세대학교 대표전화 고객센터",
@@ -15621,7 +26936,21 @@ export const customerData = [
     "isVerified": true,
     "description": "연세대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yonsei.ac.kr"
+    "web_url": "https://www.yonsei.ac.kr",
+    "subtasks": [
+      {
+        "name": "연세대학교 입학처",
+        "phone": "1599-1885"
+      },
+      {
+        "name": "송도 국제캠퍼스 지원",
+        "phone": "032-749-2114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "고려대학교 대표전화 고객센터",
@@ -15639,7 +26968,21 @@ export const customerData = [
     "isVerified": true,
     "description": "고려대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.korea.ac.kr"
+    "web_url": "https://www.korea.ac.kr",
+    "subtasks": [
+      {
+        "name": "고려대학교 입학처",
+        "phone": "02-3290-1114"
+      },
+      {
+        "name": "고려대 안암 교학처",
+        "phone": "02-3290-1114 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "서강대학교 대표전화 고객센터",
@@ -15657,7 +27000,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서강대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sogang.ac.kr"
+    "web_url": "https://www.sogang.ac.kr",
+    "subtasks": [
+      {
+        "name": "서강대학교 입학처",
+        "phone": "02-705-8114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-705-8114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-705-8119"
+      }
+    ]
   },
   {
     "name": "성균관대학교 대표전화 고객센터",
@@ -15675,7 +27032,21 @@ export const customerData = [
     "isVerified": true,
     "description": "성균관대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skku.edu"
+    "web_url": "https://www.skku.edu",
+    "subtasks": [
+      {
+        "name": "성균관대학교 입학처",
+        "phone": "02-760-0114"
+      },
+      {
+        "name": "수원 자연과학캠퍼스",
+        "phone": "031-290-5114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한양대학교 대표전화 고객센터",
@@ -15693,7 +27064,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한양대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanyang.ac.kr"
+    "web_url": "https://www.hanyang.ac.kr",
+    "subtasks": [
+      {
+        "name": "한양대학교 입학처",
+        "phone": "02-2220-0114"
+      },
+      {
+        "name": "ERICA 안산캠퍼스",
+        "phone": "031-400-5114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "중앙대학교 대표전화 고객센터",
@@ -15711,7 +27096,21 @@ export const customerData = [
     "isVerified": true,
     "description": "중앙대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cau.ac.kr"
+    "web_url": "https://www.cau.ac.kr",
+    "subtasks": [
+      {
+        "name": "중앙대학교 입학처",
+        "phone": "02-820-5114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-820-5114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-820-5119"
+      }
+    ]
   },
   {
     "name": "경희대학교 대표전화 고객센터",
@@ -15729,7 +27128,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경희대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.khu.ac.kr"
+    "web_url": "https://www.khu.ac.kr",
+    "subtasks": [
+      {
+        "name": "경희대학교 입학처",
+        "phone": "1544-9001"
+      },
+      {
+        "name": "용인 국제캠퍼스",
+        "phone": "031-201-3114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한국외국어대학교 대표전화 고객센터",
@@ -15747,7 +27160,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국외국어대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hufs.ac.kr"
+    "web_url": "https://www.hufs.ac.kr",
+    "subtasks": [
+      {
+        "name": "한국외대 입학처",
+        "phone": "02-2173-2114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-2173-2114 (내선 2)"
+      },
+      {
+        "name": "용인 글로벌캠퍼스",
+        "phone": "031-330-4114"
+      }
+    ]
   },
   {
     "name": "서울시립대학교 대표전화 고객센터",
@@ -15765,7 +27192,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울시립대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.uos.ac.kr"
+    "web_url": "https://www.uos.ac.kr",
+    "subtasks": [
+      {
+        "name": "서울시립대 입학처",
+        "phone": "02-6490-6114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2246-6114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "이화여자대학교 대표전화 고객센터",
@@ -15783,7 +27224,21 @@ export const customerData = [
     "isVerified": true,
     "description": "이화여자대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ewha.ac.kr"
+    "web_url": "https://www.ewha.ac.kr",
+    "subtasks": [
+      {
+        "name": "이화여대 입학처",
+        "phone": "02-3277-7000"
+      },
+      {
+        "name": "기숙사 한우리집",
+        "phone": "02-3277-5001"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "건국대학교 글로컬 대표 고객센터",
@@ -15801,7 +27256,21 @@ export const customerData = [
     "isVerified": true,
     "description": "건국대학교 글로컬 대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kku.ac.kr"
+    "web_url": "https://www.kku.ac.kr",
+    "subtasks": [
+      {
+        "name": "건국대 글로컬 입학",
+        "phone": "043-840-3114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "043-840-3114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "043-840-3119"
+      }
+    ]
   },
   {
     "name": "동국대학교 대표전화 고객센터",
@@ -15819,7 +27288,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동국대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dongguk.edu"
+    "web_url": "https://www.dongguk.edu",
+    "subtasks": [
+      {
+        "name": "동국대학교 입학처",
+        "phone": "02-2260-3114"
+      },
+      {
+        "name": "일산 바이오캠퍼스",
+        "phone": "031-961-5114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "홍익대학교 대표전화 고객센터",
@@ -15837,7 +27320,21 @@ export const customerData = [
     "isVerified": true,
     "description": "홍익대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hongik.ac.kr"
+    "web_url": "https://www.hongik.ac.kr",
+    "subtasks": [
+      {
+        "name": "홍익대학교 입학처",
+        "phone": "02-320-1114"
+      },
+      {
+        "name": "세종 조치원캠퍼스",
+        "phone": "044-860-2114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "숙명여자대학교 대표전화 고객센터",
@@ -15855,7 +27352,21 @@ export const customerData = [
     "isVerified": true,
     "description": "숙명여자대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sookmyung.ac.kr"
+    "web_url": "https://www.sookmyung.ac.kr",
+    "subtasks": [
+      {
+        "name": "숙명여대 입학처",
+        "phone": "02-710-9114"
+      },
+      {
+        "name": "학생 기숙사 명재관",
+        "phone": "02-710-9114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "국민대학교 대표전화 고객센터",
@@ -15873,7 +27384,21 @@ export const customerData = [
     "isVerified": true,
     "description": "국민대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kookmin.ac.kr"
+    "web_url": "https://www.kookmin.ac.kr",
+    "subtasks": [
+      {
+        "name": "국민대학교 입학처",
+        "phone": "02-910-4114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-910-4114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-910-4119"
+      }
+    ]
   },
   {
     "name": "숭실대학교 대표전화 고객센터",
@@ -15891,7 +27416,21 @@ export const customerData = [
     "isVerified": true,
     "description": "숭실대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ssu.ac.kr"
+    "web_url": "https://www.ssu.ac.kr",
+    "subtasks": [
+      {
+        "name": "숭실대학교 입학처",
+        "phone": "02-820-0114"
+      },
+      {
+        "name": "레지던스 기숙사 지원",
+        "phone": "02-828-5000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "세종대학교 대표전화 고객센터",
@@ -15909,7 +27448,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세종대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sejong.ac.kr"
+    "web_url": "https://www.sejong.ac.kr",
+    "subtasks": [
+      {
+        "name": "세종대학교 입학처",
+        "phone": "02-3408-3114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-3408-3114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3408-3119"
+      }
+    ]
   },
   {
     "name": "단국대학교 대표전화 고객센터",
@@ -15927,7 +27480,21 @@ export const customerData = [
     "isVerified": true,
     "description": "단국대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dankook.ac.kr"
+    "web_url": "https://www.dankook.ac.kr",
+    "subtasks": [
+      {
+        "name": "단국대학교 입학처",
+        "phone": "1899-3700"
+      },
+      {
+        "name": "천안 캠퍼스 안내",
+        "phone": "041-550-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "광운대학교 대표전화 고객센터",
@@ -15945,7 +27512,21 @@ export const customerData = [
     "isVerified": true,
     "description": "광운대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kw.ac.kr"
+    "web_url": "https://www.kw.ac.kr",
+    "subtasks": [
+      {
+        "name": "광운대학교 입학처",
+        "phone": "02-940-5114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-940-5114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-940-5119"
+      }
+    ]
   },
   {
     "name": "명지대학교 대표전화 고객센터",
@@ -15963,7 +27544,21 @@ export const customerData = [
     "isVerified": true,
     "description": "명지대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mju.ac.kr"
+    "web_url": "https://www.mju.ac.kr",
+    "subtasks": [
+      {
+        "name": "명지대학교 입학처",
+        "phone": "1588-3400"
+      },
+      {
+        "name": "용인 자연캠퍼스",
+        "phone": "031-330-1000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "상명대학교 대표전화 고객센터",
@@ -15981,7 +27576,21 @@ export const customerData = [
     "isVerified": true,
     "description": "상명대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.smu.ac.kr"
+    "web_url": "https://www.smu.ac.kr",
+    "subtasks": [
+      {
+        "name": "상명대학교 입학처",
+        "phone": "02-2287-5114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-2287-5114 (내선 2)"
+      },
+      {
+        "name": "천안 캠퍼스 안내",
+        "phone": "041-550-5114"
+      }
+    ]
   },
   {
     "name": "서울과학기술대학교 대표 고객센터",
@@ -15999,7 +27608,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울과학기술대학교 대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.seoultech.ac.kr"
+    "web_url": "https://www.seoultech.ac.kr",
+    "subtasks": [
+      {
+        "name": "과기대 입학 관리과",
+        "phone": "02-970-6114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-970-6119"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "성신여자대학교 대표전화 고객센터",
@@ -16017,7 +27640,21 @@ export const customerData = [
     "isVerified": true,
     "description": "성신여자대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sungshin.ac.kr"
+    "web_url": "https://www.sungshin.ac.kr",
+    "subtasks": [
+      {
+        "name": "성신여대 입학처",
+        "phone": "02-920-7114"
+      },
+      {
+        "name": "미아운정그린캠퍼스",
+        "phone": "02-920-7114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동덕여자대학교 대표전화 고객센터",
@@ -16035,7 +27672,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동덕여자대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dongduk.ac.kr"
+    "web_url": "https://www.dongduk.ac.kr",
+    "subtasks": [
+      {
+        "name": "동덕여대 입학처",
+        "phone": "02-940-4000"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-940-4000 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-940-4009"
+      }
+    ]
   },
   {
     "name": "덕성여자대학교 대표전화 고객센터",
@@ -16053,7 +27704,21 @@ export const customerData = [
     "isVerified": true,
     "description": "덕성여자대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.duksung.ac.kr"
+    "web_url": "https://www.duksung.ac.kr",
+    "subtasks": [
+      {
+        "name": "덕성여대 입학처",
+        "phone": "02-901-8000"
+      },
+      {
+        "name": "학생 기숙사 종선",
+        "phone": "02-901-8000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "서울여자대학교 대표전화 고객센터",
@@ -16071,7 +27736,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울여자대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.swu.ac.kr"
+    "web_url": "https://www.swu.ac.kr",
+    "subtasks": [
+      {
+        "name": "서울여대 입학처",
+        "phone": "02-970-5006"
+      },
+      {
+        "name": "학생 기숙사 바롬관",
+        "phone": "02-970-5114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "삼육대학교 대표전화 고객센터",
@@ -16089,7 +27768,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼육대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.syu.ac.kr"
+    "web_url": "https://www.syu.ac.kr",
+    "subtasks": [
+      {
+        "name": "삼육대학교 입학처",
+        "phone": "02-3399-3600"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-3399-3600 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3399-3609"
+      }
+    ]
   },
   {
     "name": "한성대학교 대표전화 고객센터",
@@ -16107,7 +27800,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한성대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hansung.ac.kr"
+    "web_url": "https://www.hansung.ac.kr",
+    "subtasks": [
+      {
+        "name": "한성대 입학 기획팀",
+        "phone": "02-760-5800"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-760-4119"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "서경대학교 대표전화 고객센터",
@@ -16125,7 +27832,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서경대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.seokyeong.ac.kr"
+    "web_url": "https://www.seokyeong.ac.kr",
+    "subtasks": [
+      {
+        "name": "서경대학교 입학처",
+        "phone": "02-940-7114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-940-7114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-940-7119"
+      }
+    ]
   },
   {
     "name": "총신대학교 대표전화 고객센터",
@@ -16143,7 +27864,21 @@ export const customerData = [
     "isVerified": true,
     "description": "총신대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chongshin.ac.kr"
+    "web_url": "https://www.chongshin.ac.kr",
+    "subtasks": [
+      {
+        "name": "총신대 입학처",
+        "phone": "02-3479-0200"
+      },
+      {
+        "name": "양지 신대원 캠퍼스",
+        "phone": "031-670-0114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "장로회신학대학교 대표전화 고객센터",
@@ -16161,7 +27896,21 @@ export const customerData = [
     "isVerified": true,
     "description": "장로회신학대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.puts.ac.kr"
+    "web_url": "https://www.puts.ac.kr",
+    "subtasks": [
+      {
+        "name": "장신대 입학처",
+        "phone": "02-450-0700"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "02-450-0700 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-450-0709"
+      }
+    ]
   },
   {
     "name": "경기대학교 대표전화 고객센터",
@@ -16179,7 +27928,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경기대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyonggi.ac.kr"
+    "web_url": "https://www.kyonggi.ac.kr",
+    "subtasks": [
+      {
+        "name": "수원캠퍼스 대표안내",
+        "phone": "031-249-9114"
+      },
+      {
+        "name": "입학처 신입학 상담",
+        "phone": "031-249-9997"
+      },
+      {
+        "name": "서울캠퍼스 교학처",
+        "phone": "02-390-5114"
+      }
+    ]
   },
   {
     "name": "아주대학교 대표전화 고객센터",
@@ -16197,7 +27960,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아주대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ajou.ac.kr"
+    "web_url": "https://www.ajou.ac.kr",
+    "subtasks": [
+      {
+        "name": "아주대학교 대표안내",
+        "phone": "031-219-2114"
+      },
+      {
+        "name": "입학처 입학상담팀",
+        "phone": "031-219-2021"
+      },
+      {
+        "name": "아주대 학생지원팀(장학)",
+        "phone": "031-219-2035"
+      }
+    ]
   },
   {
     "name": "인하대학교 대표전화 고객센터",
@@ -16215,7 +27992,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인하대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.inha.ac.kr"
+    "web_url": "https://www.inha.ac.kr",
+    "subtasks": [
+      {
+        "name": "인하대학교 대표안내",
+        "phone": "032-860-7114"
+      },
+      {
+        "name": "입학처 입학전형팀",
+        "phone": "032-860-7221"
+      },
+      {
+        "name": "학생지원팀(장학복지)",
+        "phone": "032-860-7065"
+      }
+    ]
   },
   {
     "name": "인천대학교 대표전화 고객센터",
@@ -16233,7 +28024,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인천대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.inu.ac.kr"
+    "web_url": "https://www.inu.ac.kr",
+    "subtasks": [
+      {
+        "name": "인천대학교 대표안내",
+        "phone": "032-835-3114"
+      },
+      {
+        "name": "입학관리과 전용선",
+        "phone": "032-835-0000"
+      },
+      {
+        "name": "학생지원과(장학금)",
+        "phone": "032-835-8142"
+      }
+    ]
   },
   {
     "name": "한세대 학무처 대표 고객센터",
@@ -16251,7 +28056,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한세대 학무처 대표 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hansei.ac.kr"
+    "web_url": "https://www.hansei.ac.kr",
+    "subtasks": [
+      {
+        "name": "한세대학교 대표안내",
+        "phone": "031-450-5114"
+      },
+      {
+        "name": "교무팀/학무 행정",
+        "phone": "031-450-5114 (내선 2)"
+      },
+      {
+        "name": "입학홍보팀 전용선",
+        "phone": "031-450-5051"
+      }
+    ]
   },
   {
     "name": "안양대학교 대표전화 고객센터",
@@ -16269,7 +28088,21 @@ export const customerData = [
     "isVerified": true,
     "description": "안양대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.anyang.ac.kr"
+    "web_url": "https://www.anyang.ac.kr",
+    "subtasks": [
+      {
+        "name": "안양대학교 대표안내",
+        "phone": "031-467-0700"
+      },
+      {
+        "name": "입학지원팀 전용선",
+        "phone": "031-467-0733"
+      },
+      {
+        "name": "학생지원팀(장학)",
+        "phone": "031-467-0752"
+      }
+    ]
   },
   {
     "name": "성결대학교 대표전화 고객센터",
@@ -16287,7 +28120,21 @@ export const customerData = [
     "isVerified": true,
     "description": "성결대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sungkyul.ac.kr"
+    "web_url": "https://www.sungkyul.ac.kr",
+    "subtasks": [
+      {
+        "name": "성결대학교 대표안내",
+        "phone": "031-467-8114"
+      },
+      {
+        "name": "입학관리과 전용",
+        "phone": "031-467-8201"
+      },
+      {
+        "name": "학생지원과(장학금)",
+        "phone": "031-467-8262"
+      }
+    ]
   },
   {
     "name": "한신대학교 대표전화 고객센터",
@@ -16305,7 +28152,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한신대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hs.ac.kr"
+    "web_url": "https://www.hs.ac.kr",
+    "subtasks": [
+      {
+        "name": "한신대학교 대표안내",
+        "phone": "031-379-0114"
+      },
+      {
+        "name": "입학관리팀 상담",
+        "phone": "031-379-0107"
+      },
+      {
+        "name": "학생지원팀(장학)",
+        "phone": "031-379-0043"
+      }
+    ]
   },
   {
     "name": "부산대학교 대표전화 고객센터",
@@ -16323,7 +28184,21 @@ export const customerData = [
     "isVerified": true,
     "description": "부산대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.pusan.ac.kr"
+    "web_url": "https://www.pusan.ac.kr",
+    "subtasks": [
+      {
+        "name": "부산대학교 대표안내",
+        "phone": "051-510-1114"
+      },
+      {
+        "name": "입학웰컴 지원센터",
+        "phone": "051-510-1202"
+      },
+      {
+        "name": "밀양캠퍼스 행정실",
+        "phone": "055-350-5114"
+      }
+    ]
   },
   {
     "name": "경북대학교 대표전화 고객센터",
@@ -16341,7 +28216,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경북대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.knu.ac.kr"
+    "web_url": "https://www.knu.ac.kr",
+    "subtasks": [
+      {
+        "name": "경북대학교 대표안내",
+        "phone": "053-950-5114"
+      },
+      {
+        "name": "입학관리과 전용",
+        "phone": "053-950-5071"
+      },
+      {
+        "name": "상주캠퍼스 행정지원",
+        "phone": "054-530-1114"
+      }
+    ]
   },
   {
     "name": "전남대학교 대표전화 고객센터",
@@ -16359,7 +28248,21 @@ export const customerData = [
     "isVerified": true,
     "description": "전남대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jnu.ac.kr"
+    "web_url": "https://www.jnu.ac.kr",
+    "subtasks": [
+      {
+        "name": "전남대학교 대표안내",
+        "phone": "062-530-5114"
+      },
+      {
+        "name": "여수캠퍼스 행정본부",
+        "phone": "061-659-3114"
+      },
+      {
+        "name": "입학정보 전담데스크",
+        "phone": "062-530-1045"
+      }
+    ]
   },
   {
     "name": "전북대학교 대표전화 고객센터",
@@ -16377,7 +28280,21 @@ export const customerData = [
     "isVerified": true,
     "description": "전북대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jbnu.ac.kr"
+    "web_url": "https://www.jbnu.ac.kr",
+    "subtasks": [
+      {
+        "name": "전북대학교 대표안내",
+        "phone": "063-270-2114"
+      },
+      {
+        "name": "입학웰컴 지원센터",
+        "phone": "063-270-2500"
+      },
+      {
+        "name": "특약 주차 및 등록금",
+        "phone": "063-270-2114"
+      }
+    ]
   },
   {
     "name": "충남대학교 대표전화 고객센터",
@@ -16395,7 +28312,21 @@ export const customerData = [
     "isVerified": true,
     "description": "충남대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://plus.cnu.ac.kr"
+    "web_url": "https://plus.cnu.ac.kr",
+    "subtasks": [
+      {
+        "name": "충남대학교 대표안내",
+        "phone": "042-821-5114"
+      },
+      {
+        "name": "입학본부 전용 상담",
+        "phone": "042-821-8001"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "042-821-5119"
+      }
+    ]
   },
   {
     "name": "충북대학교 대표전화 고객센터",
@@ -16413,7 +28344,21 @@ export const customerData = [
     "isVerified": true,
     "description": "충북대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chungbuk.ac.kr"
+    "web_url": "https://www.chungbuk.ac.kr",
+    "subtasks": [
+      {
+        "name": "충북대학교 대표안내",
+        "phone": "043-261-2114"
+      },
+      {
+        "name": "입학웰컴 지원센터",
+        "phone": "043-261-2000"
+      },
+      {
+        "name": "학생지원과(장학금)",
+        "phone": "043-261-2027"
+      }
+    ]
   },
   {
     "name": "경상국립대학교 대표전화 고객센터",
@@ -16431,7 +28376,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경상국립대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gnu.ac.kr"
+    "web_url": "https://www.gnu.ac.kr",
+    "subtasks": [
+      {
+        "name": "경상국립대 대표안내",
+        "phone": "055-772-0114"
+      },
+      {
+        "name": "칠암캠퍼스 행정지원",
+        "phone": "055-751-3114"
+      },
+      {
+        "name": "입학관리팀 상담전화",
+        "phone": "055-772-0300"
+      }
+    ]
   },
   {
     "name": "제주대학교 대표전화 고객센터",
@@ -16449,7 +28408,21 @@ export const customerData = [
     "isVerified": true,
     "description": "제주대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jejunu.ac.kr"
+    "web_url": "https://www.jejunu.ac.kr",
+    "subtasks": [
+      {
+        "name": "제주대학교 대표안내",
+        "phone": "064-754-2114"
+      },
+      {
+        "name": "입학웰컴 지원센터",
+        "phone": "064-754-3187"
+      },
+      {
+        "name": "학생생활관 기숙사",
+        "phone": "064-754-2114"
+      }
+    ]
   },
   {
     "name": "부경대학교 대표전화 고객센터",
@@ -16467,7 +28440,21 @@ export const customerData = [
     "isVerified": true,
     "description": "부경대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.pknu.ac.kr"
+    "web_url": "https://www.pknu.ac.kr",
+    "subtasks": [
+      {
+        "name": "부경대학교 대표안내",
+        "phone": "051-629-5114"
+      },
+      {
+        "name": "입학관리과 전용선",
+        "phone": "051-629-5600"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "051-629-5119"
+      }
+    ]
   },
   {
     "name": "한국해양대학교 대표전화 고객센터",
@@ -16485,7 +28472,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국해양대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kmou.ac.kr"
+    "web_url": "https://www.kmou.ac.kr",
+    "subtasks": [
+      {
+        "name": "한국해양대 대표안내",
+        "phone": "051-410-4114"
+      },
+      {
+        "name": "입학관리과 전용선",
+        "phone": "051-410-4414"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한국교원대학교 대표전화 고객센터",
@@ -16503,7 +28504,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국교원대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.knue.ac.kr"
+    "web_url": "https://www.knue.ac.kr",
+    "subtasks": [
+      {
+        "name": "한국교원대 대표안내",
+        "phone": "043-230-3114"
+      },
+      {
+        "name": "입학관리본부 전용",
+        "phone": "043-230-3000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "043-230-3119"
+      }
+    ]
   },
   {
     "name": "공주대학교 대표전화 고객센터",
@@ -16521,7 +28536,21 @@ export const customerData = [
     "isVerified": true,
     "description": "공주대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kongju.ac.kr"
+    "web_url": "https://www.kongju.ac.kr",
+    "subtasks": [
+      {
+        "name": "공주대학교 대표안내",
+        "phone": "041-850-8114"
+      },
+      {
+        "name": "예산캠퍼스 행정지원",
+        "phone": "041-330-1114"
+      },
+      {
+        "name": "천안캠퍼스 행정지원",
+        "phone": "041-521-8114"
+      }
+    ]
   },
   {
     "name": "안동대학교 대표전화 고객센터",
@@ -16539,7 +28568,21 @@ export const customerData = [
     "isVerified": true,
     "description": "안동대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.andong.ac.kr"
+    "web_url": "https://www.andong.ac.kr",
+    "subtasks": [
+      {
+        "name": "안동대학교 대표안내",
+        "phone": "054-820-5114"
+      },
+      {
+        "name": "입학지원팀 전용선",
+        "phone": "054-820-5114 (내선 2)"
+      },
+      {
+        "name": "학생지원팀(장학)",
+        "phone": "054-820-5052"
+      }
+    ]
   },
   {
     "name": "목포대학교 대표전화 고객센터",
@@ -16557,7 +28600,21 @@ export const customerData = [
     "isVerified": true,
     "description": "목포대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mokpo.ac.kr"
+    "web_url": "https://www.mokpo.ac.kr",
+    "subtasks": [
+      {
+        "name": "목포대학교 대표안내",
+        "phone": "061-450-2114"
+      },
+      {
+        "name": "입학관리과 전용",
+        "phone": "061-450-2500"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "순천대학교 대표전화 고객센터",
@@ -16575,7 +28632,21 @@ export const customerData = [
     "isVerified": true,
     "description": "순천대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.scnu.ac.kr"
+    "web_url": "https://www.scnu.ac.kr",
+    "subtasks": [
+      {
+        "name": "순천대학교 대표안내",
+        "phone": "061-750-3114"
+      },
+      {
+        "name": "입학관리팀 상담전화",
+        "phone": "061-750-3000"
+      },
+      {
+        "name": "학생지원팀(장학)",
+        "phone": "061-750-3114"
+      }
+    ]
   },
   {
     "name": "창원대학교 대표전화 고객센터",
@@ -16593,7 +28664,21 @@ export const customerData = [
     "isVerified": true,
     "description": "창원대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.changwon.ac.kr"
+    "web_url": "https://www.changwon.ac.kr",
+    "subtasks": [
+      {
+        "name": "창원대학교 대표안내",
+        "phone": "055-213-2114"
+      },
+      {
+        "name": "입학웰컴 지원센터",
+        "phone": "055-213-2000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "055-213-2119"
+      }
+    ]
   },
   {
     "name": "금오공과대학교 대표전화 고객센터",
@@ -16611,7 +28696,21 @@ export const customerData = [
     "isVerified": true,
     "description": "금오공과대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kumoh.ac.kr"
+    "web_url": "https://www.kumoh.ac.kr",
+    "subtasks": [
+      {
+        "name": "금오공대 대표 교환",
+        "phone": "054-478-7114"
+      },
+      {
+        "name": "금오공대 학생복지",
+        "phone": "054-478-7114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "054-478-7119"
+      }
+    ]
   },
   {
     "name": "영남대학교 대표전화 고객센터",
@@ -16629,7 +28728,21 @@ export const customerData = [
     "isVerified": true,
     "description": "영남대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yu.ac.kr"
+    "web_url": "https://www.yu.ac.kr",
+    "subtasks": [
+      {
+        "name": "영남대학교 대표교환",
+        "phone": "053-810-2114"
+      },
+      {
+        "name": "영남대 의과대학 대구",
+        "phone": "053-626-6611"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "계명대학교 대표전화 고객센터",
@@ -16647,7 +28760,21 @@ export const customerData = [
     "isVerified": true,
     "description": "계명대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gimyung.ac.kr"
+    "web_url": "https://www.gimyung.ac.kr",
+    "subtasks": [
+      {
+        "name": "계명대학교 입학처",
+        "phone": "053-580-5114"
+      },
+      {
+        "name": "대명동 미술캠퍼스",
+        "phone": "053-580-5114 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "울산대학교 대표전화 고객센터",
@@ -16665,7 +28792,21 @@ export const customerData = [
     "isVerified": true,
     "description": "울산대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ulsan.ac.kr"
+    "web_url": "https://www.ulsan.ac.kr",
+    "subtasks": [
+      {
+        "name": "울산대학교 대표 콜",
+        "phone": "1577-1900"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "1577-1900 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "052-259-2000"
+      }
+    ]
   },
   {
     "name": "조선대학교 대표전화 고객센터",
@@ -16683,7 +28824,21 @@ export const customerData = [
     "isVerified": true,
     "description": "조선대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.chosun.ac.kr"
+    "web_url": "https://www.chosun.ac.kr",
+    "subtasks": [
+      {
+        "name": "조선대학교 입학처",
+        "phone": "062-230-7114"
+      },
+      {
+        "name": "조선대 병원 수신",
+        "phone": "1588-3388"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동아대학교 대표전화 고객센터",
@@ -16701,7 +28856,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동아대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.donga.ac.kr"
+    "web_url": "https://www.donga.ac.kr",
+    "subtasks": [
+      {
+        "name": "동아대학교 입학처",
+        "phone": "051-200-2000"
+      },
+      {
+        "name": "부민 캠퍼스 행정지원",
+        "phone": "051-200-2000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "051-200-2009"
+      }
+    ]
   },
   {
     "name": "한남대학교 대표전화 고객센터",
@@ -16719,7 +28888,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한남대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hannam.ac.kr"
+    "web_url": "https://www.hannam.ac.kr",
+    "subtasks": [
+      {
+        "name": "한남대학교 입학처",
+        "phone": "042-629-7114"
+      },
+      {
+        "name": "한남대 린튼글로벌",
+        "phone": "042-629-7114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대전대학교 대표전화 고객센터",
@@ -16737,7 +28920,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대전대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dju.ac.kr"
+    "web_url": "https://www.dju.ac.kr",
+    "subtasks": [
+      {
+        "name": "대전대학교 입학처",
+        "phone": "042-280-2114"
+      },
+      {
+        "name": "학생 기숙사 지산홀",
+        "phone": "042-280-2114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "목원대학교 대표전화 고객센터",
@@ -16755,7 +28952,21 @@ export const customerData = [
     "isVerified": true,
     "description": "목원대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mokwon.ac.kr"
+    "web_url": "https://www.mokwon.ac.kr",
+    "subtasks": [
+      {
+        "name": "목원대학교 입학처",
+        "phone": "042-829-7114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "042-829-7114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "042-829-7119"
+      }
+    ]
   },
   {
     "name": "배재대학교 대표전화 고객센터",
@@ -16773,7 +28984,21 @@ export const customerData = [
     "isVerified": true,
     "description": "배재대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.pcu.ac.kr"
+    "web_url": "https://www.pcu.ac.kr",
+    "subtasks": [
+      {
+        "name": "배재대학교 입학처",
+        "phone": "042-520-5114"
+      },
+      {
+        "name": "학생 기숙사 서재필",
+        "phone": "042-520-5114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "우송대학교 대표전화 고객센터",
@@ -16791,7 +29016,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우송대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wsu.ac.kr"
+    "web_url": "https://www.wsu.ac.kr",
+    "subtasks": [
+      {
+        "name": "우송대학교 입학처",
+        "phone": "042-630-9600"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "042-630-9600 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "042-630-9609"
+      }
+    ]
   },
   {
     "name": "한밭대학교 대표전화 고객센터",
@@ -16809,7 +29048,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한밭대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanbat.ac.kr"
+    "web_url": "https://www.hanbat.ac.kr",
+    "subtasks": [
+      {
+        "name": "한밭대학교 입학처",
+        "phone": "042-821-1114"
+      },
+      {
+        "name": "학무 및 장학 전용",
+        "phone": "042-821-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "청주대학교 대표전화 고객센터",
@@ -16827,7 +29080,21 @@ export const customerData = [
     "isVerified": true,
     "description": "청주대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cju.ac.kr"
+    "web_url": "https://www.cju.ac.kr",
+    "subtasks": [
+      {
+        "name": "청주대학교 입학처",
+        "phone": "043-229-8114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "043-229-8114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "043-229-8119"
+      }
+    ]
   },
   {
     "name": "서원대학교 대표전화 고객센터",
@@ -16845,7 +29112,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서원대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.seowon.ac.kr"
+    "web_url": "https://www.seowon.ac.kr",
+    "subtasks": [
+      {
+        "name": "서원대학교 입학처",
+        "phone": "043-299-8114"
+      },
+      {
+        "name": "학생 기숙사 목민관",
+        "phone": "043-299-8114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "세명대학교 대표전화 고객센터",
@@ -16863,7 +29144,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세명대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.semyung.ac.kr"
+    "web_url": "https://www.semyung.ac.kr",
+    "subtasks": [
+      {
+        "name": "세명대학교 입학처",
+        "phone": "043-649-1114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "043-649-1114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "043-649-1119"
+      }
+    ]
   },
   {
     "name": "순천향대학교 대표전화 고객센터",
@@ -16881,7 +29176,21 @@ export const customerData = [
     "isVerified": true,
     "description": "순천향대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sch.ac.kr"
+    "web_url": "https://www.sch.ac.kr",
+    "subtasks": [
+      {
+        "name": "순천향대 입학처",
+        "phone": "041-530-1114"
+      },
+      {
+        "name": "향설생활관 기숙사",
+        "phone": "041-530-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "호서대학교 대표전화 고객센터",
@@ -16899,7 +29208,21 @@ export const customerData = [
     "isVerified": true,
     "description": "호서대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hoseo.ac.kr"
+    "web_url": "https://www.hoseo.ac.kr",
+    "subtasks": [
+      {
+        "name": "호서대학교 입학처",
+        "phone": "041-540-5114"
+      },
+      {
+        "name": "천안 캠퍼스 안내선",
+        "phone": "041-560-8114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "041-540-5119"
+      }
+    ]
   },
   {
     "name": "남서울대학교 대표전화 고객센터",
@@ -16917,7 +29240,21 @@ export const customerData = [
     "isVerified": true,
     "description": "남서울대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.nsu.ac.kr"
+    "web_url": "https://www.nsu.ac.kr",
+    "subtasks": [
+      {
+        "name": "남서울대 입학처",
+        "phone": "041-580-2000"
+      },
+      {
+        "name": "엘림생활관 기숙사",
+        "phone": "041-580-2000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "백석대학교 대표전화 고객센터",
@@ -16935,7 +29272,21 @@ export const customerData = [
     "isVerified": true,
     "description": "백석대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bu.ac.kr"
+    "web_url": "https://www.bu.ac.kr",
+    "subtasks": [
+      {
+        "name": "백석대학교 입학처",
+        "phone": "041-550-0114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "041-550-0114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "041-550-0119"
+      }
+    ]
   },
   {
     "name": "선문대학교 대표전화 고객센터",
@@ -16953,7 +29304,21 @@ export const customerData = [
     "isVerified": true,
     "description": "선문대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sunmoon.ac.kr"
+    "web_url": "https://www.sunmoon.ac.kr",
+    "subtasks": [
+      {
+        "name": "선문대학교 입학처",
+        "phone": "041-530-2114"
+      },
+      {
+        "name": "천안 캠퍼스 안내선",
+        "phone": "041-559-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한서대학교 대표전화 고객센터",
@@ -16971,7 +29336,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한서대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanseo.ac.kr"
+    "web_url": "https://www.hanseo.ac.kr",
+    "subtasks": [
+      {
+        "name": "한서대학교 입학처",
+        "phone": "041-660-1114"
+      },
+      {
+        "name": "태안 비행장캠퍼스",
+        "phone": "041-670-1114"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "041-660-1119"
+      }
+    ]
   },
   {
     "name": "건양대학교 대표전화 고객센터",
@@ -16989,7 +29368,21 @@ export const customerData = [
     "isVerified": true,
     "description": "건양대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.konyang.ac.kr"
+    "web_url": "https://www.konyang.ac.kr",
+    "subtasks": [
+      {
+        "name": "건양대학교 입학처",
+        "phone": "041-730-5114"
+      },
+      {
+        "name": "대전 메디컬캠퍼스",
+        "phone": "042-600-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "전주대학교 대표전화 고객센터",
@@ -17007,7 +29400,21 @@ export const customerData = [
     "isVerified": true,
     "description": "전주대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.jj.ac.kr"
+    "web_url": "https://www.jj.ac.kr",
+    "subtasks": [
+      {
+        "name": "전주대학교 입학처",
+        "phone": "063-220-2114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "063-220-2114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "063-220-2039"
+      }
+    ]
   },
   {
     "name": "우석대학교 대표전화 고객센터",
@@ -17025,7 +29432,21 @@ export const customerData = [
     "isVerified": true,
     "description": "우석대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.woosuk.ac.kr"
+    "web_url": "https://www.woosuk.ac.kr",
+    "subtasks": [
+      {
+        "name": "우석대학교 입학처",
+        "phone": "063-290-1114"
+      },
+      {
+        "name": "충북 진천캠퍼스",
+        "phone": "043-531-2114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "원광대학교 대표전화 고객센터",
@@ -17043,7 +29464,21 @@ export const customerData = [
     "isVerified": true,
     "description": "원광대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.wku.ac.kr"
+    "web_url": "https://www.wku.ac.kr",
+    "subtasks": [
+      {
+        "name": "원광대학교 입학처",
+        "phone": "063-850-5114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "063-850-5114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "063-850-5119"
+      }
+    ]
   },
   {
     "name": "군산대학교 대표전화 고객센터",
@@ -17061,7 +29496,21 @@ export const customerData = [
     "isVerified": true,
     "description": "군산대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kunsan.ac.kr"
+    "web_url": "https://www.kunsan.ac.kr",
+    "subtasks": [
+      {
+        "name": "군산대학교 입학처",
+        "phone": "063-469-4114"
+      },
+      {
+        "name": "학무 및 장학 전용",
+        "phone": "063-469-4114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동신대학교 대표전화 고객센터",
@@ -17079,7 +29528,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동신대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dsu.ac.kr"
+    "web_url": "https://www.dsu.ac.kr",
+    "subtasks": [
+      {
+        "name": "동신대학교 입학처",
+        "phone": "061-330-3114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "061-330-3114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "061-330-3009"
+      }
+    ]
   },
   {
     "name": "대구대학교 대표전화 고객센터",
@@ -17097,7 +29560,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대구대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daegu.ac.kr"
+    "web_url": "https://www.daegu.ac.kr",
+    "subtasks": [
+      {
+        "name": "대구대학교 입학처",
+        "phone": "053-850-5000"
+      },
+      {
+        "name": "대구 대명동 캠퍼스",
+        "phone": "053-650-8000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대구가톨릭대학교 대표전화 고객센터",
@@ -17115,7 +29592,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대구가톨릭대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cu.ac.kr"
+    "web_url": "https://www.cu.ac.kr",
+    "subtasks": [
+      {
+        "name": "대구가톨릭대 입학처",
+        "phone": "053-850-3114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "053-850-3114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "053-850-2509"
+      }
+    ]
   },
   {
     "name": "경일대학교 대표전화 고객센터",
@@ -17133,7 +29624,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경일대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kiu.ac.kr"
+    "web_url": "https://www.kiu.ac.kr",
+    "subtasks": [
+      {
+        "name": "경일대학교 입학처",
+        "phone": "053-600-5000"
+      },
+      {
+        "name": "기숙사 일청관 지원",
+        "phone": "053-600-5888"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동의대학교 대표전화 고객센터",
@@ -17151,7 +29656,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동의대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.deu.ac.kr"
+    "web_url": "https://www.deu.ac.kr",
+    "subtasks": [
+      {
+        "name": "동의대학교 입학처",
+        "phone": "051-890-1114"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "051-890-1114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "051-890-2509"
+      }
+    ]
   },
   {
     "name": "경성대학교 대표전화 고객센터",
@@ -17169,7 +29688,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경성대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://ks.ac.kr"
+    "web_url": "https://ks.ac.kr",
+    "subtasks": [
+      {
+        "name": "경성대학교 입학처",
+        "phone": "051-663-4114"
+      },
+      {
+        "name": "기숙사 누리관 지원",
+        "phone": "051-663-4114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "신라대학교 대표전화 고객센터",
@@ -17187,7 +29720,21 @@ export const customerData = [
     "isVerified": true,
     "description": "신라대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.silla.ac.kr"
+    "web_url": "https://www.silla.ac.kr",
+    "subtasks": [
+      {
+        "name": "신라대학교 입학처",
+        "phone": "051-999-5000"
+      },
+      {
+        "name": "교학처 및 장학 지원",
+        "phone": "051-999-5000 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "051-999-5009"
+      }
+    ]
   },
   {
     "name": "인제대학교 대표전화 고객센터",
@@ -17205,7 +29752,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인제대학교 대표전화 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.inje.ac.kr"
+    "web_url": "https://www.inje.ac.kr",
+    "subtasks": [
+      {
+        "name": "인제대학교 입학처",
+        "phone": "055-320-3114"
+      },
+      {
+        "name": "인제대 백병원 연계",
+        "phone": "055-320-3114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "엘리하이 고객센터",
@@ -17223,7 +29784,21 @@ export const customerData = [
     "isVerified": true,
     "description": "엘리하이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.elihigh.co.kr"
+    "web_url": "https://www.elihigh.co.kr",
+    "subtasks": [
+      {
+        "name": "엘리하이 초등 전용",
+        "phone": "1544-2300"
+      },
+      {
+        "name": "엠베스트 중등 전용",
+        "phone": "1544-2300 (내선 2)"
+      },
+      {
+        "name": "기기 고장 및 수거팀",
+        "phone": "1544-2300"
+      }
+    ]
   },
   {
     "name": "아이스크림홈런 고객센터",
@@ -17241,7 +29816,21 @@ export const customerData = [
     "isVerified": true,
     "description": "아이스크림홈런 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.home-learn.co.kr"
+    "web_url": "https://www.home-learn.co.kr",
+    "subtasks": [
+      {
+        "name": "홈런 학습 기기 AS",
+        "phone": "1544-0910"
+      },
+      {
+        "name": "학습 진도 상담 관리",
+        "phone": "1544-0910 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-0919"
+      }
+    ]
   },
   {
     "name": "밀당PT 고객센터",
@@ -17259,7 +29848,21 @@ export const customerData = [
     "isVerified": true,
     "description": "밀당PT 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mildang.com"
+    "web_url": "https://www.mildang.com",
+    "subtasks": [
+      {
+        "name": "밀당PT 대표 상담",
+        "phone": "1644-3151"
+      },
+      {
+        "name": "밀당영어 기술 전담",
+        "phone": "1644-3151"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "에듀플렉스 고객센터",
@@ -17277,7 +29880,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에듀플렉스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://eduplex.net"
+    "web_url": "https://eduplex.net",
+    "subtasks": [
+      {
+        "name": "에듀플렉스 대표 안내",
+        "phone": "02-555-0567"
+      },
+      {
+        "name": "지점 가맹 제휴 문의",
+        "phone": "02-555-0567"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-555-0569"
+      }
+    ]
   },
   {
     "name": "듀오링고 고객센터",
@@ -17295,7 +29912,21 @@ export const customerData = [
     "isVerified": true,
     "description": "듀오링고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://support.duolingo.com"
+    "web_url": "https://support.duolingo.com",
+    "subtasks": [
+      {
+        "name": "듀오링고 온라인 헬프",
+        "phone": "웹 도움말 전용"
+      },
+      {
+        "name": "플러스 결제 환불 메일",
+        "phone": "plus_support@duolingo.com"
+      },
+      {
+        "name": "개인정보 권익 보호",
+        "phone": "privacy@duolingo.com"
+      }
+    ]
   },
   {
     "name": "CGV 고객센터",
@@ -17313,7 +29944,21 @@ export const customerData = [
     "isVerified": true,
     "description": "CGV 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cgv.co.kr"
+    "web_url": "https://www.cgv.co.kr",
+    "subtasks": [
+      {
+        "name": "CGV 티켓 예매취소",
+        "phone": "1544-1122"
+      },
+      {
+        "name": "포토플레이/기프티콘",
+        "phone": "1544-1122 (내선 2)"
+      },
+      {
+        "name": "단체 및 대관 문의",
+        "phone": "1544-1122"
+      }
+    ]
   },
   {
     "name": "예스24 고객센터",
@@ -17331,7 +29976,21 @@ export const customerData = [
     "isVerified": true,
     "description": "예스24 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yes24.com"
+    "web_url": "https://www.yes24.com",
+    "subtasks": [
+      {
+        "name": "예스24 도서 일반문의",
+        "phone": "1544-3800"
+      },
+      {
+        "name": "공연 및 티켓 예약",
+        "phone": "1544-6399"
+      },
+      {
+        "name": "예스24 중고서점",
+        "phone": "1544-3800 (내선 3)"
+      }
+    ]
   },
   {
     "name": "교보문고 고객센터",
@@ -17349,7 +30008,21 @@ export const customerData = [
     "isVerified": true,
     "description": "교보문고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kyobobook.co.kr"
+    "web_url": "https://www.kyobobook.co.kr",
+    "subtasks": [
+      {
+        "name": "교보문고 통합 서비스",
+        "phone": "1544-1900"
+      },
+      {
+        "name": "영등포 타임스퀘어점",
+        "phone": "02-1544-1900"
+      },
+      {
+        "name": "광화문 본점 대표선",
+        "phone": "02-1544-1900"
+      }
+    ]
   },
   {
     "name": "에버랜드 고객센터",
@@ -17367,7 +30040,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에버랜드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.everland.com"
+    "web_url": "https://www.everland.com",
+    "subtasks": [
+      {
+        "name": "에버랜드 대표 교환",
+        "phone": "031-320-5000"
+      },
+      {
+        "name": "캐리비안베이 전용선",
+        "phone": "031-320-5000 (내선 2)"
+      },
+      {
+        "name": "야간 미아 분실물 접수",
+        "phone": "031-320-5000"
+      }
+    ]
   },
   {
     "name": "서울아산병원 고객센터",
@@ -17385,7 +30072,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울아산병원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.amc.seoul.kr"
+    "web_url": "https://www.amc.seoul.kr",
+    "subtasks": [
+      {
+        "name": "서울아산 대표 예약",
+        "phone": "1688-7575"
+      },
+      {
+        "name": "건강검진 전용 상담",
+        "phone": "1588-3400"
+      },
+      {
+        "name": "원무과 수납 제신고",
+        "phone": "02-3010-3114"
+      }
+    ]
   },
   {
     "name": "KBS 고객센터",
@@ -17403,7 +30104,21 @@ export const customerData = [
     "isVerified": true,
     "description": "KBS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kbs.co.kr"
+    "web_url": "https://www.kbs.co.kr",
+    "subtasks": [
+      {
+        "name": "KBS 수신료 전용콜",
+        "phone": "1588-1801"
+      },
+      {
+        "name": "KBS 본사 여의도",
+        "phone": "02-781-1000"
+      },
+      {
+        "name": "야간 비상 행정 종합",
+        "phone": "02-781-1000"
+      }
+    ]
   },
   {
     "name": "서울대학교병원 고객센터",
@@ -17421,7 +30136,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울대학교병원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.snuh.org"
+    "web_url": "https://www.snuh.org",
+    "subtasks": [
+      {
+        "name": "서울대병원 예약 센터",
+        "phone": "1588-5700"
+      },
+      {
+        "name": "암병원 예약 전용선",
+        "phone": "1588-5700 (내선 2)"
+      },
+      {
+        "name": "야간 응급 의료 구제",
+        "phone": "02-2072-2114"
+      }
+    ]
   },
   {
     "name": "삼성서울병원 고객센터",
@@ -17439,7 +30168,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성서울병원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.samsunghospital.com"
+    "web_url": "https://www.samsunghospital.com",
+    "subtasks": [
+      {
+        "name": "일반 외래 예약 종합",
+        "phone": "1599-3114"
+      },
+      {
+        "name": "삼성서울 건강검진",
+        "phone": "1599-3114 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3410-3000"
+      }
+    ]
   },
   {
     "name": "알라딘 고객센터",
@@ -17457,7 +30200,21 @@ export const customerData = [
     "isVerified": true,
     "description": "알라딘 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aladin.co.kr"
+    "web_url": "https://www.aladin.co.kr",
+    "subtasks": [
+      {
+        "name": "알라딘 대표 콜",
+        "phone": "1544-2525"
+      },
+      {
+        "name": "알라딘 중고매장 수거",
+        "phone": "1544-3800"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "MBC 고객센터",
@@ -17475,7 +30232,21 @@ export const customerData = [
     "isVerified": true,
     "description": "MBC 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.imbc.com"
+    "web_url": "https://www.imbc.com",
+    "subtasks": [
+      {
+        "name": "MBC 대표 교환실",
+        "phone": "02-780-0011"
+      },
+      {
+        "name": "라디오 문자 사연팀",
+        "phone": "02-789-1114"
+      },
+      {
+        "name": "야간 보이스피싱 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "SBS 고객센터",
@@ -17493,7 +30264,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SBS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sbs.co.kr"
+    "web_url": "https://www.sbs.co.kr",
+    "subtasks": [
+      {
+        "name": "SBS 대표 교환선",
+        "phone": "02-2061-0001"
+      },
+      {
+        "name": "라디오 프로그램 전용",
+        "phone": "02-2113-3000"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-2061-0009"
+      }
+    ]
   },
   {
     "name": "세브란스병원(신촌) 고객센터",
@@ -17511,7 +30296,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세브란스병원(신촌) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://sev.severance.hospital"
+    "web_url": "https://sev.severance.hospital",
+    "subtasks": [
+      {
+        "name": "세브란스 대표 예약",
+        "phone": "1599-1004"
+      },
+      {
+        "name": "세브란스 암병원",
+        "phone": "1599-1004 (내선 2)"
+      },
+      {
+        "name": "야간 응급실 접수처",
+        "phone": "02-2228-2114"
+      }
+    ]
   },
   {
     "name": "메가박스 고객센터",
@@ -17529,7 +30328,21 @@ export const customerData = [
     "isVerified": true,
     "description": "메가박스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.megabox.co.kr"
+    "web_url": "https://www.megabox.co.kr",
+    "subtasks": [
+      {
+        "name": "메가박스 예약 확인",
+        "phone": "1544-0070"
+      },
+      {
+        "name": "티켓 오결제 환불",
+        "phone": "1544-0070"
+      },
+      {
+        "name": "단체 대관 및 이벤트",
+        "phone": "1544-0070"
+      }
+    ]
   },
   {
     "name": "롯데월드 고객센터",
@@ -17547,7 +30360,21 @@ export const customerData = [
     "isVerified": true,
     "description": "롯데월드 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lotteworld.com"
+    "web_url": "https://www.lotteworld.com",
+    "subtasks": [
+      {
+        "name": "롯데월드 대표 상담",
+        "phone": "1661-2000"
+      },
+      {
+        "name": "어드벤처 단체 제휴",
+        "phone": "1661-2000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "tvN 고객센터",
@@ -17565,7 +30392,21 @@ export const customerData = [
     "isVerified": true,
     "description": "tvN 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://tvn.cjenm.com"
+    "web_url": "https://tvn.cjenm.com",
+    "subtasks": [
+      {
+        "name": "tvN 대표 고객 센터",
+        "phone": "1670-1525"
+      },
+      {
+        "name": "미디어 마케팅 제휴",
+        "phone": "02-371-8000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "당근마켓 고객센터",
@@ -17583,7 +30424,21 @@ export const customerData = [
     "isVerified": true,
     "description": "당근마켓 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.daangn.com"
+    "web_url": "https://www.daangn.com",
+    "subtasks": [
+      {
+        "name": "당근마켓 대표 콜",
+        "phone": "1544-9040"
+      },
+      {
+        "name": "당근비즈니스 광고",
+        "phone": "1544-9040 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-9040"
+      }
+    ]
   },
   {
     "name": "JTBC 고객센터",
@@ -17601,7 +30456,21 @@ export const customerData = [
     "isVerified": true,
     "description": "JTBC 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://jtbc.co.kr"
+    "web_url": "https://jtbc.co.kr",
+    "subtasks": [
+      {
+        "name": "JTBC 대표 교환",
+        "phone": "02-751-6000"
+      },
+      {
+        "name": "JTBC 나이스 중개",
+        "phone": "02-759-4114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "서울성모병원 고객센터",
@@ -17619,7 +30488,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울성모병원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cmcseoul.or.kr"
+    "web_url": "https://www.cmcseoul.or.kr",
+    "subtasks": [
+      {
+        "name": "서울성모 대표 교환",
+        "phone": "02-2258-5114"
+      },
+      {
+        "name": "외래 진료 예약 직통",
+        "phone": "1588-1511"
+      },
+      {
+        "name": "야간 응급실 접수처",
+        "phone": "02-2258-2114"
+      }
+    ]
   },
   {
     "name": "GS홈쇼핑(GS샵) 고객센터",
@@ -17637,7 +30520,21 @@ export const customerData = [
     "isVerified": true,
     "description": "GS홈쇼핑(GS샵) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gsshop.com"
+    "web_url": "https://www.gsshop.com",
+    "subtasks": [
+      {
+        "name": "GS샵 대표 주문",
+        "phone": "1899-4455"
+      },
+      {
+        "name": "배송 및 교환 반품",
+        "phone": "1899-4455"
+      },
+      {
+        "name": "GS포인트 통합 고객",
+        "phone": "1544-4250"
+      }
+    ]
   },
   {
     "name": "에어비앤비 고객센터",
@@ -17655,7 +30552,21 @@ export const customerData = [
     "isVerified": true,
     "description": "에어비앤비 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.airbnb.co.kr"
+    "web_url": "https://www.airbnb.co.kr",
+    "subtasks": [
+      {
+        "name": "에어비앤비 한국무료",
+        "phone": "080-822-0230"
+      },
+      {
+        "name": "글로벌 긴급 지원실",
+        "phone": "+82-2-6022-2444"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "지니뮤직 고객센터",
@@ -17673,7 +30584,21 @@ export const customerData = [
     "isVerified": true,
     "description": "지니뮤직 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.genie.co.kr"
+    "web_url": "https://www.genie.co.kr",
+    "subtasks": [
+      {
+        "name": "지니뮤직 대표 수신",
+        "phone": "1577-5337"
+      },
+      {
+        "name": "지니 정품 등록 팩스",
+        "phone": "02-2114-1114"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "오늘의집 고객센터",
@@ -17691,7 +30616,21 @@ export const customerData = [
     "isVerified": true,
     "description": "오늘의집 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://ohou.se"
+    "web_url": "https://ohou.se",
+    "subtasks": [
+      {
+        "name": "오늘의집 통합 고객선",
+        "phone": "1670-0876"
+      },
+      {
+        "name": "입점 제휴 파트너센터",
+        "phone": "1670-0876 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1670-0876"
+      }
+    ]
   },
   {
     "name": "영풍문고 고객센터",
@@ -17709,7 +30648,21 @@ export const customerData = [
     "isVerified": true,
     "description": "영풍문고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ypbooks.co.kr"
+    "web_url": "https://www.ypbooks.co.kr",
+    "subtasks": [
+      {
+        "name": "영풍문고 통합 서비스",
+        "phone": "1544-9008"
+      },
+      {
+        "name": "종로 종각역 본점 대표",
+        "phone": "02-399-5600"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-9008"
+      }
+    ]
   },
   {
     "name": "EBS 고객센터",
@@ -17727,7 +30680,21 @@ export const customerData = [
     "isVerified": true,
     "description": "EBS 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ebs.co.kr"
+    "web_url": "https://www.ebs.co.kr",
+    "subtasks": [
+      {
+        "name": "EBS 대표 콜 센터",
+        "phone": "1588-1580"
+      },
+      {
+        "name": "수능 연계 교육 전용",
+        "phone": "1588-1580 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "OCN 고객센터",
@@ -17745,7 +30712,21 @@ export const customerData = [
     "isVerified": true,
     "description": "OCN 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://ocn.cjenm.com"
+    "web_url": "https://ocn.cjenm.com",
+    "subtasks": [
+      {
+        "name": "OCN 대표 고객 센터",
+        "phone": "1566-2226"
+      },
+      {
+        "name": "영화 채널 편성 홍보",
+        "phone": "02-371-8000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "경희대학교병원 고객센터",
@@ -17763,7 +30744,21 @@ export const customerData = [
     "isVerified": true,
     "description": "경희대학교병원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.khuh.or.kr"
+    "web_url": "https://www.khuh.or.kr",
+    "subtasks": [
+      {
+        "name": "경희대병원 대표교환",
+        "phone": "02-958-2114"
+      },
+      {
+        "name": "외래 진료 예약 직통",
+        "phone": "02-958-9988"
+      },
+      {
+        "name": "야간 응급실 접수처",
+        "phone": "02-958-8114"
+      }
+    ]
   },
   {
     "name": "MBN */고객센터",
@@ -17781,7 +30776,21 @@ export const customerData = [
     "isVerified": true,
     "description": "MBN */고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mbn.co.kr"
+    "web_url": "https://www.mbn.co.kr",
+    "subtasks": [
+      {
+        "name": "MBN 대표 교환",
+        "phone": "02-2000-3114"
+      },
+      {
+        "name": "MBN 편성 및 시청자",
+        "phone": "02-2000-5000"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "한국부동산원 고객센터",
@@ -17799,7 +30808,21 @@ export const customerData = [
     "isVerified": true,
     "description": "한국부동산원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.reb.or.kr"
+    "web_url": "https://www.reb.or.kr",
+    "subtasks": [
+      {
+        "name": "부동산 시장 조사선",
+        "phone": "1644-2828"
+      },
+      {
+        "name": "청약홈 청약 가이드",
+        "phone": "1644-7447"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "053-663-8009"
+      }
+    ]
   },
   {
     "name": "인터파크 도서 고객센터",
@@ -17817,7 +30840,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인터파크 도서 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://book.interpark.com"
+    "web_url": "https://book.interpark.com",
+    "subtasks": [
+      {
+        "name": "인터파크 도서 대표",
+        "phone": "1544-3800"
+      },
+      {
+        "name": "교환 반품 전용선",
+        "phone": "1544-3800 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-3809"
+      }
+    ]
   },
   {
     "name": "인터파크 쇼핑 고객센터",
@@ -17835,7 +30872,21 @@ export const customerData = [
     "isVerified": true,
     "description": "인터파크 쇼핑 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://shopping.interpark.com"
+    "web_url": "https://shopping.interpark.com",
+    "subtasks": [
+      {
+        "name": "인터파크 쇼핑 대표",
+        "phone": "1544-3800"
+      },
+      {
+        "name": "배송 및 교환 반품",
+        "phone": "1544-3800 (내선 2)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1544-3809"
+      }
+    ]
   },
   {
     "name": "채널A 고객센터",
@@ -17853,7 +30904,21 @@ export const customerData = [
     "isVerified": true,
     "description": "채널A 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ichannela.com"
+    "web_url": "https://www.ichannela.com",
+    "subtasks": [
+      {
+        "name": "채널A 대표 교환",
+        "phone": "02-2020-3114"
+      },
+      {
+        "name": "채널A 편성 및 심사",
+        "phone": "02-2020-3114 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "대한적십자사 혈액관리본부 고객센터",
@@ -17871,7 +30936,21 @@ export const customerData = [
     "isVerified": true,
     "description": "대한적십자사 혈액관리본부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bloodinfo.net"
+    "web_url": "https://www.bloodinfo.net",
+    "subtasks": [
+      {
+        "name": "헌혈 예약/안내 센터",
+        "phone": "1600-3705"
+      },
+      {
+        "name": "적십자사 원주 본부",
+        "phone": "033-811-0088"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "033-811-0099"
+      }
+    ]
   },
   {
     "name": "세스코 고객센터",
@@ -17889,7 +30968,21 @@ export const customerData = [
     "isVerified": true,
     "description": "세스코 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.cesco.co.kr"
+    "web_url": "https://www.cesco.co.kr",
+    "subtasks": [
+      {
+        "name": "세스코 위생 진단",
+        "phone": "1588-1119"
+      },
+      {
+        "name": "세스코 과학 연구소",
+        "phone": "1588-1119 (내선 3)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-1588-1119"
+      }
+    ]
   },
   {
     "name": "예다함라이프 고객센터",
@@ -17907,7 +31000,21 @@ export const customerData = [
     "isVerified": true,
     "description": "예다함라이프 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.yedaham.co.kr"
+    "web_url": "https://www.yedaham.co.kr",
+    "subtasks": [
+      {
+        "name": "예다함라이프 대표",
+        "phone": "1566-6644"
+      },
+      {
+        "name": "장례 긴급 접수 24시",
+        "phone": "1566-6644 (내선 1)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3485-8000"
+      }
+    ]
   },
   {
     "name": "케어네이션 고객센터",
@@ -17925,7 +31032,21 @@ export const customerData = [
     "isVerified": true,
     "description": "케어네이션 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.carenation.kr"
+    "web_url": "https://www.carenation.kr",
+    "subtasks": [
+      {
+        "name": "케어네이션 대표 수신",
+        "phone": "1811-6385"
+      },
+      {
+        "name": "간병인 정산 전용선",
+        "phone": "1811-6385 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "부모사랑상조 고객센터",
@@ -17943,7 +31064,21 @@ export const customerData = [
     "isVerified": true,
     "description": "부모사랑상조 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.bumolife.co.kr"
+    "web_url": "https://www.bumolife.co.kr",
+    "subtasks": [
+      {
+        "name": "부모사랑상조 대표",
+        "phone": "1566-0004"
+      },
+      {
+        "name": "장례 긴급 의전선",
+        "phone": "1600-0004"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "ADT캡스 고객센터",
@@ -17961,7 +31096,21 @@ export const customerData = [
     "isVerified": true,
     "description": "ADT캡스 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skshieldus.com"
+    "web_url": "https://www.skshieldus.com",
+    "subtasks": [
+      {
+        "name": "보안 오작동 긴급출동",
+        "phone": "1588-6400"
+      },
+      {
+        "name": "ADT캡스 신규 가입",
+        "phone": "1588-6400 (내선 1)"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-3485-8000"
+      }
+    ]
   },
   {
     "name": "티켓링크 고객센터",
@@ -17979,7 +31128,21 @@ export const customerData = [
     "isVerified": true,
     "description": "티켓링크 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ticketlink.co.kr"
+    "web_url": "https://www.ticketlink.co.kr",
+    "subtasks": [
+      {
+        "name": "티켓링크 대표 수신",
+        "phone": "1588-7890"
+      },
+      {
+        "name": "스포츠 티켓 전용선",
+        "phone": "1588-7890 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "티켓베이 고객센터",
@@ -17997,7 +31160,21 @@ export const customerData = [
     "isVerified": true,
     "description": "티켓베이 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.ticketbay.co.kr"
+    "web_url": "https://www.ticketbay.co.kr",
+    "subtasks": [
+      {
+        "name": "티켓베이 대표 수신",
+        "phone": "1644-0633"
+      },
+      {
+        "name": "거래 사기 피해 접수",
+        "phone": "1644-0633 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "삼성 모니모 앱 고객센터",
@@ -18015,7 +31192,21 @@ export const customerData = [
     "isVerified": true,
     "description": "삼성 모니모 앱 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.monimo.com"
+    "web_url": "https://www.monimo.com",
+    "subtasks": [
+      {
+        "name": "모니모 앱 기술 지원",
+        "phone": "1599-8200"
+      },
+      {
+        "name": "삼성카드 연동 문의",
+        "phone": "1588-8700"
+      },
+      {
+        "name": "삼성생명 연동 문의",
+        "phone": "1588-3114"
+      }
+    ]
   },
   {
     "name": "알라딘 중고 고객센터",
@@ -18033,7 +31224,21 @@ export const customerData = [
     "isVerified": true,
     "description": "알라딘 중고 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.aladin.co.kr"
+    "web_url": "https://www.aladin.co.kr",
+    "subtasks": [
+      {
+        "name": "알라딘 중고 매입대표",
+        "phone": "1544-2514"
+      },
+      {
+        "name": "중고매장 택배 매입",
+        "phone": "1544-3800"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "다방 앱 고객센터",
@@ -18051,7 +31256,21 @@ export const customerData = [
     "isVerified": true,
     "description": "다방 앱 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dabangapp.com"
+    "web_url": "https://www.dabangapp.com",
+    "subtasks": [
+      {
+        "name": "다방앱 대표 서비스",
+        "phone": "1899-1060"
+      },
+      {
+        "name": "중개인 회원 전용선",
+        "phone": "1899-1060 (내선 2)"
+      },
+      {
+        "name": "야간 금융사기 즉시차단",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "트리플 앱 고객센터",
@@ -18069,7 +31288,21 @@ export const customerData = [
     "isVerified": true,
     "description": "트리플 앱 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://triple.guide"
+    "web_url": "https://triple.guide",
+    "subtasks": [
+      {
+        "name": "트리플 앱 1:1 채팅",
+        "phone": "앱 내 지원 센터"
+      },
+      {
+        "name": "인터파크 투어 연계",
+        "phone": "1588-3443"
+      },
+      {
+        "name": "수취 증명 팩스청구",
+        "phone": "02-1588-3443"
+      }
+    ]
   },
   {
     "name": "서울 남부터미널 센트럴시티 고속터미널 동서울터미널 예약 사이트, 고객센터",
@@ -18087,7 +31320,21 @@ export const customerData = [
     "isVerified": true,
     "description": "서울 남부터미널 센트럴시티 고속터미널 동서울터미널 예약 사이트, 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://txbus.t-money.co.kr"
+    "web_url": "https://txbus.t-money.co.kr",
+    "subtasks": [
+      {
+        "name": "시외버스 통합 고객",
+        "phone": "1644-3000"
+      },
+      {
+        "name": "고속버스 코버스 센터",
+        "phone": "1644-9030"
+      },
+      {
+        "name": "인천공항 버스 수탁",
+        "phone": "1644-3000"
+      }
+    ]
   },
   {
     "name": "SK스토아 고객센터",
@@ -18105,7 +31352,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK스토아 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.skstoa.com"
+    "web_url": "https://www.skstoa.com",
+    "subtasks": [
+      {
+        "name": "SK스토아 대표 주문",
+        "phone": "1566-0108"
+      },
+      {
+        "name": "배송 지연 반품 문의",
+        "phone": "1566-0108 (내선 2)"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "동행복권 고객센터",
@@ -18123,7 +31384,21 @@ export const customerData = [
     "isVerified": true,
     "description": "동행복권 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.dhlottery.co.kr"
+    "web_url": "https://www.dhlottery.co.kr",
+    "subtasks": [
+      {
+        "name": "동행복권 대표 수신",
+        "phone": "1588-6450"
+      },
+      {
+        "name": "복권 중독 예방 센터",
+        "phone": "080-300-4253"
+      },
+      {
+        "name": "공식 대표 팩스 수신선",
+        "phone": "02-515-3001"
+      }
+    ]
   },
   {
     "name": "하나캐피탈 고객센터",
@@ -18141,7 +31416,21 @@ export const customerData = [
     "isVerified": true,
     "description": "하나캐피탈 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.hanacapital.co.kr"
+    "web_url": "https://www.hanacapital.co.kr",
+    "subtasks": [
+      {
+        "name": "오토 금융 대표 상담",
+        "phone": "1800-1110"
+      },
+      {
+        "name": "신용 대출 상담 센터",
+        "phone": "1800-1110"
+      },
+      {
+        "name": "야간 금융사기 피해접수",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "고혼진 고객센터",
@@ -18159,7 +31448,21 @@ export const customerData = [
     "isVerified": true,
     "description": "고혼진 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kohonjin.com"
+    "web_url": "https://kohonjin.com",
+    "subtasks": [
+      {
+        "name": "고혼진 대표 수신",
+        "phone": "1661-8424"
+      },
+      {
+        "name": "고혼진 뷰티 상담선",
+        "phone": "1661-8424"
+      },
+      {
+        "name": "야간 사기피해 안심센터",
+        "phone": "02-3978-800"
+      }
+    ]
   },
   {
     "name": "SK세븐모바일 고객센터",
@@ -18177,7 +31480,21 @@ export const customerData = [
     "isVerified": true,
     "description": "SK세븐모바일 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.sk7mobile.com"
+    "web_url": "https://www.sk7mobile.com",
+    "subtasks": [
+      {
+        "name": "7모바일 유료 센터",
+        "phone": "1599-3508"
+      },
+      {
+        "name": "개통 전용 수신자부담",
+        "phone": "080-899-0999"
+      },
+      {
+        "name": "휴대폰 분실/도난 24시",
+        "phone": "1599-3508 (내선 9)"
+      }
+    ]
   },
   {
     "name": "LG헬로모바일 고객센터",
@@ -18195,7 +31512,21 @@ export const customerData = [
     "isVerified": true,
     "description": "LG헬로모바일 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.lghellovision.net"
+    "web_url": "https://www.lghellovision.net",
+    "subtasks": [
+      {
+        "name": "헬로모바일 LGU+전용선",
+        "phone": "1855-1144"
+      },
+      {
+        "name": "KT망 알뜰폰 고객선",
+        "phone": "1855-1000"
+      },
+      {
+        "name": "SKT망 알뜰폰 고객선",
+        "phone": "1855-2114"
+      }
+    ]
   },
   {
     "name": "강원랜드 대구사무소",
@@ -18213,7 +31544,13 @@ export const customerData = [
     "isVerified": true,
     "description": "강원랜드 대구사무소 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.alioplus.go.kr"
+    "web_url": "https://www.alioplus.go.kr",
+    "subtasks": [
+      {
+        "name": "남부권 거점 기업 제휴",
+        "phone": "053-653-9904"
+      }
+    ]
   },
   {
     "name": "개인정보보호위원회",
@@ -18231,7 +31568,13 @@ export const customerData = [
     "isVerified": true,
     "description": "개인정보보호위원회 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.pipc.go.kr"
+    "web_url": "https://www.pipc.go.kr",
+    "subtasks": [
+      {
+        "name": "개인정보 분쟁조정 및 상담",
+        "phone": "044-215-2631"
+      }
+    ]
   },
   {
     "name": "중소기업 옴부즈만",
@@ -18249,7 +31592,13 @@ export const customerData = [
     "isVerified": true,
     "description": "중소기업 옴부즈만 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.osmb.go.kr"
+    "web_url": "https://www.osmb.go.kr",
+    "subtasks": [
+      {
+        "name": "기업 규제 개선 및 애로사항",
+        "phone": "02-730-2421"
+      }
+    ]
   },
   {
     "name": "한국보건의료정보원",
@@ -18267,7 +31616,13 @@ export const customerData = [
     "isVerified": true,
     "description": "한국보건의료정보원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.k-his.or.kr"
+    "web_url": "https://www.k-his.or.kr",
+    "subtasks": [
+      {
+        "name": "보건의료 데이터 표준화 연구",
+        "phone": "02-6263-8300"
+      }
+    ]
   },
   {
     "name": "한국우편사업진흥원",
@@ -18285,7 +31640,13 @@ export const customerData = [
     "isVerified": true,
     "description": "한국우편사업진흥원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.posa.or.kr"
+    "web_url": "https://www.posa.or.kr",
+    "subtasks": [
+      {
+        "name": "우체국 쇼핑 플랫폼 운영",
+        "phone": "02-2036-0500"
+      }
+    ]
   },
   {
     "name": "한국통계정보원",
@@ -18303,7 +31664,13 @@ export const customerData = [
     "isVerified": true,
     "description": "한국통계정보원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kosi.or.kr"
+    "web_url": "https://www.kosi.or.kr",
+    "subtasks": [
+      {
+        "name": "국가 통계 정보화 사업 대행",
+        "phone": "02-3275-5700"
+      }
+    ]
   },
   {
     "name": "KISA 인터넷상담센터",
@@ -18321,7 +31688,13 @@ export const customerData = [
     "isVerified": true,
     "description": "KISA 인터넷상담센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kisa.or.kr"
+    "web_url": "https://www.kisa.or.kr",
+    "subtasks": [
+      {
+        "name": "해킹 및 개인정보 침해 신고",
+        "phone": "118"
+      }
+    ]
   },
   {
     "name": "국방조사본부 헬프콜",
@@ -18339,7 +31712,13 @@ export const customerData = [
     "isVerified": true,
     "description": "국방조사본부 헬프콜 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mnd.go.kr"
+    "web_url": "https://www.mnd.go.kr",
+    "subtasks": [
+      {
+        "name": "군내 인권 침해 및 가혹 행위 예방",
+        "phone": "1303"
+      }
+    ]
   },
   {
     "name": "위기임산부 보호 상담",
@@ -18357,7 +31736,13 @@ export const customerData = [
     "isVerified": true,
     "description": "위기임산부 보호 상담 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://gangwon.1308.or.kr"
+    "web_url": "http://gangwon.1308.or.kr",
+    "subtasks": [
+      {
+        "name": "위기 임산부 긴급 지원",
+        "phone": "1308"
+      }
+    ]
   },
   {
     "name": "국가인권위원회",
@@ -18375,7 +31760,13 @@ export const customerData = [
     "isVerified": true,
     "description": "국가인권위원회 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.humanrights.go.kr"
+    "web_url": "https://www.humanrights.go.kr",
+    "subtasks": [
+      {
+        "name": "평등권 침해 및 차별 행위 상담",
+        "phone": "1331"
+      }
+    ]
   },
   {
     "name": "교정본부 교정기획과",
@@ -18393,7 +31784,13 @@ export const customerData = [
     "isVerified": true,
     "description": "교정본부 교정기획과 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.corrections.go.kr"
+    "web_url": "https://www.corrections.go.kr",
+    "subtasks": [
+      {
+        "name": "교정 정책 수립 및 예산 조율",
+        "phone": "02-2110-0356"
+      }
+    ]
   },
   {
     "name": "교정본부 보안과",
@@ -18411,7 +31808,13 @@ export const customerData = [
     "isVerified": true,
     "description": "교정본부 보안과 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.corrections.go.kr"
+    "web_url": "https://www.corrections.go.kr",
+    "subtasks": [
+      {
+        "name": "전국 시설 보안 경비 통제",
+        "phone": "02-2110-0361"
+      }
+    ]
   },
   {
     "name": "교정본부 마약사범재활팀",
@@ -18429,7 +31832,13 @@ export const customerData = [
     "isVerified": true,
     "description": "교정본부 마약사범재활팀 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.corrections.go.kr"
+    "web_url": "https://www.corrections.go.kr",
+    "subtasks": [
+      {
+        "name": "마약류 의존 수용자 특별 재활",
+        "phone": "02-2110-3883"
+      }
+    ]
   },
   {
     "name": "교정본부 민영교도소 감독관실",
@@ -18447,7 +31856,13 @@ export const customerData = [
     "isVerified": true,
     "description": "교정본부 민영교도소 감독관실 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.corrections.go.kr"
+    "web_url": "https://www.corrections.go.kr",
+    "subtasks": [
+      {
+        "name": "민영 위탁 시설 업무 감사",
+        "phone": "031-887-5920"
+      }
+    ]
   },
   {
     "name": "서울특별시 인재개발원",
@@ -18465,7 +31880,13 @@ export const customerData = [
     "isVerified": true,
     "description": "서울특별시 인재개발원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://local.gosi.go.kr"
+    "web_url": "https://local.gosi.go.kr",
+    "subtasks": [
+      {
+        "name": "지방공무원 채용 자격 요건",
+        "phone": "02-3488-2321"
+      }
+    ]
   },
   {
     "name": "전남광주통합특별시 인사정책관",
@@ -18483,7 +31904,13 @@ export const customerData = [
     "isVerified": true,
     "description": "전남광주통합특별시 인사정책관 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://local.gosi.go.kr"
+    "web_url": "https://local.gosi.go.kr",
+    "subtasks": [
+      {
+        "name": "광주 권역 공무원 임용",
+        "phone": "062-613-6281"
+      }
+    ]
   },
   {
     "name": "부산광역시 인사과",
@@ -18501,7 +31928,13 @@ export const customerData = [
     "isVerified": true,
     "description": "부산광역시 인사과 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://local.gosi.go.kr"
+    "web_url": "https://local.gosi.go.kr",
+    "subtasks": [
+      {
+        "name": "행정직 및 소방직군 채용",
+        "phone": "051-760-3023"
+      }
+    ]
   },
   {
     "name": "대구광역시 인사혁신과",
@@ -18519,7 +31952,13 @@ export const customerData = [
     "isVerified": true,
     "description": "대구광역시 인사혁신과 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://local.gosi.go.kr"
+    "web_url": "https://local.gosi.go.kr",
+    "subtasks": [
+      {
+        "name": "대구 권역 공무원 임용",
+        "phone": "053-350-4011"
+      }
+    ]
   },
   {
     "name": "경기도 인사과",
@@ -18537,7 +31976,13 @@ export const customerData = [
     "isVerified": true,
     "description": "경기도 인사과 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://local.gosi.go.kr"
+    "web_url": "https://local.gosi.go.kr",
+    "subtasks": [
+      {
+        "name": "경기도 공무원 공채 및 경채",
+        "phone": "031-8008-4040"
+      }
+    ]
   },
   {
     "name": "강원특별자치도 총무과",
@@ -18555,7 +32000,13 @@ export const customerData = [
     "isVerified": true,
     "description": "강원특별자치도 총무과 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://local.gosi.go.kr"
+    "web_url": "https://local.gosi.go.kr",
+    "subtasks": [
+      {
+        "name": "강원 권역 공무원 임용",
+        "phone": "033-249-2227"
+      }
+    ]
   },
   {
     "name": "120경기도콜센터",
@@ -18573,7 +32024,13 @@ export const customerData = [
     "isVerified": true,
     "description": "120경기도콜센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.gg.go.kr"
+    "web_url": "https://www.gg.go.kr",
+    "subtasks": [
+      {
+        "name": "생활 민원 및 문자/SNS 상담",
+        "phone": "031-120"
+      }
+    ]
   },
   {
     "name": "강원특별자치도콜센터",
@@ -18591,7 +32048,13 @@ export const customerData = [
     "isVerified": true,
     "description": "강원특별자치도콜센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://state.gwd.go.kr"
+    "web_url": "https://state.gwd.go.kr",
+    "subtasks": [
+      {
+        "name": "도정 및 생활정보 민원",
+        "phone": "033-120"
+      }
+    ]
   },
   {
     "name": "부산시 120 바로콜센터",
@@ -18609,7 +32072,13 @@ export const customerData = [
     "isVerified": true,
     "description": "부산시 120 바로콜센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.busan.go.kr"
+    "web_url": "https://www.busan.go.kr",
+    "subtasks": [
+      {
+        "name": "시정 및 상수도·교통 민원",
+        "phone": "051-120"
+      }
+    ]
   },
   {
     "name": "행정안전부 안전·상황실",
@@ -18627,7 +32096,13 @@ export const customerData = [
     "isVerified": true,
     "description": "행정안전부 안전·상황실 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.mois.go.kr"
+    "web_url": "https://www.mois.go.kr",
+    "subtasks": [
+      {
+        "name": "서울상황센터",
+        "phone": "044-205-4510"
+      }
+    ]
   },
   {
     "name": "법무부 본부",
@@ -18645,7 +32120,13 @@ export const customerData = [
     "isVerified": true,
     "description": "법무부 본부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.moj.go.kr"
+    "web_url": "https://www.moj.go.kr",
+    "subtasks": [
+      {
+        "name": "법무행정 및 형사 기획",
+        "phone": "02-2110-3148"
+      }
+    ]
   },
   {
     "name": "대한법률구조공단",
@@ -18663,7 +32144,13 @@ export const customerData = [
     "isVerified": true,
     "description": "대한법률구조공단 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.klac.or.kr"
+    "web_url": "http://www.klac.or.kr",
+    "subtasks": [
+      {
+        "name": "무료 법률 대리 및 상담",
+        "phone": "132"
+      }
+    ]
   },
   {
     "name": "과학기술정보통신부 본부",
@@ -18681,7 +32168,13 @@ export const customerData = [
     "isVerified": true,
     "description": "과학기술정보통신부 본부 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.msit.go.kr"
+    "web_url": "https://www.msit.go.kr",
+    "subtasks": [
+      {
+        "name": "정보통신 정책 및 국가 R&D",
+        "phone": "044-202-4000"
+      }
+    ]
   },
   {
     "name": "중앙전파관리소",
@@ -18699,7 +32192,13 @@ export const customerData = [
     "isVerified": true,
     "description": "중앙전파관리소 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.crms.go.kr"
+    "web_url": "https://www.crms.go.kr",
+    "subtasks": [
+      {
+        "name": "무선국 허가 및 전파 이용",
+        "phone": "080-700-0074"
+      }
+    ]
   },
   {
     "name": "서울전파관리소",
@@ -18717,7 +32216,13 @@ export const customerData = [
     "isVerified": true,
     "description": "서울전파관리소 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.crms.go.kr"
+    "web_url": "https://www.crms.go.kr",
+    "subtasks": [
+      {
+        "name": "전파사용료 및 혼신제거",
+        "phone": "02-2680-1700"
+      }
+    ]
   },
   {
     "name": "부산전파관리소",
@@ -18735,7 +32240,13 @@ export const customerData = [
     "isVerified": true,
     "description": "부산전파관리소 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.crms.go.kr"
+    "web_url": "https://www.crms.go.kr",
+    "subtasks": [
+      {
+        "name": "지역 전파 환경 감시",
+        "phone": "051-974-5100"
+      }
+    ]
   },
   {
     "name": "국가데이터처 경인지방청",
@@ -18753,7 +32264,13 @@ export const customerData = [
     "isVerified": true,
     "description": "국가데이터처 경인지방청 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://mods.go.kr"
+    "web_url": "https://mods.go.kr",
+    "subtasks": [
+      {
+        "name": "지역별 통계 조사",
+        "phone": "02-2110-7600"
+      }
+    ]
   },
   {
     "name": "식품의약품안전처",
@@ -18771,7 +32288,13 @@ export const customerData = [
     "isVerified": true,
     "description": "식품의약품안전처 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "http://www.mfds.go.kr"
+    "web_url": "http://www.mfds.go.kr",
+    "subtasks": [
+      {
+        "name": "식품·의약품 안전 기준 관리",
+        "phone": "1577-1255"
+      }
+    ]
   },
   {
     "name": "국립국제교육원",
@@ -18789,7 +32312,13 @@ export const customerData = [
     "isVerified": true,
     "description": "국립국제교육원 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.niied.go.kr"
+    "web_url": "https://www.niied.go.kr",
+    "subtasks": [
+      {
+        "name": "국비유학 및 장학생 지원 민원",
+        "phone": "02-3668-1300"
+      }
+    ]
   },
   {
     "name": "한국과학기술연구원(KIST)",
@@ -18807,7 +32336,13 @@ export const customerData = [
     "isVerified": true,
     "description": "한국과학기술연구원(KIST) 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://www.kist.re.kr"
+    "web_url": "https://www.kist.re.kr",
+    "subtasks": [
+      {
+        "name": "과학기술 원천연구 및 특허",
+        "phone": "02-958-5478"
+      }
+    ]
   },
   {
     "name": "강원랜드 본사",
@@ -18825,6 +32360,50 @@ export const customerData = [
     "isVerified": true,
     "description": "강원랜드 본사 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
     "hours": "평일 09:00 ~ 18:00",
-    "web_url": "https://kangwonland.high1.com"
+    "web_url": "https://kangwonland.high1.com",
+    "subtasks": [
+      {
+        "name": "카지노 및 레저 사업 관리",
+        "phone": "1588-7789"
+      }
+    ]
+  },
+  {
+    "name": "신한카드 단장기 카드대출 고객센터",
+    "category": "카드",
+    "phone": "1588-0303",
+    "main_phone": "1588-0303",
+    "ars_path": "",
+    "subtasks": [],
+    "tip": "저는 카드론을 받기 전에 우대 이율 쿠폰이 적용되었는지 확인하기 위해 상담사와 직접 유선 대화를 하여 최종 이율 조정을 받아봅니다.",
+    "experienceTip": "내가 직접 전화를 걸어봤는데, 저는 카드론을 받기 전에 우대 이율 쿠폰이 적용되었는지 확인하기 위해 상담사와 직접 유선 대화를 하여 최종 이율 조정을 받아봅니다.",
+    "keywords": [
+      "신한카드 단장기 카드대출 고객센터 분실신고",
+      "신한카드 단장기 카드대출 고객센터 결제일변경",
+      "한도조회"
+    ],
+    "isVerified": true,
+    "description": "신한카드 단장기 카드대출 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "hours": "평일 09:00 ~ 18:00",
+    "web_url": "https://www.shinhancard.com"
+  },
+  {
+    "name": "KB국민카드 단장기 카드대출 고객센터",
+    "category": "카드",
+    "phone": "1588-2788",
+    "main_phone": "1588-2788",
+    "ars_path": "",
+    "subtasks": [],
+    "tip": "저는 신용 등급이 상향되었을 때 곧바로 이 대출 콜센터에 전화하여 금리 인하 요구권을 행사해 이자를 확 낮춥니다.",
+    "experienceTip": "내가 직접 전화를 걸어봤는데, 저는 신용 등급이 상향되었을 때 곧바로 이 대출 콜센터에 전화하여 금리 인하 요구권을 행사해 이자를 확 낮춥니다.",
+    "keywords": [
+      "KB국민카드 단장기 카드대출 고객센터 분실신고",
+      "KB국민카드 단장기 카드대출 고객센터 결제일변경",
+      "한도조회"
+    ],
+    "isVerified": true,
+    "description": "KB국민카드 단장기 카드대출 고객센터 고객센터의 공식 인증 대표 전화번호 및 빠른 상담사 연결을 돕는 ARS 단축경로 안내 페이지입니다.",
+    "hours": "평일 09:00 ~ 18:00",
+    "web_url": "https://card.kbcard.com"
   }
 ];

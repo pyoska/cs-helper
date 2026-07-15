@@ -77,6 +77,7 @@ async function run() {
 
   uniqueCompanies.forEach(compName => {
     const firstRow = csvRowsByCompany[compName][0];
+    const rows = csvRowsByCompany[compName];
     const normComp = normalize(compName);
     const existingIndex = customerData.findIndex(item => normalize(item.name) === normComp);
     
@@ -111,11 +112,16 @@ async function run() {
         item.ars_path = `${cleanedSubtask} 직통`;
         updated = true;
       }
-      if (item.tip && item.tip.includes('만é')) {
-        item.tip = cleanText(item.tip);
-        item.experienceTip = cleanText(item.experienceTip);
-        updated = true;
-      }
+      
+      // Update subtasks
+      const subtasks = rows.map(r => ({
+        name: cleanText(r.subtask),
+        phone: cleanText(r.directPhone || r.phone)
+      })).filter(s => s.name !== "");
+      
+      item.subtasks = subtasks;
+      updated = true;
+      
       if (updated) updatedCount++;
     } else {
       const name = compName;
@@ -126,12 +132,18 @@ async function run() {
         `${name} 분실신고`, `${name} 결제일변경`, "한도조회"
       ];
 
+      const subtasks = rows.map(r => ({
+        name: cleanText(r.subtask),
+        phone: cleanText(r.directPhone || r.phone)
+      })).filter(s => s.name !== "");
+
       customerData.push({
         name,
         category,
         phone: cleanedPhone,
         main_phone: cleanedMainPhone,
         ars_path: cleanedSubtask ? `${cleanedSubtask} 직통` : "",
+        subtasks,
         tip: cleanedTip,
         experienceTip: `내가 직접 전화를 걸어봤는데, ${cleanedTip}`,
         keywords,

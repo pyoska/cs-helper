@@ -303,6 +303,41 @@ export default async function CompanySlugPage({ params }) {
                 </div>
               </div>
             </div>
+
+            {company?.subtasks && company.subtasks.length > 1 && (
+              <div className="mt-8 bg-slate-50 p-6 rounded-2xl border border-slate-100">
+                <h3 className="text-sm font-extrabold text-slate-800 mb-4 flex items-center gap-2">
+                  <Phone className="w-4 h-4 text-[#0055FF]" /> 세부 업무별 직통 전화번호
+                </h3>
+                <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
+                  <table className="min-w-full divide-y divide-slate-200">
+                    <thead className="bg-slate-50">
+                      <tr>
+                        <th scope="col" className="px-4 py-3 text-left text-xs font-bold text-slate-500 uppercase tracking-wider">세부 담당 업무</th>
+                        <th scope="col" className="px-4 py-3 text-right text-xs font-bold text-slate-500 uppercase tracking-wider">직통 전화번호 및 연결</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-slate-200 bg-white">
+                      {company.subtasks.map((sub, sIdx) => {
+                        const cleanPhone = (sub.phone || "").replace(/[^0-9-]/g, "");
+                        return (
+                          <tr key={sIdx} className="hover:bg-slate-50/50 transition-colors">
+                            <td className="whitespace-nowrap px-4 py-3.5 text-xs font-semibold text-slate-700">{sub.name}</td>
+                            <td className="whitespace-nowrap px-4 py-3.5 text-right text-xs font-extrabold text-slate-900">
+                              <a href={`tel:${cleanPhone}`} className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 active:scale-95 transition-all">
+                                <Phone className="w-3 h-3" />
+                                {sub.phone}
+                              </a>
+                            </td>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            )}
+
             <DwellTimeEnhancer 
               companyName={cleanName}
               phone={company?.phone || ""}
