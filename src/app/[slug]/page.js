@@ -197,6 +197,31 @@ export default async function CompanySlugPage({ params }) {
     ]
   };
 
+  const getBrandPrefix = (name) => {
+    if (!name) return "";
+    const prefixes = [
+      "신한", "삼성", "KB", "국민", "현대", "우리", "하나", "롯데", 
+      "NH", "농협", "우체국", "LG", "KT", "SK", "카카오", "네이버", 
+      "한화", "DB", "교보", "동양", "GS"
+    ];
+    for (const prefix of prefixes) {
+      if (name.startsWith(prefix)) {
+        return prefix;
+      }
+    }
+    return name.split(" ")[0] || "";
+  };
+
+  const brandPrefix = getBrandPrefix(company?.name || "");
+  
+  const brandMatches = brandPrefix && brandPrefix.length >= 2
+    ? customerData.filter(x => x?.name !== company?.name && x?.name.startsWith(brandPrefix))
+    : [];
+
+  const diffCategoryMatches = brandMatches.filter(x => x.category !== company.category);
+  const sameCategoryMatches = brandMatches.filter(x => x.category === company.category);
+  const familyItems = [...diffCategoryMatches, ...sameCategoryMatches].slice(0, 3);
+
   const relatedItems = customerData
     .filter(x => x?.category === company?.category && x?.name !== company?.name)
     .slice(0, 3);
@@ -335,6 +360,24 @@ export default async function CompanySlugPage({ params }) {
             </div>
           </div>
         </section>
+
+        {familyItems.length > 0 && (
+          <section className="mt-12">
+            <h3 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
+              🏢 {brandPrefix} 패밀리 고객센터
+            </h3>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {familyItems.map((item) => (
+                <Link key={item?.name || ""} href={`/${getSlug(item?.name || "")}`} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col justify-between group">
+                  <span className="font-bold text-slate-800 group-hover:text-blue-600 transition-colors mb-2">{item?.name || ""}</span>
+                  <div className="flex items-center text-xs text-slate-400 font-medium">
+                    <Phone className="w-3 h-3 mr-1" /> {item?.phone || ""}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
 
         {relatedItems.length > 0 && (
           <section className="mt-12">
