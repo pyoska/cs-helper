@@ -183,9 +183,16 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
           </div>
 
           {voted ? (
-            <div className="bg-emerald-50 border border-emerald-100 p-2.5 rounded-xl text-center">
-              <p className="text-xs font-bold text-emerald-700">✔️ 실시간 투표 완료!</p>
-              <p className="text-[10px] text-emerald-500 mt-0.5">오늘 이 사이트 사용자 성공율은 {successRate}% 입니다.</p>
+            <div className="bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-200 p-3.5 rounded-xl text-center space-y-1 animate-in fade-in">
+              <div className="inline-flex items-center gap-1 bg-emerald-100 text-emerald-800 text-3xs font-extrabold px-2.5 py-0.5 rounded-full">
+                <span>🎖️ 실시간 기여 우수 유저 인증</span>
+              </div>
+              <p className="text-xs font-bold text-emerald-800">
+                "통화 성공 상태를 제보해 주셔서 감사합니다!"
+              </p>
+              <p className="text-[10px] text-emerald-600 font-medium">
+                오늘 이 고객센터의 실시간 연결 성공률 집계: <strong className="text-emerald-700 font-extrabold">{successRate}%</strong> (다음 방문자를 돕는 소중한 데이터입니다)
+              </p>
             </div>
           ) : (
             <div className="grid grid-cols-2 gap-2">

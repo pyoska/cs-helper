@@ -25,6 +25,7 @@ import Footer from "@/components/Footer";
 import DwellTimeEnhancer from "@/components/DwellTimeEnhancer";
 import MobileStickyCallBar from "@/components/MobileStickyCallBar";
 import BookmarkNudgeModal from "@/components/BookmarkNudgeModal";
+import CopyPhoneButton from "@/components/CopyPhoneButton";
 
 const CATEGORY_MAP = {
   "카드": { name: "카드/금융", icon: CreditCard },
@@ -296,15 +297,18 @@ export default async function CompanySlugPage({ params }) {
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <a href={`tel:${dialablePhone}`} className="group flex items-center p-6 bg-[#0055FF] rounded-2xl text-white transition-all hover:bg-blue-700 hover:scale-[1.02] active:scale-95 shadow-lg shadow-blue-200">
-                <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4 group-hover:rotate-12 transition-transform">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <p className="text-blue-100 text-xs font-semibold uppercase tracking-widest mb-1">전화번호 바로 연결</p>
-                  <p className="text-2xl font-bold tracking-tighter">{company?.phone || ""}</p>
-                </div>
-              </a>
+              <div className="flex items-center justify-between p-6 bg-[#0055FF] rounded-2xl text-white shadow-lg shadow-blue-200">
+                <a href={`tel:${dialablePhone}`} className="group flex items-center min-w-0 flex-1 hover:opacity-90 transition-opacity">
+                  <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mr-4 group-hover:rotate-12 transition-transform shrink-0">
+                    <Phone className="w-6 h-6 text-white" />
+                  </div>
+                  <div className="min-w-0">
+                    <p className="text-blue-100 text-xs font-semibold uppercase tracking-widest mb-1 truncate">전화번호 바로 연결</p>
+                    <p className="text-2xl font-bold tracking-tighter truncate">{company?.phone || ""}</p>
+                  </div>
+                </a>
+                <CopyPhoneButton phone={company?.phone || ""} />
+              </div>
 
               <div className="flex items-center p-6 bg-slate-50 rounded-2xl border border-slate-100">
                 <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mr-4 shadow-sm">
