@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import { customerData } from "@/data/customerData";
 import Footer from "@/components/Footer";
+import FavoritesBar from "@/components/FavoritesBar";
 
 const ITEMS_PER_PAGE = 12;
 
@@ -376,6 +377,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* 즐겨찾기(자주 찾는 고객센터) 퀵 바 */}
+        <FavoritesBar />
 
         {/* 요구사항 1단계(메인): '자주 찾는 업무 카테고리' 박스를 상단에 배치하여 빠른 해결 유도 */}
         <section className="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-xs">

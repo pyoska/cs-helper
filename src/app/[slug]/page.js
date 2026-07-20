@@ -23,6 +23,8 @@ import {
 import { customerData } from "@/data/customerData";
 import Footer from "@/components/Footer";
 import DwellTimeEnhancer from "@/components/DwellTimeEnhancer";
+import MobileStickyCallBar from "@/components/MobileStickyCallBar";
+import BookmarkNudgeModal from "@/components/BookmarkNudgeModal";
 
 const CATEGORY_MAP = {
   "카드": { name: "카드/금융", icon: CreditCard },
@@ -315,6 +317,10 @@ export default async function CompanySlugPage({ params }) {
               </div>
             </div>
 
+            <div className="mt-6">
+              <BookmarkNudgeModal companyName={cleanName} slug={params.slug} />
+            </div>
+
             {company?.subtasks && company.subtasks.length > 1 && (
               <div className="mt-8 bg-slate-50 p-6 rounded-2xl border border-slate-100">
                 <h3 className="text-sm font-extrabold text-slate-800 mb-4 flex items-center gap-2">
@@ -475,6 +481,12 @@ export default async function CompanySlugPage({ params }) {
           </section>
         )}
       </main>
+
+      <MobileStickyCallBar 
+        phone={company?.phone || ""} 
+        companyName={cleanName} 
+        arsPath={company?.ars_path || ""} 
+      />
 
       <Footer />
     </div>
