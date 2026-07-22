@@ -20571,16 +20571,16 @@ export const customerData = [
     "web_url": "https://www.tmapmobility.com",
     "subtasks": [
       {
-        "name": "대리운전 배차 및 상담",
-        "phone": "1522-1110"
+        "name": "티맵 대리 고객센터",
+        "phone": "1599-5121"
       },
       {
-        "name": "대리 기사 전용 고객선",
-        "phone": "1522-4575"
+        "name": "티맵 일반 고객센터",
+        "phone": "1599-5079"
       },
       {
-        "name": "티맵 택시 및 주차",
-        "phone": "1599-0007"
+        "name": "티맵 대리 기사 전용",
+        "phone": "1800-0260"
       }
     ]
   },
