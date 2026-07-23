@@ -59,7 +59,7 @@ const getDialablePhone = (phone) => {
 const getSlug = (name) => {
   if (!name) return "";
   let cleanName = name.trim().replace(/고객센터/g, "").trim();
-  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
+  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*+]/g, "");
   return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
