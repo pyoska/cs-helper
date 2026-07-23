@@ -60,12 +60,21 @@ export default function PrivacyPage() {
           </section>
 
           <section className="space-y-3">
-            <h2 className="text-base font-extrabold text-slate-800">2. 쿠키(Cookie)의 사용 및 로그 분석</h2>
-            <p className="text-xs md:text-sm text-slate-600 leading-relaxed">
-              본 사이트는 서비스 개선 및 구글 애드센스 등 외부 광고 플랫폼의 맞춤형 광고 게재를 위해 쿠키를 활용할 수 있습니다. 
-              쿠키는 이용자의 브라우저를 식별하지만 개인을 고유하게 식별하지는 않습니다. 
-              이용자는 웹 브라우저 옵션을 변경하여 쿠키 저장을 거부하거나 경고를 받도록 설정할 수 있습니다.
-            </p>
+            <h2 className="text-base font-extrabold text-slate-800">2. 구글 애드센스 광고 쿠키 및 외부 플랫폼 안내</h2>
+            <div className="text-xs md:text-sm text-slate-600 leading-relaxed space-y-2">
+              <p>
+                본 사이트는 웹사이트 활성화 및 맞춤형 서비스 제공을 위해 광고 파트너사 및 구글 애드센스(Google AdSense) 광고 플랫폼의 쿠키를 활용할 수 있습니다.
+              </p>
+              <p>
+                - 구글(Google)을 포함한 제3자 판매자는 쿠키를 사용하여 사용자가 본 사이트 또는 다른 웹사이트를 이전에 방문한 내역을 기반으로 맞춤형 광고를 게재합니다.
+              </p>
+              <p>
+                - 구글의 광고 쿠키 사용을 통해 구글과 그 파트너사는 사용자의 본 사이트 및 인터넷상의 다른 사이트 방문 정보를 토대로 사용자에게 유익한 광고를 제공할 수 있습니다.
+              </p>
+              <p>
+                - 이용자는 <a href="https://www.google.com/settings/ads" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-bold">구글 광고 설정 페이지</a>를 방문하여 맞춤형 광고를 해제할 수 있습니다. (또는 <a href="https://www.aboutads.info" target="_blank" rel="noopener noreferrer" className="text-blue-600 underline font-bold">www.aboutads.info</a>를 방문하여 제3자 판매자의 맞춤형 광고용 쿠키 사용을 원천 차단할 수 있습니다.)
+              </p>
+            </div>
           </section>
 
           <section className="space-y-3">
