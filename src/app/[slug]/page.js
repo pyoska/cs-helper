@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { notFound } from "next/navigation";
 import { 
   Phone, 
   Clock, 
@@ -73,7 +74,8 @@ export async function generateMetadata({ params }) {
   } catch (e) {
     decodedSlug = slug || "";
   }
-  const company = customerData.find(x => getSlug(x?.name || "") === decodedSlug);
+  const decodedSlugNormalized = decodedSlug.replace(/-/g, "");
+  const company = customerData.find(x => getSlug(x?.name || "").replace(/-/g, "") === decodedSlugNormalized);
 
   if (!company) {
     return {
@@ -89,7 +91,7 @@ export async function generateMetadata({ params }) {
     title: `${cleanName} 전화번호 및 연결 팁 - CS 고객센터 도우미`,
     description: `${cleanName} 고객센터 대표번호(${company?.phone || ""}) 연결 후, ARS 안내 멘트를 끝까지 들을 필요 없이 즉시 상담원과 통화할 수 있는 단축번호 치트키를 지금 확인해 보세요.`,
     alternates: {
-      canonical: `https://cshelper.kr/${slug}`,
+      canonical: `https://cshelper.kr/${getSlug(companyName)}`,
     },
   };
 }
@@ -104,39 +106,12 @@ export default async function CompanySlugPage({ params }) {
     decodedSlug = slug || "";
   }
   
-  const matchingIndex = customerData.findIndex(x => getSlug(x?.name || "") === decodedSlug);
+  const decodedSlugNormalized = decodedSlug.replace(/-/g, "");
+  const matchingIndex = customerData.findIndex(x => getSlug(x?.name || "").replace(/-/g, "") === decodedSlugNormalized);
   const company = customerData[matchingIndex];
 
   if (!company) {
-    const keyword = decodedSlug.replace("-고객센터", "").split("-")[0] || "";
-    const similarItems = customerData
-      .filter((item) => (item?.name || "").includes(keyword) || (item?.category && decodedSlug.includes(item?.category)))
-      .slice(0, 4);
-
-    return (
-      <div className="min-h-screen bg-[#F4F7FB] flex flex-col items-center justify-center p-6 text-center">
-        <AlertTriangle className="w-16 h-16 text-amber-500 mb-4" />
-        <h1 className="text-2xl font-bold mb-2">고객센터 정보를 찾을 수 없습니다.</h1>
-        <p className="text-slate-600 mb-8">요청하신 페이지가 이동되었거나 삭제되었을 수 있습니다.</p>
-        
-        {similarItems.length > 0 && (
-          <div className="w-full max-w-md">
-            <h2 className="text-sm font-semibold text-slate-500 uppercase tracking-wider mb-4">비슷한 고객센터 추천</h2>
-            <div className="grid gap-3">
-              {similarItems.map((item) => (
-                <Link key={item?.name || ""} href={`/${getSlug(item?.name || "")}`} className="bg-white p-4 rounded-xl shadow-sm hover:border-blue-400 border border-transparent transition-all flex justify-between items-center group">
-                  <span className="font-medium group-hover:text-blue-600 transition-colors">{item?.name || ""}</span>
-                  <ArrowLeft className="w-4 h-4 rotate-180 text-blue-500" />
-                </Link>
-              ))}
-            </div>
-          </div>
-        )}
-        <Link href="/" className="mt-8 text-blue-600 font-medium flex items-center gap-2 hover:underline">
-          <ArrowLeft className="w-4 h-4" /> 홈으로 돌아가기
-        </Link>
-      </div>
-    );
+    notFound();
   }
 
   const dialablePhone = getDialablePhone(company?.phone || "");
