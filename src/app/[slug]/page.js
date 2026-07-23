@@ -296,6 +296,12 @@ export default async function CompanySlugPage({ params }) {
               </div>
             </div>
 
+            <div className="my-4 p-3.5 bg-amber-50 border border-amber-200 rounded-2xl text-xs font-semibold text-amber-700 text-center flex items-center justify-center gap-1.5 shadow-2xs">
+              <span>⚠️ 본 정보는 참고용이며 공식 채널을 통해 재확인하십시오.</span>
+              <span className="text-slate-350">|</span>
+              <Link href="/contact" className="underline hover:text-amber-900 font-extrabold">정보 오류 제보하기 🚨</Link>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="flex items-center justify-between p-6 bg-[#0055FF] rounded-2xl text-white shadow-lg shadow-blue-200">
                 <a href={`tel:${dialablePhone}`} className="group flex items-center min-w-0 flex-1 hover:opacity-90 transition-opacity">

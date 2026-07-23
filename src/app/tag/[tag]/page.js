@@ -290,12 +290,11 @@ export default async function TagPage({ params }) {
                 dangerouslySetInnerHTML={{ __html: guide.content }}
               />
 
-              {/* 요구사항: 면책 문구 필수 포함 */}
               <div className="border-t border-slate-100 pt-5 mt-6 text-3xs text-slate-400 flex items-start gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-slate-300 shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
-                  <strong>면책 고지:</strong> 본 정보는 개인 작성 및 대조 참고용이며 공식 채널이 아닙니다. 
-                  금융사 사정 및 개편에 따라 실제 정보가 달라질 수 있으므로, 금융 거래 전 공식 채널을 통해 반드시 최신 규정을 재확인하십시오.
+                  <strong>면책 고지:</strong> 본 정보는 참고용이며 공식 채널을 통해 재확인하십시오. 
+                  금융사 사정 및 개편에 따라 실제 정보가 달라질 수 있으므로, 금융 거래 전 공식 채널을 통해 반드시 최신 규정을 재확인하십시오. (오류 제보: contact@cshelper.kr)
                 </p>
               </div>
             </article>
