@@ -2,6 +2,11 @@ import Link from "next/link";
 import { ArrowLeft, ShieldCheck } from "lucide-react";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "개인정보처리방침 (Privacy Policy) - CS 고객센터 도우미",
+  description: "CS 고객센터 도우미 사이트의 공식 개인정보처리방침이며, 구글 애드센스 맞춤형 광고 쿠키 활용 및 거부(Opt-out) 안내를 상세히 명시합니다.",
+};
+
 export default function PrivacyPage() {
   return (
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">

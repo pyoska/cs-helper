@@ -2,6 +2,11 @@ import Link from "next/link";
 import { ArrowLeft, Award, HelpCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "운영진 및 사이트 관리자 안내 - CS 고객센터 도우미",
+  description: "CS 고객센터 도우미 사이트를 성실히 가동하고 정합성을 검증하는 운영 책임자 정보와 관리 방침을 공유합니다.",
+};
+
 export default function ManagementPage() {
   return (
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">
