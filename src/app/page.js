@@ -522,11 +522,11 @@ export default function Home() {
         {/* 필터 통계 및 검색 결과 타이틀 */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-3 pt-2">
           <div>
-            <h1 className="text-lg md:text-xl font-black text-slate-900">
+            <h2 className="text-lg md:text-xl font-black text-slate-900">
               {currentPage > 1 
                 ? `더 많은 카드사/은행 고객센터 정보 (${currentPage}페이지)` 
                 : "전체 고객센터 빠른 대표번호 및 통화 꿀팁 리스트"}
-            </h1>
+            </h2>
             <span className="text-xs text-slate-500 font-bold block mt-1">
               조회 결과: 총 <strong className="text-[#0055FF]">{filteredData.length}</strong>개 매칭 (페이지당 12개 출력)
             </span>
