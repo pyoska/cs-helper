@@ -15,7 +15,7 @@ export default function BookmarkNudgeModal({ companyName, slug }) {
       const exists = favs.some((item) => item.name === companyName);
       setIsFavorite(exists);
     } catch (e) {
-      console.error(e);
+      // silently ignore localStorage errors
     }
   }, [companyName]);
 
@@ -39,7 +39,7 @@ export default function BookmarkNudgeModal({ companyName, slug }) {
       setShowToast(true);
       setTimeout(() => setShowToast(false), 3000);
     } catch (e) {
-      console.error(e);
+      // silently ignore localStorage errors
     }
   };
 

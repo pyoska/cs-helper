@@ -16,7 +16,6 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
   const [currentHour, setCurrentHour] = useState(null);
   const [voted, setVoted] = useState(false);
   const [voteSuccess, setVoteSuccess] = useState(true);
-  const [successRate, setSuccessRate] = useState(87);
   const [showSchedule, setShowSchedule] = useState(false);
 
   const hasShortcut = phone?.includes("단축키") || arsPath?.includes("단축키");
@@ -33,8 +32,6 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
     if (voted) return;
     setVoteSuccess(success);
     setVoted(true);
-    // Slightly adjust rate visually on vote
-    setSuccessRate(prev => success ? Math.min(prev + 1, 100) : Math.max(prev - 2, 0));
   };
 
   // Determine congestion based on hour
@@ -58,9 +55,9 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
       <div className="bg-white p-6 rounded-2xl border border-slate-200 shadow-xs">
         <div className="flex items-center justify-between mb-4">
           <h3 className="text-sm font-extrabold text-slate-900 flex items-center gap-2">
-            <Activity className="w-4 h-4 text-[#0055FF]" /> 실시간 전화 혼잡도 검사
+            <Activity className="w-4 h-4 text-[#0055FF]" /> 시간대별 예상 전화 혼잡도
           </h3>
-          <span className="text-xs text-slate-400">현재 시간 기준</span>
+          <span className="text-xs text-slate-400">일반적인 시간대별 평균 기준</span>
         </div>
 
         <div className={`p-4 rounded-xl ${status.bg} flex items-center justify-between mb-4`}>
@@ -178,7 +175,7 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
               <CheckCircle className="w-3.5 h-3.5 text-emerald-500" /> 오늘 전화 연결 피드백
             </h4>
             <p className="text-[11px] text-slate-400 leading-relaxed mb-4">
-              상담사에게 전화를 걸어 성공적인 연결이 되었나요? 실시간 통계 조사를 통해 다른 분들께 큰 정보를 줄 수 있습니다.
+              상담사에게 전화를 걸어 보셨나요? 연결 경험을 공유해 주시면 다른 방문자에게 도움이 됩니다.
             </p>
           </div>
 
@@ -191,7 +188,7 @@ export default function DwellTimeEnhancer({ companyName, phone, arsPath, hours, 
                 "이용 피드백을 제공해 주셔서 감사합니다!"
               </p>
               <p className="text-[10px] text-slate-600 font-medium">
-                오늘 참여 유저들의 연결 상태 응답: <strong className="text-blue-600 font-extrabold">원활 {successRate}%</strong> (참고용 통계 데이터)
+                이용 경험이 서비스 품질 개선에 참고됩니다.
               </p>
             </div>
           ) : (

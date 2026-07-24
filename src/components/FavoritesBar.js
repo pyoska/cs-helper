@@ -13,7 +13,7 @@ export default function FavoritesBar() {
       const favs = JSON.parse(localStorage.getItem("cshelper_favorites") || "[]");
       setFavorites(favs);
     } catch (e) {
-      console.error(e);
+      // silently ignore localStorage errors
     }
   }, []);
 
@@ -25,7 +25,7 @@ export default function FavoritesBar() {
       setFavorites(updated);
       localStorage.setItem("cshelper_favorites", JSON.stringify(updated));
     } catch (err) {
-      console.error(err);
+      // silently ignore localStorage errors
     }
   };
 

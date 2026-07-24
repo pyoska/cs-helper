@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /search
+Disallow: /admin
+Disallow: /api/
 Sitemap: https://www.cshelper.kr/sitemap.xml
 
 #DaumWebMasterTool:b9c9e4528e0a2c379e5553b7b13fd4ebb9df84889b82faf264f080b6b9c6eed9:6LQqhj3iSch63nUQiWlmNw==

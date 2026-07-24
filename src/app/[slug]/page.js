@@ -45,7 +45,7 @@ const CATEGORY_MAP = {
 const getSlug = (name) => {
   if (!name) return "";
   let cleanName = name.trim().replace(/고객센터/g, "").trim();
-  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
+  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*+]/g, "");
   return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
@@ -91,7 +91,7 @@ export async function generateMetadata({ params }) {
     title: `${cleanName} 전화번호 및 연결 팁 - CS 고객센터 도우미`,
     description: `${cleanName} 고객센터 대표번호(${company?.phone || ""}) 연결 후, ARS 안내 멘트를 끝까지 들을 필요 없이 즉시 상담원과 통화할 수 있는 단축번호 치트키를 지금 확인해 보세요.`,
     alternates: {
-      canonical: `https://cshelper.kr/${getSlug(companyName)}`,
+      canonical: `https://www.cshelper.kr/${getSlug(companyName)}`,
     },
   };
 }
@@ -354,6 +354,23 @@ export default async function CompanySlugPage({ params }) {
               <Sparkles className="w-5 h-5 text-amber-500" /> 연결 팁 & 핵심 가이드
             </h2>
 
+            {/* 고유 experienceTip 콘텐츠 (각 기업별 고유 1인칭 실전 경험담) */}
+            {company?.experienceTip && (
+              <div className="bg-white p-5 rounded-xl border border-blue-100 shadow-sm mb-6">
+                <div className="flex gap-3">
+                  <div className="w-10 h-10 bg-blue-50 rounded-lg flex items-center justify-center text-blue-500 shrink-0">
+                    <Sparkles className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h3 className="text-sm font-extrabold text-slate-900 mb-2">🎯 실전 통화 연결 경험담 (1인칭 검증 팁)</h3>
+                    <p className="text-sm text-slate-600 leading-relaxed">
+                      {company.experienceTip}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            )}
+
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
               <div className="bg-white p-5 rounded-xl border border-slate-200 shadow-3xs flex gap-3">
                 <div className="w-10 h-10 bg-amber-50 rounded-lg flex items-center justify-center text-amber-500 shrink-0">
@@ -362,7 +379,7 @@ export default async function CompanySlugPage({ params }) {
                 <div>
                   <h3 className="text-sm font-extrabold text-slate-900 mb-1">💡 상담원 빠른 연결 단축번호 팁</h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    전화 통화 연결 후 안내 멘트가 흘러나올 때 대기 시간 없이 즉시 연결을 원하시면, 곧바로 단축 번호 <strong className="text-[#0055FF]">{company?.phone?.includes("단축키") ? company.phone.split("단축키").pop().replace(/[^0-9*#]/g, "") : "0"}번</strong>을 누르시는 것이 가장 빠릅니다.
+                    {company?.ars_path ? `${cleanName}에 전화를 건 후 ARS 안내 멘트가 흘러나오면, ${company.ars_path} 경로를 입력하시면 상담원에게 가장 빠르게 연결됩니다.` : `전화 통화 연결 후 안내 멘트가 흘러나올 때 대기 시간 없이 즉시 연결을 원하시면, 곧바로 0번을 누르시는 것이 가장 빠릅니다.`}
                   </p>
                 </div>
               </div>
@@ -372,9 +389,9 @@ export default async function CompanySlugPage({ params }) {
                   <Clock className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="text-sm font-extrabold text-slate-900 mb-1">⚠️ 혼잡 시간대 및 점심시간 안내</h3>
+                  <h3 className="text-sm font-extrabold text-slate-900 mb-1">⚠️ 운영 시간 및 혼잡 시간대 안내</h3>
                   <p className="text-xs text-slate-500 leading-relaxed">
-                    일평균 가장 통화량이 집중되는 혼잡 시간대는 오전 11:30 ~ 13:30(점심시간) 및 영업 지점 업무가 종료되는 15:30 이후입니다. 가급적 오전 09:00 ~ 10:30 사이 유선 연결을 추천해 드립니다.
+                    {cleanName}의 공식 운영 시간은 <strong>{company?.hours || "평일 09:00~18:00"}</strong>입니다. 일평균 가장 통화량이 집중되는 혼잡 시간대는 오전 11:30~13:30(점심시간) 및 15:30 이후이므로, 가급적 오전 09:00~10:30 사이 유선 연결을 추천합니다.
                   </p>
                 </div>
               </div>

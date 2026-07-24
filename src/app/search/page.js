@@ -138,9 +138,9 @@ function SearchContent() {
         {/* 상단 검색 폼 (2단계 검색 결과 페이지의 검색창 유지) */}
         <section className="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-xl">
           <div className="max-w-2xl mx-auto relative z-10 space-y-6">
-            <h2 className="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
+            <h1 className="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
               CS 고객센터 통합 검색결과
-            </h2>
+            </h1>
             <form onSubmit={handleSearchSubmit} className="relative shadow-xl rounded-full border border-slate-200 bg-white group max-w-2xl mx-auto p-1.5 flex items-center">
               <div className="pl-6 flex items-center pointer-events-none">
                 <Search className="h-6 w-6 text-slate-455 group-focus-within:text-[#0055FF] transition-colors" />
@@ -188,9 +188,9 @@ function SearchContent() {
         {/* 결과 내역 타이틀 */}
         <div id="search-title-section" className="border-b border-slate-200 pb-4 flex justify-between items-center">
           <div>
-            <h1 className="text-lg md:text-xl font-black text-slate-900">
+            <h2 className="text-lg md:text-xl font-black text-slate-900">
               &apos;{searchQuery}&apos; 검색 결과 리스트
-            </h1>
+            </h2>
             <span className="text-xs text-slate-500 font-bold block mt-1">
               총 <strong className="text-[#0055FF]">{filteredData.length}</strong>개 부서 매칭
             </span>
