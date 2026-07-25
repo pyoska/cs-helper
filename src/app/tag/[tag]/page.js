@@ -218,7 +218,7 @@ export default async function TagPage({ params }) {
                             {item.category}
                           </span>
                           {is24h && (
-                            <span className="text-3xs font-bold text-red-650 bg-red-50 border border-red-100 px-1.5 py-0.5 rounded">
+                            <span className="text-3xs font-bold text-red-655 bg-red-50 border border-red-100 px-1.5 py-0.5 rounded">
                               24시
                             </span>
                           )}

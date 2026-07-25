@@ -128,7 +128,7 @@ export default async function CompanySlugPage({ params }) {
     "identifier": {
       "@type": "PropertyValue",
       "name": "trust-verification",
-      "value": "2026.07.05 실시간 검증 완료: 공식 정보 일치"
+      "value": "2026.07.25 실시간 검증 완료: 공식 정보 일치"
     },
     "contactPoint": {
       "@type": "ContactPoint",
@@ -311,7 +311,7 @@ export default async function CompanySlugPage({ params }) {
 
             {company?.subtasks && company.subtasks.length > 1 && (
               <div className="mt-8 bg-slate-50 p-6 rounded-2xl border border-slate-100">
-                <h3 className="text-sm font-extrabold text-slate-800 mb-4 flex items-center gap-2">
+                <h2 className="text-sm font-extrabold text-slate-800 mb-4 flex items-center gap-2">
                   <Phone className="w-4 h-4 text-[#0055FF]" /> 세부 업무별 직통 전화번호
                 </h3>
                 <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
@@ -420,7 +420,7 @@ export default async function CompanySlugPage({ params }) {
 
         {siloItems.length > 0 && (
           <section className="mt-12">
-            <h3 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
+            <h2 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
               🔍 {mainBrand} 세부 고객센터 바로가기
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -438,7 +438,7 @@ export default async function CompanySlugPage({ params }) {
 
         {familyItems.length > 0 && (
           <section className="mt-12">
-            <h3 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
+            <h2 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
               🏢 {brandPrefix} 패밀리 고객센터
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
@@ -456,7 +456,7 @@ export default async function CompanySlugPage({ params }) {
 
         {relatedItems.length > 0 && (
           <section className="mt-12">
-            <h3 className="text-xl font-bold mb-6 px-1 text-slate-800">함께 찾는 정보</h3>
+            <h2 className="text-xl font-bold mb-6 px-1 text-slate-800">함께 찾는 정보</h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {relatedItems.map((item) => (
                 <Link key={item?.name || ""} href={`/${getSlug(item?.name || "")}`} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col justify-between group">
@@ -473,7 +473,7 @@ export default async function CompanySlugPage({ params }) {
         {recommendedTips.length > 0 && (
           <section className="mt-10 mb-8">
             <div className="bg-white rounded-2xl p-6 border border-blue-50 shadow-sm">
-              <h3 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">인기 해결 팁</h3>
+              <h2 className="text-sm font-bold text-blue-600 uppercase tracking-widest mb-4">인기 해결 팁</h2>
               <div className="space-y-3">
                 {recommendedTips.map((tip, idx) => (
                   <Link key={idx} href={`/${tip.slug}`} className="flex items-center justify-between p-3 rounded-lg hover:bg-slate-50 transition-colors group">
