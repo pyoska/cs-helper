@@ -49,6 +49,19 @@ const getSlug = (name) => {
   return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
+const normalizeSlugKey = (str) => {
+  if (!str) return "";
+  let s = str;
+  try {
+    s = decodeURIComponent(s);
+  } catch (e) {}
+  return s
+    .toLowerCase()
+    .replace(/%2b/gi, "")
+    .replace(/[\/\\:*?"<>|%,.*+\s-]/g, "")
+    .replace(/고객센터/g, "");
+};
+
 const getDialablePhone = (phone) => {
   if (!phone) return "";
   return phone.replace(/\([^)]*\)/g, "").replace(/[^0-9+-]/g, "").trim();
@@ -68,14 +81,11 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const { slug } = await params;
-  let decodedSlug = "";
-  try {
-    decodedSlug = decodeURIComponent(slug || "");
-  } catch (e) {
-    decodedSlug = slug || "";
-  }
-  const decodedSlugNormalized = decodedSlug.replace(/-/g, "");
-  const company = customerData.find(x => getSlug(x?.name || "").replace(/-/g, "") === decodedSlugNormalized);
+  const normKey = normalizeSlugKey(slug || "");
+  const company = customerData.find(x => 
+    normalizeSlugKey(x?.name || "") === normKey || 
+    normalizeSlugKey(getSlug(x?.name || "")) === normKey
+  );
 
   if (!company) {
     return {
@@ -98,16 +108,11 @@ export async function generateMetadata({ params }) {
 
 export default async function CompanySlugPage({ params }) {
   const { slug } = await params;
-  
-  let decodedSlug = "";
-  try {
-    decodedSlug = decodeURIComponent(slug || "");
-  } catch (e) {
-    decodedSlug = slug || "";
-  }
-  
-  const decodedSlugNormalized = decodedSlug.replace(/-/g, "");
-  const matchingIndex = customerData.findIndex(x => getSlug(x?.name || "").replace(/-/g, "") === decodedSlugNormalized);
+  const normKey = normalizeSlugKey(slug || "");
+  const matchingIndex = customerData.findIndex(x => 
+    normalizeSlugKey(x?.name || "") === normKey || 
+    normalizeSlugKey(getSlug(x?.name || "")) === normKey
+  );
   const company = customerData[matchingIndex];
 
   if (!company) {
