@@ -30,3 +30,10 @@ These are project-scoped rules for cshelper.kr that the agent MUST always follow
 - Every informational article, detail page, and tag landing page guide MUST render the legal disclaimer badge:
   `"본 정보는 참고용이며 공식 채널을 통해 재확인하십시오"` (This information is for reference only, please reconfirm via the official corporate channels).
 
+## 6. Zero-Defect & Anti-Redundancy Engineering Governance (무결점 및 중복 업무 방지 개발 지침)
+- **Principle 1: Defensive Routing & Fallback Guarantee**: Every dynamic route (`[slug]`, `tag/[tag]`, `category/[category]`) must safely decode URI parameters (`try-catch`) and apply fuzzy/normalized matching (`normalizeSlugKey`). No user request or crawler request shall EVER return 400 Bad Request or 500 Server Error.
+- **Principle 2: Single Source of Truth for Slugs**: All slug generation, normalization, and matching logic MUST use unified helpers (`getSlug` and `normalizeSlugKey`) across all pages, sitemaps, and RSS feeds to prevent domain/slug discrepancies.
+- **Principle 3: Pre-Commit Automated Verification**: Every modification to data or routing MUST be validated via `npm run build` with 100% static page generation (1,127 pages) passing before committing.
+- **Principle 4: Anti-Redundancy Workflow**: When fixing an error, analyze the root cause across ALL 1,048 entries simultaneously rather than fixing individual items piecemeal. Never repeat duplicate manual verification steps when an automated script can cover 100% of cases.
+
+
