@@ -169,20 +169,20 @@ export default function Home() {
 
     const canonical = document.createElement("link");
     canonical.rel = "canonical";
-    canonical.href = `https://cshelper.kr/?page=${currentPage}`;
+    canonical.href = `https://www.cshelper.kr/?page=${currentPage}`;
     document.head.appendChild(canonical);
 
     if (currentPage > 1) {
       const prev = document.createElement("link");
       prev.rel = "prev";
-      prev.href = `https://cshelper.kr/?page=${currentPage - 1}`;
+      prev.href = `https://www.cshelper.kr/?page=${currentPage - 1}`;
       document.head.appendChild(prev);
     }
 
     if (currentPage < totalPages) {
       const next = document.createElement("link");
       next.rel = "next";
-      next.href = `https://cshelper.kr/?page=${currentPage + 1}`;
+      next.href = `https://www.cshelper.kr/?page=${currentPage + 1}`;
       document.head.appendChild(next);
     }
   }, [currentPage, totalPages]);
@@ -276,7 +276,7 @@ export default function Home() {
           "@type": "Organization",
           "name": item.name,
           "telephone": getDialablePhone(item.phone),
-          "url": `https://cshelper.kr/${getSlug(item.name)}`,
+          "url": `https://www.cshelper.kr/${getSlug(item.name)}`,
           "description": item.description
         }
       }))

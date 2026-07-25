@@ -68,7 +68,7 @@ function CategoryList({ rawCategory }) {
   }, [filteredData, currentPage]);
 
   useEffect(() => {
-    const baseUrl = "https://cshelper.kr";
+    const baseUrl = "https://www.cshelper.kr";
     const currentPath = `/category/${rawCategory}`;
     const head = document.head;
 
@@ -108,8 +108,8 @@ function CategoryList({ rawCategory }) {
           CS 고객센터 도우미<span className="text-blue-400 text-sm ml-1">.kr</span>
         </Link>
         <div className="flex gap-6 text-sm font-medium opacity-90">
-          <span className="hover:text-blue-400 cursor-pointer transition-colors">About Us</span>
-          <span className="hover:text-blue-400 cursor-pointer transition-colors">관리자 모드</span>
+          <Link href="/about" className="hover:text-blue-400 transition-colors">About Us</Link>
+          <Link href="/contact" className="hover:text-blue-400 transition-colors">문의하기</Link>
         </div>
       </header>
 

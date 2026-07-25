@@ -123,7 +123,7 @@ export default async function CompanySlugPage({ params }) {
     "@type": "LocalBusiness",
     "name": company?.name || "",
     "telephone": dialablePhone,
-    "url": company?.web_url || `https://cshelper.kr/${getSlug(company?.name || "")}`,
+    "url": company?.web_url || `https://www.cshelper.kr/${getSlug(company?.name || "")}`,
     "description": company?.description || "",
     "identifier": {
       "@type": "PropertyValue",
@@ -240,8 +240,8 @@ export default async function CompanySlugPage({ params }) {
           CS 고객센터 도우미<span className="text-blue-400 text-sm ml-1">.kr</span>
         </Link>
         <div className="hidden sm:flex gap-6 text-sm font-medium opacity-90">
-          <span className="hover:text-blue-400 cursor-pointer transition-colors">About Us</span>
-          <span className="hover:text-blue-400 cursor-pointer transition-colors">관리자 모드</span>
+          <Link href="/about" className="hover:text-blue-400 transition-colors">About Us</Link>
+          <Link href="/contact" className="hover:text-blue-400 transition-colors">문의하기</Link>
         </div>
       </header>
 
@@ -268,6 +268,9 @@ export default async function CompanySlugPage({ params }) {
                   )}
                 </div>
                 <h1 className="text-3xl sm:text-4xl font-extrabold text-slate-900">{cleanName}</h1>
+                {company?.description && (
+                  <p className="text-sm text-slate-500 leading-relaxed mt-2">{company.description}</p>
+                )}
               </div>
             </div>
 

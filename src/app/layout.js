@@ -6,13 +6,13 @@ export const metadata = {
   openGraph: {
     images: [
       {
-        url: "https://cshelper.kr/cshelper-customer-center-helper-logo.png",
+        url: "https://www.cshelper.kr/cshelper-customer-center-helper-logo.png",
       },
     ],
   },
   twitter: {
     images: [
-      "https://cshelper.kr/cshelper-customer-center-helper-logo.png",
+      "https://www.cshelper.kr/cshelper-customer-center-helper-logo.png",
     ],
   },
   verification: {
