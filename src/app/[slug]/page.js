@@ -91,7 +91,7 @@ export async function generateMetadata({ params }) {
     title: `${cleanName} 전화번호 및 연결 팁 - CS 고객센터 도우미`,
     description: `${cleanName} 고객센터 대표번호(${company?.phone || ""}) 연결 후, ARS 안내 멘트를 끝까지 들을 필요 없이 즉시 상담원과 통화할 수 있는 단축번호 치트키를 지금 확인해 보세요.`,
     alternates: {
-      canonical: `https://www.cshelper.kr/${getSlug(companyName)}`,
+      canonical: `https://cshelper.kr/${getSlug(companyName)}`,
     },
   };
 }
@@ -123,7 +123,7 @@ export default async function CompanySlugPage({ params }) {
     "@type": "LocalBusiness",
     "name": company?.name || "",
     "telephone": dialablePhone,
-    "url": company?.web_url || `https://www.cshelper.kr/${getSlug(company?.name || "")}`,
+    "url": company?.web_url || `https://cshelper.kr/${getSlug(company?.name || "")}`,
     "description": company?.description || "",
     "identifier": {
       "@type": "PropertyValue",
@@ -313,7 +313,7 @@ export default async function CompanySlugPage({ params }) {
               <div className="mt-8 bg-slate-50 p-6 rounded-2xl border border-slate-100">
                 <h2 className="text-sm font-extrabold text-slate-800 mb-4 flex items-center gap-2">
                   <Phone className="w-4 h-4 text-[#0055FF]" /> 세부 업무별 직통 전화번호
-                </h3>
+                </h2>
                 <div className="overflow-hidden rounded-xl border border-slate-200 bg-white">
                   <table className="min-w-full divide-y divide-slate-200">
                     <thead className="bg-slate-50">
@@ -422,7 +422,7 @@ export default async function CompanySlugPage({ params }) {
           <section className="mt-12">
             <h2 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
               🔍 {mainBrand} 세부 고객센터 바로가기
-            </h3>
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {siloItems.map((item) => (
                 <Link key={item?.name || ""} href={`/${getSlug(item?.name || "")}`} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col justify-between group">
@@ -440,7 +440,7 @@ export default async function CompanySlugPage({ params }) {
           <section className="mt-12">
             <h2 className="text-xl font-bold mb-6 px-1 text-slate-800 flex items-center gap-2">
               🏢 {brandPrefix} 패밀리 고객센터
-            </h3>
+            </h2>
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               {familyItems.map((item) => (
                 <Link key={item?.name || ""} href={`/${getSlug(item?.name || "")}`} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-md border border-slate-100 transition-all flex flex-col justify-between group">

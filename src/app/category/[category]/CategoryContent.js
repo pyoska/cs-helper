@@ -68,7 +68,7 @@ function CategoryList({ rawCategory }) {
   }, [filteredData, currentPage]);
 
   useEffect(() => {
-    const baseUrl = "https://www.cshelper.kr";
+    const baseUrl = "https://cshelper.kr";
     const currentPath = `/category/${rawCategory}`;
     const head = document.head;
 
@@ -156,7 +156,7 @@ function CategoryList({ rawCategory }) {
               <article key={item?.id || idx} className="bg-white rounded-2xl border border-slate-150 p-6 hover:shadow-lg transition-all group flex flex-col justify-between">
                 <div>
                   <div className="flex justify-between items-start mb-4">
-                    <h3 className="font-bold text-lg text-slate-800 group-hover:text-blue-600 transition-colors">{item?.name || ""}</h3>
+                    <h2 className="font-bold text-lg text-slate-800 group-hover:text-blue-600 transition-colors">{item?.name || ""}</h2>
                     <Link href={`/${slug}`}>
                       <Phone className="w-5 h-5 text-slate-300 group-hover:text-blue-500 transition-colors" />
                     </Link>
