@@ -352,7 +352,7 @@ export default function AdminDashboardPage() {
                     className="w-4 h-4 text-blue-600 border-slate-300 rounded focus:ring-blue-500"
                   />
                   <label htmlFor="isVerified" className="font-extrabold text-slate-700 cursor-pointer">
-                    2026.07.05 실시간 검증 완료 공식 정보 일치 여부 체크
+                    2026.07.25 실시간 검증 완료 공식 정보 일치 여부 체크
                   </label>
                 </div>
 

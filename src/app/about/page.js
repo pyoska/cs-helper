@@ -2,6 +2,11 @@ import Link from "next/link";
 import { ArrowLeft, Info, HelpCircle } from "lucide-react";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "사이트 소개 및 안내 - CS 고객센터 도우미",
+  description: "CS 고객센터 도우미(cshelper.kr) 사이트의 개설 목적, 정보 제공 취지 및 주요 서비스 철학을 안내해 드립니다.",
+};
+
 export default function AboutPage() {
   return (
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">

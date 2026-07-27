@@ -2,6 +2,11 @@ import Link from "next/link";
 import { ArrowLeft, Mail, MessageSquareCheck } from "lucide-react";
 import Footer from "@/components/Footer";
 
+export const metadata = {
+  title: "제휴 및 오류 제보 문의하기 - CS 고객센터 도우미",
+  description: "cshelper.kr 서비스 관련 오안내 전화번호 수정 제보, 신규 등록 신청, 그리고 비즈니스 제휴 문의를 남기실 수 있는 공식 안내 페이지입니다.",
+};
+
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">

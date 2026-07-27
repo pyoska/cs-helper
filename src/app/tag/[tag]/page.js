@@ -15,9 +15,10 @@ import Footer from "@/components/Footer";
 
 // 태그명 추출 헬퍼
 const getSlug = (name) => {
-  let cleanName = name.trim().replace(/\s+고객센터$/, "").replace(/\s+고객센터\s+고객센터$/, "").replace(/고객센터$/, "").trim();
-  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
-  return cleanName.replace(/\s+/g, "-") + "-고객센터";
+  if (!name) return "";
+  let cleanName = name.trim().replace(/고객센터/g, "").trim();
+  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*+]/g, "");
+  return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
 const getDialablePhone = (phone) => {
@@ -96,6 +97,35 @@ const GUIDE_ARTICLES = {
     `
   }
 };
+
+export async function generateMetadata({ params }) {
+  const { tag } = await params;
+  const decodedTag = decodeURIComponent(tag);
+  const canonicalUrl = `https://cshelper.kr/tag/${tag}`;
+  const title = `${decodedTag} 고객센터 대표전화 및 빠른 상담 연결 팁 | CS 고객센터 도우미`;
+  const description = `대한민국 대표 기업들의 ${decodedTag} 관련 고객센터 전화번호 및 빠른 연결 단축키 정보를 확인하세요.`;
+
+  return {
+    title,
+    description,
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title,
+      description,
+      url: canonicalUrl,
+      siteName: "CS 고객센터 도우미",
+      locale: "ko_KR",
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+  };
+}
 
 export default async function TagPage({ params }) {
   const { tag } = await params;
@@ -205,7 +235,7 @@ export default async function TagPage({ params }) {
                             {item.category}
                           </span>
                           {is24h && (
-                            <span className="text-3xs font-bold text-red-650 bg-red-50 border border-red-100 px-1.5 py-0.5 rounded">
+                            <span className="text-3xs font-bold text-red-655 bg-red-50 border border-red-100 px-1.5 py-0.5 rounded">
                               24시
                             </span>
                           )}
@@ -277,12 +307,11 @@ export default async function TagPage({ params }) {
                 dangerouslySetInnerHTML={{ __html: guide.content }}
               />
 
-              {/* 요구사항: 면책 문구 필수 포함 */}
               <div className="border-t border-slate-100 pt-5 mt-6 text-3xs text-slate-400 flex items-start gap-1.5">
                 <ShieldCheck className="w-4 h-4 text-slate-300 shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
-                  <strong>면책 고지:</strong> 본 정보는 개인 작성 및 대조 참고용이며 공식 채널이 아닙니다. 
-                  금융사 사정 및 개편에 따라 실제 정보가 달라질 수 있으므로, 금융 거래 전 공식 채널을 통해 반드시 최신 규정을 재확인하십시오.
+                  <strong>면책 고지:</strong> 본 정보는 참고용이며 공식 채널을 통해 재확인하십시오. 
+                  금융사 사정 및 개편에 따라 실제 정보가 달라질 수 있으므로, 금융 거래 전 공식 채널을 통해 반드시 최신 규정을 재확인하십시오. (오류 제보: contact@cshelper.kr)
                 </p>
               </div>
             </article>

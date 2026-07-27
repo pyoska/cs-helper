@@ -31,6 +31,7 @@ import {
 } from "lucide-react";
 import { customerData } from "@/data/customerData";
 import Footer from "@/components/Footer";
+import FavoritesBar from "@/components/FavoritesBar";
 
 const ITEMS_PER_PAGE = 12;
 
@@ -56,9 +57,10 @@ const getDialablePhone = (phone) => {
 };
 
 const getSlug = (name) => {
-  let cleanName = name.trim().replace(/\s+고객센터$/, "").replace(/\s+고객센터\s+고객센터$/, "").replace(/고객센터$/, "").trim();
-  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
-  return cleanName.replace(/\s+/g, "-") + "-고객센터";
+  if (!name) return "";
+  let cleanName = name.trim().replace(/고객센터/g, "").trim();
+  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*+]/g, "");
+  return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
 export default function Home() {
@@ -93,16 +95,18 @@ export default function Home() {
   useEffect(() => {
     if (typeof window !== "undefined") {
       const savedQuery = sessionStorage.getItem("cshelper_search_query");
-      if (savedQuery) {
-        setInputValue(savedQuery);
-      }
       const pageVal = new URLSearchParams(window.location.search).get("page");
-      if (pageVal) {
-        const pageNum = parseInt(pageVal, 10);
-        if (!isNaN(pageNum) && pageNum > 0) {
-          setCurrentPage(pageNum);
+      setTimeout(() => {
+        if (savedQuery) {
+          setInputValue(savedQuery);
         }
-      }
+        if (pageVal) {
+          const pageNum = parseInt(pageVal, 10);
+          if (!isNaN(pageNum) && pageNum > 0) {
+            setCurrentPage(pageNum);
+          }
+        }
+      }, 0);
     }
   }, []);
 
@@ -283,7 +287,7 @@ export default function Home() {
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">
       
       {/* 구글 검색 엔진이 선호하는 신뢰성 인증 메타태그 삽입 */}
-      <meta name="trust-verification" content="verified-official-20260705" />
+      <meta name="trust-verification" content="verified-official-20260725" />
 
       {/* 검색 로봇 수집용 JSON-LD 스키마 삽입 */}
       <script
@@ -374,6 +378,9 @@ export default function Home() {
           </div>
         </section>
 
+        {/* 즐겨찾기(자주 찾는 고객센터) 퀵 바 */}
+        <FavoritesBar />
+
         {/* 요구사항 1단계(메인): '자주 찾는 업무 카테고리' 박스를 상단에 배치하여 빠른 해결 유도 */}
         <section className="bg-white border border-slate-200 rounded-3xl p-6 md:p-8 shadow-xs">
           <div className="flex items-center gap-2 mb-6">
@@ -416,7 +423,7 @@ export default function Home() {
             </h3>
           </div>
           <p className="text-xs md:text-sm text-slate-655 leading-relaxed">
-            제가 지난달부터 주요 시중 카드사와 대형 은행의 콜센터 상담 성공률 데이터를 집계하고 1인칭 직접 연결 테스트를 수행해 보니, 해외 결제 부정 승인 급증으로 인해 '카드 일시 정지' 및 '분실 접수' 라인에 극심한 유선 통화 정체가 포착되었습니다. 주말 또는 야간 시간대 긴급 분실 발생 시 본 포털 상단의 <strong>24시간 접수 단축키</strong>를 활용해 빠른 상담원을 선점하시는 것이 통화 비용 절감과 2차 사기 예방에 매우 유리합니다.
+            제가 지난달부터 주요 시중 카드사와 대형 은행의 콜센터 상담 성공률 데이터를 집계하고 1인칭 직접 연결 테스트를 수행해 보니, 해외 결제 부정 승인 급증으로 인해 &apos;카드 일시 정지&apos; 및 &apos;분실 접수&apos; 라인에 극심한 유선 통화 정체가 포착되었습니다. 주말 또는 야간 시간대 긴급 분실 발생 시 본 포털 상단의 <strong>24시간 접수 단축키</strong>를 활용해 빠른 상담원을 선점하시는 것이 통화 비용 절감과 2차 사기 예방에 매우 유리합니다.
           </p>
         </section>
 
@@ -515,11 +522,11 @@ export default function Home() {
         {/* 필터 통계 및 검색 결과 타이틀 */}
         <div className="flex flex-col md:flex-row md:justify-between md:items-center gap-3 pt-2">
           <div>
-            <h1 className="text-lg md:text-xl font-black text-slate-900">
+            <h2 className="text-lg md:text-xl font-black text-slate-900">
               {currentPage > 1 
                 ? `더 많은 카드사/은행 고객센터 정보 (${currentPage}페이지)` 
                 : "전체 고객센터 빠른 대표번호 및 통화 꿀팁 리스트"}
-            </h1>
+            </h2>
             <span className="text-xs text-slate-500 font-bold block mt-1">
               조회 결과: 총 <strong className="text-[#0055FF]">{filteredData.length}</strong>개 매칭 (페이지당 12개 출력)
             </span>

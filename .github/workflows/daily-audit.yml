@@ -1,0 +1,25 @@
+name: Daily Autonomous AI Audit & Health Check
+
+on:
+  schedule:
+    # Runs every day at 23:00 UTC (08:00 KST next morning)
+    - cron: '0 23 * * *'
+  workflow_dispatch:
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run Daily Autonomous AI Audit Script
+        run: node scripts/daily-ai-audit.js
+
+      - name: Run System Integrity Gate Verification
+        run: node scripts/verify-all.js

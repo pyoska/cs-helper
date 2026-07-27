@@ -2,7 +2,7 @@
 
 import { Suspense, useState, useEffect, useMemo, Fragment } from "react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+import { useRouter, useSearchParams } from "next/navigation";
 import { 
   Search, 
   Phone, 
@@ -40,41 +40,36 @@ const getDialablePhone = (phone) => {
 };
 
 const getSlug = (name) => {
-  let cleanName = name.trim().replace(/\s+고객센터$/, "").replace(/\s+고객센터\s+고객센터$/, "").replace(/고객센터$/, "").trim();
-  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*]/g, "");
-  return cleanName.replace(/\s+/g, "-") + "-고객센터";
+  if (!name) return "";
+  let cleanName = name.trim().replace(/고객센터/g, "").trim();
+  cleanName = cleanName.replace(/[\/\\:*?"<>|%,.*+]/g, "");
+  return cleanName.replace(/[\s-]+/g, "-") + "-고객센터";
 };
 
 function SearchContent() {
   const router = useRouter();
-  const [inputValue, setInputValue] = useState("");
-  const [searchQuery, setSearchQuery] = useState("");
-  const [currentPage, setCurrentPage] = useState(1);
-  const [openFaq, setOpenFaq] = useState(null);
+  const searchParams = useSearchParams();
 
-  // URL에서 검색 쿼리 및 페이지 읽어오기
+  const searchQuery = useMemo(() => searchParams.get("q") || "", [searchParams]);
+  const currentPage = useMemo(() => {
+    const pageVal = searchParams.get("page") || "1";
+    const pageNum = parseInt(pageVal, 10);
+    return (!isNaN(pageNum) && pageNum > 0) ? pageNum : 1;
+  }, [searchParams]);
+
+  const [inputValue, setInputValue] = useState(searchQuery);
+
+  // Sync input value when searchQuery changes (e.g. browser navigation)
   useEffect(() => {
-    if (typeof window !== "undefined") {
-      const params = new URLSearchParams(window.location.search);
-      const queryVal = params.get("q") || "";
-      const pageVal = params.get("page") || "1";
-      
-      setInputValue(queryVal);
-      setSearchQuery(queryVal);
-      
-      const pageNum = parseInt(pageVal, 10);
-      if (!isNaN(pageNum) && pageNum > 0) {
-        setCurrentPage(pageNum);
-      }
-    }
-  }, []);
+    setTimeout(() => {
+      setInputValue(searchQuery);
+    }, 0);
+  }, [searchQuery]);
 
   // 검색 전송 핸들러
   const handleSearchSubmit = (e) => {
     if (e) e.preventDefault();
     if (inputValue.trim()) {
-      setCurrentPage(1);
-      setSearchQuery(inputValue.trim());
       if (typeof window !== "undefined") {
         sessionStorage.setItem("cshelper_search_query", inputValue.trim());
       }
@@ -106,7 +101,6 @@ function SearchContent() {
 
   // 페이지 이동 처리
   const handlePageChange = (pageNum) => {
-    setCurrentPage(pageNum);
     router.push(`/search?q=${encodeURIComponent(searchQuery)}&page=${pageNum}`);
     const portal = document.getElementById("search-title-section");
     if (portal) {
@@ -144,9 +138,9 @@ function SearchContent() {
         {/* 상단 검색 폼 (2단계 검색 결과 페이지의 검색창 유지) */}
         <section className="bg-slate-900 border border-slate-800 rounded-3xl p-8 md:p-12 text-center relative overflow-hidden shadow-xl">
           <div className="max-w-2xl mx-auto relative z-10 space-y-6">
-            <h2 className="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
+            <h1 className="text-xl md:text-2xl font-black tracking-tight text-white leading-tight">
               CS 고객센터 통합 검색결과
-            </h2>
+            </h1>
             <form onSubmit={handleSearchSubmit} className="relative shadow-xl rounded-full border border-slate-200 bg-white group max-w-2xl mx-auto p-1.5 flex items-center">
               <div className="pl-6 flex items-center pointer-events-none">
                 <Search className="h-6 w-6 text-slate-455 group-focus-within:text-[#0055FF] transition-colors" />
@@ -187,16 +181,16 @@ function SearchContent() {
             </h3>
           </div>
           <p className="text-xs text-slate-650 leading-relaxed">
-            제가 실제 유선 검증을 해 보니 검색창에 기업명(예: '삼성카드') 혹은 업무 키워드(예: '#분실신고')를 입력하면, 각 부서별 직통 ARS 대기줄을 스킵할 수 있는 고유 단축번호 경로가 나타납니다. 3초 이내에 빠르게 연결을 원하는 상담 부서를 선택해 상세 보기 가이드를 활용해 보시기 바랍니다.
+            제가 실제 유선 검증을 해 보니 검색창에 기업명(예: &apos;삼성카드&apos;) 혹은 업무 키워드(예: &apos;#분실신고&apos;)를 입력하면, 각 부서별 직통 ARS 대기줄을 스킵할 수 있는 고유 단축번호 경로가 나타납니다. 3초 이내에 빠르게 연결을 원하는 상담 부서를 선택해 상세 보기 가이드를 활용해 보시기 바랍니다.
           </p>
         </section>
 
         {/* 결과 내역 타이틀 */}
         <div id="search-title-section" className="border-b border-slate-200 pb-4 flex justify-between items-center">
           <div>
-            <h1 className="text-lg md:text-xl font-black text-slate-900">
-              '{searchQuery}' 검색 결과 리스트
-            </h1>
+            <h2 className="text-lg md:text-xl font-black text-slate-900">
+              &apos;{searchQuery}&apos; 검색 결과 리스트
+            </h2>
             <span className="text-xs text-slate-500 font-bold block mt-1">
               총 <strong className="text-[#0055FF]">{filteredData.length}</strong>개 부서 매칭
             </span>

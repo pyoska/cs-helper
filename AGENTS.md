@@ -30,3 +30,23 @@ These are project-scoped rules for cshelper.kr that the agent MUST always follow
 - Every informational article, detail page, and tag landing page guide MUST render the legal disclaimer badge:
   `"본 정보는 참고용이며 공식 채널을 통해 재확인하십시오"` (This information is for reference only, please reconfirm via the official corporate channels).
 
+## 7. Team-Specific Standard Operating Procedures & Zero-Recurrence Verification (팀별 세부 업무지침서 및 무결점 재발 방지 규정)
+
+### 7.1 SEO & Routing Division (SEO 및 라우팅 전담팀)
+- **Cross-Domain Integrity Check**: Before completing any URL or slug update, run automated validation to confirm that `<link rel="canonical">`, OpenGraph, Twitter Cards, JSON-LD, `sitemap.xml`, and `rss.xml` use identical domain strings (`https://cshelper.kr`) without exception.
+- **Malformed URL Exception Protection**: Every dynamic route MUST handle special characters (`+`, `%2B`, spaces, malformed percent sequences) without ever returning HTTP 400 Bad Request or 500 Server Error. Use fallback fuzzy matching (`normalizeSlugKey`).
+
+### 7.2 Content & Natural Language Division (콘텐츠 및 자연어 큐레이션팀)
+- **AI-Boilerplate Elimination**: Never use repetitive sentence starters (e.g. `"내가 직접 전화를..."`, `"저희 CS 운영팀이..."`) across data entries. Every entry in `customerData.js` must have 100% unique sentence starters tailored to the specific company and industry.
+- **Fact-Based 1st-Person E-E-A-T**: All 1st-person tips (`experienceTip`) must be grounded in verified company phone numbers, actual ARS shortcut codes, and real operating hours. No deceptive or fake real-time claims allowed.
+
+### 7.3 UX, Styling & Policy Division (UX/디자인 및 정책 검수팀)
+- **Tailwind v4 Theme Token Discipline**: Any custom color shade, font size, or box shadow used in components MUST be explicitly defined in the `globals.css` `@theme` block before commit to prevent text cloaking or unstyled layout bugs.
+- **AdSense Policy Compliance**: Ensure legal disclaimer badges (`"본 정보는 참고용이며 공식 채널을 통해 재확인하십시오"`) are rendered on 100% of data pages. Prevent layout overlaps between sticky call bars and main text.
+
+### 7.4 DevOps & QA Division (배포 및 전수검사 QA팀)
+- **Zero-Bypass Build Gate**: Execute `npm run build` and verify that all 1,127 static pages build cleanly with 0 warnings or errors prior to any `git push`.
+- **Production Verification**: Verify Vercel production deployment status and confirm domain routing (`cshelper.kr` Production) immediately following any deployment.
+
+
+

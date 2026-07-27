@@ -11,6 +11,8 @@ export default function Footer() {
           <span>|</span>
           <Link href="/privacy" className="hover:text-[#0055FF] transition-colors">개인정보처리방침</Link>
           <span>|</span>
+          <Link href="/terms" className="hover:text-[#0055FF] transition-colors">이용약관</Link>
+          <span>|</span>
           <Link href="/about" className="hover:text-[#0055FF] transition-colors">사이트 안내</Link>
           <span>|</span>
           <Link href="/management" className="hover:text-[#0055FF] transition-colors">운영자 안내</Link>
@@ -19,7 +21,7 @@ export default function Footer() {
         </div>
         
         <div className="text-3xs font-black text-slate-500 bg-slate-100 px-4 py-1.5 rounded-full inline-block border border-slate-200">
-          최종 업데이트: 2026.07.05
+          최종 업데이트: 2026.07.25
         </div>
 
         {/* 요구사항 상세 고지 안내 문구 전면 교체 */}
