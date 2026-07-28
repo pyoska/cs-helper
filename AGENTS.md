@@ -30,6 +30,9 @@ These are project-scoped rules for cshelper.kr that the agent MUST always follow
 - Every informational article, detail page, and tag landing page guide MUST render the legal disclaimer badge:
   `"본 정보는 참고용이며 공식 채널을 통해 재확인하십시오"` (This information is for reference only, please reconfirm via the official corporate channels).
 
+## 6. Zero-Guesswork & Fact Verification (100% 사실 확인 및 사고 설계 지침)
+- All strategic decisions, technical diagnoses, and performance reports MUST be grounded in empirical code audits (`node scripts/verify-all.js`), real HTTP headers, and 100% verified facts. No assumptions or unverified claims allowed.
+
 ## 7. Team-Specific Standard Operating Procedures & Zero-Recurrence Verification (팀별 세부 업무지침서 및 무결점 재발 방지 규정)
 
 ### 7.1 SEO & Routing Division (SEO 및 라우팅 전담팀)
