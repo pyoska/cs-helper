@@ -1,9 +1,19 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://cshelper.kr"),
   title: "cshelper.kr - 기다림 없는 고객센터 프리패스",
   description: "대한민국 주요 기관의 고객센터 직통 전화번호와 상담원에게 가장 빨리 연결되는 ARS 단축키(치트키) 리스트를 제공합니다.",
+  alternates: {
+    canonical: "https://cshelper.kr/",
+  },
   openGraph: {
+    title: "cshelper.kr - 기다림 없는 고객센터 프리패스",
+    description: "대한민국 주요 기관의 고객센터 직통 전화번호와 상담원에게 가장 빨리 연결되는 ARS 단축키(치트키) 리스트를 제공합니다.",
+    url: "https://cshelper.kr/",
+    siteName: "CS 고객센터 도우미",
+    locale: "ko_KR",
+    type: "website",
     images: [
       {
         url: "https://cshelper.kr/cshelper-customer-center-helper-logo.png",
@@ -11,6 +21,9 @@ export const metadata = {
     ],
   },
   twitter: {
+    card: "summary_large_image",
+    title: "cshelper.kr - 기다림 없는 고객센터 프리패스",
+    description: "대한민국 주요 기관의 고객센터 직통 전화번호와 상담원에게 가장 빨리 연결되는 ARS 단축키(치트키) 리스트를 제공합니다.",
     images: [
       "https://cshelper.kr/cshelper-customer-center-helper-logo.png",
     ],
