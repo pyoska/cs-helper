@@ -1,8 +1,52 @@
+# CS Helper (cshelper.kr) - All-Platform Search Engine & AI Crawler Optimization
+# Canonical Domain: https://cshelper.kr
+
 User-agent: *
 Allow: /
 Disallow: /search
 Disallow: /admin
 Disallow: /api/
+Disallow: /management
+
+# Major Domestic & Global Search Crawlers
+User-agent: Yeti
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Googlebot-Mobile
+Allow: /
+
+User-agent: Daumoa
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: ZumBot
+Allow: /
+
+# Generative AI & LLM Search Crawlers (GEO Optimization)
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
 Sitemap: https://cshelper.kr/sitemap.xml
+Sitemap: https://cshelper.kr/rss.xml
 
 #DaumWebMasterTool:b9c9e4528e0a2c379e5553b7b13fd4ebb9df84889b82faf264f080b6b9c6eed9:6LQqhj3iSch63nUQiWlmNw==
