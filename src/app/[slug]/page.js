@@ -295,6 +295,12 @@ export default async function CompanySlugPage({ params }) {
               </div>
             </div>
 
+            {(company?.phone === "1330" || (company?.name || "").includes("관광통역")) && (
+              <div className="my-6">
+                <MultiLangHelplineCard />
+              </div>
+            )}
+
             <div className="mb-3 p-3 bg-blue-50/80 border border-blue-200/80 rounded-2xl text-xs text-blue-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 shadow-2xs">
               <div className="flex items-center gap-2">
                 <span className="font-extrabold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-md">✍️ E-E-A-T 검증저자</span>
@@ -336,10 +342,6 @@ export default async function CompanySlugPage({ params }) {
               </div>
             </div>
 
-            {(company?.phone === "1330" || (company?.name || "").includes("관광통역")) && (
-              <MultiLangHelplineCard />
-            )}
-
             <div className="mt-6">
               <BookmarkNudgeModal companyName={cleanName} slug={params.slug} />
             </div>
@@ -362,7 +364,7 @@ export default async function CompanySlugPage({ params }) {
                         const cleanPhone = (sub.phone || "").replace(/[^0-9-]/g, "");
                         return (
                           <tr key={sIdx} className="hover:bg-slate-50/50 transition-colors">
-                            <td className="whitespace-nowrap px-4 py-3.5 text-xs font-semibold text-slate-700">{sub.name}</td>
+                            <td className="whitespace-nowrap px-4 py-3.5 text-xs font-semibold text-slate-700">{sub.name || sub.title}</td>
                             <td className="whitespace-nowrap px-4 py-3.5 text-right text-xs font-extrabold text-slate-900">
                               <a href={`tel:${cleanPhone}`} className="inline-flex items-center gap-1.5 px-3 py-1.5 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 active:scale-95 transition-all">
                                 <Phone className="w-3 h-3" />
