@@ -27,6 +27,7 @@ import DwellTimeEnhancer from "@/components/DwellTimeEnhancer";
 import MobileStickyCallBar from "@/components/MobileStickyCallBar";
 import BookmarkNudgeModal from "@/components/BookmarkNudgeModal";
 import CopyPhoneButton from "@/components/CopyPhoneButton";
+import MultiLangHelplineCard from "@/components/MultiLangHelplineCard";
 
 const CATEGORY_MAP = {
   "카드": { name: "카드/금융", icon: CreditCard },
@@ -334,6 +335,10 @@ export default async function CompanySlugPage({ params }) {
                 </div>
               </div>
             </div>
+
+            {(company?.phone === "1330" || (company?.name || "").includes("관광통역")) && (
+              <MultiLangHelplineCard />
+            )}
 
             <div className="mt-6">
               <BookmarkNudgeModal companyName={cleanName} slug={params.slug} />
