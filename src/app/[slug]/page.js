@@ -346,7 +346,7 @@ export default async function CompanySlugPage({ params }) {
               <BookmarkNudgeModal companyName={cleanName} slug={params.slug} />
             </div>
 
-            {company?.subtasks && company.subtasks.length > 1 && (
+            {company?.subtasks && company.subtasks.length > 1 && company?.phone !== "1330" && !(company?.name || "").includes("관광통역") && (
               <div className="mt-8 bg-slate-50 p-6 rounded-2xl border border-slate-100">
                 <h2 className="text-sm font-extrabold text-slate-800 mb-4 flex items-center gap-2">
                   <Phone className="w-4 h-4 text-[#0055FF]" /> 세부 업무별 직통 전화번호
