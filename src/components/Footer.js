@@ -21,7 +21,7 @@ export default function Footer() {
         </div>
         
         <div className="text-3xs font-black text-slate-500 bg-slate-100 px-4 py-1.5 rounded-full inline-block border border-slate-200">
-          최종 업데이트: 2026.07.25
+          최종 업데이트: 2026.07.30
         </div>
 
         {/* 요구사항 상세 고지 안내 문구 전면 교체 */}

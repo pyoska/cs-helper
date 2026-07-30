@@ -80,9 +80,9 @@ export default function AboutPage() {
                 </p>
               </div>
               <div className="p-4 bg-slate-50 border border-slate-150 rounded-2xl">
-                <h3 className="text-xs font-black text-slate-850 mb-1">✅ 공식 정보 실시간 대조</h3>
+                <h3 className="text-xs font-black text-slate-850 mb-1">✅ 공식 정보 정기 큐레이션</h3>
                 <p className="text-3xs text-slate-550 leading-relaxed">
-                  주기적으로 정보의 유효성을 실시간 대조하고 업데이트하여 신뢰성 있는 품질 데이터를 안전하게 공급합니다.
+                  주기적으로 기업 공식 발표 자료를 검증하고 업데이트하여 신뢰성 있는 품질 데이터를 안전하게 공급합니다.
                 </p>
               </div>
             </div>

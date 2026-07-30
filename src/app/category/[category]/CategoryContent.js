@@ -159,13 +159,13 @@ function CategoryList({ rawCategory }) {
           }}
         />
 
-        <div className="mb-4 p-3 bg-blue-50/80 border border-blue-200/80 rounded-2xl text-xs text-blue-900 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 shadow-2xs">
+        <div className="mb-4 p-3 bg-slate-50 border border-slate-200 rounded-2xl text-xs text-slate-700 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 shadow-2xs">
           <div className="flex items-center gap-2">
-            <span className="font-extrabold text-blue-700 bg-blue-100 px-2 py-0.5 rounded-md">✍️ E-E-A-T 검증저자</span>
-            <span className="font-semibold text-slate-800">CS 헬퍼 전문 큐레이션팀 ({catInfo.name} 전담)</span>
+            <span className="font-extrabold text-blue-700 bg-blue-50 px-2 py-0.5 rounded-md border border-blue-200">✍️ CS 헬퍼 큐레이션</span>
+            <span className="font-semibold text-slate-800">{catInfo.name} 분야 공식 정보 가이드</span>
           </div>
           <div className="text-slate-500 font-medium text-[11px]">
-            실시간 통화 대조: <span className="font-bold text-blue-600">2026.07.25 완료</span> (공식 정보 100% 일치)
+            정보 확인 일자: <span className="font-bold text-slate-700">2026.07.30</span>
           </div>
         </div>
 
