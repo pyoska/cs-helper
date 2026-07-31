@@ -75,9 +75,11 @@ const getBadgeIcon = (kIdx) => {
 };
 
 export async function generateStaticParams() {
-  return customerData.map((item) => ({
+  const params = customerData.map((item) => ({
     slug: getSlug(item?.name || ""),
   }));
+  params.push({ slug: "c8a7bf8d43a55e8057aafd6f7928d34e.txt" });
+  return params;
 }
 
 export async function generateMetadata({ params }) {
@@ -125,6 +127,14 @@ export async function generateMetadata({ params }) {
 
 export default async function CompanySlugPage({ params }) {
   const { slug } = await params;
+  if (slug && slug.endsWith(".txt")) {
+    const rawKey = slug.replace(".txt", "");
+    return (
+      <html lang="ko">
+        <body>{rawKey}</body>
+      </html>
+    );
+  }
   const normKey = normalizeSlugKey(slug || "");
   const matchingIndex = customerData.findIndex(x => 
     normalizeSlugKey(x?.name || "") === normKey || 
