@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "verify": "node scripts/verify-all.js",
+    "submit-indexnow": "node scripts/submit-indexnow.js",
     "build": "node scripts/verify-all.js && node scripts/generate-llms-txt.js && next build",
     "start": "next start",
     "lint": "eslint"
