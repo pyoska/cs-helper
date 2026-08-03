@@ -169,7 +169,9 @@ export default function Home() {
 
     const canonical = document.createElement("link");
     canonical.rel = "canonical";
-    canonical.href = `https://cshelper.kr/?page=${currentPage}`;
+    canonical.href = currentPage > 1 
+      ? `https://cshelper.kr/?page=${currentPage}` 
+      : "https://cshelper.kr/";
     document.head.appendChild(canonical);
 
     if (currentPage > 1) {

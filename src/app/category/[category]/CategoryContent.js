@@ -87,7 +87,10 @@ function CategoryList({ rawCategory }) {
     };
 
     removeExistingTags();
-    createTag("canonical", `${baseUrl}${currentPath}?page=${currentPage}`);
+    const canonicalUrl = currentPage > 1 
+      ? `${baseUrl}${currentPath}?page=${currentPage}` 
+      : `${baseUrl}${currentPath}`;
+    createTag("canonical", canonicalUrl);
     if (currentPage > 1) createTag("prev", `${baseUrl}${currentPath}?page=${currentPage - 1}`);
     if (currentPage < totalPages) createTag("next", `${baseUrl}${currentPath}?page=${currentPage + 1}`);
 
