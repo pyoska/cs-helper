@@ -60,13 +60,13 @@ export default function ContactPage() {
               <div>
                 <h3 className="text-xs font-bold text-slate-450 tracking-wide uppercase">공식 문의/제보 이메일</h3>
                 <a 
-                  href="mailto:contact@cshelper.kr" 
+                  href="mailto:pkavengers1@gmail.com" 
                   className="text-lg font-black text-slate-850 hover:text-[#0055FF] tracking-tight block mt-0.5"
                 >
-                  contact@cshelper.kr
+                  pkavengers1@gmail.com
                 </a>
                 <span className="text-3xs text-slate-400 mt-1 block">
-                  (접수 확인 즉시 24시간 이내 데이터 정정 릴리즈 적용)
+                  (공식 대표 이메일: contact@cshelper.kr | 실시간 수신: pkavengers1@gmail.com / 24시간 이내 데이터 정정 릴리즈 적용)
                 </span>
               </div>
             </div>

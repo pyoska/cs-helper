@@ -321,7 +321,7 @@ export default async function TagPage({ params }) {
                 <ShieldCheck className="w-4 h-4 text-slate-300 shrink-0 mt-0.5" />
                 <p className="leading-relaxed">
                   <strong>면책 고지:</strong> 본 정보는 참고용이며 공식 채널을 통해 재확인하십시오. 
-                  금융사 사정 및 개편에 따라 실제 정보가 달라질 수 있으므로, 금융 거래 전 공식 채널을 통해 반드시 최신 규정을 재확인하십시오. (오류 제보: contact@cshelper.kr)
+                  금융사 사정 및 개편에 따라 실제 정보가 달라질 수 있으므로, 금융 거래 전 공식 채널을 통해 반드시 최신 규정을 재확인하십시오. (오류 제보: pkavengers1@gmail.com)
                 </p>
               </div>
             </article>
