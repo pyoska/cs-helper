@@ -66,7 +66,7 @@ export default function ContactPage() {
                   pkavengers1@gmail.com
                 </a>
                 <span className="text-3xs text-slate-400 mt-1 block">
-                  (공식 대표 이메일: contact@cshelper.kr | 실시간 수신: pkavengers1@gmail.com / 24시간 이내 데이터 정정 릴리즈 적용)
+                  (접수 확인 즉시 24시간 이내 데이터 정정 릴리즈 적용)
                 </span>
               </div>
             </div>
