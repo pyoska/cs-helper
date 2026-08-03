@@ -160,14 +160,39 @@ export default async function CompanySlugPage({ params }) {
     "identifier": {
       "@type": "PropertyValue",
       "name": "trust-verification",
-      "value": "2026.07.25 실시간 검증 완료: 공식 정보 일치"
+      "value": "2026.07.30 공식 발표 자료 기준 큐레이션 완료"
     },
     "contactPoint": {
       "@type": "ContactPoint",
       "telephone": dialablePhone,
       "contactType": "customer service",
-      "description": `상담시간: ${company?.hours || "평일 09:00~18:00"} (공식 채널 대조 완료)`
+      "description": `상담시간: ${company?.hours || "평일 09:00~18:00"} (공식 채널 확인 완료)`
     }
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "홈",
+        "item": "https://cshelper.kr"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": company?.category || "고객센터",
+        "item": `https://cshelper.kr/category/${encodeURIComponent(company?.category || "기타")}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": cleanName,
+        "item": `https://cshelper.kr/${getSlug(companyName)}`
+      }
+    ]
   };
 
   const subTopicFaqs = (company?.keywords || []).map((keyword, kIdx) => {
@@ -264,6 +289,7 @@ export default async function CompanySlugPage({ params }) {
   return (
     <div className="min-h-screen bg-[#F4F7FB] text-slate-800 flex flex-col font-sans">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
       <header className="bg-[#0F172A] text-white py-4 px-6 flex justify-between items-center shadow-md">

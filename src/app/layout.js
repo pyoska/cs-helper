@@ -1,9 +1,13 @@
+import Script from "next/script";
 import "./globals.css";
 
 export const metadata = {
   metadataBase: new URL("https://cshelper.kr"),
   title: "cshelper.kr - 기다림 없는 고객센터 프리패스",
   description: "대한민국 주요 기관의 고객센터 직통 전화번호와 상담원에게 가장 빨리 연결되는 ARS 단축키(치트키) 리스트를 제공합니다.",
+  other: {
+    "google-adsense-account": "ca-pub-8564419444772490",
+  },
   alternates: {
     canonical: "https://cshelper.kr/",
   },
@@ -42,6 +46,14 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko" className="h-full antialiased">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8564419444772490"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body className="min-h-full flex flex-col bg-slate-50 text-slate-800">
         {children}
       </body>

@@ -9,8 +9,9 @@ This skill enforces high-performance static site generation (SSG) and zero-defec
 
 ## 🚀 Performance & Build Gate Standards
 
-1. **Zero-Bypass Build Gate**:
-   - MUST run `node scripts/verify-all.js` before any git commit or deployment.
+1. **Zero-Bypass Build Gate & Direct Vercel Deployment**:
+   - MUST run `node scripts/verify-all.js` before any deployment.
+   - Deploy directly via Vercel CLI (`npx vercel --prod`) without pushing to GitHub or external Git remotes.
    - MUST compile 1,118+ static pages cleanly with 0 errors and 0 warnings.
 
 2. **Mobile Fast-Pass Utility**:

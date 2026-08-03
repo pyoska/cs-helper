@@ -48,7 +48,9 @@ These are project-scoped rules for cshelper.kr that the agent MUST always follow
 - **AdSense Policy Compliance**: Ensure legal disclaimer badges (`"본 정보는 참고용이며 공식 채널을 통해 재확인하십시오"`) are rendered on 100% of data pages. Prevent layout overlaps between sticky call bars and main text.
 
 ### 7.4 DevOps & QA Division (배포 및 전수검사 QA팀)
-- **Zero-Bypass Build Gate**: Execute `npm run build` and verify that all 1,127 static pages build cleanly with 0 warnings or errors prior to any `git push`.
+- **Zero GitHub Code Exposure Policy**: NEVER push code to GitHub or external Git remotes to protect source code privacy. Disconnect all Git remotes.
+- **Direct Vercel CLI Deployment**: Deploy production releases directly from the local directory via Vercel CLI (`npx vercel --prod`).
+- **Zero-Bypass Build Gate**: Execute `node scripts/verify-all.js` and verify that all static pages build cleanly with 0 warnings or errors prior to Vercel deployment.
 - **Production Verification**: Verify Vercel production deployment status and confirm domain routing (`cshelper.kr` Production) immediately following any deployment.
 
 
